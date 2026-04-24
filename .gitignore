@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Scraper run artifacts
+logs/*.log
+snapshots/*.html
