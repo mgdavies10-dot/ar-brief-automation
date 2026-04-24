@@ -145,15 +145,36 @@ class ForbesScraper:
     # Browser lifecycle
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _find_chromium() -> str | None:
+        """Return path to an available Chromium binary, or None to use Playwright default."""
+        candidates = [
+            # Pre-installed Playwright browsers (any version)
+            *sorted(Path("/opt/pw-browsers").glob("chromium-*/chrome-linux/chrome"), reverse=True),
+            Path("/usr/bin/chromium-browser"),
+            Path("/usr/bin/chromium"),
+            Path("/usr/bin/google-chrome"),
+        ]
+        for p in candidates:
+            if Path(p).exists():
+                log.info("Using Chromium binary: %s", p)
+                return str(p)
+        return None
+
     def __enter__(self):
         self._playwright = sync_playwright().start()
-        self._browser = self._playwright.chromium.launch(
-            headless=self.headless,
-            args=[
+        launch_kwargs: dict = {
+            "headless": self.headless,
+            "args": [
                 "--no-sandbox",
                 "--disable-blink-features=AutomationControlled",
+                "--disable-dev-shm-usage",
             ],
-        )
+        }
+        exe = self._find_chromium()
+        if exe:
+            launch_kwargs["executable_path"] = exe
+        self._browser = self._playwright.chromium.launch(**launch_kwargs)
         self._context = self._browser.new_context(
             viewport={"width": 1280, "height": 900},
             user_agent=(
@@ -162,6 +183,7 @@ class ForbesScraper:
                 "Chrome/124.0.0.0 Safari/537.36"
             ),
             locale="en-US",
+            ignore_https_errors=True,  # allow sandbox proxy with self-signed cert
         )
         # Honour robots / rate limits — block heavy media to be polite
         self._context.route(
