@@ -1,0 +1,45 @@
+/*
+ * VYNE design tokens as CSS custom properties.
+ * Canonical values: BRAND_TOKENS.md via Architecture v1.2 §11 / UX Blueprint Part 1.
+ * Keep in lockstep with tokens.ts — tokens.test.ts guards the pairing.
+ */
+:root {
+  /* Color */
+  --vyne-navy: #12233F;
+  --vyne-ivory: #F7F4ED;
+  --vyne-white: #FFFFFF;
+  --vyne-slate: #425066;
+  --vyne-forest: #214E3B;
+  --vyne-gold: #B48A35;
+  --vyne-warning: #8A672C;
+  --vyne-danger: #A54747;
+  --vyne-hairline: #E3E0D8;
+
+  /* Typography */
+  --vyne-font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
+  --vyne-font-sans: Inter, "Inter Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Type scale (desktop) */
+  --vyne-type-display: 32px;
+  --vyne-type-display-lh: 40px;
+  --vyne-type-title: 24px;
+  --vyne-type-title-lh: 32px;
+  --vyne-type-section: 18px;
+  --vyne-type-section-lh: 26px;
+  --vyne-type-body: 15px;
+  --vyne-type-body-lh: 24px;
+  --vyne-type-meta: 13px;
+  --vyne-type-meta-lh: 18px;
+  --vyne-type-micro: 11px;
+  --vyne-type-micro-lh: 16px;
+
+  /* Space & surface */
+  --vyne-unit: 8px;
+  --vyne-page-gutter: 48px;
+  --vyne-radius-card: 12px;
+
+  /* Motion */
+  --vyne-motion-fast: 150ms;
+  --vyne-motion-slow: 200ms;
+  --vyne-motion-easing: ease-out;
+}

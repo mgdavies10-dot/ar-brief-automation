@@ -1,0 +1,24 @@
+{
+  "name": "vyne-platform",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@10.9.7",
+  "description": "VYNE platform monorepo — built under EA-001 (DL-2026-006). Synthetic data only; local only.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
