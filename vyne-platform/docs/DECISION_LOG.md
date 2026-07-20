@@ -20,6 +20,14 @@ Commits implementing a decision reference its ID (e.g., `DL-2026-006`) in the co
 | DL-2026-011 | 2026-07-19 | Resolved | Build environment: Option 3 — Claude Code on founder's machine, local synthetic-only |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — **Governance milestones G1/G2 inserted before M3** (engineering
+  paused). G1: Governance Manual, Product Council Charter, Source of Truth Map,
+  Authority Matrix, CLAUDE.md integration + docs navigation — then full stop for
+  founder review. G2 (only after G1 approval): Change Classification, Release
+  Governance, Outside Counsel Register, decision-log restructure, templates. M3 only
+  after G2 approval, and still gated on the ADR-001 real-Supabase re-verification.
+  Founder also directed that the governance system live in this repository as the
+  canonical working copies (non-confidential material only, per Charter Amendment 1).
 - 2026-07-20 — M3 environment: proceed per DL-2026-011 Option 3 — build moves to
   Claude Code on the founder's machine (real Docker/Supabase stack). **M1 accepted.
   M2 provisionally accepted** subject to the ADR-001 binding condition (identical
