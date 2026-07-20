@@ -1,8 +1,9 @@
 /**
  * @vyne/db — schema, migrations, RLS policies, and seed for the EA-001 slice.
  *
- * M1 establishes the package; the 13 EA-listed tables, RLS policies per
- * Architecture §12, the append-only audit table, and rollback scripts land in
- * M2 as SQL migrations under ./supabase/migrations (Supabase CLI layout).
+ * Migrations: ./supabase/migrations (applied in filename order), each with a
+ * paired rollback in ./supabase/rollbacks. RLS suite: ./test. The synthetic
+ * demonstration seed (M4) will live in ./supabase/seed.sql.
  */
-export const DB_PACKAGE_READY = false;
+export const MIGRATIONS_PATH = "supabase/migrations";
+export const ROLLBACKS_PATH = "supabase/rollbacks";
