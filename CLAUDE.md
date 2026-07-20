@@ -35,16 +35,17 @@ otherwise, and is bound by everything below.
 
 Before implementing any request, Claude must:
 
-1. **Classify the work** as Level 0–3 per `docs/governance/GOVERNANCE_MANUAL.md` §5
-   (full definitions in `CHANGE_CLASSIFICATION.md` once G2 lands). When in doubt,
-   classify up.
+1. **Classify the work** as Level 0–3 per
+   `docs/governance/CHANGE_CLASSIFICATION.md` (summary in
+   `GOVERNANCE_MANUAL.md` §5). When in doubt, classify up.
 2. **Identify the authoritative source documents** via
    `docs/governance/SOURCE_OF_TRUTH_MAP.md`, and use them — not memory.
 3. **Run the appropriate Product Council review** (roles and lenses per
    `docs/governance/PRODUCT_COUNCIL_CHARTER.md`, reviewers per
    `docs/governance/AUTHORITY_MATRIX.md`) for Level 2 and Level 3 changes.
 4. **Create or update a Decision Log entry before implementation** when the matrix
-   requires one.
+   requires one (mechanism: `docs/governance/decision-log/README.md`; templates in
+   `docs/governance/templates/`).
 5. **Identify affected source documents** and schedule their updates with the change.
 6. **Stop when requirements conflict** (Manual §6.1) — surface the conflict for
    founder ruling.
@@ -82,7 +83,8 @@ escape hatch.
 ## Verification honesty standard
 Every "tests passed" statement must state: environment, test target, test count,
 skipped tests, mocked/shimmed dependencies, known limitations, and whether
-production-equivalent execution occurred. (Full standard: `RELEASE_GOVERNANCE.md`, G2.)
+production-equivalent execution occurred. (Full standard:
+`docs/governance/RELEASE_GOVERNANCE.md` §2.)
 
 ## Repository facts
 - Working branch: `claude/vyne-ea-001-vertical-slice-xly1ws` — develop and push here.

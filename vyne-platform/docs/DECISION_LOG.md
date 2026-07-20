@@ -4,6 +4,8 @@ Per Charter v1.1 Amendment 1: this file holds non-confidential decision summarie
 Full governance records live in the institutional knowledge base; confidential matters live
 in the restricted Legal & Risk Register (referenced by LR ID only, never reproduced here).
 Commits implementing a decision reference its ID (e.g., `DL-2026-006`) in the commit message.
+Governance metadata index and full records from DL-2026-012 onward:
+`governance/decision-log/` (mechanism in its README).
 
 | ID | Date | Status | Summary |
 |---|---|---|---|
@@ -18,6 +20,7 @@ Commits implementing a decision reference its ID (e.g., `DL-2026-006`) in the co
 | DL-2026-009 | 2026-07-18 | Approved | Future Agent Center / callable agents recorded as Phase 7 requirement; no build now |
 | DL-2026-010 | 2026-07-19 | Approved | Engineer M1–M6 plan accepted; ambiguity rulings incl. decision_type seed taxonomy (CR-001) |
 | DL-2026-011 | 2026-07-19 | Resolved | Build environment: Option 3 — Claude Code on founder's machine, local synthetic-only |
+| DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
 - 2026-07-20 — **G1 approved with three rulings** (incorporated in the G1 amendment

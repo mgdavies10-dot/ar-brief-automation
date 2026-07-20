@@ -8,8 +8,17 @@
 - [Source of Truth Map](governance/SOURCE_OF_TRUTH_MAP.md) — which document governs
   which subject; authority hierarchy; code-cannot-redefine rule
 - [Authority Matrix](governance/AUTHORITY_MATRIX.md) — who reviews and approves what
-- Arriving in G2 (after founder approval of G1): `CHANGE_CLASSIFICATION.md`,
-  `RELEASE_GOVERNANCE.md`, `OUTSIDE_COUNSEL_REGISTER.md`, `decision-log/`, `templates/`
+- [Change Classification](governance/CHANGE_CLASSIFICATION.md) — Levels 0–3 with the
+  decision tree
+- [Release Governance](governance/RELEASE_GOVERNANCE.md) — acceptance states, the
+  test-claim standard, release gates
+- [Outside Counsel Register](governance/OUTSIDE_COUNSEL_REGISTER.md) — LR index and
+  escalation categories (IDs/status only; nothing privileged)
+- [Decision Log mechanism](governance/decision-log/README.md) ·
+  [Index](governance/decision-log/DECISION_LOG_INDEX.md) ·
+  [DL-2026-012](governance/decision-log/DL-2026-012-m2-environment-decision.md)
+- [Templates](governance/templates/) — proposal, council review, decision record,
+  release approval, legal escalation
 
 ## Build records
 - [Decision Log (non-confidential)](DECISION_LOG.md)
