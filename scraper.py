@@ -294,18 +294,25 @@ class ForbesScraper:
         if depth > 8:
             return []
         if isinstance(data, list):
-            # Look for a list of dicts that look like advisor rows
             if data and isinstance(data[0], dict):
-                keys = set(data[0].keys())
-                advisor_keys = {"name", "firm", "state", "city", "rank"}
-                if keys & {k.lower() for k in advisor_keys}:
+                # Lowercase all keys for comparison — Forbes uses camelCase (firstName, teamAssets)
+                lowered = {k.lower() for k in data[0].keys()}
+                # Match on any 2+ of these signals; "rank" alone is too generic
+                advisor_signals = {"name", "firstname", "lastname", "firm", "state", "city", "rank", "assets"}
+                if len(lowered & advisor_signals) >= 2:
                     return data
-            # Recurse into list items
-            for item in data[:5]:  # check first 5 only to avoid huge traversal
+            for item in data[:10]:
                 result = self._flatten_json_data(item, depth + 1)
                 if result:
                     return result
         elif isinstance(data, dict):
+            # Prioritise keys that are likely to hold the list items array
+            priority = ["listItems", "items", "advisors", "data", "results", "list", "rows"]
+            for pk in priority:
+                if pk in data:
+                    result = self._flatten_json_data(data[pk], depth + 1)
+                    if result:
+                        return result
             for v in data.values():
                 result = self._flatten_json_data(v, depth + 1)
                 if result:
@@ -377,38 +384,64 @@ class ForbesScraper:
 
     def _map_to_schema(self, raw: dict, source: str) -> dict:
         """Map a raw dict (from JSON or DOM) to our canonical column schema."""
-        # Case-insensitive key lookup helper
         def get(*keys):
+            # Case-insensitive lookup; handles camelCase and snake_case variants
             for k in keys:
                 for rk, rv in raw.items():
                     if rk.lower().strip() == k.lower().strip():
                         return _clean(str(rv)) if rv is not None else "Unknown"
             return "Unknown"
 
-        state_raw = get("state", "State")
-        abbr, full_name = _normalise_state(state_raw)
+        # Forbes embeds first/last name separately in some JSON shapes
+        name = get("name", "advisorName", "advisor_name", "fullName", "full_name")
+        if name == "Unknown":
+            first = get("firstName", "first_name", "firstname")
+            last = get("lastName", "last_name", "lastname")
+            if first != "Unknown" or last != "Unknown":
+                name = f"{first} {last}".strip().replace("Unknown", "").strip() or "Unknown"
+
+        state_raw = get("state", "stateCode", "state_code")
+        abbr, _ = _normalise_state(state_raw)
+
+        # Forbes organises by region (sub-state, e.g. "Minnesota" or "Ohio - Cleveland")
+        region = get("region", "stateName", "state_name", "territory", "areaName", "area_name")
+
+        profile_url = raw.get("_profile_url", "Unknown")
+        if profile_url == "Unknown":
+            raw_url = get("url", "profileUrl", "profile_url", "link", "href")
+            if raw_url != "Unknown":
+                if raw_url.startswith("/"):
+                    profile_url = "https://www.forbes.com" + raw_url
+                else:
+                    profile_url = raw_url
 
         return {
-            "Name": get("name", "advisor name", "advisor_name"),
-            "Firm": get("firm", "company", "employer"),
-            "City": get("city", "location"),
+            "Name": name,
+            "Firm": get("firm", "company", "employer", "firmName", "firm_name", "organization"),
+            "City": get("city", "location", "cityName", "city_name"),
             "State": abbr,
-            "Region": get("region"),
+            "Region": region,
             "Minimum Account Size For New Business": get(
-                "minimum account size", "min account", "minimum_account_size",
-                "minimumAccountSize", "minAccountSize",
+                "minimum account size", "minimumAccountSize", "minAccountSize",
+                "minimumAccount", "minAccount", "minimum_account_size",
             ),
-            "Team Assets": get("team assets", "assets", "aum", "teamAssets"),
+            "Team Assets": get(
+                "team assets", "teamAssets", "team_assets",
+                "assets", "aum", "totalAssets", "total_assets",
+            ),
             "Typical Net Worth Of Relationships": get(
-                "typical net worth", "net worth", "typicalNetWorth",
-                "typical_net_worth",
+                "typical net worth", "typicalNetWorth", "typical_net_worth",
+                "netWorth", "net_worth", "typicalClientNetWorth",
             ),
             "Typical Size Household Accounts": get(
-                "typical household", "household accounts", "typicalHousehold",
-                "typical_household",
+                "typical household", "typicalHousehold", "typical_household",
+                "householdAccounts", "household_accounts", "typicalAccountSize",
             ),
-            "Forbes Profile URL": raw.get("_profile_url", get("url", "profile_url", "link")),
-            "Source Notes": f"Forbes Best-In-State Wealth Advisors 2026 | extracted via {source} | scraped {datetime.now():%Y-%m-%d}",
+            "Forbes Profile URL": profile_url,
+            "Source Notes": (
+                f"Forbes Best-In-State Wealth Advisors 2026 | "
+                f"extracted via {source} | scraped {datetime.now():%Y-%m-%d}"
+            ),
         }
 
     def _filter_and_limit(self, records: list[dict], state_filter: str | None, limit: int | None) -> list[dict]:
