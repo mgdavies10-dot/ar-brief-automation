@@ -5,9 +5,10 @@ export default defineConfig({
     environment: "node",
     testTimeout: 60_000,
     hookTimeout: 120_000,
-    // Each file uses its own scratch database; files may run in parallel,
-    // but tests within a file share a session and must run serially.
-    fileParallelism: true,
+    // Shim mode: each file uses its own scratch database, so files may run in
+    // parallel. Real-stack mode (VYNE_REAL_STACK=1) shares the one managed
+    // database and must run files serially.
+    fileParallelism: process.env.VYNE_REAL_STACK !== "1",
     sequence: { concurrent: false },
   },
 });

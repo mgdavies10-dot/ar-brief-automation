@@ -9,12 +9,26 @@ export const MIGRATIONS_DIR = path.join(dir, "..", "supabase", "migrations");
 export const ROLLBACKS_DIR = path.join(dir, "..", "supabase", "rollbacks");
 const SHIM = path.join(dir, "shim", "auth_shim.sql");
 
+/**
+ * Real-stack mode (DL-2026-012 binding verification): VYNE_REAL_STACK=1 targets
+ * the Supabase-managed database (default 127.0.0.1:54322/postgres after
+ * `supabase start`) with its REAL auth schema and roles — the shim is never
+ * applied. Migration files and test assertions are identical in both modes;
+ * only connection/reset plumbing differs.
+ */
+export const IS_REAL_STACK = process.env.VYNE_REAL_STACK === "1";
+
 const PG = {
   host: process.env.PGHOST ?? "127.0.0.1",
-  port: Number(process.env.PGPORT ?? 5432),
+  port: Number(process.env.PGPORT ?? (IS_REAL_STACK ? 54322 : 5432)),
   user: process.env.PGUSER ?? "postgres",
   password: process.env.PGPASSWORD ?? "postgres",
 };
+const MANAGED_DB = process.env.PGDATABASE ?? "postgres";
+
+function targetDb(requested: string): string {
+  return IS_REAL_STACK ? MANAGED_DB : requested;
+}
 
 function psql(dbname: string, file: string): void {
   execFileSync(
@@ -28,30 +42,55 @@ export function listMigrations(): string[] {
   return readdirSync(MIGRATIONS_DIR).filter((f) => f.endsWith(".sql")).sort();
 }
 
-/** Drop + recreate a test database, apply the auth shim, then all migrations in order. */
+export function listRollbacksNewestFirst(): string[] {
+  return readdirSync(ROLLBACKS_DIR).filter((f) => f.endsWith(".sql")).sort().reverse();
+}
+
+/**
+ * Provision a clean schema and apply all migrations in order.
+ * Shim mode: isolated scratch database + Supabase-semantics auth shim (ADR-001).
+ * Real-stack mode: resets OUR objects on the managed database via the committed
+ * down-chain (never touching Supabase's auth/storage schemas), then re-applies
+ * the identical migrations. Requires `supabase start` (+ `supabase db reset` on
+ * first use) beforehand.
+ */
 export async function freshDatabase(dbname: string): Promise<void> {
-  const admin = new Client({ ...PG, database: "postgres" });
-  await admin.connect();
-  await admin.query(`drop database if exists ${dbname} with (force)`);
-  await admin.query(`create database ${dbname}`);
-  await admin.end();
-  psql(dbname, SHIM);
+  if (!IS_REAL_STACK) {
+    const admin = new Client({ ...PG, database: "postgres" });
+    await admin.connect();
+    await admin.query(`drop database if exists ${dbname} with (force)`);
+    await admin.query(`create database ${dbname}`);
+    await admin.end();
+    psql(dbname, SHIM);
+  } else {
+    const c = new Client({ ...PG, database: MANAGED_DB });
+    await c.connect();
+    const applied = await c.query(
+      "select 1 from information_schema.tables where table_schema = 'public' and table_name = 'users'",
+    );
+    await c.end();
+    if ((applied.rowCount ?? 0) > 0) {
+      for (const down of listRollbacksNewestFirst()) {
+        psql(MANAGED_DB, path.join(ROLLBACKS_DIR, down));
+      }
+    }
+  }
   for (const f of listMigrations()) {
-    psql(dbname, path.join(MIGRATIONS_DIR, f));
+    psql(targetDb(dbname), path.join(MIGRATIONS_DIR, f));
   }
 }
 
 export function applyRollback(dbname: string, rollbackFile: string): void {
-  psql(dbname, path.join(ROLLBACKS_DIR, rollbackFile));
+  psql(targetDb(dbname), path.join(ROLLBACKS_DIR, rollbackFile));
 }
 
 export function applyMigration(dbname: string, migrationFile: string): void {
-  psql(dbname, path.join(MIGRATIONS_DIR, migrationFile));
+  psql(targetDb(dbname), path.join(MIGRATIONS_DIR, migrationFile));
 }
 
 /** Owner-privilege connection (bypasses RLS — fixtures and assertions only). */
 export async function ownerClient(dbname: string): Promise<Client> {
-  const c = new Client({ ...PG, database: dbname });
+  const c = new Client({ ...PG, database: targetDb(dbname) });
   await c.connect();
   return c;
 }

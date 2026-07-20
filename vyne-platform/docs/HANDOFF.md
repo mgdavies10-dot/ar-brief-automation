@@ -34,15 +34,18 @@ Read `docs/SETUP.md`, `docs/milestone-reports/M1_report.md`, `M2_report.md`,
 2. `supabase db reset` — applies the **identical committed migrations, unmodified**,
    to the managed local database (real `auth` schema, real GoTrue-owned `auth.users`,
    real `anon`/`authenticated`/`service_role` roles).
-3. Add a *real-stack mode* to the test harness (`test/helpers.ts`) that
-   (a) does **not** apply `test/shim/auth_shim.sql`, (b) targets the Supabase-managed
-   database (default `postgresql://postgres:postgres@127.0.0.1:54322/postgres`), and
-   (c) leaves every migration file and every test assertion unchanged. Harness
-   plumbing may change; acceptance criteria may not weaken.
-4. Run the complete M2 suite (RLS, audit append-only, rollback + re-apply). Confirm
-   all 42 tests pass, or document and correct any shim-vs-Supabase behavioral
-   differences (corrections must not be "solely to make tests pass" — each one gets a
-   written rationale in the report).
+3. Real-stack mode is **already implemented** in the harness (commit referenced in
+   the M2 report addendum): `VYNE_REAL_STACK=1` skips the shim, targets the managed
+   database (`127.0.0.1:54322/postgres`; override via `PGHOST/PGPORT/PGDATABASE`),
+   resets our objects via the committed down-chain, and runs files serially. Every
+   migration file and test assertion is byte-identical in both modes.
+4. Run the complete M2 suite against the real stack:
+   `npm run test:real` (bash/zsh; PowerShell: `$env:VYNE_REAL_STACK="1"; npx vitest run`).
+   Confirm all 42 tests pass, or document and correct any shim-vs-Supabase
+   behavioral differences (corrections must not be "solely to make tests pass" —
+   each one gets a written rationale in the report). Known candidate difference to
+   watch: GoTrue's `auth.users` has additional constraints — fixtures insert
+   `(id, email)` idempotently; if a NOT NULL surfaces, document it.
 5. Update `docs/milestone-reports/M2_report.md` with the real-Supabase results and the
    exact commands used.
 6. Commit and push that verification **before beginning substantive M3 implementation**.

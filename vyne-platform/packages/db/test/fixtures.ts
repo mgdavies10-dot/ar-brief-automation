@@ -44,8 +44,10 @@ export const IDS = {
 export async function loadFixtures(owner: Client): Promise<void> {
   const sql = (s: string, p?: unknown[]) => owner.query(s, p);
 
+  // Idempotent: in real-stack mode auth.users is GoTrue's table and persists
+  // across our public-schema resets.
   for (const [key, authId] of Object.entries(AUTH)) {
-    await sql("insert into auth.users (id, email) values ($1, $2)", [
+    await sql("insert into auth.users (id, email) values ($1, $2) on conflict (id) do nothing", [
       authId,
       `${key}@synthetic.vyne.test`,
     ]);
