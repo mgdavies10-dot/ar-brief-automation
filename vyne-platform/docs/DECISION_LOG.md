@@ -23,6 +23,16 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — **M2 finally accepted; DL-2026-012 conditions 3–4 discharged.** The
+  binding real-Supabase verification ran on the founder's machine: identical
+  committed migrations, full suite, **42/42 passing on the genuine local Supabase
+  stack** (CLI 2.109.1, PostgreSQL 17.6, no shim, zero shim-vs-real behavioral
+  differences, no code changes). Founder reviewed and accepted the results. Full
+  record: M2 report final section. Standing direction going forward: **every future
+  milestone must end with visible, clickable product functionality the founder can
+  open and evaluate** — infrastructure-only milestones require a critical-blocker
+  justification. M3 remains gated on founder approval of the M3 plan documents
+  (`M3_plan.md`, `M3_execution_plan.md`); no M3 production code before that.
 - 2026-07-20 — **G1 approved with three rulings** (incorporated in the G1 amendment
   commit): **(1)** The M2 environment decision takes number **DL-2026-012**
   (`DL-2026-012-m2-environment-decision.md`, full record created in G2); DL-2026-009

@@ -28,9 +28,10 @@ only when approved behavior materially changes (mechanism:
 milestone; synthetic data only; local only; no hosted deployment, email sending, or
 AI features; stop for founder review at milestone gates (M5 and M6 remain) and at any
 EA-001 stop condition — never invent or substitute silently. Current standing gate:
-**M2's real-Supabase re-verification (DL-2026-012 / ADR-001 / HANDOFF.md) must be
-completed, reported, and pushed before substantive M3 work; the M3 plan needs founder
-review before M3 code.**
+**M1 and M2 accepted (real-Supabase verification complete 2026-07-20, 42/42 —
+DL-2026-012 conditions 3–4 discharged). The M3 plan documents need founder approval
+before any M3 code; every milestone must end with founder-reviewable, clickable
+product functionality.**
 
 **Testing claims:** every "tests passed" states environment, target, counts, skips,
 shims/mocks, limitations, and whether execution was production-equivalent

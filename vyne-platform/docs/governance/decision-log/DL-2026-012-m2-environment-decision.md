@@ -2,7 +2,7 @@
 
 - **Decision ID:** DL-2026-012
 - **Date:** 2026-07-20
-- **Status:** Approved — Option B (conditions open until discharged)
+- **Status:** Approved — Option B (conditions 3–4 discharged 2026-07-20; see Discharge record below)
 - **Owner:** Founder
 - **Participants:** Founder; Lead Engineer (proposal and options); Product Council
   precedent CR-001 §3 / DL-2026-011
@@ -88,3 +88,15 @@ columns).
 - **Acceptance conditions:** §Binding conditions above
 - **Review date:** at M2 final acceptance
 - **Superseded by:** —
+
+## Discharge record (2026-07-20)
+
+Conditions 3–4 discharged: the identical committed migrations and the complete
+42-test suite were executed against the genuine local Supabase stack on the
+founder's machine (Supabase CLI 2.109.1, PostgreSQL 17.6, real GoTrue `auth`
+schema and roles, no shim) — **42/42 passing, zero shim-vs-real behavioral
+differences, no corrections required** (condition 6 had nothing to document).
+Results, environment, and exact commands recorded in the M2 report final section
+and pushed with it. Founder reviewed and accepted the results the same day —
+**M2 is finally accepted.** Conditions 1–2 are thereby superseded by final
+acceptance; condition 5 (M3 plan review before M3 code) remains in force.

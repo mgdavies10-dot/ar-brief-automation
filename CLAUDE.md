@@ -27,9 +27,12 @@ otherwise, and is bound by everything below.
 - EA-001 stop conditions are binding: on any conflict, undefined business rule,
   control the stack can't satisfy, or anything requiring real data/hosting/excluded
   modules — **stop and report; never invent or substitute silently.**
-- Current standing condition: M2 is provisionally accepted; the **real-Supabase
-  re-verification (ADR-001, procedure in HANDOFF.md) must be completed and pushed
-  before substantive M3 implementation.**
+- Current standing condition: M1 and M2 are **accepted** (real-Supabase binding
+  verification completed 2026-07-20, 42/42 — see M2 report). **M3 production code
+  may not begin until the founder approves the M3 plan documents**
+  (`docs/milestone-reports/M3_plan.md` and `M3_execution_plan.md`). Founder
+  direction: every milestone must end with visible, clickable product
+  functionality for founder review.
 
 ## Product Governance Requirements
 

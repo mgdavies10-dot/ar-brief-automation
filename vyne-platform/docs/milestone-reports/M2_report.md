@@ -1,6 +1,6 @@
 # M2 Report — Database + RLS + audit (EA-001)
 
-**Date:** 2026-07-20 · **Milestone:** M2 of the accepted plan (DL-2026-010) · **Status:** Complete — **stopped for founder/council review (mandatory M2 stop)**
+**Date:** 2026-07-20 · **Milestone:** M2 of the accepted plan (DL-2026-010) · **Status:** **Accepted** — real-Supabase binding verification complete (see final section; ADR-001 / DL-2026-012 conditions discharged)
 
 ## Environment decision executed
 Per the M1 report's flag, the founder was offered the three M2-environment options and
@@ -91,3 +91,65 @@ PostgreSQL harness; it does not yet prove interaction with real Supabase Auth
 claims, service roles, token refresh, or GoTrue behavior. M3 environment decision:
 **Option B** — the build moves to Claude Code on the founder's machine. The
 real-stack verification must be completed and pushed before substantive M3 work.
+
+## Real-Supabase binding verification (2026-07-20, founder's machine — ADR-001 / DL-2026-012)
+
+**Result: 42/42 tests passed against the genuine local Supabase stack. 0 failed,
+0 skipped, no shim applied, no code/test/migration/fixture changes required.**
+Founder reviewed and accepted the results the same day; DL-2026-012 conditions
+3–4 are discharged by this commit and push. **M2 is finally accepted.**
+
+### Environment (verification honesty standard)
+- Founder's machine: Windows 11 Pro (10.0.26200), PowerShell.
+- Docker Desktop, engine 29.6.1 on WSL 2 (WSL 2.7.10.0 installed for this
+  verification), 16 CPUs / ~8 GB engine memory.
+- Node v24.18.0; Supabase CLI **2.109.1** installed as a `vyne-platform`
+  devDependency and run via `npx supabase` (same CLI version as the cloud M2
+  session); `psql` 16.12 client from the official EDB PostgreSQL 16.12-1
+  binaries (per-user install, client tools only — no local PostgreSQL server).
+- The stack's managed database is **PostgreSQL 17.6** (CLI default) at
+  `127.0.0.1:54322`, with the real GoTrue-owned `auth` schema and real
+  `anon`/`authenticated`/`service_role` roles.
+
+### Exact commands executed
+```powershell
+cd vyne-platform
+npm install
+npx turbo run build typecheck        # 8/8 tasks successful (test task excluded:
+                                     # shim mode needs a native PG at 5432 that
+                                     # does not exist on this machine; the db
+                                     # suite is verified for real below)
+cd packages/db
+npx supabase init                    # created only supabase/config.toml and
+                                     # supabase/.gitignore; migrations/ and
+                                     # rollbacks/ untouched (git-verified clean)
+npx supabase start                   # all services healthy (imgproxy/pooler
+                                     # intentionally stopped by default profile)
+npx supabase db reset                # applied 0001–0007 in order, unmodified
+$env:VYNE_REAL_STACK="1"; npx vitest run   # (pgsql-16 bin on session PATH)
+```
+Vitest: `test/rls.test.ts` 40/40, `test/rollback.test.ts` 2/2 — **42/42 in
+8.52s**, serial execution (real-stack mode disables file parallelism). The
+committed migrations and every test assertion were byte-identical to the
+shim-mode runs (git status clean over `supabase/migrations` and
+`supabase/rollbacks` throughout). Post-run check: all 14 tables present in
+`public`. This is executed, production-equivalent database-layer verification.
+
+### Observations
+1. **No shim-vs-real behavioral differences surfaced.** The anticipated
+   difference (GoTrue's `auth.users` rejecting the fixtures' minimal idempotent
+   `(id, email)` inserts) did not materialize — the inserts were accepted.
+   DL-2026-012 condition 6 required documenting/correcting differences; there
+   were none to document.
+2. **PostgreSQL major version:** the shim verification ran on PostgreSQL 16.13;
+   the real stack runs PostgreSQL 17.6. M2 is therefore verified on both 16.x
+   and 17.x. No behavior differed. Pinning a major version for the slice is an
+   open (non-blocking) choice for a future decision if desired.
+3. **Windows notes:** the `test:real` npm script uses bash env-var syntax and
+   does not run under npm's cmd shell on Windows — the PowerShell form above is
+   the equivalent (documented in SETUP.md). `psql` is a required client-side
+   prerequisite of the test harness (now listed in SETUP.md).
+4. Transient Docker registry rate-limit error during the first `edge-runtime`
+   image pull; the CLI retried and the stack started cleanly. The Windows
+   analytics warning (Logflare needs the daemon on tcp:2375) is irrelevant to
+   this verification and was not acted on.

@@ -1,61 +1,56 @@
-# Handoff — cloud session → Claude Code on the founder's machine
+# Handoff — current build state (EA-001 vertical slice)
 
-**Date:** 2026-07-20 · **Per founder direction executing DL-2026-011 (Option B/3: build
-locally where Docker can run the real Supabase stack).**
+**Updated:** 2026-07-20 (local session on the founder's machine, per DL-2026-011
+Option 3 / DL-2026-012 Option B). Supersedes the cloud→local handoff of the same
+date; that procedure was executed and is preserved in the M2 report.
 
-## Status at handoff
+## Status
+
 - **M1: accepted** (founder, 2026-07-20).
-- **M2: provisionally accepted**, subject to the binding condition of ADR-001 /
-  DL-2026-008: full re-verification against the real Supabase stack (steps below)
-  **before any substantive M3 implementation**.
-- Branch `claude/vyne-ea-001-vertical-slice-xly1ws` at commit `401522e` holds all work.
-  Working tree clean at handoff; no secrets tracked (only `.env.example` placeholders
-  and the Supabase CLI's well-known local-dev connection string).
+- **M2: accepted.** The ADR-001 / DL-2026-012 binding real-Supabase verification
+  was executed on the founder's machine 2026-07-20: identical committed
+  migrations, full suite, **42/42 passing on the genuine local Supabase stack**
+  (no shim; zero behavioral differences). Results, environment, and exact
+  commands: `docs/milestone-reports/M2_report.md`, final section. Conditions 3–4
+  of DL-2026-012 are discharged with that report's commit and push.
+- **G1/G2 governance milestones: complete** (see `docs/governance/`, DECISION_LOG
+  founder directions of 2026-07-20).
+- **M3: not started — no production code may be written yet.** Two documents
+  await founder approval:
+  1. `docs/milestone-reports/M3_plan.md` — technical implementation plan
+     (auth architecture, acceptance criteria; §10 lists the founder decisions
+     it needs).
+  2. `docs/milestone-reports/M3_execution_plan.md` — phase-by-phase execution
+     sequencing per the founder's 2026-07-20 direction that every milestone end
+     with visible, clickable product for founder review.
+- EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
+  no secrets in the repo, milestone stops at M5 and M6 minimum.
 
-## Local prerequisites
-Git · Node 20+ · Docker Desktop (running) · Supabase CLI · Claude Code.
+## Local environment (established and verified 2026-07-20)
 
-## Resume commands (local machine)
-```sh
-git clone https://github.com/mgdavies10-dot/ar-brief-automation.git
-cd ar-brief-automation
-git checkout claude/vyne-ea-001-vertical-slice-xly1ws
+- Windows 11 · Node v24.18.0 · Docker Desktop (engine 29.6.1, WSL 2 backend).
+- Supabase CLI 2.109.1 as a `vyne-platform` devDependency — always `npx supabase`.
+- `psql` 16.12 client tools (per-user EDB binaries install; no local PG server).
+- See `docs/SETUP.md` for prerequisites and Windows-specific notes.
+
+## Resume commands
+
+```powershell
 cd vyne-platform
 npm install
-npx turbo run build typecheck test   # sanity: expect 12/12 tasks; db suite needs Postgres (next step)
+npx turbo run build typecheck        # 8/8 expected
+cd packages/db
+npx supabase start                   # requires Docker Desktop running
+npx supabase db reset                # re-apply committed migrations
+$env:VYNE_REAL_STACK="1"; npx vitest run   # M2 regression: 42/42 expected
 ```
-Read `docs/SETUP.md`, `docs/milestone-reports/M1_report.md`, `M2_report.md`,
-`docs/adr/ADR-001*` before touching anything.
 
-## M2 binding verification procedure (do this FIRST, before M3 code)
-1. `cd packages/db && supabase init` (creates `supabase/config.toml`; the existing
-   `supabase/migrations` and `supabase/rollbacks` folders must be left untouched)
-   then `supabase start`.
-2. `supabase db reset` — applies the **identical committed migrations, unmodified**,
-   to the managed local database (real `auth` schema, real GoTrue-owned `auth.users`,
-   real `anon`/`authenticated`/`service_role` roles).
-3. Real-stack mode is **already implemented** in the harness (commit referenced in
-   the M2 report addendum): `VYNE_REAL_STACK=1` skips the shim, targets the managed
-   database (`127.0.0.1:54322/postgres`; override via `PGHOST/PGPORT/PGDATABASE`),
-   resets our objects via the committed down-chain, and runs files serially. Every
-   migration file and test assertion is byte-identical in both modes.
-4. Run the complete M2 suite against the real stack:
-   `npm run test:real` (bash/zsh; PowerShell: `$env:VYNE_REAL_STACK="1"; npx vitest run`).
-   Confirm all 42 tests pass, or document and correct any shim-vs-Supabase
-   behavioral differences (corrections must not be "solely to make tests pass" —
-   each one gets a written rationale in the report). Known candidate difference to
-   watch: GoTrue's `auth.users` has additional constraints — fixtures insert
-   `(id, email)` idempotently; if a NOT NULL surfaces, document it.
-5. Update `docs/milestone-reports/M2_report.md` with the real-Supabase results and the
-   exact commands used.
-6. Commit and push that verification **before beginning substantive M3 implementation**.
+(bash/zsh equivalent for the last step: `npm run test:real`.)
 
-## Then: M3 plan before M3 code
-Present the founder a written M3 implementation plan covering: Supabase Auth
-architecture; founder/recruiter/advisor account creation; invitation and activation
-flows; MFA/TOTP requirements by role; session creation and refresh; immediate account
-revocation; password-reset behavior; authorization claims and their relationship to
-RLS; advisor-account linkage; audit events; authentication failure and recovery
-states; automated integration and acceptance tests. Authentication acceptance tests
-may not be weakened or deferred without a new, explicitly approved stop condition.
-EA-001 milestone stop-and-review rules continue to apply (stops at M5 and M6 minimum).
+## Next required action
+
+Founder review and approval of the M3 plan documents above (including the §10
+decisions in `M3_plan.md`). Only after that approval does M3 implementation
+begin. Authentication acceptance tests may not be weakened or deferred without a
+new, explicitly approved stop condition. The M2 real-stack suite is the standing
+regression gate: it must stay green (`42/42`) after every M3 change.
