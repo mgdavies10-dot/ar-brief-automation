@@ -81,3 +81,13 @@ M1 report; this needs deciding before M3 implementation begins.
 ## Stopped for review
 Per the rules of engagement (mandatory stop at M2). Awaiting founder/council direction
 on: (a) acceptance of ADR-001/ADR-002, (b) the M3 environment question above.
+
+## Founder ruling (2026-07-20, post-review addendum)
+M1 **accepted**. M2 **provisionally accepted** — implementation complete, but final
+acceptance is conditional on re-verification against the real Supabase stack
+(ADR-001 binding condition; procedure in docs/HANDOFF.md). Scope note on this
+report's test claims: the 42/42 result proves the policies under the native
+PostgreSQL harness; it does not yet prove interaction with real Supabase Auth
+claims, service roles, token refresh, or GoTrue behavior. M3 environment decision:
+**Option B** — the build moves to Claude Code on the founder's machine. The
+real-stack verification must be completed and pushed before substantive M3 work.

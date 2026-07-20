@@ -19,6 +19,15 @@ Commits implementing a decision reference its ID (e.g., `DL-2026-006`) in the co
 | DL-2026-010 | 2026-07-19 | Approved | Engineer M1–M6 plan accepted; ambiguity rulings incl. decision_type seed taxonomy (CR-001) |
 | DL-2026-011 | 2026-07-19 | Resolved | Build environment: Option 3 — Claude Code on founder's machine, local synthetic-only |
 
+## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — M3 environment: proceed per DL-2026-011 Option 3 — build moves to
+  Claude Code on the founder's machine (real Docker/Supabase stack). **M1 accepted.
+  M2 provisionally accepted** subject to the ADR-001 binding condition (identical
+  migrations + full 42-test suite re-run on the real Supabase stack, results and exact
+  commands added to the M2 report, committed and pushed before substantive M3 work).
+  M3 requires a written implementation plan for founder review before code. See
+  docs/HANDOFF.md.
+
 ## ADR index
 - ADR-000 — Monorepo foundation under EA-001 (M1, 2026-07-19) — references DL-2026-006/010
 - ADR-001 — M2 verification on native PostgreSQL 16 with test-only auth shim (M2, 2026-07-20) — references DL-2026-011, CR-001 §3; re-verification on real Supabase stack required before DL-2026-008
