@@ -20,6 +20,25 @@ Commits implementing a decision reference its ID (e.g., `DL-2026-006`) in the co
 | DL-2026-011 | 2026-07-19 | Resolved | Build environment: Option 3 — Claude Code on founder's machine, local synthetic-only |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — **G1 approved with three rulings** (incorporated in the G1 amendment
+  commit): **(1)** The M2 environment decision takes number **DL-2026-012**
+  (`DL-2026-012-m2-environment-decision.md`, full record created in G2); DL-2026-009
+  is never reused or renumbered; all existing DL identifiers and references are
+  preserved. **(2)** The M2 environment decision status is **Approved — Option B**
+  (continue on local Claude Code with Docker and the genuine Supabase stack);
+  repository evidence: commit `d899b7c`. The record preserves: M1 accepted; M2
+  provisionally accepted; the 42/42 result applies to PostgreSQL 16.13 with the
+  test-only Supabase-semantics auth shim and is **not** production-equivalent
+  Supabase Auth verification; final M2 acceptance remains conditioned on rerunning
+  the identical migrations and complete applicable suite on the genuine local
+  Supabase stack; substantive M3 implementation may not begin until that verification
+  is completed and reported; the M3 implementation plan must be reviewed before M3
+  code. **(3)** The repository copy of the governance system is the canonical
+  operational source; knowledge-base copies are reference mirrors; the new Council
+  Charter is an implementation elaboration of Charter v1.1 Part B; material
+  supersession requires a DL entry naming the exact provision changed; confidential
+  legal/privileged/personnel/commercial material never enters the repository.
+  **G2 authorized** upon this amendment.
 - 2026-07-20 — **Governance milestones G1/G2 inserted before M3** (engineering
   paused). G1: Governance Manual, Product Council Charter, Source of Truth Map,
   Authority Matrix, CLAUDE.md integration + docs navigation — then full stop for

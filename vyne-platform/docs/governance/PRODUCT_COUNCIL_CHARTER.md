@@ -1,12 +1,14 @@
 # VYNE Product Council Charter (repository operating version)
 
-**Status:** G1 draft for founder review · **Owner:** Founder (Council Chair)
-**Lineage:** Product Council Charter v1.0 was adopted as v1.1 with Amendments 1–5
-(DL-2026-001). This document is the founder-directed repository operating version: it
-elaborates the council's role structure for day-to-day use inside the engineering
-workflow. Where it and the v1.1 governance record disagree, that is a conflict for
-founder ruling, not a silent supersession (none is known at this writing; the role
-elaboration below extends Part B of the v1.1 record).
+**Status:** Approved (founder rulings of 2026-07-20 incorporated) · **Owner:** Founder (Council Chair)
+**Lineage (founder-confirmed, 2026-07-20):** Product Council Charter v1.0 was adopted
+as v1.1 with Amendments 1–5 (DL-2026-001). This document is an **implementation
+elaboration of Charter v1.1 Part B, not a silent replacement** of the original
+charter. The repository copy is the canonical operational source (Source of Truth Map
+§0). Discipline for future divergence: any substantive conflict with the v1.1 record
+must be identified explicitly; it may not be resolved by labeling the newer document
+an "elaboration"; material supersession requires a Decision Log entry identifying the
+exact provision changed. No substantive conflict is known at this writing.
 
 **Honesty clause (from v1.1 Part B, restated because it matters):** the council roles
 below are working contexts of one underlying model plus the founder. Role separation

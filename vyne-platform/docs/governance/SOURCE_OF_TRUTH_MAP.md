@@ -1,9 +1,28 @@
 # VYNE Source of Truth Map
 
-**Status:** G1 draft for founder review · **Owner:** Founder (Council Chair)
+**Status:** Approved (founder rulings of 2026-07-20 incorporated) · **Owner:** Founder (Council Chair)
 **Purpose:** for any subject, name the one document that governs it, who owns it, and
 what authority it carries — so no decision is made against the wrong source and no
 document is silently redefined by code.
+
+## 0. Repository-canonical rule (founder ruling, 2026-07-20)
+
+**The repository copy is the canonical operational source** for product development,
+engineering governance, release governance, and Claude Code execution. Any
+institutional knowledge-base copy is a **reference mirror** and must not independently
+diverge from or override the approved repository version.
+
+Boundaries of this rule:
+- It applies to **non-confidential** governance materials only. Confidential legal
+  advice, privileged communications, sensitive personnel information, and restricted
+  commercial terms must **never** be committed to the repository — they live in the
+  restricted workspace and are referenced here by `LR-YYYY-NNN` ID and status only
+  (Charter Amendments 1–2).
+- Founder-approved amendments and later Decision Log entries may clarify or supersede
+  earlier provisions. Any substantive conflict between an original governing document
+  and a repository operating document must be identified explicitly; a conflict may
+  not be resolved merely by calling the newer document an "elaboration." **Material
+  supersession requires a Decision Log entry identifying the exact provision changed.**
 
 ## 1. Document registry
 

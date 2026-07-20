@@ -1,6 +1,6 @@
 # VYNE Governance Manual
 
-**Status:** G1 draft for founder review · **Owner:** Founder (Council Chair)
+**Status:** Approved (founder, 2026-07-20, with rulings incorporated) · **Owner:** Founder (Council Chair)
 **Authority:** Founder direction of 2026-07-20 inserting governance milestones G1/G2
 before M3 (recorded in `docs/DECISION_LOG.md`, pending council DL numbering).
 This manual operationalizes Product Council Charter v1.1 (DL-2026-001) inside the

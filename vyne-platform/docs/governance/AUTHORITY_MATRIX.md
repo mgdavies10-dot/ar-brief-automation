@@ -1,6 +1,6 @@
 # VYNE Authority Matrix
 
-**Status:** G1 draft for founder review · **Owner:** Founder (Council Chair)
+**Status:** Approved (founder, 2026-07-20, with rulings incorporated) · **Owner:** Founder (Council Chair)
 **How to read:** find the decision category; the row states who proposes, who must
 review, who approves, and which artifacts are mandatory. Levels reference the change
 classification (Manual §5; full definitions in G2). When a change spans categories,
