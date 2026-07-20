@@ -4,8 +4,8 @@ import "@vyne/ui/tokens.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VYNE OS",
-  description: "VYNE internal operating system",
+  title: "VYNE OS — VYNE Strategies",
+  description: "VYNE Strategies internal operating system",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

@@ -9,7 +9,8 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:real": "VYNE_REAL_STACK=1 vitest run"
+    "test:real": "VYNE_REAL_STACK=1 vitest run",
+    "provision": "node scripts/provision-local.mjs"
   },
   "devDependencies": {
     "@types/pg": "^8.11.0",

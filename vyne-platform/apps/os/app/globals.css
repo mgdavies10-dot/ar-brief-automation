@@ -11,3 +11,237 @@ body {
   font-size: var(--vyne-type-body);
   line-height: var(--vyne-type-body-lh);
 }
+
+/* ---- Sign-in (UX §4.1: centered card on ivory; a discreet lobby) ---- */
+
+.signin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vyne-page-gutter) calc(var(--vyne-unit) * 3);
+}
+
+.signin-card {
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: var(--vyne-radius-card);
+  padding: calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 5);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The logo asset carries its own clear space (white ground is part of the
+   asset — never crop or restyle it); the card's white surface matches it. */
+.signin-logo {
+  display: block;
+  width: 78%;
+  height: auto;
+  margin: calc(var(--vyne-unit) * -2) auto 0;
+}
+
+.signin-submark {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--vyne-gold);
+  text-align: center;
+  text-indent: 0.42em; /* optically recenters letterspaced caps */
+  margin-top: 2px;
+}
+
+.signin-rule {
+  height: 1px;
+  background: var(--vyne-gold);
+  width: 56px;
+  margin: calc(var(--vyne-unit) * 2.5) auto calc(var(--vyne-unit) * 4);
+}
+
+.signin-note {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  text-align: center;
+  margin-bottom: calc(var(--vyne-unit) * 3);
+}
+
+.signin-label {
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  color: var(--vyne-slate);
+  margin-bottom: calc(var(--vyne-unit) * 0.5);
+}
+
+.signin-input {
+  font: inherit;
+  color: var(--vyne-navy);
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.25) calc(var(--vyne-unit) * 1.5);
+  margin-bottom: calc(var(--vyne-unit) * 2.5);
+  transition: border-color var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-input:focus {
+  outline: none;
+  border-color: var(--vyne-navy);
+}
+
+.signin-error {
+  color: var(--vyne-danger);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  margin: calc(var(--vyne-unit) * -1) 0 calc(var(--vyne-unit) * 2);
+}
+
+.signin-submit {
+  font: inherit;
+  font-weight: 600;
+  color: var(--vyne-white);
+  background: var(--vyne-navy);
+  border: none;
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.5);
+  cursor: pointer;
+  margin-top: var(--vyne-unit);
+  transition: opacity var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-submit:hover {
+  opacity: 0.92;
+}
+
+/* ---- Authenticated shell (M3-1) ---- */
+
+/* White bar: the logo's white ground sits seamlessly on it (the asset has no
+   transparency and must never be recolored or filtered). */
+.topbar {
+  background: var(--vyne-white);
+  color: var(--vyne-navy);
+  border-bottom: 1px solid var(--vyne-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--vyne-unit) * 0.5) calc(var(--vyne-unit) * 3);
+}
+
+.topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vyne-unit) * 1.5);
+}
+
+.topbar-logo {
+  display: block;
+  height: 64px;
+  width: auto;
+}
+
+.topbar-mark-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--vyne-hairline);
+}
+
+.topbar-mark-app {
+  font-family: var(--vyne-font-sans);
+  font-size: var(--vyne-type-micro);
+  letter-spacing: 0.22em;
+  color: var(--vyne-slate);
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vyne-unit) * 2);
+}
+
+.topbar-name {
+  font-size: var(--vyne-type-meta);
+  color: var(--vyne-slate);
+}
+
+.topbar-signout {
+  font: inherit;
+  font-size: var(--vyne-type-meta);
+  color: var(--vyne-navy);
+  background: transparent;
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 0.5) calc(var(--vyne-unit) * 1.5);
+  cursor: pointer;
+  transition: border-color var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.topbar-signout:hover {
+  border-color: var(--vyne-gold);
+}
+
+.role-chip {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--vyne-gold);
+  border: 1px solid var(--vyne-gold);
+  border-radius: 999px;
+  padding: 2px 10px;
+}
+
+.shell {
+  padding: var(--vyne-page-gutter);
+  max-width: 720px;
+}
+
+.shell-title {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-display);
+  line-height: var(--vyne-type-display-lh);
+  font-weight: 600;
+}
+
+.shell-rule {
+  height: 1px;
+  background: var(--vyne-gold);
+  max-width: 320px;
+  margin: calc(var(--vyne-unit) * 2) 0 calc(var(--vyne-unit) * 3);
+}
+
+.shell-card {
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: var(--vyne-radius-card);
+  padding: calc(var(--vyne-unit) * 3);
+}
+
+.shell-rows {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--vyne-unit) * 2);
+}
+
+.shell-row {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--vyne-unit) * 2);
+}
+
+.shell-row dt {
+  width: 80px;
+  flex-shrink: 0;
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+}
+
+.shell-note {
+  color: var(--vyne-slate);
+  max-width: 60ch;
+  margin-top: calc(var(--vyne-unit) * 3);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+}

@@ -23,6 +23,36 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — **Roadmap approved; checkpoint authorized; demo-account reset
+  mechanism directed.** Founder approved `docs/ROADMAP.md` (Horizon A sequencing,
+  founder-first M4 split, Horizon B gated on new authorization) and M3-1's
+  visible product. Checkpoint commit+push of the reviewed work authorized.
+  Standing direction: demo accounts are never deleted ad hoc — a reusable
+  provisioning/reset mechanism regenerates fresh demo users and onboarding
+  states on demand. Brand reconciliation: engineering tokens stay unchanged
+  until a single founder decision before M4, made against a written proposal
+  comparing tokens vs. the official brand guide with visual swatches.
+- 2026-07-20 — **Q-9 (vector logo) resolved for the v1 slice.** The founder supplied
+  and approved the VYNE Strategies primary logo (symbol + wordmark, navy on
+  white). Canonical asset: `packages/ui/assets/brand/vyne-logo-primary.png`
+  (usage rules in the adjacent README: exact asset only — never redrawn,
+  recreated, cropped, distorted, or filtered). Integrated into the OS sign-in
+  screen and authenticated top bar (presentation-only change). Still open per
+  Architecture §18: vector master and reversed variants for print — raster is
+  acceptable for v1 only.
+- 2026-07-20 — **M3 plans approved; R1/A1 ruled; M3-1 authorized.** Founder approved
+  the M3 phase structure and the acceptance criteria in `M3_plan.md` +
+  `M3_execution_plan.md`. **R1 (password recovery):** implement and test the
+  complete user-facing local reset workflow (Supabase Auth + Mailpit capture);
+  founder review includes request → Mailpit email → new password → sign-in.
+  Admin reset may exist only as a controlled backup, never the primary flow.
+  **A1 (MFA enrollment):** internal VYNE OS users must complete the
+  password-change + real TOTP enrollment ceremony at first successful login
+  before any normal application access; standard authenticator apps; no
+  simulated MFA. **M3-1 only** authorized to proceed (sign-in, §4.1 language,
+  synthetic accounts, error handling without account-existence leaks,
+  authenticated shell, sign-out); no M3-2 work, no commit/push until founder
+  reviews the visible product.
 - 2026-07-20 — **M2 finally accepted; DL-2026-012 conditions 3–4 discharged.** The
   binding real-Supabase verification ran on the founder's machine: identical
   committed migrations, full suite, **42/42 passing on the genuine local Supabase
