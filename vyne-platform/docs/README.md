@@ -1,5 +1,9 @@
 # VYNE docs — navigation
 
+**New here? Start with the [Developer Quick Start](DEVELOPER_QUICK_START.md)** —
+one page: what to read, how work is classified, when council review and Decision Log
+entries are required, and the workflow before material implementation.
+
 ## Governance (start here for any material decision)
 - [Governance Manual](governance/GOVERNANCE_MANUAL.md) — purpose, principles, the
   11-stage review process, change-level summary, mandatory stop conditions

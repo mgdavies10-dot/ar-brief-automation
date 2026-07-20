@@ -36,8 +36,13 @@ otherwise, and is bound by everything below.
 Before implementing any request, Claude must:
 
 1. **Classify the work** as Level 0–3 per
-   `docs/governance/CHANGE_CLASSIFICATION.md` (summary in
-   `GOVERNANCE_MANUAL.md` §5). When in doubt, classify up.
+   `docs/governance/CHANGE_CLASSIFICATION.md` (council-trigger table first, then the
+   decision tree; summary in `GOVERNANCE_MANUAL.md` §5).
+
+   > **Governing rule:** if there is reasonable uncertainty about whether a proposed
+   > change requires governance review, classify it at the higher plausible level and
+   > ask the founder before implementation. Do not use this rule to escalate clearly
+   > administrative Level 0 work.
 2. **Identify the authoritative source documents** via
    `docs/governance/SOURCE_OF_TRUTH_MAP.md`, and use them — not memory.
 3. **Run the appropriate Product Council review** (roles and lenses per

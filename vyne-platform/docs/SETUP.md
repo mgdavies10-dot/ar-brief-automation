@@ -3,10 +3,11 @@
 Binding environment rules (DL-2026-003 / DL-2026-006): **local development only,
 synthetic data only, no hosted deployment, no secrets in the repo.**
 
-**Before beginning material work**, read: the repository root `CLAUDE.md`, the
-[Governance Manual](governance/GOVERNANCE_MANUAL.md), the applicable EA/CR documents
-in `../vyne-docs/`, and the current [Decision Log](DECISION_LOG.md). Material changes
-require governance classification before implementation (see `CLAUDE.md`).
+**Before beginning material work**, read: the [Developer Quick Start](DEVELOPER_QUICK_START.md),
+the repository root `CLAUDE.md`, the [Governance Manual](governance/GOVERNANCE_MANUAL.md),
+the applicable EA/CR documents in `../vyne-docs/`, and the current
+[Decision Log](DECISION_LOG.md). Material changes require governance classification
+before implementation (see `CLAUDE.md`).
 
 ## Prerequisites
 - **Node 20+** (`node --version`)
