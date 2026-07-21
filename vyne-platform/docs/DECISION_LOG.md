@@ -23,6 +23,37 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-20 — **Sequencing ruled; dashboard standard finalized.** Founder ruled
+  the order **M3-2 → M3-S → Brand Token Update → M3-3 → M4** (resolves the open
+  M3-3-placement question from the prior entry): finish the auth foundation
+  before expanding business functionality; remove duplicated auth code before
+  adding auth features; adopt the final palette before the larger M4 surface;
+  keep current typography pending a separate commercial-licensing decision; treat
+  M3-3 as completion of the security foundation, not optional. Pipeline executes
+  in that order **only after the founder's M3-2 walkthrough approval**. Milestone
+  gates continue after each major phase. **Progress dashboard is now a permanent
+  section of every milestone report going forward**, and reports **earned
+  milestone progress** (completed ÷ total milestones) rather than effort-based
+  percentages.
+- 2026-07-20 — **M3-2 gate decisions.** (1) **M3-2 approved pending the founder's
+  interactive browser walkthrough** of the auth flows; the Lead Engineer is
+  authorized to commit and push M3-2 only after the founder confirms that
+  walkthrough (commit held until then). (2) **Shared authentication package
+  approved** — extract the duplicated OS/Studio auth components (middleware,
+  clients, ceremony screens, shared styles) into a shared foundation
+  **immediately after M3-2**, before M4 consumes it. (3) **Brand colors: adopt
+  the official VYNE palette before M4**; keep current typography (Source Serif 4
+  + Inter) and defer any commercial font-licensing decision to a later
+  milestone; update design tokens to the official brand colors while maintaining
+  WCAG AA — if any bronze usage fails contrast as text, use an accessible bronze
+  text variant while preserving the official palette for surfaces/accents.
+  (4) **Milestone dashboard required from M4 onward** in every milestone report:
+  overall completion %, remaining milestones, estimated sessions remaining,
+  technical debt, open founder decisions, risks, features complete vs. planned.
+  **Open question flagged to founder:** the message sequences refactor → brand →
+  M4 without restating M3-3 (session integrity, immediate revocation, R1
+  password-reset); M3-3 is security-critical and is not dropped — placement
+  pending founder confirmation (LE recommendation: refactor → brand → M3-3 → M4).
 - 2026-07-20 — **Roadmap approved; checkpoint authorized; demo-account reset
   mechanism directed.** Founder approved `docs/ROADMAP.md` (Horizon A sequencing,
   founder-first M4 split, Horizon B gated on new authorization) and M3-1's

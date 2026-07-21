@@ -14,11 +14,10 @@ function claimsOf(token: string): Record<string, unknown> {
 }
 
 /**
- * Session middleware (M3-1): refreshes the auth cookies on every request and
- * gates every route behind a session. This is the app-layer guard only —
- * authorization authority remains RLS resolving the live public.users row
- * (Architecture §12 defense in depth). Idle/absolute lifetime enforcement and
- * role-scoped routing arrive in M3-2/M3-3.
+ * Studio session middleware (M3-2). Studio is advisor-only (§8 route map);
+ * internal roles get the calm unauthorized page. Rotation ceremony applies to
+ * all provisioned accounts; MFA is optional for advisors — but an enrolled
+ * factor at aal1 must still pass its challenge. RLS remains the authority.
  */
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({ request });
@@ -30,7 +29,7 @@ export async function middleware(request: NextRequest) {
   }
 
   const supabase = createServerClient(url, anonKey, {
-    cookieOptions: { name: "vyne-os" },
+    cookieOptions: { name: "vyne-studio" },
     cookies: {
       getAll() {
         return request.cookies.getAll();
@@ -59,40 +58,23 @@ export async function middleware(request: NextRequest) {
   if (!user && !isPublic) return to("/login");
 
   if (user && !isPublic) {
-    // Routing-only role claim (0008 hook). Authorization authority remains
-    // RLS resolving the live public.users row on every query.
     const {
       data: { session },
     } = await supabase.auth.getSession();
     const role = session ? (claimsOf(session.access_token).user_role as string | undefined) : undefined;
 
-    // OS is internal-only (§8 route map): advisor sessions get the calm
-    // unauthorized page, nothing else.
-    if (role === "advisor" && !path.startsWith("/unauthorized")) {
+    if (role !== undefined && role !== "advisor" && !path.startsWith("/unauthorized")) {
       return to("/unauthorized");
     }
 
-    if (role !== "advisor") {
-      // A1 gate 1: unrotated password blocks every surface (app_metadata is
-      // server-controlled; the flag cannot be self-cleared).
+    if (role === "advisor") {
       if (user.app_metadata?.password_rotated === false && !path.startsWith("/welcome")) {
         return to("/welcome");
       }
-
-      // A1 gate 2 (after rotation): MFA. A verified factor at aal1 must pass
-      // the challenge; an internal role with no verified factor must enroll.
       if (user.app_metadata?.password_rotated !== false) {
         const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
-        if (aal) {
-          const needsChallenge = aal.currentLevel === "aal1" && aal.nextLevel === "aal2";
-          const unenrolled = aal.nextLevel === "aal1";
-          const isInternal = role === "founder" || role === "recruiter";
-          if (needsChallenge && !path.startsWith("/challenge")) {
-            return to("/challenge");
-          }
-          if (!needsChallenge && unenrolled && isInternal && !path.startsWith("/welcome/mfa")) {
-            return to("/welcome/mfa");
-          }
+        if (aal && aal.currentLevel === "aal1" && aal.nextLevel === "aal2" && !path.startsWith("/challenge")) {
+          return to("/challenge");
         }
       }
     }

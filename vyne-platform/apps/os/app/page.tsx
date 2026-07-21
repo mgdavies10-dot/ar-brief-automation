@@ -23,6 +23,7 @@ export default async function Home() {
     .eq("auth_id", user.id)
     .maybeSingle();
   if (!profile) redirect("/auth/end"); // no active row backing the session
+  if (profile.role === "advisor") redirect("/unauthorized"); // §8: OS is internal-only
 
   return (
     <>

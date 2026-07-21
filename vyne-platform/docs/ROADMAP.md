@@ -14,11 +14,24 @@ the rest of the platform — planned here so sequencing and dependencies are
 visible, but **nothing in Horizon B may be built under EA-001**; it requires a
 new engineering authorization and council review, phase by phase.
 
+**Milestone reporting standard (founder direction, permanent — every milestone
+report going forward):** each report opens with a progress dashboard. Completion
+is reported as **earned milestone progress** (milestones complete ÷ total
+milestones), **not** effort estimates. The dashboard carries: the milestone
+status table (below), earned-progress %, estimated engineering sessions
+remaining, technical debt, open founder decisions, risks, and features complete
+vs. planned.
+
+Milestone status legend: ✅ Complete · 🟡 Pending founder approval · ⏳ Planned.
+Canonical milestone set (10): M1 · M2 · M3-1 · M3-2 · M3-S · Brand Update ·
+M3-3 · M4 · M5 · M6. Order is founder-ruled (2026-07-20):
+**M3-2 → M3-S → Brand Token Update → M3-3 → M4 → M5 → M6.**
+
 ---
 
 ## Horizon A — remainder of the EA-001 slice (authorized)
 
-### M3-2 — Credential ceremony + Studio sign-in  *(in progress)*
+### M3-2 — Credential ceremony + Studio sign-in  *(complete; awaiting founder walkthrough → commit)*
 - **Objective:** complete the first-login trust ceremony (founder ruling A1) and
   open Advisor Studio's front door.
 - **Features:** forced first-login password change (GoTrue `app_metadata` flag —
@@ -36,7 +49,40 @@ new engineering authorization and council review, phase by phase.
   tests first); ceremony screens have no UX Blueprint section — engineer-drafted
   copy flagged for founder at the gate.
 
-### M3-3 — Session integrity, revocation, recovery
+### M3-S — Shared authentication extraction  *(founder-approved 2026-07-20; do immediately after M3-2)*
+- **Objective:** eliminate the OS/Studio auth duplication now, so M4 (and M3-3)
+  consume one foundation instead of copying it a third time.
+- **Features:** shared `packages/auth` (Supabase server/browser/admin client
+  factories, middleware gate builder parameterized by app skin + role policy,
+  the A1 ceremony logic); shared auth CSS moved into `packages/ui`; OS and Studio
+  reduced to thin app-specific wiring.
+- **Dependencies:** M3-2 committed.
+- **Acceptance criteria:** no behavioral change — full 49-test real-stack suite
+  stays green; both apps' flows (sign-in, ceremony, MFA, guards, unauthorized)
+  behave identically; net line count down; no auth logic duplicated across apps.
+- **Estimated effort:** 1–2 sessions.
+- **Risks:** refactor regressions (mitigate: tests are the safety net, run after
+  each extraction step); Next.js middleware must remain in each app's root
+  (framework constraint) but delegate to the shared builder.
+
+### Brand token adoption  *(founder-approved 2026-07-20; before M4)*
+- **Objective:** build the rest of the platform on the final visual system.
+- **Features:** update `packages/ui` tokens to the official VYNE palette
+  (midnight navy, ivory, warm bronze, stone gray, charcoal); keep current
+  typography (font-licensing deferred); add an accessible bronze **text** variant
+  where the surface bronze fails contrast, preserving the official palette for
+  surfaces/accents.
+- **Dependencies:** M3-S (so the shared components restyle once).
+- **Acceptance criteria:** every token pairing used as text meets WCAG AA
+  (documented contrast ratios); `tokens.ts`/`tokens.css` stay in lockstep
+  (token tests green); apps visually reflect the official palette; no hardcoded
+  colors introduced.
+- **Estimated effort:** ~1 session.
+- **Risks:** bronze-on-white and gold-on-white text contrast (measured and
+  resolved with the text variant); confirm exact hex from the founder's source
+  design file before locking.
+
+### M3-3 — Session integrity, revocation, recovery  *(founder-ruled placement 2026-07-20: after Brand, before M4 — completion of the security foundation)*
 - **Objective:** make sessions die correctly and recovery work locally, per §12
   and founder ruling R1.
 - **Features:** idle timeout (30-min internal) + absolute lifetimes (12h/24h);

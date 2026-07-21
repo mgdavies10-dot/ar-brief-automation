@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:real": "VYNE_REAL_STACK=1 vitest run",
-    "provision": "node scripts/provision-local.mjs"
+    "provision": "node scripts/provision-local.mjs",
+    "demo:reset": "node scripts/provision-local.mjs --reset"
   },
   "devDependencies": {
     "@types/pg": "^8.11.0",

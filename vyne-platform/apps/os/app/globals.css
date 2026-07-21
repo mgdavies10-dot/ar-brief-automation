@@ -91,6 +91,48 @@ body {
   border-color: var(--vyne-navy);
 }
 
+.signin-heading {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-title);
+  line-height: var(--vyne-type-title-lh);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--vyne-unit);
+}
+
+.signin-qr {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto calc(var(--vyne-unit) * 2);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 8px;
+  background: var(--vyne-white);
+}
+
+.signin-secret {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  color: var(--vyne-slate);
+  text-align: center;
+  margin-bottom: calc(var(--vyne-unit) * 3);
+  word-break: break-all;
+}
+
+.signin-alt {
+  display: block;
+  text-align: center;
+  margin-top: calc(var(--vyne-unit) * 2);
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.signin-alt:hover {
+  color: var(--vyne-navy);
+}
+
 .signin-error {
   color: var(--vyne-danger);
   font-size: var(--vyne-type-meta);

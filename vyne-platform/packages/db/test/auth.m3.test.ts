@@ -1,10 +1,35 @@
 import { describe, it, expect, beforeAll, afterAll } from "vitest";
 import { execFileSync } from "node:child_process";
-import { randomUUID } from "node:crypto";
+import { createHmac, randomUUID } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import type { Client } from "pg";
 import { IS_REAL_STACK, freshDatabase, ownerClient } from "./helpers";
+
+/** RFC 4648 base32 decode (TOTP secrets). */
+function base32Decode(s: string): Buffer {
+  const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+  let bits = "";
+  for (const c of s.replace(/=+$/, "").toUpperCase()) {
+    const v = alphabet.indexOf(c);
+    if (v >= 0) bits += v.toString(2).padStart(5, "0");
+  }
+  const bytes: number[] = [];
+  for (let i = 0; i + 8 <= bits.length; i += 8) bytes.push(parseInt(bits.slice(i, i + 8), 2));
+  return Buffer.from(bytes);
+}
+
+/** RFC 6238 TOTP — real algorithm, exactly what an authenticator app computes. */
+function totp(secret: string, atMs = Date.now()): string {
+  const counter = Math.floor(atMs / 1000 / 30);
+  const buf = Buffer.alloc(8);
+  buf.writeBigUInt64BE(BigInt(counter));
+  const h = createHmac("sha1", base32Decode(secret)).update(buf).digest();
+  const off = h[h.length - 1] & 0xf;
+  const code =
+    (((h[off] & 0x7f) << 24) | (h[off + 1] << 16) | (h[off + 2] << 8) | h[off + 3]) % 1_000_000;
+  return String(code).padStart(6, "0");
+}
 
 /**
  * M3-1 auth integration tests — real Supabase stack ONLY (GoTrue is not
@@ -221,5 +246,125 @@ d("M3-2 forced password rotation — A1 ceremony backbone (real Supabase stack)"
     expect(newGrant.status).toBe(200);
     const claims = decodeJwtPayload(((await newGrant.json()) as { access_token: string }).access_token);
     expect((claims.app_metadata as Record<string, unknown>).password_rotated).toBe(true);
+  });
+});
+
+d("M3-2 TOTP MFA — real GoTrue enrollment and challenge (A1: no simulation)", () => {
+  let env: StackEnv;
+  let authUserId = "";
+  let factorId = "";
+  let secret = "";
+  const email = `m3totp-${randomUUID()}@synthetic.vyne.test`;
+  const password = `Totp-${randomUUID()}`;
+
+  async function adminFetch(pathname: string, init: RequestInit = {}): Promise<Response> {
+    return fetch(`${env.apiUrl}${pathname}`, {
+      ...init,
+      headers: {
+        apikey: env.serviceKey,
+        Authorization: `Bearer ${env.serviceKey}`,
+        "Content-Type": "application/json",
+        ...(init.headers ?? {}),
+      },
+    });
+  }
+
+  async function userFetch(token: string, pathname: string, init: RequestInit = {}): Promise<Response> {
+    return fetch(`${env.apiUrl}${pathname}`, {
+      ...init,
+      headers: {
+        apikey: env.anonKey,
+        Authorization: `Bearer ${token}`,
+        "Content-Type": "application/json",
+        ...(init.headers ?? {}),
+      },
+    });
+  }
+
+  async function signIn(): Promise<{ token: string; claims: Record<string, unknown> }> {
+    const res = await fetch(`${env.apiUrl}/auth/v1/token?grant_type=password`, {
+      method: "POST",
+      headers: { apikey: env.anonKey, "Content-Type": "application/json" },
+      body: JSON.stringify({ email, password }),
+    });
+    expect(res.status).toBe(200);
+    const token = ((await res.json()) as { access_token: string }).access_token;
+    return { token, claims: decodeJwtPayload(token) };
+  }
+
+  /** Verify with clock-skew tolerance: current window, then adjacent ones. */
+  async function verifyWithSkew(token: string): Promise<Response> {
+    let last: Response | undefined;
+    for (const offset of [0, -30_000, 30_000]) {
+      const challenge = await userFetch(token, `/auth/v1/factors/${factorId}/challenge`, { method: "POST" });
+      expect(challenge.status).toBe(200);
+      const challengeId = ((await challenge.json()) as { id: string }).id;
+      last = await userFetch(token, `/auth/v1/factors/${factorId}/verify`, {
+        method: "POST",
+        body: JSON.stringify({ challenge_id: challengeId, code: totp(secret, Date.now() + offset) }),
+      });
+      if (last.status === 200) return last;
+    }
+    return last as Response;
+  }
+
+  beforeAll(async () => {
+    env = stackEnv();
+    const created = await adminFetch("/auth/v1/admin/users", {
+      method: "POST",
+      body: JSON.stringify({ email, password, email_confirm: true }),
+    });
+    expect(created.status).toBe(200);
+    authUserId = ((await created.json()) as { id: string }).id;
+  }, 60_000);
+
+  afterAll(async () => {
+    if (authUserId) {
+      await adminFetch(`/auth/v1/admin/users/${authUserId}`, { method: "DELETE" }).catch(() => undefined);
+    }
+  });
+
+  it("enrolls a real TOTP factor and verifies a computed code, stepping the session to aal2", async () => {
+    const { token, claims } = await signIn();
+    expect(claims.aal).toBe("aal1");
+
+    const enroll = await userFetch(token, "/auth/v1/factors", {
+      method: "POST",
+      body: JSON.stringify({ factor_type: "totp", friendly_name: "integration-test" }),
+    });
+    expect(enroll.status).toBe(200);
+    const enrolled = (await enroll.json()) as { id: string; totp: { secret: string; qr_code: string } };
+    factorId = enrolled.id;
+    secret = enrolled.totp.secret;
+    expect(secret.length).toBeGreaterThan(0);
+    // Regression guard (M3-2 defect #1): enrollment must return renderable SVG
+    // QR content. The raw REST layer returns raw SVG; the supabase-js client
+    // the page uses wraps it into a data URL — which the page must consume
+    // directly, never re-wrap (that produced a broken <img>). This asserts the
+    // backend contract; the client-render handling is verified end-to-end.
+    const qr = enrolled.totp.qr_code;
+    expect(qr.includes("<svg") || qr.startsWith("data:image/svg+xml")).toBe(true);
+
+    const verified = await verifyWithSkew(token);
+    expect(verified.status).toBe(200);
+    const stepped = (await verified.json()) as { access_token: string };
+    expect(decodeJwtPayload(stepped.access_token).aal).toBe("aal2");
+  });
+
+  it("a fresh sign-in with a verified factor starts at aal1 (challenge required) and rejects a wrong code", async () => {
+    const { token, claims } = await signIn();
+    expect(claims.aal).toBe("aal1"); // step-up still required per session
+
+    const challenge = await userFetch(token, `/auth/v1/factors/${factorId}/challenge`, { method: "POST" });
+    expect(challenge.status).toBe(200);
+    const challengeId = ((await challenge.json()) as { id: string }).id;
+    const bad = await userFetch(token, `/auth/v1/factors/${factorId}/verify`, {
+      method: "POST",
+      body: JSON.stringify({ challenge_id: challengeId, code: "000000" }),
+    });
+    expect(bad.status).toBeGreaterThanOrEqual(400);
+
+    const good = await verifyWithSkew(token);
+    expect(good.status).toBe(200);
   });
 });

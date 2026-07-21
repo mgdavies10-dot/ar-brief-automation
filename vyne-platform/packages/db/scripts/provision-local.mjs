@@ -6,10 +6,16 @@
 // Keys are read from `supabase status` at runtime — nothing here is a secret
 // and no hosted credential is ever involved.
 //
-// Usage (from packages/db, with the stack running):  npm run provision
+// Usage (from packages/db, with the stack running):
+//   npm run provision          — idempotent: creates missing accounts, keeps
+//                                existing passwords/ceremony state
+//   npm run demo:reset         — founder direction 2026-07-20: regenerates every
+//                                demo account from scratch (deletes + recreates
+//                                the GoTrue user), restoring temporary passwords
+//                                and the fresh first-login onboarding state
 //
-// NOTE (M3-1 scope): the advisor account gets no advisor_accounts mapping yet —
-// Studio sign-in and the advisor linkage arrive in M3-2.
+// NOTE (M3-2): the advisor account gets its advisor_accounts mapping in M4
+// when advisor records exist; Studio sign-in works without it.
 
 import { execFileSync } from "node:child_process";
 import pg from "pg";
@@ -78,9 +84,28 @@ async function upsertAuthUser(env, account) {
   return created.id;
 }
 
+const RESET = process.argv.includes("--reset");
 const env = stackEnv();
 const db = new pg.Client({ connectionString: env.dbUrl });
 await db.connect();
+
+if (RESET) {
+  for (const account of ACCOUNTS) {
+    const existing = await findAuthUserByEmail(env, account.email);
+    if (existing) {
+      // public.users.auth_id references auth.users: remove referencing rows
+      // first (owner context; synthetic demo data only) or GoTrue's delete
+      // fails with a foreign-key violation.
+      await db.query(
+        "delete from public.advisor_accounts where user_id in (select id from public.users where auth_id = $1)",
+        [existing.id],
+      );
+      await db.query("delete from public.users where auth_id = $1", [existing.id]);
+      await admin(env, `/auth/v1/admin/users/${existing.id}`, { method: "DELETE" });
+      console.log(`reset: removed ${account.email}`);
+    }
+  }
+}
 
 for (const account of ACCOUNTS) {
   const authId = await upsertAuthUser(env, account);

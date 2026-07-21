@@ -11,3 +11,223 @@ body {
   font-size: 16px; /* Studio floor: 16px minimum body (UX §2.5) */
   line-height: 1.6;
 }
+
+/* ---- Auth surfaces (shared pattern with OS; Studio skin). Consolidation
+   into a shared package is tracked M3-2 tech debt. ---- */
+
+.signin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vyne-page-gutter) calc(var(--vyne-unit) * 3);
+}
+
+.signin-card {
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: var(--vyne-radius-card);
+  padding: calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 5);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-logo {
+  display: block;
+  width: 78%;
+  height: auto;
+  margin: calc(var(--vyne-unit) * -2) auto 0;
+}
+
+.signin-submark {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--vyne-gold);
+  text-align: center;
+  text-indent: 0.42em;
+  margin-top: 2px;
+}
+
+.signin-rule {
+  height: 1px;
+  background: var(--vyne-gold);
+  width: 56px;
+  margin: calc(var(--vyne-unit) * 2.5) auto calc(var(--vyne-unit) * 4);
+}
+
+.signin-heading {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-title);
+  line-height: var(--vyne-type-title-lh);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--vyne-unit);
+}
+
+.signin-note {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  text-align: center;
+  margin-bottom: calc(var(--vyne-unit) * 3);
+}
+
+.signin-label {
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  color: var(--vyne-slate);
+  margin-bottom: calc(var(--vyne-unit) * 0.5);
+}
+
+.signin-input {
+  font: inherit;
+  color: var(--vyne-navy);
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.25) calc(var(--vyne-unit) * 1.5);
+  margin-bottom: calc(var(--vyne-unit) * 2.5);
+  transition: border-color var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-input:focus {
+  outline: none;
+  border-color: var(--vyne-navy);
+}
+
+.signin-error {
+  color: var(--vyne-danger);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  margin: calc(var(--vyne-unit) * -1) 0 calc(var(--vyne-unit) * 2);
+}
+
+.signin-submit {
+  font: inherit;
+  font-weight: 600;
+  color: var(--vyne-white);
+  background: var(--vyne-navy);
+  border: none;
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.5);
+  cursor: pointer;
+  margin-top: var(--vyne-unit);
+  transition: opacity var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-submit:hover {
+  opacity: 0.92;
+}
+
+.signin-qr {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto calc(var(--vyne-unit) * 2);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 8px;
+  background: var(--vyne-white);
+}
+
+.signin-alt {
+  display: block;
+  text-align: center;
+  margin-top: calc(var(--vyne-unit) * 2);
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  text-decoration: none;
+}
+
+.signin-alt:hover {
+  color: var(--vyne-navy);
+}
+
+/* The one approved Studio skin difference (§4.1). */
+.signin-studio-line {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  text-align: center;
+  margin-top: calc(var(--vyne-unit) * 3);
+}
+
+/* ---- Studio top bar (§4.3: horizontal, wordmark left, no sidebar) ---- */
+
+.topbar {
+  background: var(--vyne-white);
+  color: var(--vyne-navy);
+  border-bottom: 1px solid var(--vyne-hairline);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: calc(var(--vyne-unit) * 0.5) calc(var(--vyne-unit) * 3);
+}
+
+.topbar-logo {
+  display: block;
+  height: 64px;
+  width: auto;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--vyne-unit) * 2);
+}
+
+.topbar-name {
+  font-size: var(--vyne-type-meta);
+  color: var(--vyne-slate);
+}
+
+.topbar-signout {
+  font: inherit;
+  font-size: var(--vyne-type-meta);
+  color: var(--vyne-navy);
+  background: transparent;
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 0.5) calc(var(--vyne-unit) * 1.5);
+  cursor: pointer;
+  transition: border-color var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.topbar-signout:hover {
+  border-color: var(--vyne-gold);
+}
+
+/* ---- Studio home ---- */
+
+.studio-home {
+  padding: var(--vyne-page-gutter);
+  max-width: 68ch;
+}
+
+.studio-title {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-display);
+  line-height: var(--vyne-type-display-lh);
+  font-weight: 600;
+}
+
+.studio-rule {
+  height: 1px;
+  background: var(--vyne-gold);
+  max-width: 320px;
+  margin: calc(var(--vyne-unit) * 2) 0 calc(var(--vyne-unit) * 3);
+}
+
+.studio-line {
+  color: var(--vyne-slate);
+}
+
+.studio-note {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  margin-top: calc(var(--vyne-unit) * 2);
+}
