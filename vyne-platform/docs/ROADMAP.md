@@ -27,6 +27,27 @@ Canonical milestone set (10): M1 · M2 · M3-1 · M3-2 · M3-S · Brand Update �
 M3-3 · M4 · M5 · M6. Order is founder-ruled (2026-07-20):
 **M3-2 → M3-S → Brand Token Update → M3-3 → M4 → M5 → M6.**
 
+**Definition of Done (founder direction, 2026-07-21):** from M3-3 onward, every
+milestone report also carries its completed **DoD checklist**
+(`docs/governance/DEFINITION_OF_DONE.md`): functional implementation ·
+unit/integration tests · e2e verification · accessibility review · design-system
+compliance · security review (if authn/authz) · documentation update ·
+changelog/milestone report · founder acceptance. N/A items carry a one-line
+reason.
+
+**ADR index (founder direction, 2026-07-21) — deliverable AFTER M4.** Once M4 is
+complete, create a short one-page ADR per major architectural decision (why
+Supabase, why Next.js, why the shared auth package, why RLS over middleware
+authorization, why Studio separated from OS, why local-first, why this design
+system) plus an index. Brief decision records, not essays.
+
+**Project Health Report (founder direction, 2026-07-21) — required checkpoint
+between M3-3 and M4.** After M3-3 is accepted and before M4 begins, produce a
+Project Health Report answering: remaining technical debt · remaining
+architectural risks · current test coverage · biggest scalability concerns ·
+intentionally deferred areas · readiness for feature velocity. This is the
+gate into business-feature building.
+
 ---
 
 ## Horizon A — remainder of the EA-001 slice (authorized)

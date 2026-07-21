@@ -11,7 +11,8 @@
     "test": "vitest run",
     "test:real": "VYNE_REAL_STACK=1 vitest run",
     "provision": "node scripts/provision-local.mjs",
-    "demo:reset": "node scripts/provision-local.mjs --reset"
+    "demo:reset": "node scripts/provision-local.mjs --reset",
+    "user:status": "node scripts/set-user-status.mjs"
   },
   "devDependencies": {
     "@types/pg": "^8.11.0",

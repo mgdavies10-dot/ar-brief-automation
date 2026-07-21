@@ -61,7 +61,10 @@ export function createAuthMiddleware(config: AuthMiddlewareConfig) {
     // /design-system is the developer-only design reference (dev builds only;
     // 404s in production) — viewable without auth.
     const isPublic =
-      path.startsWith("/login") || path.startsWith("/auth") || path.startsWith("/design-system");
+      path.startsWith("/login") ||
+      path.startsWith("/auth") ||
+      path.startsWith("/reset") || // R1 password-reset request + update (may carry a recovery session)
+      path.startsWith("/design-system");
     const to = (pathname: string) => {
       const redirectUrl = request.nextUrl.clone();
       redirectUrl.pathname = pathname;

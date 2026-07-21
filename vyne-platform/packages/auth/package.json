@@ -8,7 +8,8 @@
     "./browser": "./src/browser.ts",
     "./admin": "./src/admin.ts",
     "./middleware": "./src/middleware.ts",
-    "./actions": "./src/actions.ts"
+    "./actions": "./src/actions.ts",
+    "./audit": "./src/audit.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.58.0",
+    "@vyne/audit": "*",
     "server-only": "^0.0.1"
   },
   "peerDependencies": {

@@ -23,6 +23,18 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-21 — **Definition of Done + Project Health Report adopted.** (1) Every
+  milestone/major feature is "done" only against a **Definition of Done
+  checklist** (`docs/governance/DEFINITION_OF_DONE.md`): functional
+  implementation · unit/integration tests · e2e verification · accessibility
+  review · design-system compliance · security review (if authn/authz) ·
+  documentation update · changelog/milestone report · founder acceptance.
+  Mandatory in every milestone report from **M3-3 onward** (earlier milestones
+  already met most items). (2) **A Project Health Report is a required checkpoint
+  between M3-3 and M4** (before any M4 code), answering: remaining technical debt;
+  remaining architectural risks; current test coverage; biggest scalability
+  concerns; intentionally deferred areas; readiness for feature velocity. Both
+  recorded in `ROADMAP.md` (milestone reporting standard).
 - 2026-07-21 — **Official VYNE brand adopted; new canonical brand package;
   standing design-system mandate.** The original identity sheet could not be
   located; the founder ruled the following the **official VYNE brand and the
@@ -152,3 +164,4 @@ Governance metadata index and full records from DL-2026-012 onward:
 - ADR-000 — Monorepo foundation under EA-001 (M1, 2026-07-19) — references DL-2026-006/010
 - ADR-001 — M2 verification on native PostgreSQL 16 with test-only auth shim (M2, 2026-07-20) — references DL-2026-011, CR-001 §3; re-verification on real Supabase stack required before DL-2026-008
 - ADR-002 — Minimal-scope tables under EA-001 (M2, 2026-07-20) — references CR-001 §1.2; for council review at slice acceptance
+- ADR-003 — Role-specific session policies (M3-3, 2026-07-21, **Proposed**) — GoTrue global-only session timeouts; role-specific idle/absolute caps deferred with a proposed application-layer architecture

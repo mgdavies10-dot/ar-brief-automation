@@ -45,6 +45,10 @@ PowerShell (the npm script's inline env var is bash-only):
 ```powershell
 $env:VYNE_REAL_STACK="1"; npx vitest run
 ```
+M3-3 admin actions (from `packages/db`): `npm run user:status <email> disabled`
+revokes a user immediately (RLS + GoTrue ban + audit); `... active` restores.
+Password reset emails are captured by Mailpit at `http://127.0.0.1:54324`.
+
 Windows notes from the M2 verification: the stack's Postgres major version follows
 the Supabase CLI default (17.x currently; the shim harness used 16.x — both
 verified); the CLI's analytics warning about the Docker daemon on tcp:2375 is

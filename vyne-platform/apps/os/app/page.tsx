@@ -22,7 +22,7 @@ export default async function Home() {
     .select("full_name, email, role")
     .eq("auth_id", user.id)
     .maybeSingle();
-  if (!profile) redirect("/auth/end"); // no active row backing the session
+  if (!profile) redirect("/unauthorized"); // disabled/revoked: RLS returns no row → calm page (§4.1)
   if (profile.role === "advisor") redirect("/unauthorized"); // §8: OS is internal-only
 
   return (

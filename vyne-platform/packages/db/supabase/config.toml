@@ -160,7 +160,8 @@ site_url = "http://127.0.0.1:3000"
 # The public URL that Auth serves on. Defaults to the API external URL with `/auth/v1` appended.
 # external_url = ""
 # A list of *exact* URLs that auth providers are permitted to redirect to post authentication.
-additional_redirect_urls = ["https://127.0.0.1:3000"]
+# VYNE (M3-3 R1): allow the local OS/Studio password-reset landing routes.
+additional_redirect_urls = ["https://127.0.0.1:3000", "http://localhost:3000/**", "http://localhost:3001/**"]
 # How long tokens are valid for, in seconds. Defaults to 3600 (1 hour), maximum 604,800 (1 week).
 # VYNE (M3_plan §2.1, Architecture §12): short-lived 10-minute access tokens.
 jwt_expiry = 600
@@ -254,6 +255,12 @@ otp_expiry = 3600
 # subject = "You have been invited"
 # content_path = "./supabase/templates/invite.html"
 
+# VYNE (M3-3 R1): recovery email links directly to the app's redirect_to with a
+# token_hash (verifyOtp on arrival) — no PKCE verifier round-trip, routes per app.
+[auth.email.template.recovery]
+subject = "Reset your VYNE password"
+content_path = "./supabase/templates/recovery.html"
+
 # Uncomment to customize notification email template
 # [auth.email.notification.password_changed]
 # enabled = true
@@ -275,11 +282,17 @@ max_frequency = "5s"
 # 4152127777 = "123456"
 
 # Configure logged in session timeouts.
+# VYNE (M3-3, founder decision 2026-07-21): GoTrue session timeouts are GLOBAL
+# (one policy for all roles). The product requires ROLE-SPECIFIC caps —
+# internal 12h/30-min, advisor 24h/60-min — so we deliberately DO NOT set a
+# global cap here rather than degrade the advisor experience (or loosen internal
+# security) with a one-size value. Session security in the interim rests on
+# 10-minute access tokens + refresh rotation + immediate revocation. Role-
+# specific idle/absolute enforcement is a documented, deferred limitation with a
+# proposed application-layer architecture: docs/adr/ADR-003-role-specific-session-policies.md.
 # [auth.sessions]
-# Force log out after the specified duration.
-# timebox = "24h"
-# Force log out if the user has been inactive longer than the specified duration.
-# inactivity_timeout = "8h"
+# timebox = ...            # NOT set globally — see ADR-003
+# inactivity_timeout = ... # NOT set globally — see ADR-003
 
 # This hook runs before a new user is created and allows developers to reject the request based on the incoming user object.
 # [auth.hook.before_user_created]

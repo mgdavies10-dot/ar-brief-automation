@@ -30,6 +30,7 @@ export default async function LoginPage({
         </div>
         <div className="signin-rule" aria-hidden="true" />
         {status === "ended" ? <p className="signin-note">Your session has ended.</p> : null}
+        {status === "reset" ? <p className="signin-note">Your password has been reset — sign in with it.</p> : null}
         <label className="signin-label" htmlFor="email">
           Email
         </label>
@@ -61,6 +62,9 @@ export default async function LoginPage({
         <button className="signin-submit" type="submit">
           Sign in
         </button>
+        <a className="signin-alt" href="/reset">
+          Forgot your password?
+        </a>
         <p className="signin-studio-line">
           Your workspace is private and prepared for you by VYNE Strategies.
         </p>
