@@ -57,7 +57,7 @@ body {
 }
 
 .topbar-signout:hover {
-  border-color: var(--vyne-gold);
+  border-color: var(--vyne-bronze);
 }
 
 /* ---- Studio home ---- */
@@ -76,7 +76,7 @@ body {
 
 .studio-rule {
   height: 1px;
-  background: var(--vyne-gold);
+  background: var(--vyne-bronze);
   max-width: 320px;
   margin: calc(var(--vyne-unit) * 2) 0 calc(var(--vyne-unit) * 3);
 }

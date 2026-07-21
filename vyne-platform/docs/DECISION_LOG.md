@@ -23,6 +23,25 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-21 — **Official VYNE brand adopted; new canonical brand package;
+  standing design-system mandate.** The original identity sheet could not be
+  located; the founder ruled the following the **official VYNE brand and the
+  canonical source of truth** going forward: Midnight Navy `#081B36`, Ivory
+  `#F8F5EF`, Warm Bronze `#B88A5A`, Stone Gray `#D7D2C6`, Charcoal `#1A1A1A`.
+  Engineering decisions: (1) Stone Gray is the standard border/hairline color;
+  (2) the existing Slate `#425066` stays a **functional** secondary-text token
+  (not a brand token); (3) an **accessible bronze text token** derived from Warm
+  Bronze (`#8A6234`, meets WCAG AA) is used only where text contrast requires —
+  Warm Bronze is used for accents/borders/icons/highlights/surfaces;
+  (4) existing semantic success/warning/danger stay (information has no distinct
+  hue yet — flagged). A **new version-controlled brand package** (`docs/brand/`:
+  `Brand_Guide_v1.0.md`, `BRAND_TOKENS.md`, `DESIGN_SYSTEM.md`, `LOGO_USAGE.md`)
+  becomes canonical, superseding Architecture §11's palette and the never-created
+  `BRAND_TOKENS.md` it referenced. **Standing mandate:** from Brand-milestone
+  approval onward, every future feature and every future public-website page uses
+  this Design System by default unless the founder explicitly approves an
+  exception. Brand implementation preserves layouts/spacing/typography/UX/
+  accessibility/functionality (tokens only); stop at the Brand gate before M3-3.
 - 2026-07-20 — **Sequencing ruled; dashboard standard finalized.** Founder ruled
   the order **M3-2 → M3-S → Brand Token Update → M3-3 → M4** (resolves the open
   M3-3-placement question from the prior entry): finish the auth foundation

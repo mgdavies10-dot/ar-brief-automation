@@ -38,7 +38,7 @@
   line-height: var(--vyne-type-micro-lh);
   letter-spacing: 0.42em;
   text-transform: uppercase;
-  color: var(--vyne-gold);
+  color: var(--vyne-bronze-text); /* small caps text — AA-compliant bronze */
   text-align: center;
   text-indent: 0.42em; /* optically recenters letterspaced caps */
   margin-top: 2px;
@@ -46,7 +46,7 @@
 
 .signin-rule {
   height: 1px;
-  background: var(--vyne-gold);
+  background: var(--vyne-bronze);
   width: 56px;
   margin: calc(var(--vyne-unit) * 2.5) auto calc(var(--vyne-unit) * 4);
 }

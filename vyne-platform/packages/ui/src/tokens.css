@@ -1,19 +1,26 @@
 /*
  * VYNE design tokens as CSS custom properties.
- * Canonical values: BRAND_TOKENS.md via Architecture v1.2 §11 / UX Blueprint Part 1.
+ * Canonical values: docs/brand/BRAND_TOKENS.md (official brand, 2026-07-21).
  * Keep in lockstep with tokens.ts — tokens.test.ts guards the pairing.
  */
 :root {
-  /* Color */
-  --vyne-navy: #12233F;
-  --vyne-ivory: #F7F4ED;
+  /* Official brand palette */
+  --vyne-navy: #081B36;
+  --vyne-ivory: #F8F5EF;
   --vyne-white: #FFFFFF;
+  --vyne-bronze: #B88A5A;
+  --vyne-stone-gray: #D7D2C6;
+  --vyne-charcoal: #1A1A1A;
+
+  /* Functional (support the UI; not brand colors) */
   --vyne-slate: #425066;
+  --vyne-bronze-text: #8A6234;
+  --vyne-hairline: #D7D2C6;
+
+  /* Semantic (carried; unchanged until a future brand update) */
   --vyne-forest: #214E3B;
-  --vyne-gold: #B48A35;
   --vyne-warning: #8A672C;
   --vyne-danger: #A54747;
-  --vyne-hairline: #E3E0D8;
 
   /* Typography */
   --vyne-font-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;

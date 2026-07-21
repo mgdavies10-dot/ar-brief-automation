@@ -5,21 +5,31 @@ import { color, typeScale } from "./tokens";
 
 const css = readFileSync(fileURLToPath(new URL("./tokens.css", import.meta.url)), "utf8");
 
+/** camelCase token key -> --vyne-kebab-case custom property name. */
+const cssVar = (name: string) => `--vyne-${name.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`)}`;
+
 describe("design tokens", () => {
-  it("matches the canonical BRAND_TOKENS palette (Architecture §11 / C-3)", () => {
-    expect(color.navy).toBe("#12233F");
-    expect(color.ivory).toBe("#F7F4ED");
+  it("matches the official VYNE brand palette (docs/brand/BRAND_TOKENS.md)", () => {
+    expect(color.navy).toBe("#081B36");
+    expect(color.ivory).toBe("#F8F5EF");
+    expect(color.white).toBe("#FFFFFF");
+    expect(color.bronze).toBe("#B88A5A");
+    expect(color.stoneGray).toBe("#D7D2C6");
+    expect(color.charcoal).toBe("#1A1A1A");
+  });
+
+  it("keeps the functional and semantic tokens", () => {
+    expect(color.slate).toBe("#425066"); // secondary text (functional)
+    expect(color.bronzeText).toBe("#8A6234"); // accessible bronze for text (WCAG AA)
+    expect(color.hairline).toBe("#D7D2C6"); // border/hairline = stone gray
     expect(color.forest).toBe("#214E3B");
-    expect(color.gold).toBe("#B48A35");
-    expect(color.slate).toBe("#425066");
     expect(color.warning).toBe("#8A672C");
     expect(color.danger).toBe("#A54747");
   });
 
   it("keeps tokens.css in lockstep with tokens.ts colors", () => {
     for (const [name, hex] of Object.entries(color)) {
-      const varName = `--vyne-${name === "hairline" ? "hairline" : name}`;
-      expect(css.toUpperCase()).toContain(`${varName.toUpperCase()}: ${hex.toUpperCase()}`);
+      expect(css.toUpperCase()).toContain(`${cssVar(name).toUpperCase()}: ${hex.toUpperCase()}`);
     }
   });
 

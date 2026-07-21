@@ -1,6 +1,13 @@
 # Brand Reconciliation Proposal — one decision before M4
 
-**Status:** PROPOSED (founder decision required before M4-A begins)
+**Status:** RESOLVED (founder ruled 2026-07-21). This proposal is retained for
+history; the **canonical** brand source of truth is now the brand package:
+`Brand_Guide_v1.0.md`, `BRAND_TOKENS.md`, `DESIGN_SYSTEM.md`, `LOGO_USAGE.md`.
+Official palette adopted: navy `#081B36`, ivory `#F8F5EF`, bronze `#B88A5A`,
+stone gray `#D7D2C6`, charcoal `#1A1A1A` (this doc's earlier `#0B1B36` navy
+reading was superseded by the founder-confirmed `#081B36`).
+
+**Original status:** PROPOSED (founder decision required before M4-A begins)
 **Date:** 2026-07-20 · **Change level if adopted:** 2 (design-system change
 touching every screen; single migration of token values, no behavior change)
 

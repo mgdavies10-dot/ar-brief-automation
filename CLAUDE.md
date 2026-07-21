@@ -94,6 +94,15 @@ skipped tests, mocked/shimmed dependencies, known limitations, and whether
 production-equivalent execution occurred. (Full standard:
 `docs/governance/RELEASE_GOVERNANCE.md` §2.)
 
+## Design system (canonical, founder-mandated 2026-07-21)
+The official VYNE brand + design system lives in `vyne-platform/docs/brand/`
+(`Brand_Guide_v1.0.md`, `BRAND_TOKENS.md`, `DESIGN_SYSTEM.md`, `LOGO_USAGE.md`),
+implemented as tokens in `packages/ui`. It **supersedes** the palette in the
+read-only `vyne-docs/` (Architecture §11, UX Blueprint Part 1). **Standing
+mandate:** every future feature and every future public-website page uses this
+design system by default; consume tokens via `@vyne/ui` (never hardcode hex).
+Any exception requires explicit founder approval.
+
 ## Repository facts
 - Working branch: `claude/vyne-ea-001-vertical-slice-xly1ws` — develop and push here.
 - Monorepo root: `vyne-platform/` (npm workspaces + Turborepo).

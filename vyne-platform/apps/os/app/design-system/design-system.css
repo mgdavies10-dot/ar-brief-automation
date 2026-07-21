@@ -1,0 +1,103 @@
+/*
+ * Design System reference page — chrome + component examples.
+ * Every color is a --vyne-* token (never hardcoded) so the page cannot drift
+ * from production. New component patterns (alerts, nav items) are defined here
+ * token-first and are candidates to graduate into shared components.
+ */
+.ds {
+  background: var(--vyne-ivory);
+  color: var(--vyne-navy);
+  min-height: 100vh;
+  padding: calc(var(--vyne-unit) * 6) var(--vyne-page-gutter);
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.ds-eyebrow {
+  font-size: var(--vyne-type-micro);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vyne-bronze-text);
+  margin-bottom: var(--vyne-unit);
+}
+.ds-h1 {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-display);
+  line-height: var(--vyne-type-display-lh);
+  font-weight: 600;
+}
+.ds-rule {
+  height: 1px;
+  background: var(--vyne-bronze);
+  width: 64px;
+  margin: calc(var(--vyne-unit) * 2) 0 calc(var(--vyne-unit) * 3);
+}
+.ds-lede { color: var(--vyne-slate); max-width: 70ch; }
+.ds-section { margin-top: calc(var(--vyne-unit) * 6); }
+.ds-h2 {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-title);
+  line-height: var(--vyne-type-title-lh);
+  font-weight: 600;
+  padding-bottom: var(--vyne-unit);
+  border-bottom: 1px solid var(--vyne-hairline);
+  margin-bottom: calc(var(--vyne-unit) * 3);
+}
+.ds-note { color: var(--vyne-slate); font-size: var(--vyne-type-meta); margin-top: calc(var(--vyne-unit) * 2); }
+
+/* Color swatches */
+.ds-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: calc(var(--vyne-unit) * 2); }
+.ds-swatch { border: 1px solid var(--vyne-hairline); border-radius: 8px; overflow: hidden; background: var(--vyne-white); }
+.ds-swatch-chip { height: 72px; }
+.ds-swatch-meta { padding: calc(var(--vyne-unit) * 1.25) calc(var(--vyne-unit) * 1.5); }
+.ds-swatch-name { font-size: var(--vyne-type-meta); font-weight: 600; }
+.ds-swatch-var { font-size: var(--vyne-type-micro); color: var(--vyne-slate); font-family: ui-monospace, Menlo, monospace; }
+.ds-swatch-hex { font-size: var(--vyne-type-micro); color: var(--vyne-slate); text-transform: uppercase; font-variant-numeric: tabular-nums; }
+.ds-swatch-role { font-size: var(--vyne-type-micro); color: var(--vyne-slate); margin-top: 4px; line-height: 1.4; }
+
+/* Type scale */
+.ds-type-row { display: flex; align-items: baseline; gap: calc(var(--vyne-unit) * 3); padding: calc(var(--vyne-unit) * 1.5) 0; border-bottom: 1px solid var(--vyne-hairline); }
+.ds-type-label { width: 130px; flex-shrink: 0; font-size: var(--vyne-type-micro); color: var(--vyne-slate); font-family: ui-monospace, Menlo, monospace; }
+.ds-type-serif { font-family: var(--vyne-font-serif); font-weight: 600; color: var(--vyne-navy); }
+
+/* Spacing */
+.ds-space-row { display: flex; align-items: center; gap: calc(var(--vyne-unit) * 2); margin-bottom: var(--vyne-unit); }
+.ds-space-bar { height: 16px; background: var(--vyne-bronze); border-radius: 3px; }
+.ds-space-label { font-size: var(--vyne-type-micro); color: var(--vyne-slate); font-family: ui-monospace, Menlo, monospace; }
+
+.ds-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: calc(var(--vyne-unit) * 3); }
+.ds-tile { border: 1px solid var(--vyne-hairline); border-radius: 12px; background: var(--vyne-white); padding: calc(var(--vyne-unit) * 3); }
+.ds-tile-h { font-size: var(--vyne-type-meta); font-weight: 600; color: var(--vyne-slate); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: calc(var(--vyne-unit) * 2); }
+.ds-row { display: flex; gap: calc(var(--vyne-unit) * 1.5); align-items: center; flex-wrap: wrap; }
+
+/* Alerts (new pattern — token-driven; label + one color, never color alone) */
+.ds-alert { display: flex; gap: calc(var(--vyne-unit) * 1.5); align-items: flex-start; padding: calc(var(--vyne-unit) * 1.5) calc(var(--vyne-unit) * 2); border-radius: 8px; border: 1px solid; font-size: var(--vyne-type-meta); margin-bottom: var(--vyne-unit); background: var(--vyne-white); }
+.ds-alert-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+.ds-alert.is-success { border-color: var(--vyne-forest); color: var(--vyne-forest); }
+.ds-alert.is-success .ds-alert-dot { background: var(--vyne-forest); }
+.ds-alert.is-warning { border-color: var(--vyne-warning); color: var(--vyne-warning); }
+.ds-alert.is-warning .ds-alert-dot { background: var(--vyne-warning); }
+.ds-alert.is-danger { border-color: var(--vyne-danger); color: var(--vyne-danger); }
+.ds-alert.is-danger .ds-alert-dot { background: var(--vyne-danger); }
+.ds-alert.is-info { border-color: var(--vyne-navy); color: var(--vyne-navy); }
+.ds-alert.is-info .ds-alert-dot { background: var(--vyne-navy); }
+.ds-alert b { display: block; }
+.ds-alert span { color: var(--vyne-slate); }
+
+/* Nav items */
+.ds-nav { display: flex; flex-direction: column; gap: 2px; }
+.ds-nav-item { display: flex; align-items: center; gap: var(--vyne-unit); padding: calc(var(--vyne-unit) * 1) calc(var(--vyne-unit) * 1.5); font-size: var(--vyne-type-meta); color: var(--vyne-navy); border-left: 2px solid transparent; }
+.ds-nav-item.is-active { border-left-color: var(--vyne-bronze); font-weight: 600; }
+.ds-nav-item.is-muted { color: var(--vyne-slate); }
+
+/* Table */
+.ds-table { width: 100%; border-collapse: collapse; font-size: var(--vyne-type-meta); }
+.ds-table th { text-align: left; color: var(--vyne-slate); font-weight: 600; font-size: var(--vyne-type-micro); letter-spacing: 0.08em; text-transform: uppercase; padding: calc(var(--vyne-unit)*1.25) calc(var(--vyne-unit)*1.5); border-bottom: 1px solid var(--vyne-hairline); }
+.ds-table td { padding: calc(var(--vyne-unit)*1.5); border-bottom: 1px solid var(--vyne-hairline); }
+.ds-table tr:last-child td { border-bottom: none; }
+.ds-num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Icons */
+.ds-icons { display: flex; gap: calc(var(--vyne-unit) * 3); align-items: center; }
+.ds-icon { color: var(--vyne-navy); }
+.ds-icon.is-accent { color: var(--vyne-bronze); }
+.ds-icon.is-muted { color: var(--vyne-slate); }

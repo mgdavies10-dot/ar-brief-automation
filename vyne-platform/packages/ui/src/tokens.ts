@@ -1,32 +1,48 @@
 /**
- * VYNE design tokens — canonical source: BRAND_TOKENS.md palette as recorded in
- * Architecture v1.2 §11 and UX Blueprint v1.0 Part 1. Any change here requires a
- * founder decision (Conflict C-3 treats BRAND_TOKENS.md as canonical).
+ * VYNE design tokens — canonical source: docs/brand/BRAND_TOKENS.md (founder-
+ * approved official brand, 2026-07-21). Supersedes the earlier engineering
+ * palette in Architecture v1.2 §11. Any change here requires a founder decision.
  *
- * Typography: Source Serif 4 is the Q-8 fallback serif (final serif is an open
- * founder decision); Inter for all interface text. Font files are not vendored
- * yet — stacks fall back to system faces until Q-8 resolves.
+ * Brand tokens (navy, ivory, white, bronze, stoneGray, charcoal) are the
+ * official VYNE palette. Functional tokens (slate, bronzeText, hairline) and
+ * semantic tokens (forest, warning, danger) support the UI without being part of
+ * the brand palette. Keep tokens.css in lockstep — tokens.test.ts guards it.
+ *
+ * Typography: Source Serif 4 (display) + Inter (interface) remain in use;
+ * commercial-font licensing (Trajan Pro / Cormorant Garamond / Suisse Int'l) is
+ * deferred to a future founder decision.
  */
 
 export const color = {
-  /** Ink Navy — primary text, headers, OS sidebar, primary buttons. */
-  navy: "#12233F",
-  /** Warm Ivory — the canvas; all content surfaces are ivory or white. */
-  ivory: "#F7F4ED",
+  // ---- Official brand palette (docs/brand/BRAND_TOKENS.md) ----
+  /** Midnight Navy — primary ink, headers, primary buttons, OS sidebar. */
+  navy: "#081B36",
+  /** Ivory — the canvas; all content surfaces are ivory or white. */
+  ivory: "#F8F5EF",
   /** White — cards and documents sitting on ivory; the one-step elevation. */
   white: "#FFFFFF",
-  /** Slate — secondary text, metadata, captions. */
+  /** Warm Bronze — accents, borders emphasis, icons, highlights, surfaces. Not for small text (see bronzeText). */
+  bronze: "#B88A5A",
+  /** Stone Gray — brand neutral; the standard border/hairline color. */
+  stoneGray: "#D7D2C6",
+  /** Charcoal — brand neutral; deepest ink for high-contrast text on light surfaces. */
+  charcoal: "#1A1A1A",
+
+  // ---- Functional tokens (support the UI; not brand colors) ----
+  /** Slate — secondary text, metadata, captions (functional, preserves readability). */
   slate: "#425066",
-  /** Forest — confirmation, completed states, "published". */
+  /** Accessible bronze — derived from Warm Bronze; use ONLY where bronze text must meet WCAG AA on light surfaces. */
+  bronzeText: "#8A6234",
+  /** Hairline border on cards, tables, bars — resolves to Stone Gray. */
+  hairline: "#D7D2C6",
+
+  // ---- Semantic tokens (carried; unchanged until a future brand update) ----
+  /** Forest — success, completed states, "published". */
   forest: "#214E3B",
-  /** Gold — the signature. Nav active indicator, document hairline rule, the publish moment. Nothing else. */
-  gold: "#B48A35",
   /** Warning amber — genuine warning states only, never decoration. */
   warning: "#8A672C",
   /** Danger — overdue, clawback, destructive confirmation only. */
   danger: "#A54747",
-  /** Hairline border on cards and tables. */
-  hairline: "#E3E0D8",
 } as const;
 
 export const font = {
