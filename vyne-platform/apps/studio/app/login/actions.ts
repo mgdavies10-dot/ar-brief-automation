@@ -1,22 +1,12 @@
 "use server";
 
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
+import { performSignIn, performSignOut } from "@vyne/auth/actions";
 
-/** Studio sign-in / sign-out. One §4.1 error for every failure. */
+/** Studio sign-in / sign-out — thin server-action boundary over shared logic. */
 export async function signIn(formData: FormData): Promise<void> {
-  const email = String(formData.get("email") ?? "").trim();
-  const password = String(formData.get("password") ?? "");
-  if (email && password) {
-    const supabase = await createClient();
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    if (!error) redirect("/");
-  }
-  redirect("/login?status=failed");
+  return performSignIn("vyne-studio", formData);
 }
 
 export async function signOut(): Promise<void> {
-  const supabase = await createClient();
-  await supabase.auth.signOut();
-  redirect("/login");
+  return performSignOut("vyne-studio");
 }

@@ -1,0 +1,162 @@
+/*
+ * Shared authentication-screen styles (M3-S) — the sign-in / ceremony / MFA /
+ * unauthorized card pattern (UX §4.1), identical across VYNE OS and Advisor
+ * Studio. Imported by both apps; app-specific chrome (top bars, home surfaces)
+ * stays in each app's globals.css.
+ */
+
+.signin {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--vyne-page-gutter) calc(var(--vyne-unit) * 3);
+}
+
+.signin-card {
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: var(--vyne-radius-card);
+  padding: calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 5);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The logo asset carries its own clear space (white ground is part of the
+   asset — never crop or restyle it); the card's white surface matches it. */
+.signin-logo {
+  display: block;
+  width: 78%;
+  height: auto;
+  margin: calc(var(--vyne-unit) * -2) auto 0;
+}
+
+.signin-submark {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--vyne-gold);
+  text-align: center;
+  text-indent: 0.42em; /* optically recenters letterspaced caps */
+  margin-top: 2px;
+}
+
+.signin-rule {
+  height: 1px;
+  background: var(--vyne-gold);
+  width: 56px;
+  margin: calc(var(--vyne-unit) * 2.5) auto calc(var(--vyne-unit) * 4);
+}
+
+.signin-heading {
+  font-family: var(--vyne-font-serif);
+  font-size: var(--vyne-type-title);
+  line-height: var(--vyne-type-title-lh);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--vyne-unit);
+}
+
+.signin-note {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  text-align: center;
+  margin-bottom: calc(var(--vyne-unit) * 3);
+}
+
+.signin-label {
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  color: var(--vyne-slate);
+  margin-bottom: calc(var(--vyne-unit) * 0.5);
+}
+
+.signin-input {
+  font: inherit;
+  color: var(--vyne-navy);
+  background: var(--vyne-white);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.25) calc(var(--vyne-unit) * 1.5);
+  margin-bottom: calc(var(--vyne-unit) * 2.5);
+  transition: border-color var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-input:focus {
+  outline: none;
+  border-color: var(--vyne-navy);
+}
+
+.signin-error {
+  color: var(--vyne-danger);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  margin: calc(var(--vyne-unit) * -1) 0 calc(var(--vyne-unit) * 2);
+}
+
+.signin-submit {
+  font: inherit;
+  font-weight: 600;
+  color: var(--vyne-white);
+  background: var(--vyne-navy);
+  border: none;
+  border-radius: 6px;
+  padding: calc(var(--vyne-unit) * 1.5);
+  cursor: pointer;
+  margin-top: var(--vyne-unit);
+  transition: opacity var(--vyne-motion-fast) var(--vyne-motion-easing);
+}
+
+.signin-submit:hover {
+  opacity: 0.92;
+}
+
+.signin-submit:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.signin-qr {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto calc(var(--vyne-unit) * 2);
+  border: 1px solid var(--vyne-hairline);
+  border-radius: 8px;
+  background: var(--vyne-white);
+}
+
+.signin-secret {
+  font-size: var(--vyne-type-micro);
+  line-height: var(--vyne-type-micro-lh);
+  color: var(--vyne-slate);
+  text-align: center;
+  margin-bottom: calc(var(--vyne-unit) * 3);
+  word-break: break-all;
+}
+
+.signin-alt {
+  display: block;
+  text-align: center;
+  margin-top: calc(var(--vyne-unit) * 2);
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  text-decoration: none;
+}
+
+.signin-alt:hover {
+  color: var(--vyne-navy);
+}
+
+/* The one approved Studio skin difference (§4.1). */
+.signin-studio-line {
+  color: var(--vyne-slate);
+  font-size: var(--vyne-type-meta);
+  line-height: var(--vyne-type-meta-lh);
+  text-align: center;
+  margin-top: calc(var(--vyne-unit) * 3);
+}

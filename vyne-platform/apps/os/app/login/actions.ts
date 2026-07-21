@@ -1,25 +1,12 @@
 "use server";
 
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
+import { performSignIn, performSignOut } from "@vyne/auth/actions";
 
-/**
- * Sign-in / sign-out server actions (M3-1). Every sign-in failure routes to
- * the single §4.1 error state — never revealing whether the account exists.
- */
+/** OS sign-in / sign-out — thin server-action boundary over shared logic. */
 export async function signIn(formData: FormData): Promise<void> {
-  const email = String(formData.get("email") ?? "").trim();
-  const password = String(formData.get("password") ?? "");
-  if (email && password) {
-    const supabase = await createClient();
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    if (!error) redirect("/");
-  }
-  redirect("/login?status=failed");
+  return performSignIn("vyne-os", formData);
 }
 
 export async function signOut(): Promise<void> {
-  const supabase = await createClient();
-  await supabase.auth.signOut();
-  redirect("/login");
+  return performSignOut("vyne-os");
 }

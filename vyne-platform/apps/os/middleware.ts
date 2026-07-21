@@ -1,104 +1,17 @@
-import { NextResponse, type NextRequest } from "next/server";
-import { createServerClient } from "@supabase/ssr";
-
-/** Decode JWT claims for ROUTING decisions only — never authorization. */
-function claimsOf(token: string): Record<string, unknown> {
-  try {
-    const part = token.split(".")[1];
-    if (!part) return {};
-    const payload = part.replace(/-/g, "+").replace(/_/g, "/");
-    return JSON.parse(atob(payload)) as Record<string, unknown>;
-  } catch {
-    return {};
-  }
-}
+import { createAuthMiddleware } from "@vyne/auth/middleware";
 
 /**
- * Session middleware (M3-1): refreshes the auth cookies on every request and
- * gates every route behind a session. This is the app-layer guard only —
- * authorization authority remains RLS resolving the live public.users row
- * (Architecture §12 defense in depth). Idle/absolute lifetime enforcement and
- * role-scoped routing arrive in M3-2/M3-3.
+ * VYNE OS session middleware — shared builder (M3-S). OS is internal-only
+ * (§8 route map): advisor sessions get the calm unauthorized page; internal
+ * roles run the A1 ceremony and mandatory MFA enrollment. RLS remains the
+ * authorization authority.
  */
-export async function middleware(request: NextRequest) {
-  let response = NextResponse.next({ request });
-
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !anonKey) {
-    throw new Error("Missing NEXT_PUBLIC_SUPABASE_URL / NEXT_PUBLIC_SUPABASE_ANON_KEY (see .env.example)");
-  }
-
-  const supabase = createServerClient(url, anonKey, {
-    cookieOptions: { name: "vyne-os" },
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll(cookiesToSet) {
-        cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
-        response = NextResponse.next({ request });
-        cookiesToSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
-      },
-    },
-  });
-
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
-  const path = request.nextUrl.pathname;
-  const isPublic = path.startsWith("/login") || path.startsWith("/auth");
-  const to = (pathname: string) => {
-    const redirectUrl = request.nextUrl.clone();
-    redirectUrl.pathname = pathname;
-    redirectUrl.search = "";
-    return NextResponse.redirect(redirectUrl);
-  };
-
-  if (!user && !isPublic) return to("/login");
-
-  if (user && !isPublic) {
-    // Routing-only role claim (0008 hook). Authorization authority remains
-    // RLS resolving the live public.users row on every query.
-    const {
-      data: { session },
-    } = await supabase.auth.getSession();
-    const role = session ? (claimsOf(session.access_token).user_role as string | undefined) : undefined;
-
-    // OS is internal-only (§8 route map): advisor sessions get the calm
-    // unauthorized page, nothing else.
-    if (role === "advisor" && !path.startsWith("/unauthorized")) {
-      return to("/unauthorized");
-    }
-
-    if (role !== "advisor") {
-      // A1 gate 1: unrotated password blocks every surface (app_metadata is
-      // server-controlled; the flag cannot be self-cleared).
-      if (user.app_metadata?.password_rotated === false && !path.startsWith("/welcome")) {
-        return to("/welcome");
-      }
-
-      // A1 gate 2 (after rotation): MFA. A verified factor at aal1 must pass
-      // the challenge; an internal role with no verified factor must enroll.
-      if (user.app_metadata?.password_rotated !== false) {
-        const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
-        if (aal) {
-          const needsChallenge = aal.currentLevel === "aal1" && aal.nextLevel === "aal2";
-          const unenrolled = aal.nextLevel === "aal1";
-          const isInternal = role === "founder" || role === "recruiter";
-          if (needsChallenge && !path.startsWith("/challenge")) {
-            return to("/challenge");
-          }
-          if (!needsChallenge && unenrolled && isInternal && !path.startsWith("/welcome/mfa")) {
-            return to("/welcome/mfa");
-          }
-        }
-      }
-    }
-  }
-  return response;
-}
+export const middleware = createAuthMiddleware({
+  cookieName: "vyne-os",
+  blockRole: (role) => role === "advisor",
+  gatesApplyTo: (role) => role !== "advisor",
+  mfaEnrollmentRequired: (role) => role === "founder" || role === "recruiter",
+});
 
 export const config = {
   matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],

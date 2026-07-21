@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "@vyne/ui/tokens.css";
+import "@vyne/ui/auth.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
