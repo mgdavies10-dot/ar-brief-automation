@@ -86,3 +86,40 @@ enterprise-grade correctness and calm, so simple an advisor never sees the
 machinery. When choosing between another feature and making an existing workflow
 dramatically better — improve the workflow. Clarity over complexity; decision
 support over information overload; trust over persuasion.
+
+## Product Philosophy (founder, 2026-07-21) — VYNE's moat
+
+**VYNE's deepest moat is the industry's best structured understanding of an
+advisory practice** — not the consulting process, artifact generation, or
+recruiting expertise. Everything downstream (Decision Readiness → Artifact
+Builder → Modeling → Firm Intelligence) compounds the value of the twin because
+it is grounded in one coherent understanding, not isolated inputs. The build
+sequence is deliberate: each layer makes the previous one more valuable.
+
+**The twin becomes smarter — not larger.** Every proposed field must answer one
+question: *does this improve our understanding of the advisor?* If no, don't add
+it. This is the guard against becoming another CRM, and it is a first-class M4
+principle.
+
+**The twin is continuously refined, never "finished."** It is not something we
+store; it is something every interaction strengthens — the Current Reality
+interview, recruiter notes, the Artifact Builder, discovery meetings, advisor
+edits, platform comparisons, and (later) AI conversations all make it more
+accurate over time.
+
+## Twin evolution — architecture to leave room for (don't build yet)
+
+Design so these slot in without a schema redesign; do not build them now:
+
+- **Three-axis confidence** (evolving today's confirmed/assumed heuristic):
+  **Coverage** (how much we know) · **Confidence** (how certain) · **Freshness**
+  (how current — "last validated 14 days ago"). A recruiter should see at a
+  glance whether the profile can be relied on. Today's `dimension_confidence`
+  JSONB is the seam; it can hold per-dimension `{coverage, confidence,
+  validatedAt}` later.
+- **Evidence per dimension** (high value; architected-for now): each dimension's
+  assertions carry evidence — advisor interview, recruiter observation, public
+  bio, CRM note, planning meeting. This is what makes the twin *explainable*
+  ("we believe growth-through-acquisition is a high-priority goal because …")
+  and lets recommendations feel earned. The JSONB dimensions already accommodate
+  an `evidence: [{ source, note }]` per item without a migration.

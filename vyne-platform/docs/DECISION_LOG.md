@@ -23,6 +23,19 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-21 — **Digital twin is VYNE's moat; twin-evolution direction; F2
+  framing.** Founder approved F1 + the twin deepening (editable Executive
+  Summary, confidence model, "what we still need to learn"). Strategic rulings
+  (recorded in `M4_product_plan.md` Product Philosophy): (1) VYNE's deepest moat
+  is **the industry's best structured understanding of an advisory practice** —
+  the sequence Digital Twin → Decision Readiness → Artifact Builder → Modeling →
+  Firm Intelligence compounds. (2) **The twin becomes smarter, not larger** —
+  every field must improve understanding of the advisor or it's not added (guard
+  against CRM-bloat). (3) **The twin is continuously refined, never finished** —
+  every interaction strengthens it. (4) **Architect (don't build yet):**
+  three-axis confidence (coverage / confidence / freshness) and **evidence per
+  dimension** (explainability). (5) **F2 framing:** recommendations must *emerge
+  from the twin and feel earned* — not a scorecard to complete. Continue to F2.
 - 2026-07-21 — **Definition of Done + Project Health Report adopted.** (1) Every
   milestone/major feature is "done" only against a **Definition of Done
   checklist** (`docs/governance/DEFINITION_OF_DONE.md`): functional
