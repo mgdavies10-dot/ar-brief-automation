@@ -31,16 +31,17 @@ afterAll(async () => {
 });
 
 describe("migration rollback (EA-001 acceptance: rollback of latest migration verified)", () => {
-  it("rolls back the latest migration (0010_current_reality_understanding) and re-applies cleanly", async () => {
-    expect(await columnExists("current_reality", "executive_summary")).toBe(true);
-    applyRollback(DB, "0010_current_reality_understanding_down.sql");
-    expect(await columnExists("current_reality", "executive_summary")).toBe(false);
-    applyMigration(DB, "0010_current_reality_understanding.sql");
-    expect(await columnExists("current_reality", "executive_summary")).toBe(true);
+  it("rolls back the latest migration (0011_decision_recommendation) and re-applies cleanly", async () => {
+    expect(await columnExists("decisions", "recommendation")).toBe(true);
+    applyRollback(DB, "0011_decision_recommendation_down.sql");
+    expect(await columnExists("decisions", "recommendation")).toBe(false);
+    applyMigration(DB, "0011_decision_recommendation.sql");
+    expect(await columnExists("decisions", "recommendation")).toBe(true);
   });
 
   it("full down-chain leaves an empty public schema; full re-apply restores all 15 tables", async () => {
     const downs = [
+      "0011_decision_recommendation_down.sql",
       "0010_current_reality_understanding_down.sql",
       "0009_current_reality_down.sql",
       "0008_auth_claims_hook_down.sql",
@@ -69,13 +70,14 @@ describe("migration rollback (EA-001 acceptance: rollback of latest migration ve
       "0008_auth_claims_hook.sql",
       "0009_current_reality.sql",
       "0010_current_reality_understanding.sql",
+      "0011_decision_recommendation.sql",
     ]) {
       applyMigration(DB, m);
     }
     const restored = await owner.query(
       "select count(*)::int as n from information_schema.tables where table_schema = 'public'",
     );
-    // 13 EA tables + decision_types lookup + current_reality
+    // 13 EA tables + decision_types lookup + current_reality (0011 adds columns, not tables)
     expect(restored.rows[0].n).toBe(15);
   });
 });

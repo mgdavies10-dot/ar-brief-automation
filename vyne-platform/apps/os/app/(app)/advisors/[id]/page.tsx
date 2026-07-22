@@ -7,10 +7,14 @@ import {
   understandingScore,
   dimensionsToLearn,
   generateSummaryDraft,
+  assessConviction,
+  recommendationSchema,
   DIMENSION_LABELS,
   type CurrentReality,
+  type DecisionType,
 } from "@vyne/domain";
 import { RealityEditor } from "./reality-editor";
+import { DirectionPanel, type DirectionInitial } from "./direction";
 
 const fmtMoney = (v: number | null | undefined) =>
   v == null ? null : `$${(v / 1_000_000).toLocaleString(undefined, { maximumFractionDigits: 1 })}M`;
@@ -145,9 +149,29 @@ export default async function AdvisorWorkspace({
   const cr = toCurrentReality(crRow as Record<string, unknown>);
   const pct = Math.round(currentRealityCompleteness(cr) * 100);
   const name = `${advisor.first_name} ${advisor.last_name}`;
+  const first = advisor.first_name;
   const t12 = fmtMoney(advisor.t12_verified ?? advisor.t12_reported);
-  const activeTab = tab === "reality" ? "reality" : "overview";
+  const activeTab = tab === "reality" ? "reality" : tab === "direction" ? "direction" : "overview";
   const hasContent = pct > 0;
+
+  // Direction (F2): the advisor's primary decision + VYNE's conviction (derived
+  // from the twin, never stored). RLS is the authority on visibility.
+  const { data: decisionRow } = await supabase
+    .from("decisions")
+    .select("decision_type, question, recommendation")
+    .eq("advisor_id", id)
+    .eq("is_primary", true)
+    .is("deleted_at", null)
+    .maybeSingle();
+
+  const conviction = assessConviction(cr, name);
+  const directionInitial: DirectionInitial | null = decisionRow
+    ? {
+        decisionType: (decisionRow.decision_type as DecisionType) ?? "",
+        question: (decisionRow.question as string) ?? "",
+        recommendation: recommendationSchema.parse(decisionRow.recommendation ?? {}),
+      }
+    : null;
 
   return (
     <div className="workspace">
@@ -158,6 +182,7 @@ export default async function AdvisorWorkspace({
         <div className="ws-tabs">
           <Link href={`/advisors/${id}`} className={`ws-tab${activeTab === "overview" ? " is-active" : ""}`}>Overview</Link>
           <Link href={`/advisors/${id}?tab=reality`} className={`ws-tab${activeTab === "reality" ? " is-active" : ""}`}>Current Reality</Link>
+          <Link href={`/advisors/${id}?tab=direction`} className={`ws-tab${activeTab === "direction" ? " is-active" : ""}`}>Direction</Link>
           <span className={`ws-status${pct === 100 ? " is-complete" : ""}`}>{pct === 100 ? "Complete" : `${pct}% captured`}</span>
         </div>
       </header>
@@ -177,6 +202,8 @@ export default async function AdvisorWorkspace({
               <Link href={`/advisors/${id}?tab=reality`} className="btn-primary">Begin Current Reality</Link>
             </div>
           )
+        ) : activeTab === "direction" ? (
+          <DirectionPanel advisorId={id} advisorFirst={first} conviction={conviction} initial={directionInitial} />
         ) : (
           <RealityEditor advisorId={id} advisorName={name} initial={cr} />
         )}

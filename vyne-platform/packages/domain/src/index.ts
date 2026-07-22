@@ -58,3 +58,12 @@ export type {
   CurrentRealityStatus,
   CurrentRealityDimension,
 } from "./current-reality";
+
+export { CONVICTION_LEVELS, assessConviction, recommendationSchema } from "./conviction";
+export type {
+  ConvictionLevel,
+  Standing,
+  DimensionUnderstanding,
+  ConvictionReading,
+  Recommendation,
+} from "./conviction";

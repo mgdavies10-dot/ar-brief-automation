@@ -1,8 +1,14 @@
 "use server";
 
+import { z } from "zod";
 import { revalidatePath } from "next/cache";
 import { createClient } from "@/lib/supabase/server";
-import { currentRealitySchema, currentRealityCompleteness } from "@vyne/domain";
+import {
+  currentRealitySchema,
+  currentRealityCompleteness,
+  recommendationSchema,
+  DECISION_TYPES,
+} from "@vyne/domain";
 
 /**
  * Save (create-or-update) an advisor's Current Reality — the single living
@@ -52,6 +58,63 @@ export async function saveCurrentReality(
   const result = existing
     ? await supabase.from("current_reality").update(row).eq("advisor_id", advisorId)
     : await supabase.from("current_reality").insert({ ...row, advisor_id: advisorId, created_by: profile?.id ?? null });
+
+  if (result.error) return { ok: false, error: "That didn’t save — please try again." };
+
+  revalidatePath(`/advisors/${advisorId}`);
+  return { ok: true };
+}
+
+/**
+ * The Direction input (F2): the decision framed in plain language plus the
+ * recruiter-authored recommendation (narrative first, then explainability).
+ * Conviction itself is NOT stored — it is derived from the twin at read time.
+ */
+const directionSchema = z.object({
+  decisionType: z.enum(DECISION_TYPES),
+  question: z.string().trim().max(280).optional(),
+  recommendation: recommendationSchema,
+});
+
+/**
+ * Save (create-or-update) an advisor's primary Direction. Targets the single
+ * primary decision for the advisor; creates it if absent. RLS is the authority:
+ * the write only lands for an advisor the caller owns.
+ */
+export async function saveDirection(
+  advisorId: string,
+  input: unknown,
+): Promise<{ ok: boolean; error?: string }> {
+  const parsed = directionSchema.safeParse(input);
+  if (!parsed.success) return { ok: false, error: "Some entries need attention." };
+  const { decisionType, question, recommendation } = parsed.data;
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+  if (!user) return { ok: false, error: "Your session has ended." };
+  const { data: profile } = await supabase.from("users").select("id").eq("auth_id", user.id).maybeSingle();
+
+  const row = {
+    decision_type: decisionType,
+    question: question ?? null,
+    recommendation,
+  };
+
+  const { data: existing } = await supabase
+    .from("decisions")
+    .select("id")
+    .eq("advisor_id", advisorId)
+    .eq("is_primary", true)
+    .is("deleted_at", null)
+    .maybeSingle();
+
+  const result = existing
+    ? await supabase.from("decisions").update(row).eq("id", existing.id)
+    : await supabase
+        .from("decisions")
+        .insert({ ...row, advisor_id: advisorId, is_primary: true, created_by: profile?.id ?? null });
 
   if (result.error) return { ok: false, error: "That didn’t save — please try again." };
 

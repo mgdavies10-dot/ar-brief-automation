@@ -1,0 +1,19 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "os",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--workspace", "@vyne/os"],
+      "cwd": "vyne-platform",
+      "port": 3000
+    },
+    {
+      "name": "studio",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--workspace", "@vyne/studio"],
+      "cwd": "vyne-platform",
+      "port": 3001
+    }
+  ]
+}

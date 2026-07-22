@@ -107,6 +107,33 @@ interview, recruiter notes, the Artifact Builder, discovery meetings, advisor
 edits, platform comparisons, and (later) AI conversations all make it more
 accurate over time.
 
+**Express professional judgment, not algorithmic certainty** (founder,
+2026-07-21). VYNE speaks like a consultant, not a scoring engine. This reshapes
+the recommendation surface (F2) fundamentally:
+
+- **Measure *Conviction*, not *Readiness*.** Readiness sounds like software
+  judging the advisor; Conviction is VYNE judging *its own understanding*. The
+  burden stays on us. The advisor is never scored — our confidence is.
+- **Recommendations begin with a narrative, never a number.** "Our Current
+  Perspective — based on our conversations and our understanding of your
+  business, we believe…" — supporting indicators come *after*, if at all.
+- **Understanding thinking, not completion thinking.** Not "82% ready · 6/8
+  sections." Instead: "We understand your goals well; we have moderate confidence
+  in your succession objectives; we still need to understand your client
+  relationships before recommending."
+- **No traffic lights, no gauges, no gamification.** Calm language only —
+  "Our understanding is developing," "We have enough confidence to begin
+  discussing paths forward."
+- **Every recommendation is explainable** — why we're saying this, what informed
+  it, what we're assuming, and what could change our view. Internally it must be
+  able to answer: what do we know · how do we know it · what are we uncertain
+  about · would more information materially change the recommendation (if yes,
+  say so).
+
+The long-term test: an advisor finishes a meeting thinking *"they understand my
+business better than anyone I've spoken to"* — not because VYNE asked the most
+questions, but because it synthesized everything into thoughtful judgment.
+
 ## Twin evolution — architecture to leave room for (don't build yet)
 
 Design so these slot in without a schema redesign; do not build them now:

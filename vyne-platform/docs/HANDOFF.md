@@ -1,28 +1,29 @@
 # Handoff — current build state (EA-001 vertical slice)
 
-**Updated:** 2026-07-20 (local session on the founder's machine, per DL-2026-011
-Option 3 / DL-2026-012 Option B). Supersedes the cloud→local handoff of the same
-date; that procedure was executed and is preserved in the M2 report.
+**Updated:** 2026-07-22 (local session on the founder's machine). M4 product
+milestone in progress.
 
 ## Status
 
-- **M1: accepted** (founder, 2026-07-20).
-- **M2: accepted.** The ADR-001 / DL-2026-012 binding real-Supabase verification
-  was executed on the founder's machine 2026-07-20: identical committed
-  migrations, full suite, **42/42 passing on the genuine local Supabase stack**
-  (no shim; zero behavioral differences). Results, environment, and exact
-  commands: `docs/milestone-reports/M2_report.md`, final section. Conditions 3–4
-  of DL-2026-012 are discharged with that report's commit and push.
-- **G1/G2 governance milestones: complete** (see `docs/governance/`, DECISION_LOG
-  founder directions of 2026-07-20).
-- **M3: not started — no production code may be written yet.** Two documents
-  await founder approval:
-  1. `docs/milestone-reports/M3_plan.md` — technical implementation plan
-     (auth architecture, acceptance criteria; §10 lists the founder decisions
-     it needs).
-  2. `docs/milestone-reports/M3_execution_plan.md` — phase-by-phase execution
-     sequencing per the founder's 2026-07-20 direction that every milestone end
-     with visible, clickable product for founder review.
+- **M1, M2: accepted** (M2 real-Supabase binding verification 2026-07-20, 42/42;
+  see `docs/milestone-reports/M2_report.md`).
+- **G1/G2 governance milestones: complete** (see `docs/governance/`).
+- **M3: accepted** — shared auth extraction (M3-S), session integrity /
+  revocation / recovery (M3-3), forced rotation + real TOTP MFA. Interim session
+  policy documented in ADR-003 (role-specific caps deferred).
+- **Brand: adopted** — official VYNE palette + canonical brand package
+  (`docs/brand/`), tokens in `@vyne/ui`, in-app design-system reference page.
+- **M4 (product milestone) — in progress.** Sequence: F1 → F2 → F3 → F4.
+  - **F1 — Advisor Workspace + Current Reality (the digital twin): accepted**
+    (founder, 2026-07-21), then deepened (editable executive summary, per-dimension
+    confidence, understanding). Proposal: `docs/milestone-reports/M4-F1_current_reality.md`.
+  - **F2 — the Conviction Engine: BUILT, awaiting founder walkthrough.** Founder
+    reframe (2026-07-21): measure *Conviction* (VYNE's confidence in its own
+    understanding), never *Readiness*; narrative-first, no scores/gauges/traffic
+    lights; explainable; honest about uncertainty. Proposal:
+    `docs/milestone-reports/M4-F2_decision_readiness.md`. Product philosophy:
+    `M4_product_plan.md` ("Express professional judgment, not algorithmic certainty").
+  - **F3 — Artifact Builder + lifecycle + cooling rule: not started.**
 - EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
   no secrets in the repo, milestone stops at M5 and M6 minimum.
 
@@ -38,19 +39,25 @@ date; that procedure was executed and is preserved in the M2 report.
 ```powershell
 cd vyne-platform
 npm install
-npx turbo run build typecheck        # 8/8 expected
+npx turbo run typecheck build        # 9/9 expected
 cd packages/db
 npx supabase start                   # requires Docker Desktop running
-npx supabase db reset                # re-apply committed migrations
-$env:VYNE_REAL_STACK="1"; npx vitest run   # M2 regression: 42/42 expected
+npx supabase db reset                # re-apply committed migrations (through 0011)
+npm run demo:reset                   # restore demo accounts + synthetic advisors
+$env:VYNE_REAL_STACK="1"; npx vitest run   # regression: 60/60 expected
+npm run dev --workspace @vyne/os     # OS app on http://localhost:3000
 ```
 
-(bash/zsh equivalent for the last step: `npm run test:real`.)
+(`packages/domain` unit suite: `npx vitest run` → 10/10, incl. the Conviction
+Engine.) A local demo dev server can also be started through the harness via
+`.claude/launch.json` (config `os`, port 3000).
 
 ## Next required action
 
-Founder review and approval of the M3 plan documents above (including the §10
-decisions in `M3_plan.md`). Only after that approval does M3 implementation
-begin. Authentication acceptance tests may not be weakened or deferred without a
-new, explicitly approved stop condition. The M2 real-stack suite is the standing
-regression gate: it must stay green (`42/42`) after every M3 change.
+**Founder walkthrough of F2 — the Conviction Engine.** Open an advisor
+(demo: Robert Halvorsen) → **Direction** tab. Verify it measures VYNE's
+conviction in *its own understanding* (never scores the advisor), speaks in calm
+language (no numbers/gauges/traffic lights), leads with "Our Current Perspective"
+narrative, and is honest about what we still need to understand. After sign-off,
+proceed to **F3 (Artifact Builder)**. The real-stack suite is the standing
+regression gate: it must stay green (`60/60`) after every M4 change.
