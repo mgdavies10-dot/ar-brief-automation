@@ -90,20 +90,27 @@ const db = new pg.Client({ connectionString: env.dbUrl });
 await db.connect();
 
 if (RESET) {
+  // In-place onboarding reset (NOT delete): restore the temporary password, the
+  // unrotated first-login flag, and clear MFA factors. Deleting the GoTrue user
+  // (and its public.users row) violates FKs once the account owns advisors, so
+  // we reset in place — the demo data (advisors, Current Reality) is preserved.
   for (const account of ACCOUNTS) {
     const existing = await findAuthUserByEmail(env, account.email);
-    if (existing) {
-      // public.users.auth_id references auth.users: remove referencing rows
-      // first (owner context; synthetic demo data only) or GoTrue's delete
-      // fails with a foreign-key violation.
-      await db.query(
-        "delete from public.advisor_accounts where user_id in (select id from public.users where auth_id = $1)",
-        [existing.id],
-      );
-      await db.query("delete from public.users where auth_id = $1", [existing.id]);
-      await admin(env, `/auth/v1/admin/users/${existing.id}`, { method: "DELETE" });
-      console.log(`reset: removed ${account.email}`);
+    if (!existing) continue;
+    await admin(env, `/auth/v1/admin/users/${existing.id}`, {
+      method: "PUT",
+      body: JSON.stringify({ password: account.password, email_confirm: true, app_metadata: { password_rotated: false } }),
+    });
+    try {
+      const fr = await admin(env, `/auth/v1/admin/users/${existing.id}/factors`);
+      const factors = Array.isArray(fr) ? fr : (fr.factors ?? []);
+      for (const f of factors) {
+        if (f?.id) await admin(env, `/auth/v1/admin/users/${existing.id}/factors/${f.id}`, { method: "DELETE" }).catch(() => {});
+      }
+    } catch {
+      /* no factors endpoint / none enrolled — fine */
     }
+    console.log(`reset: ${account.email} onboarding restored (in place)`);
   }
 }
 
