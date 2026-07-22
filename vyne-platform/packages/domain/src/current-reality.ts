@@ -72,8 +72,21 @@ export const practiceProfileSchema = z.object({
   successionStatus: z.string().optional(),
 });
 
-/** The full Current Reality shape (the JSONB dimensions of the twin). */
+/**
+ * Confidence in each captured dimension (begins confidence scoring). Absent =
+ * not yet understood ("still to learn"); the twin always communicates what it
+ * knows vs. what needs learning.
+ */
+export const CONFIDENCE_LEVELS = ["confirmed", "assumed"] as const;
+export type ConfidenceLevel = (typeof CONFIDENCE_LEVELS)[number];
+export const dimensionConfidenceSchema = z.record(z.string(), z.enum(CONFIDENCE_LEVELS)).default({});
+export type DimensionConfidence = z.infer<typeof dimensionConfidenceSchema>;
+
+/** The full Current Reality shape (the digital twin). */
 export const currentRealitySchema = z.object({
+  /** Recruiter-owned narrative — "here's how we understand your business."
+   *  Generated drafts only ever seed this; the human always holds the truth. */
+  executiveSummary: z.string().optional(),
   overview: z.string().optional(),
   practiceProfile: practiceProfileSchema.default({}),
   goals: z.array(goalSchema).default([]),
@@ -83,6 +96,7 @@ export const currentRealitySchema = z.object({
   frictions: z.array(observationSchema).default([]),
   findings: z.array(findingSchema).default([]),
   recruiterNotes: z.string().optional(),
+  dimensionConfidence: dimensionConfidenceSchema,
 });
 
 export type Goal = z.infer<typeof goalSchema>;
@@ -128,4 +142,70 @@ export function isDimensionComplete(cr: CurrentReality, dim: CurrentRealityDimen
 export function currentRealityCompleteness(cr: CurrentReality): number {
   const done = CURRENT_REALITY_DIMENSIONS.filter((d) => isDimensionComplete(cr, d)).length;
   return done / CURRENT_REALITY_DIMENSIONS.length;
+}
+
+export const DIMENSION_LABELS: Record<CurrentRealityDimension, string> = {
+  overview: "Overview",
+  practiceProfile: "The practice",
+  goals: "Goals",
+  motivations: "Why now",
+  constraints: "Constraints",
+  strengths: "Strengths",
+  frictions: "Frictions",
+  findings: "Findings",
+};
+
+/** Dimensions with no content yet — "what we still need to learn." */
+export function dimensionsToLearn(cr: CurrentReality): CurrentRealityDimension[] {
+  return CURRENT_REALITY_DIMENSIONS.filter((d) => !isDimensionComplete(cr, d));
+}
+
+/**
+ * Understanding (0–1) — completeness weighted by confidence. A confirmed
+ * dimension counts full; a captured-but-assumed dimension counts half; an
+ * empty dimension counts zero. This is what the platform reports as "how well
+ * we understand this business," distinct from raw completeness.
+ */
+export function understandingScore(cr: CurrentReality): number {
+  let score = 0;
+  for (const d of CURRENT_REALITY_DIMENSIONS) {
+    if (!isDimensionComplete(cr, d)) continue;
+    score += cr.dimensionConfidence[d] === "confirmed" ? 1 : 0.5;
+  }
+  return score / CURRENT_REALITY_DIMENSIONS.length;
+}
+
+function listPhrase(items: string[]): string {
+  const xs = items.map((s) => s.trim()).filter(Boolean);
+  if (xs.length <= 1) return xs.join("");
+  if (xs.length === 2) return `${xs[0]} and ${xs[1]}`;
+  return `${xs.slice(0, -1).join(", ")}, and ${xs[xs.length - 1]}`;
+}
+
+/**
+ * Compose a STARTING-POINT executive narrative from the captured structure.
+ * Deterministic (no AI; EA-001) — the recruiter always edits this into the
+ * final. Voice: a consultant summarizing the business, not a data dump.
+ */
+export function generateSummaryDraft(cr: CurrentReality, advisorName: string): string {
+  const first = advisorName.split(" ")[0] || "The advisor";
+  const parts: string[] = [];
+  if (cr.overview?.trim()) parts.push(cr.overview.trim());
+
+  const pp = cr.practiceProfile;
+  const facts: string[] = [];
+  if (pp.serviceModel) facts.push(`a ${pp.serviceModel} practice`);
+  if (pp.teamStructure) facts.push(pp.teamStructure);
+  if (pp.yearsInBusiness) facts.push(`${pp.yearsInBusiness} years in business`);
+  if (pp.custodianOrPlatform) facts.push(`on ${pp.custodianOrPlatform}`);
+  if (facts.length) parts.push(`${first} runs ${listPhrase(facts)}.`);
+
+  if (cr.goals.length) parts.push(`${first} is focused on ${listPhrase(cr.goals.map((g) => g.text))}.`);
+  if (cr.motivations.length) parts.push(`What's driving the conversation now: ${listPhrase(cr.motivations.map((m) => m.text))}.`);
+  if (cr.strengths.length) parts.push(`Notable strengths include ${listPhrase(cr.strengths.map((s) => s.text))}.`);
+  if (cr.frictions.length) parts.push(`Frictions holding the practice back: ${listPhrase(cr.frictions.map((f) => f.text))}.`);
+  if (cr.constraints.length) parts.push(`Constraints to navigate: ${listPhrase(cr.constraints.map((c) => c.text))}.`);
+  if (cr.findings.length) parts.push(`Our read: ${listPhrase(cr.findings.map((f) => f.text))}.`);
+
+  return parts.join("\n\n");
 }

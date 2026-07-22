@@ -140,6 +140,32 @@ right is what makes the platform feel connected rather than like separate tools.
 - Living record (updated in place) — artifacts snapshot it at publish (M5), so
   Current Reality always reflects the *current* truth.
 
+## Post-approval deepening (founder direction 2026-07-21 — "the digital twin is the differentiator")
+
+Built on top of the approved F1 to invest in the twin per the four principles:
+
+1. **Conversational, not field-collection** — authoring prompts read as a
+   consultant's questions; the generated summary is prose, not a data dump.
+2. **"Here's how we understand your business"** — the Overview is reframed to
+   exactly this, led by the executive narrative.
+3. **Editable Executive Summary** — a recruiter-owned `executive_summary` field
+   (migration 0010). A "Draft from what we've captured" action composes a
+   deterministic starting point (`generateSummaryDraft`, no AI) from the
+   structured dimensions; the recruiter always edits it into the final. When
+   unedited, the Overview shows the draft, clearly marked as a starting point.
+4. **Completeness + confidence scoring** — per-dimension confidence
+   (`dimension_confidence`, migration 0010; confirmed / assumed / unknown). The
+   Overview reports **"% understood"** = completeness weighted by confidence
+   (`understandingScore`), plus a **"what we still need to learn"** panel
+   (`dimensionsToLearn`). The platform now always says what it knows and what it
+   doesn't.
+
+Data-model note: `executive_summary` is a first-class editable column;
+`dimension_confidence` is JSONB — both additive (migration 0010, no table/policy
+change). Verified: real-stack 60/60 (rollback test updated to 0010 columns),
+build+typecheck 9/9, and the draft → edit → save → understanding-meter loop
+confirmed end-to-end in the browser.
+
 ## Architecture / scope notes (for transparency)
 
 - Likely needs **one reviewed migration** (a `current_reality` authoring store

@@ -3,12 +3,15 @@
 import { useState } from "react";
 import {
   type CurrentReality,
+  type CurrentRealityDimension,
+  type ConfidenceLevel,
   CONSTRAINT_KINDS,
   FINDING_KINDS,
   GOAL_PRIORITIES,
-  GOAL_HORIZONS,
+  CONFIDENCE_LEVELS,
   isDimensionComplete,
   currentRealityCompleteness,
+  generateSummaryDraft,
 } from "@vyne/domain";
 import { saveCurrentReality } from "./actions";
 
@@ -86,6 +89,7 @@ const PROFILE_FIELDS: { key: keyof CurrentReality["practiceProfile"]; label: str
 ];
 
 const SECTIONS = [
+  { key: "executiveSummary", label: "Executive summary", hint: "How we understand this business, in your words. Draft a starting point from what you've captured, then make it yours." },
   { key: "overview", label: "Overview", hint: "The practice in a few sentences — as a consultant would summarize it." },
   { key: "practiceProfile", label: "Practice profile", hint: "How the business is built." },
   { key: "goals", label: "Goals", hint: "What they're trying to accomplish." },
@@ -97,14 +101,23 @@ const SECTIONS = [
   { key: "recruiterNotes", label: "Your notes", hint: "Context and judgment only you can add." },
 ] as const;
 
-export function RealityEditor({ advisorId, initial }: { advisorId: string; initial: CurrentReality }) {
+const DIMENSION_KEYS = ["overview", "practiceProfile", "goals", "motivations", "constraints", "strengths", "frictions", "findings"];
+
+export function RealityEditor({ advisorId, advisorName, initial }: { advisorId: string; advisorName: string; initial: CurrentReality }) {
   const [cr, setCr] = useState<CurrentReality>(initial);
-  const [open, setOpen] = useState<string | null>("overview");
+  const [open, setOpen] = useState<string | null>("executiveSummary");
   const [saving, setSaving] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   const set = <K extends keyof CurrentReality>(k: K, v: CurrentReality[K]) => setCr((c) => ({ ...c, [k]: v }));
+  const setConfidence = (dim: string, level: ConfidenceLevel | undefined) =>
+    setCr((c) => {
+      const next = { ...c.dimensionConfidence };
+      if (level) next[dim] = level;
+      else delete next[dim];
+      return { ...c, dimensionConfidence: next };
+    });
 
   async function save() {
     setSaving(true);
@@ -126,7 +139,10 @@ export function RealityEditor({ advisorId, initial }: { advisorId: string; initi
 
       <div className="cr-sections">
         {SECTIONS.map((s) => {
-          const done = isDimensionComplete(cr, s.key as never) || (s.key === "recruiterNotes" && Boolean(cr.recruiterNotes?.trim()));
+          const done =
+            (DIMENSION_KEYS.includes(s.key) && isDimensionComplete(cr, s.key as CurrentRealityDimension)) ||
+            (s.key === "recruiterNotes" && Boolean(cr.recruiterNotes?.trim())) ||
+            (s.key === "executiveSummary" && Boolean(cr.executiveSummary?.trim()));
           const isOpen = open === s.key;
           return (
             <section className={`cr-section${isOpen ? " is-open" : ""}`} key={s.key}>
@@ -138,7 +154,17 @@ export function RealityEditor({ advisorId, initial }: { advisorId: string; initi
               {isOpen ? (
                 <div className="cr-section-body">
                   <p className="cr-hint">{s.hint}</p>
-                  {s.key === "overview" ? (
+                  {s.key === "executiveSummary" ? (
+                    <>
+                      <div className="cr-summary-actions">
+                        <button type="button" className="cr-add" onClick={() => set("executiveSummary", generateSummaryDraft(cr, advisorName))}>
+                          Draft from what we&rsquo;ve captured
+                        </button>
+                        <span className="cr-summary-hint">A starting point — always yours to edit.</span>
+                      </div>
+                      <textarea className="cr-textarea" rows={9} value={cr.executiveSummary ?? ""} onChange={(e) => set("executiveSummary", e.target.value)} placeholder="How we understand this business…" />
+                    </>
+                  ) : s.key === "overview" ? (
                     <textarea className="cr-textarea" rows={5} value={cr.overview ?? ""} onChange={(e) => set("overview", e.target.value)} />
                   ) : s.key === "recruiterNotes" ? (
                     <textarea className="cr-textarea" rows={4} value={cr.recruiterNotes ?? ""} onChange={(e) => set("recruiterNotes", e.target.value)} />
@@ -173,7 +199,21 @@ export function RealityEditor({ advisorId, initial }: { advisorId: string; initi
                       placeholder={`Add ${s.label.toLowerCase()}…`}
                     />
                   )}
-                  {/* goals horizon note kept simple: priority only in v1 */}
+                  {DIMENSION_KEYS.includes(s.key) ? (
+                    <div className="cr-confidence">
+                      <span className="cr-confidence-label">How well do we know this?</span>
+                      {CONFIDENCE_LEVELS.map((lvl) => (
+                        <button
+                          key={lvl}
+                          type="button"
+                          className={`cr-conf-btn${cr.dimensionConfidence[s.key] === lvl ? " is-on" : ""}`}
+                          onClick={() => setConfidence(s.key, cr.dimensionConfidence[s.key] === lvl ? undefined : lvl)}
+                        >
+                          {lvl}
+                        </button>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
               ) : null}
             </section>

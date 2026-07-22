@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { currentRealitySchema, currentRealityCompleteness, type CurrentReality } from "@vyne/domain";
+import {
+  currentRealitySchema,
+  currentRealityCompleteness,
+  understandingScore,
+  dimensionsToLearn,
+  generateSummaryDraft,
+  DIMENSION_LABELS,
+  type CurrentReality,
+} from "@vyne/domain";
 import { RealityEditor } from "./reality-editor";
 
 const fmtMoney = (v: number | null | undefined) =>
@@ -9,6 +17,7 @@ const fmtMoney = (v: number | null | undefined) =>
 
 function toCurrentReality(row: Record<string, unknown> | null | undefined): CurrentReality {
   const parsed = currentRealitySchema.safeParse({
+    executiveSummary: (row?.executive_summary as string) ?? undefined,
     overview: (row?.overview as string) ?? undefined,
     practiceProfile: row?.practice_profile ?? {},
     goals: row?.goals ?? [],
@@ -18,6 +27,7 @@ function toCurrentReality(row: Record<string, unknown> | null | undefined): Curr
     frictions: row?.frictions ?? [],
     findings: row?.findings ?? [],
     recruiterNotes: (row?.recruiter_notes as string) ?? undefined,
+    dimensionConfidence: row?.dimension_confidence ?? {},
   });
   return parsed.success ? parsed.data : currentRealitySchema.parse({});
 }
@@ -28,15 +38,49 @@ const PROFILE_LABELS: Record<string, string> = {
   clientAcquisition: "Client acquisition", growthTrajectory: "Growth", successionStatus: "Succession",
 };
 
-/** Executive-quality read view — the "hand it to a managing partner" render. */
-function RealitySummary({ cr, name }: { cr: CurrentReality; name: string }) {
+/** Executive-quality read view — "here's how we understand your business." */
+function RealitySummary({ cr, name, advisorId }: { cr: CurrentReality; name: string; advisorId: string }) {
+  const first = name.split(" ")[0];
   const profileEntries = Object.entries(cr.practiceProfile).filter(([, v]) => v !== undefined && v !== "");
   const list = (items: { text: string }[]) =>
     items.length ? <ul className="sum-list">{items.map((i, k) => <li key={k}>{i.text}</li>)}</ul> : null;
+
+  const understanding = Math.round(understandingScore(cr) * 100);
+  const toLearn = dimensionsToLearn(cr);
+  const draft = generateSummaryDraft(cr, name);
+  const summaryText = cr.executiveSummary?.trim() || draft;
+  const isDraft = !cr.executiveSummary?.trim() && Boolean(draft);
+
   return (
     <article className="summary">
-      <p className="summary-kicker">Current Reality · {name}</p>
-      {cr.overview ? <p className="summary-lede">{cr.overview}</p> : null}
+      <p className="summary-kicker">Here&rsquo;s how we understand {first}&rsquo;s business</p>
+
+      <div className="understanding">
+        <div className="understanding-meter"><span style={{ width: `${understanding}%` }} /></div>
+        <span className="understanding-label">{understanding}% understood</span>
+      </div>
+
+      {summaryText ? (
+        <div className="summary-exec">
+          {isDraft ? (
+            <p className="summary-draft-note">
+              A starting point drafted from what we&rsquo;ve captured — <a href={`/advisors/${advisorId}?tab=reality`}>refine it in Current Reality</a>. It&rsquo;s always yours to edit.
+            </p>
+          ) : null}
+          {summaryText.split(/\n{2,}/).map((para, k) => <p className="summary-para" key={k}>{para}</p>)}
+        </div>
+      ) : null}
+
+      {toLearn.length ? (
+        <section className="learn">
+          <h3 className="learn-h">What we still need to learn</h3>
+          <div className="learn-chips">
+            {toLearn.map((d) => <span className="learn-chip" key={d}>{DIMENSION_LABELS[d]}</span>)}
+          </div>
+        </section>
+      ) : null}
+
+      {cr.overview && cr.executiveSummary ? <p className="summary-lede">{cr.overview}</p> : null}
 
       {profileEntries.length ? (
         <section className="summary-block">
@@ -121,7 +165,7 @@ export default async function AdvisorWorkspace({
       <div className="ws-body">
         {activeTab === "overview" ? (
           hasContent ? (
-            <RealitySummary cr={cr} name={name} />
+            <RealitySummary cr={cr} name={name} advisorId={id} />
           ) : (
             <div className="ws-checklist">
               <h2 className="ws-checklist-title">Let&rsquo;s begin.</h2>
@@ -134,7 +178,7 @@ export default async function AdvisorWorkspace({
             </div>
           )
         ) : (
-          <RealityEditor advisorId={id} initial={cr} />
+          <RealityEditor advisorId={id} advisorName={name} initial={cr} />
         )}
       </div>
     </div>

@@ -29,6 +29,7 @@ export async function saveCurrentReality(
   const { data: profile } = await supabase.from("users").select("id").eq("auth_id", user.id).maybeSingle();
 
   const row = {
+    executive_summary: cr.executiveSummary ?? null,
     overview: cr.overview ?? null,
     practice_profile: cr.practiceProfile,
     goals: cr.goals,
@@ -38,6 +39,7 @@ export async function saveCurrentReality(
     frictions: cr.frictions,
     findings: cr.findings,
     recruiter_notes: cr.recruiterNotes ?? null,
+    dimension_confidence: cr.dimensionConfidence,
     status,
   };
 

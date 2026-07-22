@@ -13,6 +13,14 @@ async function tableExists(name: string): Promise<boolean> {
   return (r.rowCount ?? 0) > 0;
 }
 
+async function columnExists(table: string, column: string): Promise<boolean> {
+  const r = await owner.query(
+    "select 1 from information_schema.columns where table_schema='public' and table_name=$1 and column_name=$2",
+    [table, column],
+  );
+  return (r.rowCount ?? 0) > 0;
+}
+
 beforeAll(async () => {
   await freshDatabase(DB);
   owner = await ownerClient(DB);
@@ -23,16 +31,17 @@ afterAll(async () => {
 });
 
 describe("migration rollback (EA-001 acceptance: rollback of latest migration verified)", () => {
-  it("rolls back the latest migration (0009_current_reality) and re-applies cleanly", async () => {
-    expect(await tableExists("current_reality")).toBe(true);
-    applyRollback(DB, "0009_current_reality_down.sql");
-    expect(await tableExists("current_reality")).toBe(false);
-    applyMigration(DB, "0009_current_reality.sql");
-    expect(await tableExists("current_reality")).toBe(true);
+  it("rolls back the latest migration (0010_current_reality_understanding) and re-applies cleanly", async () => {
+    expect(await columnExists("current_reality", "executive_summary")).toBe(true);
+    applyRollback(DB, "0010_current_reality_understanding_down.sql");
+    expect(await columnExists("current_reality", "executive_summary")).toBe(false);
+    applyMigration(DB, "0010_current_reality_understanding.sql");
+    expect(await columnExists("current_reality", "executive_summary")).toBe(true);
   });
 
   it("full down-chain leaves an empty public schema; full re-apply restores all 15 tables", async () => {
     const downs = [
+      "0010_current_reality_understanding_down.sql",
       "0009_current_reality_down.sql",
       "0008_auth_claims_hook_down.sql",
       "0007_audit_down.sql",
@@ -59,6 +68,7 @@ describe("migration rollback (EA-001 acceptance: rollback of latest migration ve
       "0007_audit.sql",
       "0008_auth_claims_hook.sql",
       "0009_current_reality.sql",
+      "0010_current_reality_understanding.sql",
     ]) {
       applyMigration(DB, m);
     }
