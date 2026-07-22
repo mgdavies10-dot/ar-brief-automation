@@ -23,16 +23,18 @@ afterAll(async () => {
 });
 
 describe("migration rollback (EA-001 acceptance: rollback of latest migration verified)", () => {
-  it("rolls back the latest migration (0007_audit) and re-applies cleanly", async () => {
-    expect(await tableExists("audit_events")).toBe(true);
-    applyRollback(DB, "0007_audit_down.sql");
-    expect(await tableExists("audit_events")).toBe(false);
-    applyMigration(DB, "0007_audit.sql");
-    expect(await tableExists("audit_events")).toBe(true);
+  it("rolls back the latest migration (0009_current_reality) and re-applies cleanly", async () => {
+    expect(await tableExists("current_reality")).toBe(true);
+    applyRollback(DB, "0009_current_reality_down.sql");
+    expect(await tableExists("current_reality")).toBe(false);
+    applyMigration(DB, "0009_current_reality.sql");
+    expect(await tableExists("current_reality")).toBe(true);
   });
 
-  it("full down-chain leaves an empty public schema; full re-apply restores all 14 tables", async () => {
+  it("full down-chain leaves an empty public schema; full re-apply restores all 15 tables", async () => {
     const downs = [
+      "0009_current_reality_down.sql",
+      "0008_auth_claims_hook_down.sql",
       "0007_audit_down.sql",
       "0006_activity_tasks_down.sql",
       "0005_documents_artifacts_down.sql",
@@ -55,13 +57,15 @@ describe("migration rollback (EA-001 acceptance: rollback of latest migration ve
       "0005_documents_artifacts.sql",
       "0006_activity_tasks.sql",
       "0007_audit.sql",
+      "0008_auth_claims_hook.sql",
+      "0009_current_reality.sql",
     ]) {
       applyMigration(DB, m);
     }
     const restored = await owner.query(
       "select count(*)::int as n from information_schema.tables where table_schema = 'public'",
     );
-    // 13 EA tables + decision_types lookup
-    expect(restored.rows[0].n).toBe(14);
+    // 13 EA tables + decision_types lookup + current_reality
+    expect(restored.rows[0].n).toBe(15);
   });
 });

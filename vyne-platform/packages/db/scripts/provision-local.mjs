@@ -120,5 +120,17 @@ for (const account of ACCOUNTS) {
   console.log(`provisioned ${account.role.padEnd(9)} ${account.email}`);
 }
 
+// Demo reference firms so advisor creation has firm options (F4 will expand the
+// full synthetic seed). Idempotent via fixed ids.
+const FIRMS = [
+  ["a0000000-0000-4000-8000-000000000001", "Meridian Wealth Partners (Demo)", "independent_ria"],
+  ["a0000000-0000-4000-8000-000000000002", "Kingsley Financial Group (Demo)", "wirehouse"],
+  ["a0000000-0000-4000-8000-000000000003", "Northpoint Advisors (Demo)", "regional_bd"],
+];
+for (const [id, name, channel] of FIRMS) {
+  await db.query("insert into public.firms (id, name, channel) values ($1,$2,$3) on conflict (id) do nothing", [id, name, channel]);
+}
+console.log(`seeded ${FIRMS.length} demo firms`);
+
 await db.end();
 console.log("\nSynthetic demo accounts ready (passwords are demonstration values, local only).");

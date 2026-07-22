@@ -17,3 +17,36 @@ export type {
   DocumentClassification,
   Role,
 } from "./vocabulary";
+
+export {
+  GOAL_PRIORITIES,
+  GOAL_HORIZONS,
+  CONSTRAINT_KINDS,
+  FINDING_KINDS,
+  CURRENT_REALITY_STATUSES,
+  CURRENT_REALITY_DIMENSIONS,
+  goalSchema,
+  motivationSchema,
+  constraintSchema,
+  observationSchema,
+  findingSchema,
+  practiceProfileSchema,
+  currentRealitySchema,
+  isDimensionComplete,
+  currentRealityCompleteness,
+} from "./current-reality";
+export type {
+  GoalPriority,
+  GoalHorizon,
+  ConstraintKind,
+  FindingKind,
+  Goal,
+  Motivation,
+  Constraint,
+  Observation,
+  Finding,
+  PracticeProfile,
+  CurrentReality,
+  CurrentRealityStatus,
+  CurrentRealityDimension,
+} from "./current-reality";
