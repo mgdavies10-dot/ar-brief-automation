@@ -134,6 +134,40 @@ The long-term test: an advisor finishes a meeting thinking *"they understand my
 business better than anyone I've spoken to"* — not because VYNE asked the most
 questions, but because it synthesized everything into thoughtful judgment.
 
+**The engine is internal; the advisor never sees it** (founder, 2026-07-22).
+"Conviction Engine" is an *internal* name. Advisors experience something much
+simpler and more human: **Our Perspective** / **Our Current Perspective**.
+Internally VYNE may reason about **coverage, confidence, freshness, evidence, and
+assumptions**; externally the advisor simply experiences thoughtful guidance.
+Keep that wall firm — never surface internal state (fields, charts, progress
+indicators, scores) as the experience. Every recommendation should read like a
+**senior consultant** talking, never like software, AI, or compliance language:
+*"We've spent time understanding your practice. Here's how we're currently
+thinking about it. Here's why. Here's what we'd still like to learn before making
+a stronger recommendation."* Conversational affordances, too — *"View our current
+perspective," "Continue building our understanding," "Discuss potential paths
+forward," "Explore transition options"* — never a mechanical "Begin our
+perspective."
+
+**Recommendations evolve, not flip** (founder, 2026-07-22 — first-class M4
+principle). A recommendation must never lurch from *"no recommendation"* to
+*"strong recommendation."* It **matures gradually** as the twin becomes more
+complete, and the advisor should feel VYNE's thinking *developing over time*. This
+is why conviction is a gradient (still forming → developing → sufficient → deep),
+why the perspective is a living artifact that is *refined*, not re-issued, and why
+we say plainly when new information could still change our view. Architecturally:
+never gate the perspective behind a hard binary; let it deepen.
+
+## The Artifact Builder's north star (F3 — think before building)
+
+Founder question to hold before F3: *"If I removed every field, chart, progress
+indicator, and internal state from the screen — what conversation would still
+remain? Build the artifact around that conversation. Not around the data. The
+data supports the story; the story creates trust."* The Current Reality Record is
+**a consultant's letter, not a report** — it opens with how we understand the
+practice and where our thinking is heading, and the structured detail sits
+underneath in service of that narrative.
+
 ## Twin evolution — architecture to leave room for (don't build yet)
 
 Design so these slot in without a schema redesign; do not build them now:

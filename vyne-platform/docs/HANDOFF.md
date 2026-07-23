@@ -17,13 +17,18 @@ milestone in progress.
   - **F1 — Advisor Workspace + Current Reality (the digital twin): accepted**
     (founder, 2026-07-21), then deepened (editable executive summary, per-dimension
     confidence, understanding). Proposal: `docs/milestone-reports/M4-F1_current_reality.md`.
-  - **F2 — the Conviction Engine: BUILT, awaiting founder walkthrough.** Founder
-    reframe (2026-07-21): measure *Conviction* (VYNE's confidence in its own
-    understanding), never *Readiness*; narrative-first, no scores/gauges/traffic
-    lights; explainable; honest about uncertainty. Proposal:
-    `docs/milestone-reports/M4-F2_decision_readiness.md`. Product philosophy:
-    `M4_product_plan.md` ("Express professional judgment, not algorithmic certainty").
-  - **F3 — Artifact Builder + lifecycle + cooling rule: not started.**
+  - **F2 — the Conviction Engine: accepted** (founder, 2026-07-22), with binding
+    refinements applied: the engine is *internal* only — advisors experience
+    **"Our Perspective"**; consulting voice, not software/AI; conversational
+    affordances; and the new principle **recommendations evolve, not flip**. Measures
+    *Conviction* (VYNE's confidence in its own understanding), never *Readiness*;
+    narrative-first, no scores/gauges/traffic lights. Proposal:
+    `docs/milestone-reports/M4-F2_decision_readiness.md`. Decision recorded in
+    `DECISION_LOG.md` (2026-07-22, pending DL numbering).
+  - **F3 — Artifact Builder (Premium Current Reality Record) + lifecycle + cooling
+    rule: not started.** North star (founder): build the artifact around the
+    *conversation* that would remain if every field/chart/indicator were removed —
+    a consultant's letter, not a report. Proposal (six sections) is the next step.
 - EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
   no secrets in the repo, milestone stops at M5 and M6 minimum.
 
@@ -54,10 +59,12 @@ Engine.) A local demo dev server can also be started through the harness via
 
 ## Next required action
 
-**Founder walkthrough of F2 — the Conviction Engine.** Open an advisor
-(demo: Robert Halvorsen) → **Direction** tab. Verify it measures VYNE's
-conviction in *its own understanding* (never scores the advisor), speaks in calm
-language (no numbers/gauges/traffic lights), leads with "Our Current Perspective"
-narrative, and is honest about what we still need to understand. After sign-off,
-proceed to **F3 (Artifact Builder)**. The real-stack suite is the standing
+**F3 — the Premium Current Reality Record (Artifact Builder).** Produce the
+six-section proposal first (Advisor Problem · Why It Matters · Alternatives ·
+Advisor Experience · Business Value · Founder Acceptance Criteria), designed
+around the founder's north star: the *conversation* that remains when every
+field/chart/indicator is stripped away — a consultant's letter opening with how
+we understand the practice, structured detail underneath in service of the story.
+Then build Draft → In review → Approved with the cooling rule as felt behavior
+(publishing to the advisor is M5). The real-stack suite is the standing
 regression gate: it must stay green (`60/60`) after every M4 change.

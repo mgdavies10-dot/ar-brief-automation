@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { DECISION_TYPES, type DecisionType, type Recommendation, type ConvictionReading } from "@vyne/domain";
 import { saveDirection } from "./actions";
@@ -240,23 +241,28 @@ export function DirectionPanel({
       ) : conviction.canBeginDiscussion ? (
         <section className="perspective perspective-ready">
           <p className="perspective-ready-note">
-            We understand {advisorFirst}’s business well enough to begin shaping a perspective.
+            We understand {advisorFirst}’s practice well enough to discuss potential paths forward.
           </p>
           <button type="button" className="btn-primary" onClick={() => setEditing(true)}>
-            Begin our perspective
+            Share our perspective
           </button>
         </section>
       ) : (
         <section className="perspective perspective-forming">
           <p className="perspective-forming-note">
-            We’re not ready to offer a perspective yet — and we’d rather be honest than fast.
+            We’re still getting to know {advisorFirst}’s practice, and our thinking is developing.
             {conviction.stillToLearn.length
-              ? ` Before we do, we still want to understand ${advisorFirst}’s ${listPhrase(conviction.stillToLearn)}.`
+              ? ` Before we share a perspective, we’d like to understand ${advisorFirst}’s ${listPhrase(conviction.stillToLearn)} more fully.`
               : ""}
           </p>
-          <button type="button" className="btn-ghost" onClick={() => setEditing(true)}>
-            {hasDecision ? "Edit the decision" : "Frame the decision"}
-          </button>
+          <div className="perspective-actions">
+            <Link href={`/advisors/${advisorId}?tab=reality`} className="btn-primary">
+              Continue building our understanding
+            </Link>
+            <button type="button" className="btn-ghost" onClick={() => setEditing(true)}>
+              {hasDecision ? "Edit this decision" : "Frame this decision"}
+            </button>
+          </div>
         </section>
       )}
     </section>

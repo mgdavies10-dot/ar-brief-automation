@@ -8,11 +8,18 @@ import {
 } from "./current-reality";
 
 /**
- * The Conviction Engine (M4-F2). Founder direction 2026-07-21: measure
- * CONVICTION (VYNE's confidence in its own understanding), never READINESS
- * (software judging the advisor). It expresses professional judgment in calm
- * language — no scores, no traffic lights, no gauges — and it always keeps the
- * burden on us. Recommendations emerge from the digital twin, not a scorecard.
+ * The Conviction Engine (M4-F2) — the INTERNAL name for the reasoning that
+ * powers the advisor-facing "Our Perspective" surface. Founder direction
+ * 2026-07-21/22:
+ * - Measure CONVICTION (VYNE's confidence in its own understanding), never
+ *   READINESS (software judging the advisor).
+ * - The engine is internal; the advisor never sees it. Internally we may reason
+ *   about coverage / confidence / freshness / evidence / assumptions; externally
+ *   the advisor simply experiences thoughtful guidance.
+ * - Every sentence reads like a senior consultant, not software: "We've spent
+ *   time understanding your practice; here's how we're currently thinking about
+ *   it; here's what we'd still like to learn." No scores, gauges, or traffic
+ *   lights. Recommendations emerge from the twin and evolve — they never flip.
  */
 
 export const CONVICTION_LEVELS = ["forming", "developing", "sufficient", "confident"] as const;
@@ -65,10 +72,10 @@ export function assessConviction(cr: CurrentReality, advisorName: string): Convi
     score < 0.25 ? "forming" : score < 0.5 ? "developing" : score < 0.75 ? "sufficient" : "confident";
 
   const headline: string = {
-    forming: `Our understanding of ${first}'s business is still forming.`,
-    developing: `Our understanding of ${first}'s business is developing.`,
-    sufficient: `We understand ${first}'s business well enough to begin discussing potential paths forward.`,
-    confident: `We have strong conviction in our understanding of ${first}'s business.`,
+    forming: `We're still getting to know ${first}'s practice.`,
+    developing: `Our understanding of ${first}'s practice is developing.`,
+    sufficient: `We understand ${first}'s practice well enough to discuss potential paths forward.`,
+    confident: `We understand ${first}'s practice deeply — enough to make a considered recommendation.`,
   }[level];
 
   const understanding: DimensionUnderstanding[] = CURRENT_REALITY_DIMENSIONS.map((d) => {
@@ -81,7 +88,7 @@ export function assessConviction(cr: CurrentReality, advisorName: string): Convi
         ? `We understand ${first}'s ${noun} well.`
         : standing === "working"
           ? `We have a working read on ${first}'s ${noun}, though we'd want to confirm it.`
-          : `We still need to understand ${first}'s ${noun}.`;
+          : `We'd still like to understand ${first}'s ${noun}.`;
     return { dimension: d, standing, phrase };
   });
 

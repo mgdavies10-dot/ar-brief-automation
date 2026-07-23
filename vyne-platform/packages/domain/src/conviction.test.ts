@@ -12,7 +12,7 @@ describe("assessConviction — Conviction Engine (F2)", () => {
     const c = assessConviction(twin(), "Robert Halvorsen");
     expect(c.level).toBe("forming");
     // Speaks about OUR understanding, never scores the advisor.
-    expect(c.headline).toBe("Our understanding of Robert's business is still forming.");
+    expect(c.headline).toBe("We're still getting to know Robert's practice.");
     expect(c.canBeginDiscussion).toBe(false);
     // Every dimension reads as something WE still need to understand.
     expect(c.understanding.every((u) => u.standing === "unknown")).toBe(true);
@@ -59,7 +59,7 @@ describe("assessConviction — Conviction Engine (F2)", () => {
     });
     const c = assessConviction(cr, "Robert Halvorsen");
     expect(c.canBeginDiscussion).toBe(true);
-    expect(c.headline).toContain("begin discussing potential paths forward");
+    expect(c.headline).toContain("discuss potential paths forward");
   });
 
   it("reaches confident, and still admits material uncertainty while any gap remains", () => {
@@ -88,6 +88,6 @@ describe("assessConviction — Conviction Engine (F2)", () => {
 
   it("falls back gracefully when no advisor name is available", () => {
     const c = assessConviction(twin(), "");
-    expect(c.headline).toBe("Our understanding of this advisor's business is still forming.");
+    expect(c.headline).toBe("We're still getting to know this advisor's practice.");
   });
 });

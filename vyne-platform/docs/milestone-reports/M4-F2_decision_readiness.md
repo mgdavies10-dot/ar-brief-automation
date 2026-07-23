@@ -14,6 +14,16 @@ confidence · reduce transition uncertainty · trust before persuasion ·
 > stays on us, and the advisor is *never scored*. This distinction is important
 > enough that it shapes everything from the copy to the information architecture.
 
+> **Internal engine vs. external experience (founder, 2026-07-22).** "Conviction
+> Engine" is an **internal** name — the advisor never sees it. Externally they
+> experience **"Our Perspective" / "Our Current Perspective."** Internally VYNE
+> reasons about coverage / confidence / freshness / evidence / assumptions;
+> externally the advisor simply experiences thoughtful, senior-consultant
+> guidance. Affordances are conversational (*"Share our perspective," "Continue
+> building our understanding," "Discuss potential paths forward"*), never a
+> mechanical "Begin our perspective." And **recommendations evolve, not flip** —
+> the perspective matures with the twin rather than switching on.
+
 ## Advisor Problem
 
 An advisor facing a consequential decision — stay, move, go independent — is
@@ -72,9 +82,10 @@ consultation). What the internal team sees, on a **Direction** surface:
   we're assuming · what could change our view.*
 - **An honest uncertainty note** when more information would materially change the
   view — surfaced, not hidden.
-- **"Begin our perspective"** appears only when conviction is sufficient; when it
-  isn't, the space calmly explains what we still need to understand — discipline
-  felt as care, not friction.
+- **A conversational affordance** ("Share our perspective") appears only when
+  conviction is sufficient; when it isn't, the space calmly invites *"Continue
+  building our understanding"* and names what we'd still like to learn —
+  discipline felt as care, not friction.
 
 ## Business Value
 
@@ -98,8 +109,9 @@ consultation). What the internal team sees, on a **Direction** surface:
 4. Understanding is expressed **per dimension in calm sentences**, drawn from the
    twin (F1) — understanding thinking, not completion thinking.
 5. When more information would **materially change** the view, VYNE says so.
-6. **"Begin our perspective" is earned** — present only when conviction is
-   sufficient; otherwise the space explains what we still need to understand.
+6. **The perspective is earned** — the "Share our perspective" affordance is
+   present only when conviction is sufficient; otherwise the space invites
+   continued learning and names what we'd still like to understand.
 7. A decision has a **plain-language question**; recruiter augmentation intact;
    RLS inherits the advisor (real-stack tested); design-system + AA; advisor-first
    language.

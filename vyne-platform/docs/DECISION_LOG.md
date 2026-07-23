@@ -23,6 +23,33 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-22 — **Conviction, not Readiness; the engine is internal; "Our
+  Perspective" is the experience; recommendations evolve, not flip.** Founder
+  approved the F2 Conviction Engine direction and set binding refinements (a
+  genuine product decision future contributors must understand). Rulings:
+  (1) **Measure Conviction (VYNE's confidence in its own understanding), never
+  Readiness** — the advisor is never scored; the burden stays on VYNE.
+  (2) **The "Conviction Engine" is an internal concept only.** Advisors never see
+  it; externally they experience **"Our Perspective" / "Our Current
+  Perspective."** Internal reasoning (coverage / confidence / freshness /
+  evidence / assumptions) never surfaces as the experience.
+  (3) **Consulting voice, not software/AI/compliance** — every recommendation
+  reads like a senior consultant ("We've spent time understanding your practice;
+  here's how we're currently thinking about it; here's why; here's what we'd
+  still like to learn"). Narrative precedes indicators; uncertainty is stated
+  honestly. Conversational affordances only ("Share our perspective," "Continue
+  building our understanding," "Discuss potential paths forward," "Explore
+  transition options") — the mechanical "Begin our perspective" is removed.
+  (4) **New first-class Product Philosophy principle — recommendations *evolve,
+  not flip*:** a recommendation matures gradually as the twin becomes more
+  complete; never a sudden jump from "no recommendation" to "strong
+  recommendation." (5) **F3 north star (before building the Artifact Builder):**
+  *"If I removed every field, chart, progress indicator, and internal state — what
+  conversation would remain? Build the artifact around that conversation, not the
+  data."* Scope stays exactly where it is: finish **Digital Twin → Our Perspective
+  → Premium Artifact**; Modeling / Firm Intelligence remain Horizon B (new EA).
+  Change level 2. Recorded in `M4_product_plan.md` (Product Philosophy) and the
+  F2 proposal; implemented in commit following `6257dca`.
 - 2026-07-21 — **Digital twin is VYNE's moat; twin-evolution direction; F2
   framing.** Founder approved F1 + the twin deepening (editable Executive
   Summary, confidence model, "what we still need to learn"). Strategic rulings

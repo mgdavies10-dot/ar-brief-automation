@@ -202,6 +202,8 @@
 .explain p { color: var(--vyne-navy); line-height: 1.55; max-width: 62ch; }
 .perspective-uncertainty { margin-top: calc(var(--vyne-unit) * 3); padding: calc(var(--vyne-unit) * 1.5) calc(var(--vyne-unit) * 2); background: var(--vyne-ivory); border-left: 2px solid var(--vyne-bronze); color: var(--vyne-slate); font-size: var(--vyne-type-meta); line-height: 1.55; font-style: italic; }
 .perspective button { margin-top: calc(var(--vyne-unit) * 3); }
+.perspective-actions { display: flex; align-items: center; gap: var(--vyne-unit); flex-wrap: wrap; margin-top: calc(var(--vyne-unit) * 3); }
+.perspective-actions button, .perspective-actions .btn-primary { margin-top: 0; }
 .perspective-ready-note, .perspective-forming-note { line-height: 1.6; max-width: 60ch; margin-bottom: calc(var(--vyne-unit) * 2); }
 .perspective-ready-note { color: var(--vyne-navy); }
 .perspective-forming-note { color: var(--vyne-slate); }
