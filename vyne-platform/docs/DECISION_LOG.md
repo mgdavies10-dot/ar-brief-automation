@@ -23,6 +23,32 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-22 — **F3 accepted; the Record documents judgment; F4 becomes M4
+  Integration; M4 closes after integration.** Founder accepted F3 and elevated
+  the product philosophy. Rulings: (1) **The Record documents professional
+  judgment at a moment in time**, not merely understanding — framed as *"Our
+  perspective as of July 2026,"* never *"Version 4"*; this makes the artifact
+  history a *history of thinking*. (2) **Authorship is preserved** on every
+  Record — prepared by / submitted for review by / approved by / date of
+  perspective — because consulting judgment has authorship (trust, not
+  compliance). (3) **Intentional incompleteness is a feature** — the composer
+  leaves "Where we'd focus next" for the human; the platform must never pretend
+  certainty where human judgment adds value. (4) **New foundational principle:**
+  *"The platform should amplify human judgment, never replace it"* (twin captures
+  understanding · perspective organizes thinking · Record communicates judgment ·
+  the human consultant stays accountable). (5) **Core identity thread:** CRM
+  records facts, AI generates answers — **VYNE builds an evolving understanding**;
+  protect *understanding before recommendation · judgment before automation ·
+  conversation before workflow.* (6) **F4 is redefined as "M4 Integration"** — not
+  a feature milestone but proof that M4 behaves like one product (complete advisor
+  journey; recruiter + founder workflow validation; lifecycle validation;
+  usability; polish; design consistency; docs). (7) **Believability exercise
+  before M5:** walk one fictional advisor through the entire journey and ask
+  *"would an advisor believe this came from a thoughtful consulting engagement?"*
+  — if not an unqualified yes, improve before adding capability. (8) **M4 closes
+  after Integration**, giving a clean stop before M5's advisor-facing publishing.
+  Change level 2. Recorded in `M4_product_plan.md`; Record elevation implemented
+  in the commit following `71acc1f`.
 - 2026-07-22 — **F3 approved: the Premium Artifact is a milestone in the
   relationship, not a deliverable.** Founder authorized F3 (Current Reality
   Record / Artifact Builder) and set its product doctrine. Rulings: (1) The

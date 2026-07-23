@@ -190,6 +190,8 @@ export default async function AdvisorWorkspace({
   let recordInitial: RecordInitial = {
     status: "none",
     content: {},
+    perspectiveAsOf: null,
+    preparedByLabel: null,
     submittedLabel: null,
     approvedLabel: null,
     canApprove: false,
@@ -199,7 +201,7 @@ export default async function AdvisorWorkspace({
   if (decisionRow?.id) {
     const { data: art } = await supabase
       .from("artifacts")
-      .select("status, content, content_edited_at, submitted_at, submitted_by, approved_at, approved_by, cooling_override_reason")
+      .select("status, content, content_edited_at, created_by, submitted_at, submitted_by, approved_at, approved_by, cooling_override_reason")
       .eq("decision_id", decisionRow.id)
       .eq("artifact_type", "current_reality")
       .is("deleted_at", null)
@@ -207,21 +209,28 @@ export default async function AdvisorWorkspace({
       .limit(1)
       .maybeSingle();
     if (art) {
-      const actorIds = [art.submitted_by, art.approved_by].filter(Boolean) as string[];
+      const actorIds = [art.created_by, art.submitted_by, art.approved_by].filter(Boolean) as string[];
       const names = new Map<string, string>();
       if (actorIds.length) {
         const { data: us } = await supabase.from("users").select("id, full_name").in("id", actorIds);
         for (const u of us ?? []) names.set(u.id as string, (u.full_name as string) ?? "—");
       }
-      const fmtDate = (s: string | null) =>
+      const fmtDay = (s: string | null) =>
         s ? new Date(s).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : null;
+      // Date of perspective: when the judgment was set — approval if approved, else last edit.
+      const asOfSource = (art.approved_at as string) ?? (art.content_edited_at as string) ?? null;
+      const perspectiveAsOf = asOfSource
+        ? new Date(asOfSource).toLocaleDateString(undefined, { month: "long", year: "numeric" })
+        : null;
       const cool = coolingStatus(art.content_edited_at ? new Date(art.content_edited_at as string) : null, new Date());
       const parsedContent = currentRealityRecordSchema.safeParse(art.content ?? {});
       recordInitial = {
         status: art.status as RecordInitial["status"],
         content: parsedContent.success ? parsedContent.data : {},
-        submittedLabel: art.submitted_at ? `Submitted by ${names.get(art.submitted_by as string) ?? "—"} — ${fmtDate(art.submitted_at as string)}` : null,
-        approvedLabel: art.approved_at ? `Approved by ${names.get(art.approved_by as string) ?? "—"} — ${fmtDate(art.approved_at as string)}` : null,
+        perspectiveAsOf,
+        preparedByLabel: art.created_by ? `Prepared by ${names.get(art.created_by as string) ?? "—"}` : null,
+        submittedLabel: art.submitted_at ? `Submitted by ${names.get(art.submitted_by as string) ?? "—"} — ${fmtDay(art.submitted_at as string)}` : null,
+        approvedLabel: art.approved_at ? `Approved by ${names.get(art.approved_by as string) ?? "—"} — ${fmtDay(art.approved_at as string)}` : null,
         canApprove: cool.available,
         coolingMessage: cool.message,
         overrideReason: (art.cooling_override_reason as string) ?? null,

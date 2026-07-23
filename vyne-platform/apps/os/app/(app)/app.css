@@ -238,7 +238,9 @@
 
 /* The letter */
 .letter { background: var(--vyne-white); border: 1px solid var(--vyne-hairline); border-radius: var(--vyne-radius-card); padding: calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 6); }
+.letter-asof { font-size: var(--vyne-type-micro); letter-spacing: 0.16em; text-transform: uppercase; color: var(--vyne-bronze-text); margin-bottom: calc(var(--vyne-unit) * 2.5); }
 .letter-salutation { font-family: var(--vyne-font-serif); font-size: var(--vyne-type-section); color: var(--vyne-navy); margin-bottom: calc(var(--vyne-unit) * 2); }
+.letter-authorship { margin-top: calc(var(--vyne-unit) * 3); padding-top: calc(var(--vyne-unit) * 2); border-top: 1px solid var(--vyne-hairline); font-size: var(--vyne-type-micro); color: var(--vyne-slate); letter-spacing: 0.02em; }
 .movement { margin-top: calc(var(--vyne-unit) * 4); }
 .movement:first-of-type { margin-top: 0; }
 .movement-h { font-family: var(--vyne-font-serif); font-style: italic; font-weight: 400; font-size: var(--vyne-type-section); color: var(--vyne-bronze-text); margin-bottom: calc(var(--vyne-unit) * 1.25); }

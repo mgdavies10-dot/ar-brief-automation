@@ -18,6 +18,10 @@ type RecordStatus = "none" | "draft" | "in_review" | "approved" | "published" | 
 export interface RecordInitial {
   status: RecordStatus;
   content: CurrentRealityRecord;
+  /** "Our perspective as of July 2026" — a moment of judgment, not a version number. */
+  perspectiveAsOf: string | null;
+  /** Authorship (consulting judgment has authorship). */
+  preparedByLabel: string | null;
   submittedLabel: string | null;
   approvedLabel: string | null;
   canApprove: boolean;
@@ -181,6 +185,9 @@ export function RecordPanel({
       {/* The letter */}
       {filledMovements.length ? (
         <article className="letter">
+          {initial.perspectiveAsOf ? (
+            <p className="letter-asof">Our perspective as of {initial.perspectiveAsOf}</p>
+          ) : null}
           <p className="letter-salutation">Dear {advisorFirst},</p>
           {filledMovements.map(({ key, title }) => (
             <section className="movement" key={key}>
@@ -191,6 +198,11 @@ export function RecordPanel({
             </section>
           ))}
           <p className="letter-sign">— The VYNE team</p>
+          {[initial.preparedByLabel, initial.submittedLabel, initial.approvedLabel].some(Boolean) ? (
+            <p className="letter-authorship">
+              {[initial.preparedByLabel, initial.submittedLabel, initial.approvedLabel].filter(Boolean).join(" · ")}
+            </p>
+          ) : null}
         </article>
       ) : (
         <div className="record-blank">

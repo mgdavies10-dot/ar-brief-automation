@@ -57,14 +57,25 @@ reviews the proposal and the built result at the gate.
    into a premium Current Reality Record; carry it Draft → In review → Approved
    with the cooling rule as felt product behavior. (Publishing to the advisor is
    M5.)
-4. **F4 — Synthetic seed + recruiter scoping + cooling-rule policy (M4-B).** A
-   demonstration data set that tells one compelling advisor story end-to-end, the
-   same surfaces correctly narrowed for a recruiter, and the configurable cooling
-   rule.
+4. **M4 Integration (was "F4") — prove M4 behaves like one product** (founder
+   reframe, 2026-07-22). *Not another feature milestone — the closing milestone.*
+   No major new product concepts. Its purpose is to prove the pieces are **one
+   consulting experience**, not three modules: the complete advisor journey; the
+   recruiter workflow validated; the founder workflow validated; the lifecycle
+   validated end-to-end; end-to-end usability; product polish; design consistency;
+   documentation updates. The synthetic seed that tells one advisor's transition
+   story serves this proof.
 
-The synthetic seed is designed *last-but-informed-first*: the personas exist to
-make F1–F3 tell a real transition story, so their design follows the feature
-proposals rather than preceding them.
+**The believability exercise (before M5).** Take one fictional advisor and walk
+the whole journey — advisor created → Current Reality completed → digital twin
+formed → perspective developed → Record drafted → review → approval — then ask:
+*"Would an advisor believe this came from a thoughtful consulting engagement?"* If
+the answer isn't an unqualified **yes**, improve the experience before adding any
+capability.
+
+**M4 closes after Integration, not after another feature** (founder, 2026-07-22):
+that yields a stable consulting workflow, a polished experience, and a clean
+stopping point before M5 introduces advisor-facing publishing.
 
 ## How M4 honors the product principles
 
@@ -205,6 +216,34 @@ succeeded.
 harder problem, and a far more defensible one. Staying disciplined around that
 idea is what keeps the product differentiated without chasing feature parity or
 adding complexity.
+
+**The Record documents judgment at a moment in time** (founder, 2026-07-22). It is
+not merely documenting our *understanding* — it documents our *professional
+judgment* as of a date. So a Record is never *"Version 4"*; it is **"Our
+perspective as of July 2026."** That framing turns the artifact history into a
+*history of thinking* (how our judgment evolved), not a history of software
+revisions — the foundation for the long-term "history of letters." And because
+consulting judgment has authorship, every Record preserves **who prepared it, who
+submitted it for review, who approved it, and the date of the perspective** — not
+for compliance, but because authorship reinforces trust.
+
+**Intentionally incomplete, on purpose.** The composer deliberately leaves *"Where
+we'd focus next"* for the human consultant. Preserve this: the platform must never
+pretend certainty where human judgment adds value. That restraint is part of the
+premium experience.
+
+**Amplify human judgment, never replace it** (founder, 2026-07-22 — the principle
+under all the others). The digital twin *captures* understanding; Our Perspective
+*organizes* thinking; the Record *communicates* judgment — and the human
+consultant remains **accountable** throughout. Every layer we build must make the
+consultant better, never stand in for them.
+
+**The core identity — the thread to keep pulling** (founder, 2026-07-22). Most CRM
+systems *record facts*; most AI systems *generate answers*; **VYNE builds an
+evolving understanding.** That is the rarer, more defensible philosophy. Protect
+three orderings and the product stays differentiated even as Modeling, Firm
+Intelligence, and AI arrive: **understanding before recommendation · judgment
+before automation · conversation before workflow.**
 
 ## Twin evolution — architecture to leave room for (don't build yet)
 
