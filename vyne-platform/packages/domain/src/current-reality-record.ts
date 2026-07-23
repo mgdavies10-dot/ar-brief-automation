@@ -58,15 +58,25 @@ export function composeRecordDraft(
   const goals = cr.goals.map((g) => g.text);
   const motivations = cr.motivations.map((m) => m.text);
   const mattersParts: string[] = [];
-  if (goals.length) mattersParts.push(`Right now, ${first} is focused on ${listPhrase(goals)}.`);
+  // Colon-led lists read cleanly whether goals are phrased as nouns or aims.
+  if (goals.length) mattersParts.push(`For ${first}, the priorities are clear: ${listPhrase(goals)}.`);
   if (motivations.length) mattersParts.push(`What's bringing this to a head: ${listPhrase(motivations)}.`);
   const mattersMost = mattersParts.join(" ");
 
   const perspective = recommendation?.perspective?.trim() ?? "";
 
-  const stillToLearn = assessConviction(cr, advisorName).stillToLearn;
-  const understandFurther = stillToLearn.length
-    ? `Before we offer a stronger recommendation, we'd like to understand ${first}'s ${listPhrase(stillToLearn)} more fully.`
+  // Honest about the limits of our understanding: what we don't yet know AND
+  // what we're only assuming (a working read we'd want to confirm).
+  const conviction = assessConviction(cr, advisorName);
+  const furtherParts: string[] = [];
+  if (conviction.stillToLearn.length) {
+    furtherParts.push(`we'd like to understand ${first}'s ${listPhrase(conviction.stillToLearn)} more fully`);
+  }
+  if (conviction.toConfirm.length) {
+    furtherParts.push(`we'd want to confirm what we believe about ${first}'s ${listPhrase(conviction.toConfirm)}`);
+  }
+  const understandFurther = furtherParts.length
+    ? `Before we'd make a stronger recommendation, ${furtherParts.join(", and ")}.`
     : `We feel we have a well-rounded understanding of ${first}'s practice.`;
 
   return {

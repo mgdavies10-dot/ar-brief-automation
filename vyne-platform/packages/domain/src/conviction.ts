@@ -56,6 +56,8 @@ export interface ConvictionReading {
   understanding: DimensionUnderstanding[];
   /** Dimensions we still need to understand (human phrases). */
   stillToLearn: string[];
+  /** Dimensions we have a working read on but would want to confirm (human phrases). */
+  toConfirm: string[];
   /** Question 4: would more information materially change our recommendation? */
   materialUncertainty: boolean;
 }
@@ -93,6 +95,7 @@ export function assessConviction(cr: CurrentReality, advisorName: string): Convi
   });
 
   const stillToLearn = understanding.filter((u) => u.standing === "unknown").map((u) => DIMENSION_PHRASE[u.dimension]);
+  const toConfirm = understanding.filter((u) => u.standing === "working").map((u) => DIMENSION_PHRASE[u.dimension]);
 
   return {
     level,
@@ -100,6 +103,7 @@ export function assessConviction(cr: CurrentReality, advisorName: string): Convi
     canBeginDiscussion: score >= 0.5,
     understanding,
     stillToLearn,
+    toConfirm,
     materialUncertainty: understanding.some((u) => u.standing !== "known"),
   };
 }

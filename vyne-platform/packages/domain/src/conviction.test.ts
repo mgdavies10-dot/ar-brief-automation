@@ -41,6 +41,9 @@ describe("assessConviction — Conviction Engine (F2)", () => {
     expect(goals.standing).toBe("working");
     expect(goals.phrase).toContain("working read");
     expect(goals.phrase).toContain("confirm");
+    // A working read surfaces as something to confirm, not something unknown.
+    expect(c.toConfirm).toContain("goals");
+    expect(c.stillToLearn).not.toContain("goals");
   });
 
   it("earns the discussion affordance only when understanding is sufficient", () => {

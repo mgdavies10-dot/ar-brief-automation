@@ -32,6 +32,18 @@ describe("composeRecordDraft — the five-movement letter (F3)", () => {
     expect(r.focusNext).toBe("");
   });
 
+  it("stays honest — offers to confirm what we're only assuming, not just what's missing", () => {
+    const cr = twin({
+      overview: "x",
+      constraints: [{ text: "a non-solicit he hasn't fully reviewed", kind: "non_solicit" }],
+      dimensionConfidence: { overview: "confirmed", constraints: "assumed" },
+    });
+    const r = composeRecordDraft(cr, null, "Robert Halvorsen");
+    // The assumed constraint should be offered up as something to confirm.
+    expect(r.understandFurther).toContain("confirm");
+    expect(r.understandFurther).toContain("constraints");
+  });
+
   it("reads like correspondence — never Summary / Analysis / Findings", () => {
     const cr = twin({ overview: "A solo advisor considering independence.", goals: [{ text: "more autonomy" }] });
     const r = composeRecordDraft(cr, { perspective: "We think independence fits." }, "Dana Whitfield");
