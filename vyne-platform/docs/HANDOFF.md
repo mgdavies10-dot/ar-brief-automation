@@ -73,13 +73,25 @@ be started through the harness via `.claude/launch.json` (config `os`, port 3000
 
 ## Next required action
 
-**M5 — advisor-facing publishing (Advisor Studio) — is the next milestone, and an
-EA-001 milestone stop.** No M5 production code until the founder approves an M5
-plan (the M3 pattern: plan → founder approval → build). M5 crosses the
-internal/advisor boundary — the `published_artifacts` snapshot, residue scan, the
-publish "gold moment," and the advisor's first Studio sign-in landing on the
-Record. The real-stack suite is the standing regression gate: it must stay green
-(`60/60`).
+**Founder-directed strategic pause before M5 (2026-07-23).** Not code — shaping the
+company. Four deliverables, in order, each after the previous:
+1. **VYNE Product Story** — `docs/product/PRODUCT_STORY.md` (drafted; for founder
+   refinement). The canonical "what VYNE is" doctrine.
+2. **Website Strategy** — experience-first (what an advisor should *feel* in 30
+   seconds), only after the Story is settled. Not built here (public website is
+   EA-001-excluded) — a strategy document.
+3. **M5 Planning** — the plan for advisor-facing publishing (Advisor Studio):
+   `published_artifacts` snapshot, residue scan, the publish "gold moment," the
+   advisor's first Studio sign-in on the Record. **M5 is an EA-001 milestone stop —
+   no M5 code until the founder approves the plan.**
+4. **Brand Standards** — core identity only (voice, tone, typography, colors,
+   photography, illustration philosophy, writing principles), extending
+   `docs/brand/`.
+
+Milestone retrospective done: `docs/milestone-reports/M4_learnings.md`. Governing
+identity to protect across all four: **VYNE is the operating system for advisor
+transition consulting, not recruiting software.** The real-stack suite remains the
+standing regression gate (`60/60`) whenever code resumes.
 
 **Two non-blocking engineering follow-ups (from the M4 walkthrough):**
 1. A Next.js **dev-mode** webpack bug on `/challenge` (`__webpack_require__.n is
