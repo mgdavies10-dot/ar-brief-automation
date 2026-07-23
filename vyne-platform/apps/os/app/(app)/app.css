@@ -152,11 +152,8 @@
 .sum-tag { margin-left: 8px; font-size: var(--vyne-type-micro); text-transform: uppercase; letter-spacing: 0.05em; color: var(--vyne-slate); border: 1px solid var(--vyne-hairline); border-radius: 999px; padding: 1px 8px; }
 .summary-note { color: var(--vyne-navy); line-height: 1.6; max-width: 66ch; }
 
-/* Understanding meter (completeness × confidence) */
-.understanding { display: flex; align-items: center; gap: var(--vyne-unit); margin-bottom: calc(var(--vyne-unit) * 3); }
-.understanding-meter { flex: 1; max-width: 320px; height: 6px; background: var(--vyne-hairline); border-radius: 999px; overflow: hidden; }
-.understanding-meter span { display: block; height: 100%; background: var(--vyne-forest); transition: width var(--vyne-motion-slow) var(--vyne-motion-easing); }
-.understanding-label { font-size: var(--vyne-type-micro); text-transform: uppercase; letter-spacing: 0.06em; color: var(--vyne-forest); }
+/* Understanding — calm language, not a gauge (no numbers; we never score the advisor) */
+.understanding-phrase { font-family: var(--vyne-font-serif); font-style: italic; font-size: var(--vyne-type-body); color: var(--vyne-bronze-text); margin-bottom: calc(var(--vyne-unit) * 3); }
 
 /* Editable executive summary (rendered) */
 .summary-exec { max-width: 66ch; }

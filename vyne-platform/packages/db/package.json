@@ -12,6 +12,7 @@
     "test:real": "VYNE_REAL_STACK=1 vitest run",
     "provision": "node scripts/provision-local.mjs",
     "demo:reset": "node scripts/provision-local.mjs --reset",
+    "seed:golden-path": "node scripts/seed-golden-path.mjs",
     "user:status": "node scripts/set-user-status.mjs"
   },
   "devDependencies": {

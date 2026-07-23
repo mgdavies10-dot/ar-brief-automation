@@ -52,7 +52,17 @@ function RealitySummary({ cr, name, advisorId }: { cr: CurrentReality; name: str
   const list = (items: { text: string }[]) =>
     items.length ? <ul className="sum-list">{items.map((i, k) => <li key={k}>{i.text}</li>)}</ul> : null;
 
-  const understanding = Math.round(understandingScore(cr) * 100);
+  const score = understandingScore(cr);
+  // Calm language, not a gauge — consistent with "professional judgment, not
+  // algorithmic certainty." We never score the advisor; we describe our own grasp.
+  const understandingPhrase =
+    score >= 0.75
+      ? `We understand ${first}’s practice deeply.`
+      : score >= 0.5
+        ? `We understand ${first}’s practice well.`
+        : score >= 0.25
+          ? `Our understanding of ${first}’s practice is developing.`
+          : `Our understanding of ${first}’s practice is still forming.`;
   const toLearn = dimensionsToLearn(cr);
   const draft = generateSummaryDraft(cr, name);
   const summaryText = cr.executiveSummary?.trim() || draft;
@@ -62,10 +72,7 @@ function RealitySummary({ cr, name, advisorId }: { cr: CurrentReality; name: str
     <article className="summary">
       <p className="summary-kicker">Here&rsquo;s how we understand {first}&rsquo;s business</p>
 
-      <div className="understanding">
-        <div className="understanding-meter"><span style={{ width: `${understanding}%` }} /></div>
-        <span className="understanding-label">{understanding}% understood</span>
-      </div>
+      <p className="understanding-phrase">{understandingPhrase}</p>
 
       {summaryText ? (
         <div className="summary-exec">

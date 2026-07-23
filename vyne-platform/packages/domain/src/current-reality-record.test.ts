@@ -13,22 +13,24 @@ function twin(over: Partial<CurrentReality> = {}): CurrentReality {
 }
 
 describe("composeRecordDraft — the five-movement letter (F3)", () => {
-  it("seeds each movement from the twin and Our Perspective", () => {
+  it("seeds each movement in a letter's voice — second person, addressed to the advisor", () => {
     const cr = twin({
-      executiveSummary: "Robert runs a planning-led ensemble in Greenwich.",
-      goals: [{ text: "grow through acquisition" }],
-      motivations: [{ text: "his firm's shrinking payout" }],
-      dimensionConfidence: { overview: "confirmed" },
+      overview: "A planning-led practice in Greenwich.",
+      practiceProfile: { serviceModel: "planning-led", yearsInBusiness: 22, custodianOrPlatform: "a national wirehouse", clientAcquisition: "referrals" },
+      goals: [{ text: "Own the direction of the practice" }],
+      motivations: [{ text: "a payout grid that keeps shifting" }],
+      dimensionConfidence: { overview: "confirmed", practiceProfile: "confirmed", goals: "confirmed", motivations: "confirmed" },
     });
     const rec: Recommendation = { perspective: "We believe supported independence deserves consideration." };
     const r = composeRecordDraft(cr, rec, "Robert Halvorsen");
 
-    expect(r.understand).toBe("Robert runs a planning-led ensemble in Greenwich.");
-    expect(r.mattersMost).toContain("grow through acquisition");
-    expect(r.mattersMost).toContain("shrinking payout");
+    // Speaks TO the advisor (you/your), never ABOUT them (no third-person name).
+    expect(r.understand).toContain("You've built");
+    expect(r.understand).not.toMatch(/\bRobert\b/);
+    expect(r.mattersMost).toContain("For you, the priorities are clear: own the direction");
+    expect(r.mattersMost).not.toMatch(/\bRobert\b/);
     expect(r.perspective).toBe("We believe supported independence deserves consideration.");
-    expect(r.understandFurther).toContain("we'd like to understand");
-    // "Where we'd focus next" is the recruiter's judgment — never auto-padded.
+    // "Where we'd focus next" is the consultant's judgment — never auto-padded.
     expect(r.focusNext).toBe("");
   });
 

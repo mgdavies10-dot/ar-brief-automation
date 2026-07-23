@@ -34,13 +34,14 @@ milestone in progress.
     Record reads as **"Our perspective as of {Month Year}"** (not a version number)
     and preserves **authorship** (prepared / submitted / approved). Proposal:
     `docs/milestone-reports/M4-F3_artifact_builder.md`.
-  - **M4 Integration (was "F4") — the closing M4 milestone: not started.** Not a
-    new feature — proof that Twin → Perspective → Record behaves like *one*
-    consulting product: synthetic seed telling one advisor's transition story,
-    recruiter + founder workflow validation, end-to-end lifecycle + usability,
-    polish, design consistency, docs. Gated by the **believability exercise** (walk
-    one fictional advisor end-to-end; "would an advisor believe this came from a
-    thoughtful consulting engagement?"). **M4 closes after Integration.**
+  - **M4 Integration (was "F4") — the closing M4 milestone: in progress, at the
+    founder gate.** Golden path seeded (`npm run seed:golden-path` — Robert's full
+    arc); consulting-quality review done (`docs/milestone-reports/M4_Integration_report.md`).
+    Three improvements landed from reading it end-to-end: the Record now speaks in
+    the second person (a letter), it offers to *confirm* what it only assumes, and
+    the Overview's "% understood" gauge became calm language (no number scores the
+    advisor). Remaining: the **founder's authenticated believability pass**; then
+    **M4 closes.**
 - EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
   no secrets in the repo, milestone stops at M5 and M6 minimum.
 
@@ -61,6 +62,7 @@ cd packages/db
 npx supabase start                   # requires Docker Desktop running
 npx supabase db reset                # re-apply committed migrations (through 0012)
 npm run demo:reset                   # restore demo accounts + synthetic advisors
+npm run seed:golden-path             # Robert Halvorsen's full M4 journey (idempotent)
 $env:VYNE_REAL_STACK="1"; npx vitest run   # regression: 60/60 expected
 npm run dev --workspace @vyne/os     # OS app on http://localhost:3000
 ```
@@ -71,12 +73,10 @@ be started through the harness via `.claude/launch.json` (config `os`, port 3000
 
 ## Next required action
 
-**M4 Integration — prove the core experience is one product.** Build the synthetic
-seed that tells one fictional advisor's transition story end-to-end, then run the
-**believability exercise**: walk them advisor-created → Current Reality → twin →
-perspective → Record → review → approval, and judge *"would an advisor believe
-this came from a thoughtful consulting engagement?"* Fix what falls short (polish,
-copy, design consistency, recruiter/founder workflow gaps) before any new
-capability. Close M4 at this milestone gate; M5 (advisor-facing publishing) comes
-next. The real-stack suite is the standing regression gate: it must stay green
-(`60/60`) after every change.
+**Founder's believability pass, then close M4.** The golden path is seeded and the
+consulting-quality review is done (`M4_Integration_report.md`). Walk Robert once —
+Overview → Direction → Record → approve after cooling — and confirm the emotional
+arc lands (*understood → carefully considered → given real judgment*) and that it
+would read as a thoughtful consulting engagement. If it does, **M4 closes here**;
+M5 (advisor-facing publishing) is next. The real-stack suite is the standing
+regression gate: it must stay green (`60/60`) after every change.

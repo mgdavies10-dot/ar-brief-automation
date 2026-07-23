@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { type CurrentReality, generateSummaryDraft } from "./current-reality";
+import { type CurrentReality } from "./current-reality";
 import { assessConviction, type Recommendation } from "./conviction";
 
 /**
@@ -40,6 +40,26 @@ function listPhrase(items: string[]): string {
   return `${xs.slice(0, -1).join(", ")}, and ${xs[xs.length - 1]}`;
 }
 
+/** Lower the first letter so a stored aim reads naturally mid-sentence. */
+const decap = (s: string) => (s ? s.charAt(0).toLowerCase() + s.slice(1) : s);
+
+/**
+ * A second-person reflection of the practice, composed fresh from the structured
+ * twin — NOT the third-person Overview summary. This keeps the letter in one
+ * voice (a letter speaks TO the advisor) and stops the Record from restating the
+ * Overview (each surface must advance the conversation, not echo it).
+ */
+function practiceReflection(cr: CurrentReality): string {
+  const pp = cr.practiceProfile;
+  const facts: string[] = [];
+  if (pp.serviceModel) facts.push(`a ${pp.serviceModel} practice`);
+  if (pp.yearsInBusiness) facts.push(`${pp.yearsInBusiness} years in the making`);
+  if (pp.custodianOrPlatform) facts.push(`built on ${pp.custodianOrPlatform}`);
+  const lead = facts.length ? `You've built ${listPhrase(facts)}.` : (cr.overview?.trim() ?? "");
+  const growth = pp.clientAcquisition ? ` Your growth has come through ${pp.clientAcquisition}.` : "";
+  return `${lead}${growth}`.trim();
+}
+
 /**
  * Compose a STARTING-POINT Record from the twin + Our Perspective. Deterministic;
  * the recruiter edits every word. Voice: a partner writing to a partner — never
@@ -51,16 +71,14 @@ export function composeRecordDraft(
   recommendation: Recommendation | null | undefined,
   advisorName: string,
 ): CurrentRealityRecord {
-  const first = advisorName.split(" ")[0] || "this advisor";
+  // A letter speaks TO the advisor: second person throughout.
+  const understand = practiceReflection(cr);
 
-  const understand = cr.executiveSummary?.trim() || generateSummaryDraft(cr, advisorName);
-
-  const goals = cr.goals.map((g) => g.text);
-  const motivations = cr.motivations.map((m) => m.text);
+  const goals = cr.goals.map((g) => decap(g.text));
+  const motivations = cr.motivations.map((m) => decap(m.text));
   const mattersParts: string[] = [];
-  // Colon-led lists read cleanly whether goals are phrased as nouns or aims.
-  if (goals.length) mattersParts.push(`For ${first}, the priorities are clear: ${listPhrase(goals)}.`);
-  if (motivations.length) mattersParts.push(`What's bringing this to a head: ${listPhrase(motivations)}.`);
+  if (goals.length) mattersParts.push(`For you, the priorities are clear: ${listPhrase(goals)}.`);
+  if (motivations.length) mattersParts.push(`What's bringing this to a head is ${listPhrase(motivations)}.`);
   const mattersMost = mattersParts.join(" ");
 
   const perspective = recommendation?.perspective?.trim() ?? "";
@@ -70,21 +88,21 @@ export function composeRecordDraft(
   const conviction = assessConviction(cr, advisorName);
   const furtherParts: string[] = [];
   if (conviction.stillToLearn.length) {
-    furtherParts.push(`we'd like to understand ${first}'s ${listPhrase(conviction.stillToLearn)} more fully`);
+    furtherParts.push(`we'd like to understand your ${listPhrase(conviction.stillToLearn)} more fully`);
   }
   if (conviction.toConfirm.length) {
-    furtherParts.push(`we'd want to confirm what we believe about ${first}'s ${listPhrase(conviction.toConfirm)}`);
+    furtherParts.push(`we'd want to confirm what we believe about your ${listPhrase(conviction.toConfirm)}`);
   }
   const understandFurther = furtherParts.length
     ? `Before we'd make a stronger recommendation, ${furtherParts.join(", and ")}.`
-    : `We feel we have a well-rounded understanding of ${first}'s practice.`;
+    : `We feel we understand your practice well.`;
 
   return {
     understand,
     mattersMost,
     perspective,
     understandFurther,
-    focusNext: "", // a considered next step — the recruiter's judgment to add
+    focusNext: "", // a considered next step — the consultant's judgment to add
   };
 }
 
