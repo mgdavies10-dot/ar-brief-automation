@@ -23,6 +23,30 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-22 — **F3 approved: the Premium Artifact is a milestone in the
+  relationship, not a deliverable.** Founder authorized F3 (Current Reality
+  Record / Artifact Builder) and set its product doctrine. Rulings: (1) The
+  artifact reads like **professional correspondence** from a partner to a
+  partner ("After spending time learning about your practice, here's how we're
+  thinking about it today…") — never "Report Summary / Analysis / Findings"; the
+  advisor should feel real thought went in, never "software generated this."
+  (2) **Structure is a story, not sections** — five movements (what we've come to
+  understand · what appears to matter most · our current perspective · what we'd
+  like to understand further · where we'd focus next); everything else supports
+  them. (3) **Premium means restraint** — every sentence earns its place; silence
+  is part of premium design; resist showing everything. (4) **It must age well /
+  be timeless** — no references tied to the software itself; still feels
+  thoughtful six months later. (5) **New final Product Philosophy principle:**
+  *"Our artifacts should be remembered for their insight, not their formatting."*
+  (6) **Design-for (don't build):** advisors accrue a *history* of these letters
+  documenting how VYNE's judgment evolved. (7) **Anchoring insight:** VYNE is not
+  automating consulting — it is *capturing, organizing, refining, and
+  communicating consulting judgment.* Sequence remains **Digital Twin → Our
+  Perspective → Premium Artifact**; scope unchanged (Modeling / Firm Intelligence
+  stay Horizon B). **Autonomy grant:** after the F3 proposal is written, proceed
+  to implementation; stop only for a material philosophy change, a material
+  architecture change, or a genuine founder decision — otherwise build and bring
+  F3 back at the milestone gate. Change level 2. Recorded in `M4_product_plan.md`.
 - 2026-07-22 — **Conviction, not Readiness; the engine is internal; "Our
   Perspective" is the experience; recommendations evolve, not flip.** Founder
   approved the F2 Conviction Engine direction and set binding refinements (a

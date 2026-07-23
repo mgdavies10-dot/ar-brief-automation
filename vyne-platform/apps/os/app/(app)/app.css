@@ -219,6 +219,53 @@
 .dir-error { color: var(--vyne-danger); font-size: var(--vyne-type-meta); margin-top: var(--vyne-unit); }
 .dir-actions { display: flex; gap: var(--vyne-unit); margin-top: calc(var(--vyne-unit) * 2); }
 
+/* ---- Record (F3 — the Premium Current Reality Record). A letter, not a
+   report: restraint, breathing room, timeless language. ---- */
+.record { max-width: 720px; }
+.record-empty, .record-blank { background: var(--vyne-white); border: 1px solid var(--vyne-hairline); border-radius: var(--vyne-radius-card); padding: calc(var(--vyne-unit) * 5); }
+.record-empty-note, .record-blank-note { color: var(--vyne-slate); line-height: 1.6; max-width: 58ch; margin-bottom: calc(var(--vyne-unit) * 2.5); }
+
+/* Lifecycle bar */
+.lifecycle { list-style: none; display: flex; flex-wrap: wrap; gap: calc(var(--vyne-unit) * 3); padding: 0; margin-bottom: calc(var(--vyne-unit) * 4); }
+.lc-step { display: flex; flex-direction: column; gap: 3px; }
+.lc-dot { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--vyne-hairline); }
+.lc-step.is-done .lc-dot { background: var(--vyne-bronze); border-color: var(--vyne-bronze); }
+.lc-step.is-current .lc-dot { background: var(--vyne-navy); border-color: var(--vyne-navy); }
+.lc-label { font-size: var(--vyne-type-meta); color: var(--vyne-slate); }
+.lc-step.is-current .lc-label { color: var(--vyne-navy); font-weight: 600; }
+.lc-step.is-horizon { opacity: 0.55; }
+.lc-meta { font-size: var(--vyne-type-micro); color: var(--vyne-slate); }
+
+/* The letter */
+.letter { background: var(--vyne-white); border: 1px solid var(--vyne-hairline); border-radius: var(--vyne-radius-card); padding: calc(var(--vyne-unit) * 6) calc(var(--vyne-unit) * 6); }
+.letter-salutation { font-family: var(--vyne-font-serif); font-size: var(--vyne-type-section); color: var(--vyne-navy); margin-bottom: calc(var(--vyne-unit) * 2); }
+.movement { margin-top: calc(var(--vyne-unit) * 4); }
+.movement:first-of-type { margin-top: 0; }
+.movement-h { font-family: var(--vyne-font-serif); font-style: italic; font-weight: 400; font-size: var(--vyne-type-section); color: var(--vyne-bronze-text); margin-bottom: calc(var(--vyne-unit) * 1.25); }
+.movement-p { font-family: var(--vyne-font-serif); font-size: var(--vyne-type-body); line-height: 1.78; color: var(--vyne-navy); max-width: 64ch; margin-bottom: var(--vyne-unit); }
+.letter-sign { font-family: var(--vyne-font-serif); font-style: italic; color: var(--vyne-slate); margin-top: calc(var(--vyne-unit) * 4); }
+
+.record-override-note { font-size: var(--vyne-type-meta); color: var(--vyne-slate); font-style: italic; margin-top: calc(var(--vyne-unit) * 2); }
+.record-error { color: var(--vyne-danger); font-size: var(--vyne-type-meta); margin-top: var(--vyne-unit); }
+.record-actions { display: flex; align-items: center; gap: var(--vyne-unit); flex-wrap: wrap; margin-top: calc(var(--vyne-unit) * 3); }
+.record-await, .record-approved-note { font-size: var(--vyne-type-meta); color: var(--vyne-slate); }
+
+/* Cooling affordance */
+.cooling { display: inline-flex; align-items: center; gap: var(--vyne-unit); flex-wrap: wrap; }
+.cooling-msg { font-size: var(--vyne-type-meta); color: var(--vyne-bronze-text); }
+.cooling-override { display: inline-flex; align-items: center; gap: 8px; }
+.cooling-input { font: inherit; font-size: var(--vyne-type-meta); color: var(--vyne-navy); background: var(--vyne-white); border: 1px solid var(--vyne-hairline); border-radius: 6px; padding: 7px 10px; min-width: 220px; }
+.cooling-input:focus { outline: none; border-color: var(--vyne-navy); }
+.cooling-link { font: inherit; font-size: var(--vyne-type-meta); color: var(--vyne-navy); background: transparent; border: none; text-decoration: underline; cursor: pointer; padding: 0; }
+
+/* Record editor */
+.record-edit .record-edit-head { display: flex; align-items: center; justify-content: space-between; gap: var(--vyne-unit); flex-wrap: wrap; margin-bottom: calc(var(--vyne-unit) * 2); }
+.record-edit-hint { font-size: var(--vyne-type-meta); color: var(--vyne-slate); max-width: 52ch; }
+.record-edit .field { margin-bottom: calc(var(--vyne-unit) * 2); }
+.record-edit label { font-family: var(--vyne-font-serif); font-style: italic; font-size: var(--vyne-type-body); color: var(--vyne-navy); margin-bottom: 6px; display: block; }
+.record-textarea { width: 100%; font: inherit; color: var(--vyne-navy); background: var(--vyne-white); border: 1px solid var(--vyne-hairline); border-radius: 6px; padding: 10px 12px; resize: vertical; line-height: 1.65; }
+.record-textarea:focus { outline: none; border-color: var(--vyne-navy); }
+
 @media (max-width: 720px) {
   .app { flex-direction: column; }
   .sidebar { width: 100%; height: auto; position: static; flex-direction: row; align-items: center; padding: var(--vyne-unit) calc(var(--vyne-unit) * 2); }

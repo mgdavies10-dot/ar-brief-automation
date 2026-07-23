@@ -158,15 +158,53 @@ why the perspective is a living artifact that is *refined*, not re-issued, and w
 we say plainly when new information could still change our view. Architecturally:
 never gate the perspective behind a hard binary; let it deepen.
 
-## The Artifact Builder's north star (F3 — think before building)
+## The Premium Artifact — F3 (founder direction, 2026-07-22)
 
-Founder question to hold before F3: *"If I removed every field, chart, progress
-indicator, and internal state from the screen — what conversation would still
-remain? Build the artifact around that conversation. Not around the data. The
-data supports the story; the story creates trust."* The Current Reality Record is
-**a consultant's letter, not a report** — it opens with how we understand the
-practice and where our thinking is heading, and the structured detail sits
-underneath in service of that narrative.
+**The artifact is not a deliverable — it is a milestone in the relationship.**
+That distinction governs every design decision. When an advisor receives the
+Current Reality Record, they should feel *"someone invested real thought into
+understanding my business,"* never *"software generated this."* Think like a
+partner writing to another partner: *"After spending time learning about your
+practice, here's how we're thinking about it today…"* — never "Report Summary,"
+"Analysis," or "Findings." It reads like **professional correspondence.**
+
+**Structure is a story, not sections** — five movements, everything else in
+support:
+
+1. **What we've come to understand** (the twin, synthesized — not listed)
+2. **What appears to matter most** (goals and motivations, in their words)
+3. **Our current perspective** (the F2 recommendation as narrative)
+4. **What we'd like to understand further** (honest, not a gap report)
+5. **Where we'd focus next** (a considered next step, not a CTA)
+
+**Premium means restraint.** Resist proving value by showing everything. Every
+sentence earns its place; every page breathes; every chart answers a question;
+silence is part of premium design. The north-star test: *"If I removed every
+field, chart, progress indicator, and internal state — what conversation would
+remain?"* Build the artifact around that conversation; the data supports the
+story, the story creates trust.
+
+**It must age well.** Imagine the advisor opening it six months later — it should
+still feel thoughtful, not transactional. Avoid anything tied to the software
+itself (build IDs, internal state, tool language); make it **timeless.**
+
+**Long-term (design for, don't build):** every advisor eventually has a *history*
+of these letters, and the progression tells the story of how VYNE's understanding
+evolved — valuable not because it stores history, but because it **documents
+judgment.** The artifact data model should leave room for versioned, dated
+records over time (the lifecycle already does).
+
+**Final Product Philosophy principle (founder, 2026-07-22):** *Our artifacts
+should be remembered for their insight, not their formatting.* If someone
+finishes reading and remembers the layout, it was overdesigned; if they remember
+a sentence because it changed how they think about their own business, it
+succeeded.
+
+**The insight that anchors all of it:** VYNE is not automating consulting — it is
+**capturing, organizing, refining, and communicating consulting judgment.** A
+harder problem, and a far more defensible one. Staying disciplined around that
+idea is what keeps the product differentiated without chasing feature parity or
+adding complexity.
 
 ## Twin evolution — architecture to leave room for (don't build yet)
 

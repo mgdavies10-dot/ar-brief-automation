@@ -67,3 +67,18 @@ export type {
   ConvictionReading,
   Recommendation,
 } from "./conviction";
+
+export {
+  RECORD_MOVEMENTS,
+  currentRealityRecordSchema,
+  composeRecordDraft,
+  recordHasContent,
+  coolingStatus,
+  DEFAULT_COOLING_POLICY,
+} from "./current-reality-record";
+export type {
+  RecordMovementKey,
+  CurrentRealityRecord,
+  CoolingPolicy,
+  CoolingStatus,
+} from "./current-reality-record";

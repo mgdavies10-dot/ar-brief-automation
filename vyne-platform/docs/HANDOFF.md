@@ -25,10 +25,16 @@ milestone in progress.
     narrative-first, no scores/gauges/traffic lights. Proposal:
     `docs/milestone-reports/M4-F2_decision_readiness.md`. Decision recorded in
     `DECISION_LOG.md` (2026-07-22, pending DL numbering).
-  - **F3 — Artifact Builder (Premium Current Reality Record) + lifecycle + cooling
-    rule: not started.** North star (founder): build the artifact around the
-    *conversation* that would remain if every field/chart/indicator were removed —
-    a consultant's letter, not a report. Proposal (six sections) is the next step.
+  - **F3 — the Premium Current Reality Record (Artifact Builder): BUILT, awaiting
+    founder gate.** A `current_reality` artifact on the primary decision, composed
+    from twin + Our Perspective into a five-movement **letter** (What we've come to
+    understand · what appears to matter most · our current perspective · what we'd
+    like to understand further · where we'd focus next); lifecycle Draft → In
+    review → Approved (Published = M5 horizon) with actor+timestamp inline; the
+    cooling rule enforced and felt (no same-day approval; override needs a logged
+    reason); founder-only approval (DB guard). Proposal:
+    `docs/milestone-reports/M4-F3_artifact_builder.md`.
+  - **F4 — synthetic seed + recruiter scoping + cooling-rule policy: not started.**
 - EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
   no secrets in the repo, milestone stops at M5 and M6 minimum.
 
@@ -47,24 +53,23 @@ npm install
 npx turbo run typecheck build        # 9/9 expected
 cd packages/db
 npx supabase start                   # requires Docker Desktop running
-npx supabase db reset                # re-apply committed migrations (through 0011)
+npx supabase db reset                # re-apply committed migrations (through 0012)
 npm run demo:reset                   # restore demo accounts + synthetic advisors
 $env:VYNE_REAL_STACK="1"; npx vitest run   # regression: 60/60 expected
 npm run dev --workspace @vyne/os     # OS app on http://localhost:3000
 ```
 
-(`packages/domain` unit suite: `npx vitest run` → 10/10, incl. the Conviction
-Engine.) A local demo dev server can also be started through the harness via
-`.claude/launch.json` (config `os`, port 3000).
+(`packages/domain` unit suite: `npx vitest run` → 16/16, incl. the Conviction
+Engine and the Record composer + cooling rule.) A local demo dev server can also
+be started through the harness via `.claude/launch.json` (config `os`, port 3000).
 
 ## Next required action
 
-**F3 — the Premium Current Reality Record (Artifact Builder).** Produce the
-six-section proposal first (Advisor Problem · Why It Matters · Alternatives ·
-Advisor Experience · Business Value · Founder Acceptance Criteria), designed
-around the founder's north star: the *conversation* that remains when every
-field/chart/indicator is stripped away — a consultant's letter opening with how
-we understand the practice, structured detail underneath in service of the story.
-Then build Draft → In review → Approved with the cooling rule as felt behavior
-(publishing to the advisor is M5). The real-stack suite is the standing
-regression gate: it must stay green (`60/60`) after every M4 change.
+**Founder gate review of the M4 core experience — Digital Twin → Our Perspective
+→ Premium Artifact.** Walk through an advisor (demo: Robert Halvorsen): Overview
+(the twin), Direction (Our Perspective), Record (draft the letter → submit for
+review → approve after the cooling period, as the founder). Confirm the Record
+reads like correspondence and the cooling rule is felt. After sign-off, **F4**
+(a synthetic seed that tells one advisor's transition story end-to-end +
+recruiter scoping + configurable cooling policy). The real-stack suite is the
+standing regression gate: it must stay green (`60/60`) after every M4 change.

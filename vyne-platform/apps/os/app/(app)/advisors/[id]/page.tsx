@@ -9,12 +9,15 @@ import {
   generateSummaryDraft,
   assessConviction,
   recommendationSchema,
+  currentRealityRecordSchema,
+  coolingStatus,
   DIMENSION_LABELS,
   type CurrentReality,
   type DecisionType,
 } from "@vyne/domain";
 import { RealityEditor } from "./reality-editor";
 import { DirectionPanel, type DirectionInitial } from "./direction";
+import { RecordPanel, type RecordInitial } from "./record";
 
 const fmtMoney = (v: number | null | undefined) =>
   v == null ? null : `$${(v / 1_000_000).toLocaleString(undefined, { maximumFractionDigits: 1 })}M`;
@@ -151,14 +154,15 @@ export default async function AdvisorWorkspace({
   const name = `${advisor.first_name} ${advisor.last_name}`;
   const first = advisor.first_name;
   const t12 = fmtMoney(advisor.t12_verified ?? advisor.t12_reported);
-  const activeTab = tab === "reality" ? "reality" : tab === "direction" ? "direction" : "overview";
+  const activeTab =
+    tab === "reality" ? "reality" : tab === "direction" ? "direction" : tab === "record" ? "record" : "overview";
   const hasContent = pct > 0;
 
   // Direction (F2): the advisor's primary decision + VYNE's conviction (derived
   // from the twin, never stored). RLS is the authority on visibility.
   const { data: decisionRow } = await supabase
     .from("decisions")
-    .select("decision_type, question, recommendation")
+    .select("id, decision_type, question, recommendation")
     .eq("advisor_id", id)
     .eq("is_primary", true)
     .is("deleted_at", null)
@@ -173,6 +177,58 @@ export default async function AdvisorWorkspace({
       }
     : null;
 
+  // Record (F3): the current_reality artifact on the primary decision. Approval is
+  // founder-only, so we resolve the viewer's role and compute cooling here.
+  const {
+    data: { user: authUser },
+  } = await supabase.auth.getUser();
+  const { data: me } = authUser
+    ? await supabase.from("users").select("role").eq("auth_id", authUser.id).maybeSingle()
+    : { data: null };
+  const isFounder = me?.role === "founder";
+
+  let recordInitial: RecordInitial = {
+    status: "none",
+    content: {},
+    submittedLabel: null,
+    approvedLabel: null,
+    canApprove: false,
+    coolingMessage: "",
+    overrideReason: null,
+  };
+  if (decisionRow?.id) {
+    const { data: art } = await supabase
+      .from("artifacts")
+      .select("status, content, content_edited_at, submitted_at, submitted_by, approved_at, approved_by, cooling_override_reason")
+      .eq("decision_id", decisionRow.id)
+      .eq("artifact_type", "current_reality")
+      .is("deleted_at", null)
+      .order("version", { ascending: false })
+      .limit(1)
+      .maybeSingle();
+    if (art) {
+      const actorIds = [art.submitted_by, art.approved_by].filter(Boolean) as string[];
+      const names = new Map<string, string>();
+      if (actorIds.length) {
+        const { data: us } = await supabase.from("users").select("id, full_name").in("id", actorIds);
+        for (const u of us ?? []) names.set(u.id as string, (u.full_name as string) ?? "—");
+      }
+      const fmtDate = (s: string | null) =>
+        s ? new Date(s).toLocaleDateString(undefined, { month: "short", day: "numeric" }) : null;
+      const cool = coolingStatus(art.content_edited_at ? new Date(art.content_edited_at as string) : null, new Date());
+      const parsedContent = currentRealityRecordSchema.safeParse(art.content ?? {});
+      recordInitial = {
+        status: art.status as RecordInitial["status"],
+        content: parsedContent.success ? parsedContent.data : {},
+        submittedLabel: art.submitted_at ? `Submitted by ${names.get(art.submitted_by as string) ?? "—"} — ${fmtDate(art.submitted_at as string)}` : null,
+        approvedLabel: art.approved_at ? `Approved by ${names.get(art.approved_by as string) ?? "—"} — ${fmtDate(art.approved_at as string)}` : null,
+        canApprove: cool.available,
+        coolingMessage: cool.message,
+        overrideReason: (art.cooling_override_reason as string) ?? null,
+      };
+    }
+  }
+
   return (
     <div className="workspace">
       <header className="ws-head">
@@ -183,6 +239,7 @@ export default async function AdvisorWorkspace({
           <Link href={`/advisors/${id}`} className={`ws-tab${activeTab === "overview" ? " is-active" : ""}`}>Overview</Link>
           <Link href={`/advisors/${id}?tab=reality`} className={`ws-tab${activeTab === "reality" ? " is-active" : ""}`}>Current Reality</Link>
           <Link href={`/advisors/${id}?tab=direction`} className={`ws-tab${activeTab === "direction" ? " is-active" : ""}`}>Direction</Link>
+          <Link href={`/advisors/${id}?tab=record`} className={`ws-tab${activeTab === "record" ? " is-active" : ""}`}>Record</Link>
           <span className={`ws-status${pct === 100 ? " is-complete" : ""}`}>{pct === 100 ? "Complete" : `${pct}% captured`}</span>
         </div>
       </header>
@@ -204,6 +261,17 @@ export default async function AdvisorWorkspace({
           )
         ) : activeTab === "direction" ? (
           <DirectionPanel advisorId={id} advisorFirst={first} conviction={conviction} initial={directionInitial} />
+        ) : activeTab === "record" ? (
+          <RecordPanel
+            advisorId={id}
+            advisorFirst={first}
+            advisorName={name}
+            cr={cr}
+            recommendation={directionInitial?.recommendation ?? null}
+            isFounder={isFounder}
+            hasDecision={Boolean(decisionRow?.id)}
+            initial={recordInitial}
+          />
         ) : (
           <RealityEditor advisorId={id} advisorName={name} initial={cr} />
         )}
