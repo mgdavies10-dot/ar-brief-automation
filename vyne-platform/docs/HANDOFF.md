@@ -13,7 +13,8 @@ milestone in progress.
   policy documented in ADR-003 (role-specific caps deferred).
 - **Brand: adopted** — official VYNE palette + canonical brand package
   (`docs/brand/`), tokens in `@vyne/ui`, in-app design-system reference page.
-- **M4 (product milestone) — in progress.** Sequence: F1 → F2 → F3 → F4.
+- **M4 (product milestone) — ACCEPTED / closed** (founder, 2026-07-23, after the
+  golden-path walkthrough). Sequence delivered: F1 → F2 → F3 → M4 Integration.
   - **F1 — Advisor Workspace + Current Reality (the digital twin): accepted**
     (founder, 2026-07-21), then deepened (editable executive summary, per-dimension
     confidence, understanding). Proposal: `docs/milestone-reports/M4-F1_current_reality.md`.
@@ -34,14 +35,13 @@ milestone in progress.
     Record reads as **"Our perspective as of {Month Year}"** (not a version number)
     and preserves **authorship** (prepared / submitted / approved). Proposal:
     `docs/milestone-reports/M4-F3_artifact_builder.md`.
-  - **M4 Integration (was "F4") — the closing M4 milestone: in progress, at the
-    founder gate.** Golden path seeded (`npm run seed:golden-path` — Robert's full
-    arc); consulting-quality review done (`docs/milestone-reports/M4_Integration_report.md`).
-    Three improvements landed from reading it end-to-end: the Record now speaks in
-    the second person (a letter), it offers to *confirm* what it only assumes, and
-    the Overview's "% understood" gauge became calm language (no number scores the
-    advisor). Remaining: the **founder's authenticated believability pass**; then
-    **M4 closes.**
+  - **M4 Integration (was "F4") — accepted; M4 closed.** Golden path seeded
+    (`npm run seed:golden-path` — Robert's full arc); consulting-quality review done
+    (`docs/milestone-reports/M4_Integration_report.md`, ACCEPTED). Three
+    improvements landed from reading it end-to-end: the Record now speaks in the
+    second person (a letter), it offers to *confirm* what it only assumes, and the
+    Overview's "% understood" gauge became calm language. Founder walked the golden
+    path and accepted 2026-07-23.
 - EA-001 rules unchanged: synthetic data only, local only, no hosted deployment,
   no secrets in the repo, milestone stops at M5 and M6 minimum.
 
@@ -73,10 +73,19 @@ be started through the harness via `.claude/launch.json` (config `os`, port 3000
 
 ## Next required action
 
-**Founder's believability pass, then close M4.** The golden path is seeded and the
-consulting-quality review is done (`M4_Integration_report.md`). Walk Robert once —
-Overview → Direction → Record → approve after cooling — and confirm the emotional
-arc lands (*understood → carefully considered → given real judgment*) and that it
-would read as a thoughtful consulting engagement. If it does, **M4 closes here**;
-M5 (advisor-facing publishing) is next. The real-stack suite is the standing
-regression gate: it must stay green (`60/60`) after every change.
+**M5 — advisor-facing publishing (Advisor Studio) — is the next milestone, and an
+EA-001 milestone stop.** No M5 production code until the founder approves an M5
+plan (the M3 pattern: plan → founder approval → build). M5 crosses the
+internal/advisor boundary — the `published_artifacts` snapshot, residue scan, the
+publish "gold moment," and the advisor's first Studio sign-in landing on the
+Record. The real-stack suite is the standing regression gate: it must stay green
+(`60/60`).
+
+**Two non-blocking engineering follow-ups (from the M4 walkthrough):**
+1. A Next.js **dev-mode** webpack bug on `/challenge` (`__webpack_require__.n is
+   not a function`) — the interop helper isn't emitted in `next dev`; the
+   production build is unaffected. Likely a Next version bump (overlay flagged it
+   outdated) or a config tweak. The local app is currently served in **production
+   mode** (`next build` + `next start`) as the interim workaround.
+2. Consider folding `seed:golden-path` into `demo:reset` so the canonical demo
+   advisor is always present after a reset.

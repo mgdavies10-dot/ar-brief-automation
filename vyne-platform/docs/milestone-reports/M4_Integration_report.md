@@ -1,6 +1,6 @@
 # M4 Integration — the consulting-quality review
 
-**Status:** for founder gate review · **Date:** 2026-07-22
+**Status:** ACCEPTED — founder, 2026-07-23 (M4 closed) · **Date:** 2026-07-22
 **Purpose (founder):** not another feature — *proof that Twin → Our Perspective →
 Current Reality Record behaves like one coherent consulting experience.* Read the
 whole thing end-to-end and improve it before adding capability.
@@ -114,8 +114,26 @@ a screen. They felt understood. That is the product.
   that is the founder's gate step (the MFA ceremony makes it yours). Everything up
   to it is seeded and verified; the walk is ready.
 
-## To close M4
+## Definition of Done (adopted 2026-07-21)
 
-Founder walks the golden path once and confirms the emotional arc lands. If it
-does, M4 closes here — a stable consulting workflow, a polished experience, a
-clean stop before M5 introduces advisor-facing publishing.
+- **Functional implementation** — F1–F3 + Integration built and walkable. ✅
+- **Unit/integration tests** — `@vyne/domain` 17/17 (twin, conviction, record,
+  cooling). ✅
+- **e2e / real-stack** — real-Supabase DB suite 60/60 (RLS, guards, rollback);
+  golden-path seed runs clean. ✅
+- **Accessibility** — semantic forms, labels, focus states; design-system tokens.
+  ✅ (AA maintained; no new contrast risks.)
+- **Design-system compliance** — all surfaces via `@vyne/ui` tokens; the last
+  numeric gauge removed for consistency. ✅
+- **Security review** — founder-only approval enforced by DB trigger; RLS inherits
+  the advisor/decision; no new auth surface. ✅
+- **Documentation** — F1/F2/F3 proposals, Product Philosophy, this report, HANDOFF,
+  DECISION_LOG all current. ✅
+- **Founder acceptance** — **granted 2026-07-23** (golden-path walkthrough). ✅
+
+## M4 — closed
+
+The founder walked the golden path (Overview → Direction → Record → approval) and
+accepted the milestone. M4 is a stable consulting workflow with a polished,
+coherent experience — a clean stop before **M5 (advisor-facing publishing)**,
+which is an EA-001 milestone stop requiring an approved M5 plan before any code.

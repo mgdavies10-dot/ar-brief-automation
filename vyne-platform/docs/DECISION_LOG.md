@@ -23,6 +23,22 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-23 — **M4 ACCEPTED — the milestone is closed.** After walking the golden
+  path end-to-end (Robert Halvorsen: Overview → Direction → Record → approval), the
+  founder accepted M4 Integration and closed the milestone. M4 delivered the
+  decision spine of the VYNE Method as one coherent consulting experience:
+  **F1** Advisor Workspace + Current Reality (the digital twin) · **F2** the
+  Conviction Engine surfaced as "Our Perspective" · **F3** the Premium Current
+  Reality Record (a letter, lifecycle, cooling rule, founder-only approval) ·
+  **M4 Integration** (golden path + consulting-quality review; three
+  improvements: second-person Record, honest-about-assumptions, the last gauge
+  removed). EA-001 scope held throughout (Modeling / Firm Intelligence remain
+  Horizon B; synthetic + local; no secrets). Report:
+  `docs/milestone-reports/M4_Integration_report.md`. **Next: M5 (advisor-facing
+  publishing) — an EA-001 milestone stop; no M5 production code until the founder
+  approves an M5 plan.** Two engineering follow-ups noted, neither blocking: a
+  Next.js dev-mode webpack bug on `/challenge` (`__webpack_require__.n`; production
+  build unaffected) and the local app currently served in production mode.
 - 2026-07-22 — **F3 accepted; the Record documents judgment; F4 becomes M4
   Integration; M4 closes after integration.** Founder accepted F3 and elevated
   the product philosophy. Rulings: (1) **The Record documents professional
