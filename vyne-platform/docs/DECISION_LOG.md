@@ -23,6 +23,21 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-23 — **The VYNE Constitution ratified (v1.0).** After two founder board
+  reviews, the founder ratified `docs/foundation/THE_VYNE_CONSTITUTION.md` as the
+  **highest authority at VYNE** — a worldview preamble + ten enduring principles +
+  a decision standard + a two-question governance gate. Core identity fixed: **VYNE
+  is an independent consulting firm with a proprietary technology and market-
+  intelligence edge — not a software company.** Advisor-first mission; *Decisions
+  Over Transactions* (measured by better decisions, never placements); *Evidence
+  Before Opinion*; "the platform is our advantage, never our identity." Governance:
+  nothing (roadmap, feature, marketing, website) may contradict it; every idea is
+  first tested — *should VYNE build this? does it strengthen the consulting
+  relationship?* — before *how.* Amendments are rare, dated, and explained (logged
+  in `docs/foundation/FOUNDATION_CHANGE_LOG.md`). Read order + precedence:
+  `docs/foundation/FOUNDATION_README.md` (Constitution → Founder Alignment Memo →
+  VYNE Story). **Next (in order): draft the Founder Alignment Memo, then rewrite
+  the VYNE Story.** No production code during this founder-level phase.
 - 2026-07-23 — **M4 ACCEPTED — the milestone is closed.** After walking the golden
   path end-to-end (Robert Halvorsen: Overview → Direction → Record → approval), the
   founder accepted M4 Integration and closed the milestone. M4 delivered the

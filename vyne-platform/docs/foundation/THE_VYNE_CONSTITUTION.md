@@ -1,6 +1,6 @@
 # The VYNE Constitution
 
-**Status:** DRAFT for founder review (revised for timelessness) · **Date:** 2026-07-23
+**Status:** RATIFIED — founder, 2026-07-23 · **Version:** 1.0
 **Authority:** The highest document at VYNE. Everything — the Founder Alignment
 Memo, the VYNE Story, the roadmap, the website, the brand, hiring, and every
 product decision — derives from and must remain consistent with what follows. It
@@ -13,6 +13,12 @@ decades from now, even if technology, business models, and the market have
 changed completely. This document changes only by deliberate amendment.*
 
 ---
+
+## Purpose
+
+This Constitution exists to preserve VYNE's identity, principles, and
+decision-making philosophy as the company grows. Every strategy, product, hire,
+and partnership should be evaluated against these principles before it is pursued.
 
 ## Preamble — Our Worldview
 
@@ -153,7 +159,15 @@ does not adopt structures that would compromise either:
   2. *If we build it, does it strengthen or weaken the consulting relationship?*
 
   Only what strengthens the consulting relationship proceeds.
-- This Constitution changes only by **deliberate, dated amendment**, recorded in
-  the Decision Log. Present-day interpretation belongs in the Founder Alignment
-  Memo; the narrative belongs in the VYNE Story. Neither may alter what is written
-  here.
+- This Constitution is intended to **change rarely.** Amendments occur only when
+  VYNE's enduring philosophy genuinely evolves — never because products, markets,
+  competitors, or technology have changed. Every amendment must be **dated and
+  accompanied by a written explanation of why the change was necessary**, recorded
+  in the Decision Log and the Foundation Change Log. Present-day interpretation
+  belongs in the Founder Alignment Memo; the narrative belongs in the VYNE Story.
+  Neither may alter what is written here.
+
+---
+
+*If a future decision conflicts with these principles, the decision should
+change — not the principles.*
