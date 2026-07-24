@@ -91,15 +91,21 @@ VYNE Story, **stop adding foundational documents** — future work references th
 three, never expands them. (The old `docs/product/PRODUCT_STORY.md` was retired;
 `docs/foundation/THE_VYNE_STORY.md` supersedes it.)
 
-**Foundation validated (2026-07-24):** a coherence audit (read only the three docs,
-as a five-years-later newcomer) confirmed one coherent company on identity,
-customer, value, boundaries, technology's role, and decision-making. **One open
-item, load-bearing:** the docs never state **how VYNE is compensated**, and
-"Decisions Over Transactions" depends on the economics being non-contingent on a
-move. Resolve it in the **Founder Alignment Memo as `[Strategy]`** (a founder
-decision — advisor-paid vs. non-contingent retainer; never placement fees); the
-Constitution does not reopen. Design/strategy reviews now open with three
-questions (see `FOUNDATION_README.md`).
+**Foundation validated (2026-07-24), architecture sharpened by the founder:** a
+coherence audit (read only the three docs, as a five-years-later newcomer)
+confirmed one coherent company on identity, customer, value, boundaries,
+technology's role, and decision-making. The audit surfaced that the docs never
+state **how VYNE is compensated** — but the founder ruled this a **business-model
+question, not a constitutional or strategy gap.** The Constitution is
+compensation-independent *by design* (it must survive any future revenue model);
+compensation, conflicts, disclosure, and neutrality safeguards live in a separate
+**operational** document, registered as a future work item:
+`docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`. Intended model:
+**firm-paid** (like established transition consultancies), made compatible with
+advisor-first advice by an **Incentive-Alignment** principle (advisor's long-term
+interests take precedence) plus disclosure. **Constitution and Memo are
+unchanged.** Design/strategy reviews open with three questions (see
+`FOUNDATION_README.md`).
 
 **Remaining founder-level deliverables (in order), then code:**
 1. **Website Strategy** — experience-first; must reflect the Memo (a trusted
