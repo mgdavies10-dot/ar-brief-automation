@@ -73,25 +73,37 @@ be started through the harness via `.claude/launch.json` (config `os`, port 3000
 
 ## Next required action
 
-**Founder-directed strategic pause before M5 (2026-07-23).** Not code — shaping the
-company. Four deliverables, in order, each after the previous:
-1. **VYNE Product Story** — `docs/product/PRODUCT_STORY.md` (drafted; for founder
-   refinement). The canonical "what VYNE is" doctrine.
-2. **Website Strategy** — experience-first (what an advisor should *feel* in 30
-   seconds), only after the Story is settled. Not built here (public website is
-   EA-001-excluded) — a strategy document.
-3. **M5 Planning** — the plan for advisor-facing publishing (Advisor Studio):
-   `published_artifacts` snapshot, residue scan, the publish "gold moment," the
-   advisor's first Studio sign-in on the Record. **M5 is an EA-001 milestone stop —
-   no M5 code until the founder approves the plan.**
-4. **Brand Standards** — core identity only (voice, tone, typography, colors,
-   photography, illustration philosophy, writing principles), extending
-   `docs/brand/`.
+**Foundation phase (founder-directed pause before M5).** The company's foundation
+lives in `docs/foundation/` — read in order, precedence **Constitution → Memo →
+Story** (see `FOUNDATION_README.md`):
+- **The VYNE Constitution** — RATIFIED v1.0 (frozen; amend only via
+  `FOUNDATION_CHANGE_LOG.md` + Decision Log).
+- **Founder Alignment Memo** — adopted, living (strategy/interpretation; evolves,
+  the Constitution does not).
+- **The VYNE Story** — draft, for founder review.
 
-Milestone retrospective done: `docs/milestone-reports/M4_learnings.md`. Governing
-identity to protect across all four: **VYNE is the operating system for advisor
-transition consulting, not recruiting software.** The real-stack suite remains the
-standing regression gate (`60/60`) whenever code resumes.
+**Governing identity — protect it everywhere:** VYNE is an **independent
+consulting firm with a proprietary technology + market-intelligence edge — NOT a
+software company, NOT recruiting software.** Standing governance gate: test every
+idea against the Constitution (*should VYNE build this? does it strengthen the
+consulting relationship?*) before discussing how. **Founder directive:** after the
+VYNE Story, **stop adding foundational documents** — future work references these
+three, never expands them. (The old `docs/product/PRODUCT_STORY.md` was retired;
+`docs/foundation/THE_VYNE_STORY.md` supersedes it.)
+
+**Remaining founder-level deliverables (in order), then code:**
+1. **Website Strategy** — experience-first; must reflect the Memo (a trusted
+   consulting relationship, not a software landing page). Public-website *build*
+   stays EA-001-excluded — this is a strategy document.
+2. **Brand Standards** — core identity (voice, tone, typography, color,
+   photography, illustration, writing principles), extending `docs/brand/`.
+3. **M5 Plan** — advisor-facing publishing (Advisor Studio): `published_artifacts`
+   snapshot, residue scan, publish "gold moment," the advisor's first Studio
+   sign-in on the Record. **An EA-001 milestone stop — no M5 code until the founder
+   approves the plan.**
+
+Milestone retrospective: `docs/milestone-reports/M4_learnings.md`. The real-stack
+suite remains the standing regression gate (`60/60`) whenever code resumes.
 
 **Two non-blocking engineering follow-ups (from the M4 walkthrough):**
 1. A Next.js **dev-mode** webpack bug on `/challenge` (`__webpack_require__.n is

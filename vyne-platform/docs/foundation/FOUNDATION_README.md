@@ -4,7 +4,7 @@ These are VYNE's foundational documents. Read them **in this order:**
 
 1. **The VYNE Constitution** — [`THE_VYNE_CONSTITUTION.md`](THE_VYNE_CONSTITUTION.md) *(ratified 2026-07-23, v1.0)*
 2. **Founder Alignment Memo** — [`FOUNDER_ALIGNMENT_MEMO.md`](FOUNDER_ALIGNMENT_MEMO.md) *(draft, 2026-07-23)*
-3. **The VYNE Story** — `THE_VYNE_STORY.md` *(forthcoming)*
+3. **The VYNE Story** — [`THE_VYNE_STORY.md`](THE_VYNE_STORY.md) *(draft, 2026-07-24)*
 
 What each is for:
 
