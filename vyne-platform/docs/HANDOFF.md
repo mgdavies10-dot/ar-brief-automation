@@ -91,13 +91,27 @@ VYNE Story, **stop adding foundational documents** — future work references th
 three, never expands them. (The old `docs/product/PRODUCT_STORY.md` was retired;
 `docs/foundation/THE_VYNE_STORY.md` supersedes it.)
 
+**Foundation validated (2026-07-24):** a coherence audit (read only the three docs,
+as a five-years-later newcomer) confirmed one coherent company on identity,
+customer, value, boundaries, technology's role, and decision-making. **One open
+item, load-bearing:** the docs never state **how VYNE is compensated**, and
+"Decisions Over Transactions" depends on the economics being non-contingent on a
+move. Resolve it in the **Founder Alignment Memo as `[Strategy]`** (a founder
+decision — advisor-paid vs. non-contingent retainer; never placement fees); the
+Constitution does not reopen. Design/strategy reviews now open with three
+questions (see `FOUNDATION_README.md`).
+
 **Remaining founder-level deliverables (in order), then code:**
 1. **Website Strategy** — experience-first; must reflect the Memo (a trusted
    consulting relationship, not a software landing page). Public-website *build*
    stays EA-001-excluded — this is a strategy document.
-2. **Brand Standards** — core identity (voice, tone, typography, color,
+2. **Advisor Journey** — what an advisor actually experiences, from first
+   discovering VYNE through becoming an advocate: the bridge between what we
+   believe (Constitution) and why (Story) and a real human experience, mapped
+   before any software.
+3. **Brand Standards** — core identity (voice, tone, typography, color,
    photography, illustration, writing principles), extending `docs/brand/`.
-3. **M5 Plan** — advisor-facing publishing (Advisor Studio): `published_artifacts`
+4. **M5 Plan** — advisor-facing publishing (Advisor Studio): `published_artifacts`
    snapshot, residue scan, publish "gold moment," the advisor's first Studio
    sign-in on the Record. **An EA-001 milestone stop — no M5 code until the founder
    approves the plan.**

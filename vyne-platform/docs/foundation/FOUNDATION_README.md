@@ -25,3 +25,15 @@ Every downstream artifact — the roadmap, product specs, the website, brand
 standards, hiring — derives from these three and must remain consistent with them.
 The history of *philosophical* changes (not product changes) lives in
 [`FOUNDATION_CHANGE_LOG.md`](FOUNDATION_CHANGE_LOG.md).
+
+## Using the foundation in reviews
+
+Every major design or strategy review opens with three questions. If a proposal
+cannot answer them, it is not ready:
+
+1. Which principle(s) of the **Constitution** does this support?
+2. Which part of the **Founder Alignment Memo** guided this decision?
+3. How does this reinforce **The VYNE Story** from the advisor's perspective?
+
+This is the whole governance model: lightweight, and enough to keep the
+organization aligned as it grows.
