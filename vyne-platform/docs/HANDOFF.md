@@ -107,23 +107,35 @@ interests take precedence) plus disclosure. **Constitution and Memo are
 unchanged.** Design/strategy reviews open with three questions (see
 `FOUNDATION_README.md`).
 
-**Remaining founder-level deliverables (in order), then code:**
-1. **Website Strategy** — experience-first; must reflect the Memo (a trusted
-   consulting relationship, not a software landing page). Public-website *build*
-   stays EA-001-excluded — this is a strategy document.
-2. **Advisor Journey** — what an advisor actually experiences, from first
-   discovering VYNE through becoming an advocate: the bridge between what we
-   believe (Constitution) and why (Story) and a real human experience, mapped
-   before any software.
-3. **Brand Standards** — core identity (voice, tone, typography, color,
-   photography, illustration, writing principles), extending `docs/brand/`.
-4. **M5 Plan** — advisor-facing publishing (Advisor Studio): `published_artifacts`
-   snapshot, residue scan, publish "gold moment," the advisor's first Studio
-   sign-in on the Record. **An EA-001 milestone stop — no M5 code until the founder
-   approves the plan.**
+### VYNE Development Phases (founder, 2026-07-24)
 
-Milestone retrospective: `docs/milestone-reports/M4_learnings.md`. The real-stack
-suite remains the standing regression gate (`60/60`) whenever code resumes.
+The company (internally, **The VYNE Consulting System** — philosophy, methodology,
+digital experience, intelligence, research, technology, people; software is *one*
+component) is built in strict phase order:
+
+- **Phase 0 — Foundation: ✅ COMPLETE.** Outcome: one coherent company; every future
+  decision has a philosophical home (`docs/foundation/`).
+- **Phase 1 — Expression: IN PROGRESS.** Make the company visible through
+  *experience*, not software. No code, UI, CRM, or database in this phase.
+- **Phase 2 — Product Experience** (later): design what the workspaces / intelligence
+  layers are trying to *accomplish*, now that the experience defines them.
+- **Phase 3 — Platform** (later): decide what software supports the experience.
+  (M5 — advisor-facing publishing — lives here; still an EA-001 milestone stop
+  requiring an approved plan before code.)
+
+**Phase 1 deliverables (in order), each experience-strategy BEFORE UX:**
+1. **Digital Experience Strategy** (renamed from "Website Strategy") —
+   `docs/experience/DIGITAL_EXPERIENCE_STRATEGY.md` **(drafted, for founder review).**
+   Governs every digital surface (website, email, research, reports, portal, AI
+   search, workspaces); centers the Advisor + Emotional Journey. No pages/UI/color.
+2. **Advisor Journey** (deeper standalone) · 3. **Brand Standards** · 4. **Messaging
+   Architecture** · 5. **Content Architecture** · 6. **AEO Strategy** · 7.
+   **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+
+Each Phase-1 doc derives from the foundation and passes the three-question review
+gate. Milestone retrospective: `docs/milestone-reports/M4_learnings.md`. The
+real-stack suite remains the standing regression gate (`60/60`) when code resumes
+(Phase 2/3).
 
 **Two non-blocking engineering follow-ups (from the M4 walkthrough):**
 1. A Next.js **dev-mode** webpack bug on `/challenge` (`__webpack_require__.n is
