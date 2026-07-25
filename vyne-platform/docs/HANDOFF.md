@@ -133,8 +133,17 @@ component) is built in strict phase order:
    review).** Built around the real consulting engagement (12 non-linear stages;
    engagement levels; graduated disclosure; where the modular assessment + calibrated
    recommendation enter; stay/pause/return as valid outcomes) — not a funnel.
-   3. **Brand Standards** · 4. **Messaging Architecture** · 5. **Content Architecture** ·
-   6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+3. **Brand Standards** — `docs/brand/BRAND_STANDARDS.md` **(strategy-level, drafted, for
+   founder review).** How VYNE sounds/feels/behaves (foundation · promise · positioning ·
+   personality · voice · tone-by-context · writing · message hierarchy · language to
+   own/use-carefully/avoid · visual/color/type/photo/data **principles** · confidentiality
+   · behavior · architecture · guardrails · decision test). Evaluates & **affirms** the
+   existing palette/type/logo (`BRAND_TOKENS.md`, `Brand_Guide_v1.0.md`, `LOGO_USAGE.md`)
+   — warm bronze on ivory, not bank navy-and-gold; no final creative selected.
+   4. **Messaging Architecture** *(next — the founder's steer: define WHAT VYNE must say
+   to each audience and at each Advisor-Journey stage, before any page design)* ·
+   5. **Content Architecture** · 6. **AEO Strategy** · 7. **Lead-Capture Philosophy** ·
+   8. **Consultation Experience.**
 
 **Competitive intelligence & method (added 2026-07-25):**
 - `docs/market/2026_RECRUITER_RELEVANCE_AND_DIRECT_FIRM_COMPETITION.md` — direct-firm

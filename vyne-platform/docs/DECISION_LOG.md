@@ -23,6 +23,26 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Phase 1 (Expression) direction: signature engagement, engagement model,
+  and brand strategy.** Building the company's *expression* before software. Key
+  founder decisions/directions (all in `docs/` — foundation untouched): (1) elevate Book
+  Portability into the flagship **VYNE Practice Transition Assessment** (working title) —
+  answers *"what happens to my business if I make this move?"* across twelve areas;
+  portability is one module (`docs/method/`). (2) **Comprehensive framework, tailored
+  (modular) engagement** — always scan all areas, go deep only where warranted. (3)
+  **Calibrated recommendations** — VYNE gives the strongest conclusion the evidence
+  supports (decision-support · conditional · full); advisor always decides. Quality bar =
+  **The VYNE Standard**. (4) Advisor-facing deliverable is three layers (executive
+  narrative · comparison · supporting record), not locked to a letter. (5) **Digital
+  Experience Strategy** + standalone **Advisor Journey** built around the real consulting
+  relationship, not a funnel; direct-firm + self-directed paths; stay/pause/return valid.
+  (6) **Brand Standards** (strategy level) created and the existing visual identity
+  (navy/ivory/warm-bronze; serif+sans) **evaluated and affirmed** — not reinvented.
+  (7) Competitive read: recruiting commoditizing, consulting judgment durable; two of the
+  four cited 2026 articles are Diamond (industry-participant). **Open founder decisions:**
+  final assessment name · VYNE-Standard public vs internal · always-included diagnostic
+  elements · how much methodology is public · IP/trademark strategy. Next: **Messaging
+  Architecture**. Change level 2 (strategy/docs; no code/scope change).
 - 2026-07-23 — **The VYNE Constitution ratified (v1.0).** After two founder board
   reviews, the founder ratified `docs/foundation/THE_VYNE_CONSTITUTION.md` as the
   **highest authority at VYNE** — a worldview preamble + ten enduring principles +
