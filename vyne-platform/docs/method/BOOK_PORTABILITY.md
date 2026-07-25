@@ -1,9 +1,18 @@
 # Book Portability & Transferability Analysis
 
 **Status:** Capability defined (v0.1) — methodology to be developed · **Date:** 2026-07-25
-**Type:** Operational — a central capability of the VYNE Method. Not a foundational
-document. Bound by the Constitution (Advisor First, Evidence Before Opinion,
-Decisions Over Transactions, No Preferred Destination) and the review gate.
+**Type:** Operational — a capability of the VYNE Method. Not a foundational document.
+Bound by the Constitution (Advisor First, Evidence Before Opinion, Decisions Over
+Transactions, No Preferred Destination), delivered to *The VYNE Standard*, and part
+of the review gate.
+
+> **This is Area 3 of the broader signature engagement — the VYNE Practice Transition
+> Assessment** (`PRACTICE_TRANSITION_ASSESSMENT.md`). Portability answers *how much of
+> the book can move*; the full assessment answers *what happens to the whole practice
+> if the advisor makes this move.* This document is preserved in full and depends on /
+> feeds: transition economics (Area 5), capability compatibility (Area 4), client
+> impact (7), operating-model impact (9), enterprise continuity (6), risk (10), and
+> the integrated conclusion (12).
 
 ## Why this is central
 

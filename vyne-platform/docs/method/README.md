@@ -11,13 +11,19 @@ becomes concrete.
 
 | Capability | Status | Location |
 |---|---|---|
-| **Book Portability & Transferability Analysis** | Defined (v0.1); methodology to be developed | [`BOOK_PORTABILITY.md`](BOOK_PORTABILITY.md) |
+| **VYNE Practice Transition Assessment** — the flagship signature engagement ("what happens to my business if I make this move?") | Concept; methodology largely to be developed | [`PRACTICE_TRANSITION_ASSESSMENT.md`](PRACTICE_TRANSITION_ASSESSMENT.md) |
+| **The VYNE Standard** — the quality bar every material analysis must clear | Preliminary internal definition | [`THE_VYNE_STANDARD.md`](THE_VYNE_STANDARD.md) |
+| **Book Portability & Transferability** — Area 3 of the Assessment | Defined (v0.1); methodology to be developed | [`BOOK_PORTABILITY.md`](BOOK_PORTABILITY.md) |
 | **Professional Standards for VYNE Consultants** | Registered — future work | this file (below) |
 
-Additional method components are registered inside Book Portability (methodology,
-firm & channel intelligence, product/program taxonomy, revenue modeling, confidence
-& evidence standards, information requirements by disclosure level, the comparison
-deliverable).
+The **Practice Transition Assessment** is the organizing framework; Book Portability
+is one of its twelve areas. Additional method components are registered inside the
+Assessment and Book Portability (portability methodology, firm & channel intelligence,
+product/program taxonomy, revenue modeling, confidence & evidence standards,
+information requirements by disclosure level, the comparison deliverable) — plus the
+economics, capability-compatibility, enterprise-continuity, risk, and verification
+methods the Assessment will need. All are undeveloped by design until built on real
+evidence.
 
 ## Professional Standards for VYNE Consultants *(registered — future work)*
 

@@ -250,6 +250,8 @@ never because they were pushed.
 
 The deeper standalone **Advisor Journey**, **Brand Standards**, **Messaging
 Architecture**, **Content Architecture**, **AEO Strategy**, **Lead-Capture
-Philosophy**, **Consultation Experience**, and the **Book Portability** capability
-(`docs/method/BOOK_PORTABILITY.md`) all derive from this document, and this document
-derives from the foundation.
+Philosophy**, **Consultation Experience**, and the VYNE Method's flagship **Practice
+Transition Assessment** (`docs/method/PRACTICE_TRANSITION_ASSESSMENT.md`, of which Book
+Portability is one module) all derive from this document, and this document derives
+from the foundation. The Perspective, Consultation, and Evaluation stages are where the
+advisor experiences that assessment.

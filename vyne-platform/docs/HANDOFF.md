@@ -129,9 +129,10 @@ component) is built in strict phase order:
    **Perspective** stage; per-stage *Advisor Needs* + *How Trust Is Earned*);
    **direct-firm digital path** + **self-directed path**; assumes an already-informed,
    already-leaning advisor. No pages/UI/color.
-2. **Advisor Journey** (deeper standalone) · 3. **Brand Standards** · 4. **Messaging
-   Architecture** · 5. **Content Architecture** · 6. **AEO Strategy** · 7.
-   **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+2. **Advisor Journey** (deeper standalone) — **built around the Practice Transition
+   Assessment** so it reflects the real consulting engagement, not a generic funnel ·
+   3. **Brand Standards** · 4. **Messaging Architecture** · 5. **Content Architecture** ·
+   6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
 
 **Competitive intelligence & method (added 2026-07-25):**
 - `docs/market/2026_RECRUITER_RELEVANCE_AND_DIRECT_FIRM_COMPETITION.md` — direct-firm
@@ -145,10 +146,21 @@ component) is built in strict phase order:
   positioning captured: *"Advisors do not need more information or more options — they
   need a better way to determine which option, if any, is right for their business,
   clients, and future."*
-- `docs/method/BOOK_PORTABILITY.md` — Book Portability & Transferability defined as a
-  central VYNE Method capability (six dimensions; graduated disclosure L1–L3;
-  confidence ranges; fact-vs-claim-vs-judgment distinctions; boundaries).
-  `docs/method/README.md` — the VYNE Method registry.
+- **VYNE Method — flagship framework** (`docs/method/`): the signature engagement is the
+  **VYNE Practice Transition Assessment** (`PRACTICE_TRANSITION_ASSESSMENT.md`, concept)
+  — answers *"what happens to my business if I make this move?"* across twelve areas
+  (advisor objectives · current-practice profile · **book portability** · capability
+  compatibility · transition economics · enterprise continuity/value · client impact ·
+  team impact · operating-model impact · risk · due-diligence/verification · integrated
+  conclusion). **Book Portability** (`BOOK_PORTABILITY.md`) is preserved in full as
+  Area 3. Every material output is delivered to **The VYNE Standard**
+  (`THE_VYNE_STANDARD.md`, preliminary internal). Methodology is largely **undeveloped
+  by design** (flagged, not invented). Registry: `README.md`.
+- **Founder decisions pending before deeper method/Advisor-Journey work** (see
+  `PRACTICE_TRANSITION_ASSESSMENT.md`): final assessment name; VYNE-Standard
+  internal-vs-public; one comprehensive engagement vs. modular; always-included
+  elements; explicit-recommendation vs. decision-support conclusion; how much
+  methodology is public; later IP/trademark review.
 
 **Registered future work (no code/UI):** Book Portability Methodology · Firm &
 Channel Portability Intelligence · Product & Program Compatibility Taxonomy · Revenue
