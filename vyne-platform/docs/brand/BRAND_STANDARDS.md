@@ -1,6 +1,8 @@
 # VYNE Brand Standards (strategy level)
 
-**Status:** DRAFT for founder review · **Date:** 2026-07-25 · **Phase:** 1 — Expression
+**Status:** Accepted with minor revisions (founder, 2026-07-25); living · **Phase:** 1 —
+Expression. *Deliberately left open:* the brand promise (§2), the signature-assessment
+name, and validating bronze/ivory in digital products (§11).
 **Derived from:** the Constitution, Founder Alignment Memo, VYNE Story, Digital
 Experience Strategy, Advisor Journey, Practice Transition Assessment, and The VYNE
 Standard. **Governs:** how VYNE *sounds, feels, presents itself, and behaves.*
@@ -24,9 +26,9 @@ wireframes, final marketing copy, or new visual assets are produced here.
 - **The problem:** advisors now have *more information and more options than ever* —
   and no disciplined, confidential, independent way to determine what actually applies
   to *their* practice.
-- **What VYNE provides:** independent consulting that turns that overwhelming
-  marketplace into a clear, advisor-specific decision — understanding, interpretation,
-  whole-practice impact analysis, and calibrated professional judgment.
+- **What VYNE provides:** outside, evidence-based consulting that turns that
+  overwhelming marketplace into a clear, advisor-specific decision — understanding,
+  interpretation, impact analysis on the business, and calibrated professional judgment.
 - **Why VYNE is credible:** evidence-based and neutral (Evidence Before Opinion), with
   no preferred destination, delivered to The VYNE Standard, by a firm whose only stake
   is the quality of the advisor's decision.
@@ -38,30 +40,39 @@ wireframes, final marketing copy, or new visual assets are produced here.
 - **Desired emotional outcome:** *"They understand my business better than anyone I've
   spoken to, and I can trust their judgment."*
 
-## 2. Brand promise (working, internal)
+## 2. Brand promise (working — deliberately not locked)
 
-VYNE helps an advisor make a **clearer, better-supported decision** about their
-business and future. It does **not** promise a better deal, a successful move,
-guaranteed portability, higher compensation, a placement, complete objectivity,
-certainty, or a move as the goal — and it remains true when the right answer is to
-*stay, wait, or continue independently.*
+VYNE helps an advisor reach a **clearer, better-supported, more confident decision**
+about their business and future. It does **not** promise a better deal, a successful
+move, guaranteed portability, higher compensation, a placement, complete objectivity,
+certainty, or a move as the goal — and it stays true when the right answer is to *stay,
+wait, or continue on their own.*
 
-Working formulations (internal strategy, not website copy):
+**Not yet locked — on purpose.** Advisors are not buying analysis; they are buying
+**confidence** in one of the most important decisions of their career. The final
+promise should carry that emotion, so we keep exploring before committing. Working
+formulations, in two families (internal strategy, not website copy):
 
-1. *"A clearer, better-supported decision about your business and your future."* **← recommended**
-2. *"Independent judgment on what a move — if any — means for your practice."*
-3. *"The disciplined way to decide what actually applies to your business."*
+*Clarity / support-framed:*
+1. "A clearer, better-supported decision about your business and your future."
+2. "The disciplined way to decide what actually applies to your business."
 
-Recommend #1: it centers the advisor's decision, promises support not outcome, and
-survives "stay."
+*Confidence-framed (the emotion):*
+3. "Confidence in one of the most important decisions of your career."
+4. "Confidence in the future of your practice."
+5. "Decisions about your practice you won't second-guess."
+
+**Direction:** the final promise likely **blends** the clarity/discipline of the first
+family with the confidence of the second — support *and* the feeling it produces. Left
+open until Messaging Architecture pressure-tests it against real audiences.
 
 ## 3. Positioning (internal)
 
 - **Vs. traditional recruiters:** VYNE is *not* differentiated by firm access, deal
   knowledge, introductions, knowing who's hiring, or making a match. It is
-  differentiated by **independent interpretation and advisor-specific judgment.**
+  differentiated by **impartial interpretation and advisor-specific judgment.**
 - **Vs. destination firms:** VYNE does not out-explain a firm about itself; it provides
-  the **independent, whole-market comparison and advisor-specific interpretation a
+  the **cross-market comparison and advisor-specific interpretation a
   destination firm cannot credibly offer.**
 - **Vs. software / matching platforms:** VYNE does **not** reduce a consequential
   decision to a quiz, algorithm, score, or automated match. Technology strengthens the
@@ -78,7 +89,7 @@ and make a decision they can trust.*
 firms, read payouts, run calculators, and talk to recruiters directly. What remains
 unsolved is *interpretation* — turning all of that into a confident, advisor-specific
 decision about clients, book, team, economics, operations, ownership, enterprise value,
-and risk. VYNE owns that ground: independent, evidence-based, confidential judgment,
+and risk. VYNE owns that ground: impartial, evidence-based, confidential judgment,
 willing to conclude "stay," and accountable to a defined standard.
 
 ## 4. Brand personality (the few traits that govern decisions)
@@ -181,8 +192,8 @@ Evaluated the proposed order; it's close. Recommended:
 1. **The advisor's consequential decision** (their world, first).
 2. **The difficulty of applying abundant information to a specific practice** (the real
    problem VYNE solves).
-3. **VYNE's independent consulting role** (who we are).
-4. **The Practice Transition Assessment** (how we help — whole-practice).
+3. **VYNE's consulting role** (who we are — impartial, advisor-side).
+4. **The signature assessment** (how we help — the whole business, not just the book).
 5. **Portability, economics, capabilities, enterprise value, and risk** (what we analyze).
 6. **Marketplace and firm intelligence** (the evidence base — *support, not headline*).
 7. **The VYNE Standard** (how our judgment is disciplined).
@@ -196,7 +207,7 @@ positioning we reject. Interpretation leads; data supports.
 ## 9. Language architecture
 
 **Own** (define VYNE's ground): practice transition · decision clarity · advisor-specific
-analysis · whole-practice impact · independent comparison · evidence-supported judgment ·
+analysis · impact on the business (not just the book) · independent comparison · evidence-supported judgment ·
 portability · capability compatibility · enterprise continuity · calibrated recommendation
 · *staying as a valid outcome.*
 
@@ -251,6 +262,11 @@ human canvas — *the key differentiator*), White (documents), **Warm Bronze `#B
   print — verify bronze reproduction.
 - **Avoid the bank/law/luxury-real-estate feel** through *warmth (ivory), restraint
   (bronze sparing), and editorial white space* — not more color.
+- **Bronze on screen is a hypothesis to validate, not a settled conclusion.** Warm
+  bronze is beautiful in print and on navy, but genuinely hard to use well in digital
+  products (small UI, thin strokes, varied displays). Treat the bronze/ivory system as a
+  **direction to prove in real applications** — validate legibility, restraint, and
+  digital reproduction before treating it as immutable.
 - *Open:* no "information" semantic hue is defined yet (uses navy) — a future founder
   color decision.
 
@@ -335,7 +351,7 @@ Consulting first · Advisor first · No preferred destination · No unsupported 
 artificial urgency · No software-first positioning · No implication that every advisor
 should move · Never obscure how VYNE is paid · Never reduce the decision to a score · No
 visual excess substituting for credibility · No claim of certainty where uncertainty
-exists.
+exists · **When behavior and visuals ever conflict, the behavior is the brand.**
 
 ## 19. The brand decision test
 
@@ -351,6 +367,8 @@ software, recruiting outreach, advisor communication, or firm communication. Doe
 7. Avoid hype and unsupported claims?
 8. Support the consulting relationship?
 9. Meet The VYNE Standard where analysis is involved?
+10. Would an exceptional financial advisor be **proud to share this** with another
+    exceptional advisor? *(the craftsmanship test)*
 
 If it fails any, it isn't ready.
 
