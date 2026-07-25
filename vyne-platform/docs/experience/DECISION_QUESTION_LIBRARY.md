@@ -140,9 +140,30 @@ Found in real marketplace sources (see `../market/ADVISOR_DECISION_INTELLIGENCE_
 - `(i)` Do I want to *run a business*, or just serve clients? *(the supported-independence
   fork)* `[E]` *[Complex]*
 
-**Two tags to add to every question** (research finding — sharpest predictors of VYNE value):
-**AI-sufficiency** (AI alone suffices · AI helps but can't personalize · only confidential
-consulting can answer) and **personalization** (generic · advisor-specific · book-specific).
+**Three tags to add to every question** (research findings — the sharpest predictors of VYNE
+value): **primary decision supported** (stay · move · independence · join · partner · sell ·
+succession · acquire · retire · wait — see the Wave-2 taxonomy), **AI-sufficiency** (AI alone
+suffices · AI helps but can't personalize · only confidential consulting can answer), and
+**personalization** (generic · advisor-specific · book-specific).
+
+## Wave-2 additions — the broader decision set (2026-07-25, evidence-grounded)
+
+The advisor decision is not only "change firms." Questions across adjacent primary decisions
+(see `../market/ADVISOR_DECISION_INTELLIGENCE_RESEARCH_WAVE2.md`, §4):
+
+- **Sell / valuation** `[E]`: What is my practice actually worth? · Revenue multiple or EBITDA
+  multiple? · Do favorable terms beat a higher headline multiple? · What makes my book more
+  valuable? *[Complex]*
+- **Succession** `[E]`: Internal successor or external sale? · Does my candidate have the
+  capital/skill/trust? · How long a runway (5–10 yrs)? · A minority-stake/hybrid to keep control?
+  *[Complex]*
+- **Acquire** `[E]`: Can I finance this (SBA/conventional/seller note)? · Do I have the cash flow?
+  · How do I value the target and structure contingencies? *[Complex]*
+- **Independence / supported** `[E]`: Do I want to *run a business* or *serve clients*? · What's my
+  real net after infrastructure? · Fully independent vs. a platform? · Does it preserve ownership
+  and enterprise value? *[Complex]*
+- **Changing broker-dealer** `[E]`: How do payout, technology, PM flexibility, compliance, and
+  transition resources compare? *[Moderate]*
 
 ## Governance (how the library stays canonical)
 

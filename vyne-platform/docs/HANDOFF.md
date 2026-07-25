@@ -153,18 +153,24 @@ component) is built in strict phase order:
    tagged stage · conversation · complexity; grows to hundreds). Every future content/AEO/
    report/consultation/AI artifact must trace to ≥1 question here. The connective tissue
    between Messaging and everything downstream.
-   4c. **Advisor Decision Intelligence Research** —
-   `docs/market/ADVISOR_DECISION_INTELLIGENCE_RESEARCH.md` **(first evidence-grounded pass,
-   for founder review).** Real cited sources (Kitces, Diamond, Bridgemark, WealthManagement,
-   AdvisorHub, Financial Planning, Fidelity, checklists); every claim tagged **[E]** evidenced
-   / **[H]** hypothesis; no fabricated demand scores. Deliverables: exec summary · methodology
-   · decision landscape · expanded question set (folded into 4b) · competitor coverage matrix ·
-   gap analysis · a Decision Intelligence Framework (classification taxonomy) · recommendations.
-   **Key neutral finding:** "independent/unbiased/advisor-centric" is **table-stakes** (every
-   competitor claims it) — VYNE must differentiate on *demonstrated method*, not the claim; the
-   real **white space** is confidential, advisor-specific, whole-business decision analysis
-   (nobody publishes it). Founder **paused Content Architecture** until this research is
-   reviewed.
+   4c. **Advisor Decision Intelligence Research** — Wave 1
+   `docs/market/ADVISOR_DECISION_INTELLIGENCE_RESEARCH.md` + Wave 2
+   `..._WAVE2.md` **(evidence-grounded, for founder review).** Real cited sources across
+   competitors (Diamond, Bridgemark, Elite, Spartan, Winthrop, FP Transitions), destination
+   firms/platforms (LPL, UBS, Dynasty, Sanctuary, Equitable, Carson), Kitces, and broader
+   decisions (sell/valuation, succession, acquire, independence). **5 evidence classes kept
+   separate**; no fabricated demand/LLM-prompt data. Deliverables: methodology + source register ·
+   primary-decision taxonomy · expanded question set (folded into 4b) · competitor+destination
+   coverage matrix · demand evidence map · AI-sufficiency × personalization matrix · gap analysis
+   (with confidence levels) · first-party data plan · recommendation. **Strongly-evidenced
+   findings:** "advisor-centric/unbiased/firm-agnostic" is universal category language (Diamond,
+   Bridgemark, Elite, Spartan all claim it) → differentiate on **demonstrated method**, not the
+   claim; the integrated, confidential, advisor-specific, cross-decision analysis is a
+   **strongly-evidenced gap in PUBLIC positioning** (private delivery unverifiable — was
+   preliminary in Wave 1). **Recommendation:** library is validated enough to **proceed to
+   Content Architecture**; two gaps remain non-blocking/additive (measured search/community
+   demand; first-party data) — a **narrow Wave 3** only if the founder wants demand
+   *quantification* first.
    5. **Content Architecture** *(paused pending research review — "which advisor question
    deserves which answer FORMAT?"; complexity drives format, reading from 4b)* ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**

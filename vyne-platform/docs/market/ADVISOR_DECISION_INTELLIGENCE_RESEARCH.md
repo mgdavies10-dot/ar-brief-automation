@@ -4,6 +4,12 @@
 **Date:** 2026-07-25 · **Type:** Operational (competitive/decision intelligence). Bound by
 the Constitution and delivered to The VYNE Standard.
 
+> **Extended by Wave 2 (2026-07-25):** see `ADVISOR_DECISION_INTELLIGENCE_RESEARCH_WAVE2.md`
+> for the broadened audit and calibrated confidence levels. The white-space conclusion in this
+> Wave-1 pass (*"nobody publishes a confidential advisor-specific analysis"*) is **preliminary**;
+> Wave 2 refines it to a **strongly-evidenced gap in PUBLIC positioning** — whether competitors
+> *deliver* similar work privately is unverifiable from public research.
+
 > **Honest method note (read first).** A true institutional study of *demand* would measure
 > live search volumes, AI-prompt frequencies, and forum/community data — which this analyst
 > **cannot** measure from here. What follows is grounded in **real, cited public sources**
