@@ -127,7 +127,74 @@ team · create a partnership · acquire · sell · pursue succession · restruct
 current practice · revisit after defined milestones.** Every conclusion explains
 **why · supporting evidence · assumptions · confidence · material risks · alternatives
 considered · what could change it · next steps** — i.e. it is delivered to The VYNE
-Standard.
+Standard. **The advisor retains the final decision in every case;** VYNE provides
+professional judgment, it does not decide for the advisor.
+
+**Calibrated recommendations (Founder Decision, 2026-07-25).** VYNE *is* willing to
+make an explicit recommendation when the evidence supports one — but never expresses
+more certainty than the evidence allows. Governing principle: **VYNE gives the
+strongest conclusion the evidence supports — no stronger and no weaker.** Three levels:
+
+- **Level 1 — Decision-support conclusion.** When information is preliminary,
+  disclosure is limited, key evidence is unavailable, or diligence is incomplete. May
+  name a likely direction, the most relevant alternatives, key tradeoffs, unresolved
+  questions, and next diligence steps. **Must not imply a final recommendation.**
+- **Level 2 — Conditional recommendation.** When VYNE has a directional judgment but
+  material conditions must still be confirmed. States the recommended direction, the
+  conditions, the evidence still required, what would change or invalidate it,
+  confidence, and next steps.
+- **Level 3 — Full recommendation.** When the relevant analysis is sufficiently
+  complete, material claims are verified, significant alternatives are considered, and
+  confidence is appropriate. States recommended action, rationale, supporting evidence,
+  major tradeoffs, material risks, alternatives considered, assumptions, confidence,
+  what could change the conclusion, and implementation/next steps.
+
+## Engagement model — comprehensive framework, tailored engagement
+
+**Founder Decision (2026-07-25): the framework is comprehensive; the engagement is
+tailored.** VYNE maintains one comprehensive internal framework (all twelve areas) so
+material issues are never missed — but it does not impose equal depth on every advisor.
+It always runs a **high-level scan across every area**, then goes deep only where the
+advisor's objectives, decision, channel, book composition, disclosure level, risks,
+complexity, open questions, and likely client/team impact warrant it. Illustratively:
+
+- **Employee-to-employee** comparison → depth on portability, capability, economics,
+  client impact, culture, team; lighter ownership modeling.
+- **Move to independence** → deeper operating-model, expense, staffing, compliance,
+  financing, vendor, and enterprise-value work.
+- **Succession** → emphasis on ownership, valuation, buyer universe, team and client
+  continuity, long-term control; lighter recruiting-package analysis.
+- **Known destination** → primarily verification, portability, financial analysis,
+  risk, and due diligence.
+
+Two failure modes to avoid: a **shallow** engagement that misses a material issue, and
+a **bloated** twelve-section process imposed identically on everyone. A future
+methodology concept (no scoring formulas yet) covers: (1) comprehensive initial
+diagnostic → (2) identification of material modules → (3) depth determination → (4)
+disclosure requirements → (5) analysis plan → (6) integrated conclusion.
+
+## The advisor-facing deliverable
+
+**Analytical breadth must not create presentation bloat.** The twelve-area framework
+is the *internal* analytical engine; it is **not** the advisor-facing artifact, and
+the deliverable is **not locked into the literal form of a letter.** The advisor
+should remember the *insight and conclusion* — not the quantity of analysis — while the
+work stays defensible later when a spouse, team, attorney, accountant, or destination
+firm asks how VYNE reached its conclusion. The eventual deliverable likely has three
+layers (structure only — no design/format decided now):
+
+- **Layer 1 — Executive decision narrative.** Concise and human: what the advisor is
+  trying to accomplish, what VYNE learned, the most consequential insights, the
+  conclusion, the reasons, the major risks and conditions, and next steps.
+- **Layer 2 — Decision comparison.** A focused comparison of the alternatives and
+  tradeoffs most material to *this* advisor (may later use structured tables, ranges,
+  scenarios, or visuals — not designed now).
+- **Layer 3 — Supporting analysis.** The rigorous record: evidence, assumptions,
+  portability, economics, capability compatibility, risk, due-diligence findings, and
+  unresolved questions — depth without overwhelming the narrative.
+
+*Internal framework broad · executive presentation selective · supporting record
+rigorous.*
 
 ## Provenance discipline (throughout every area)
 
@@ -162,18 +229,22 @@ as future work (see `README.md` and `BOOK_PORTABILITY.md`) and must be developed
 real evidence — not fabricated to make the framework look complete. Where a serious
 engagement would need a method we don't yet have, the assessment should **say so.**
 
-## Founder decisions required (surfaced, not assumed)
+## Founder decisions
 
+**Decided (2026-07-25):**
+- **Engagement structure — comprehensive framework, tailored (modular) engagement.**
+  (See "Engagement model.")
+- **Conclusion style — calibrated recommendation.** VYNE gives the strongest conclusion
+  the evidence supports (Levels 1–3), no stronger and no weaker. (See Area 12.)
+
+**Still open (founder):**
 1. **Final name** of the signature assessment (working title only today).
 2. Whether **The VYNE Standard** stays internal or eventually becomes public.
-3. Whether the assessment is **one comprehensive engagement** or a **modular set** of
-   analyses.
-4. Which elements are **included in every engagement** vs. optional.
-5. Which elements require **deeper (Level 2/3) disclosure** to produce.
-6. Whether the conclusion includes an **explicit recommendation** or a
-   **decision-support conclusion** (present the analysis, let the advisor decide).
-7. **How much of the methodology** should eventually be explained publicly.
-8. Whether **IP / trademark review** is warranted later.
+3. Which elements are **always included** (the "high-level scan" set) vs. optional, and
+   which require **deeper (Level 2/3) disclosure** to produce — once the diagnostic
+   methodology is developed.
+4. **How much of the methodology** should eventually be explained publicly.
+5. Whether **IP / trademark review** is warranted later.
 
 ---
 

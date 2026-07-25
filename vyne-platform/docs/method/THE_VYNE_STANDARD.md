@@ -29,6 +29,16 @@ consultant an advisor happens to work with.
 - **Why the conclusion follows** from the above.
 - **What information could change the conclusion.**
 
+## Calibration — the strongest conclusion the evidence supports
+
+The Standard requires professional judgment *calibrated to the evidence.* VYNE is
+willing to make an explicit recommendation, but **never expresses more certainty than
+the evidence allows.** Governing principle: **VYNE gives the strongest conclusion the
+evidence supports — no stronger and no weaker.** In practice this is expressed as one
+of three levels — *decision-support conclusion · conditional recommendation · full
+recommendation* — defined in the Practice Transition Assessment (Area 12). The advisor
+always retains the final decision.
+
 ## What it reinforces
 
 Advisor First · Evidence Before Opinion · No Preferred Destination · transparency ·

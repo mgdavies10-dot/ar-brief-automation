@@ -129,8 +129,10 @@ component) is built in strict phase order:
    **Perspective** stage; per-stage *Advisor Needs* + *How Trust Is Earned*);
    **direct-firm digital path** + **self-directed path**; assumes an already-informed,
    already-leaning advisor. No pages/UI/color.
-2. **Advisor Journey** (deeper standalone) — **built around the Practice Transition
-   Assessment** so it reflects the real consulting engagement, not a generic funnel ·
+2. **Advisor Journey** — `docs/experience/ADVISOR_JOURNEY.md` **(drafted, for founder
+   review).** Built around the real consulting engagement (12 non-linear stages;
+   engagement levels; graduated disclosure; where the modular assessment + calibrated
+   recommendation enter; stay/pause/return as valid outcomes) — not a funnel.
    3. **Brand Standards** · 4. **Messaging Architecture** · 5. **Content Architecture** ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
 
@@ -156,11 +158,15 @@ component) is built in strict phase order:
   Area 3. Every material output is delivered to **The VYNE Standard**
   (`THE_VYNE_STANDARD.md`, preliminary internal). Methodology is largely **undeveloped
   by design** (flagged, not invented). Registry: `README.md`.
-- **Founder decisions pending before deeper method/Advisor-Journey work** (see
-  `PRACTICE_TRANSITION_ASSESSMENT.md`): final assessment name; VYNE-Standard
-  internal-vs-public; one comprehensive engagement vs. modular; always-included
-  elements; explicit-recommendation vs. decision-support conclusion; how much
-  methodology is public; later IP/trademark review.
+- **Engagement decisions DECIDED (2026-07-25):** *comprehensive framework, tailored
+  (modular) engagement*; and *calibrated recommendation* — VYNE gives the strongest
+  conclusion the evidence supports (Levels 1–3: decision-support · conditional · full),
+  no stronger/weaker. Advisor-facing deliverable is three layers (executive narrative ·
+  decision comparison · supporting record), not locked to a "letter." Recorded in
+  `PRACTICE_TRANSITION_ASSESSMENT.md` + `THE_VYNE_STANDARD.md`.
+- **Founder decisions still open** (before Brand Standards): final assessment name;
+  VYNE-Standard internal-vs-public; always-included ("scan") elements + which need L2/L3
+  disclosure; how much methodology is public; later IP/trademark review.
 
 **Registered future work (no code/UI):** Book Portability Methodology · Firm &
 Channel Portability Intelligence · Product & Program Compatibility Taxonomy · Revenue
