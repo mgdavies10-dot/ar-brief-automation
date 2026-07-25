@@ -142,10 +142,16 @@ component) is built in strict phase order:
    hypothesis**; craftsmanship question added to the decision test; "behavior is the
    brand" elevated to a guardrail. *Left open:* brand promise, signature-assessment name,
    bronze-on-screen validation.
-   4. **Messaging Architecture** *(NEXT — define WHAT VYNE must say to each audience and
-   at each Advisor-Journey stage, derived from Brand Standards + run through the brand
-   decision test; before any page design or copy)* · 5. **Content Architecture** ·
+   4. **Messaging Architecture** — `docs/experience/MESSAGING_ARCHITECTURE.md` **(drafted,
+   for founder review).** Organized around the **advisor's evolving questions, not VYNE's
+   features** (founder rule): the three conversations (advisor internal · advisor external ·
+   VYNE interpretive), a question map by journey stage (questions that *don't name VYNE*),
+   and "one conversation, many surfaces" (website/articles/reports/consultation/AEO/lead
+   capture all answer the same questions in the same voice). · 5. **Content Architecture** ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+
+Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
+Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**
 
 **Competitive intelligence & method (added 2026-07-25):**
 - `docs/market/2026_RECRUITER_RELEVANCE_AND_DIRECT_FIRM_COMPETITION.md` — direct-firm
