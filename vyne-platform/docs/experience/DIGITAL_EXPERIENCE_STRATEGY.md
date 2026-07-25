@@ -54,6 +54,11 @@ at explaining LPL, or Raymond James at explaining Raymond James. VYNE must help 
 advisor determine which claims matter, which require verification, how alternatives
 compare under consistent standards, and whether the advisor should move at all.*
 
+**The one-line positioning the whole experience serves:** *"Advisors do not need more
+information or more options. They need a better way to determine which option — if
+any — is right for their business, clients, and future."* This separates VYNE from
+both traditional recruiters and software-driven matching platforms.
+
 ## 3. Design principles (derived from the Constitution)
 
 - **Advisor first.** Every interaction improves the advisor's ability to decide. *(P2)*

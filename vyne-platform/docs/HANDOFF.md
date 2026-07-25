@@ -138,9 +138,13 @@ component) is built in strict phase order:
   digital recruiting (LPL, Raymond James) + AEO as a first-order competitive force;
   recruiting activities commoditizing, consulting advantages (interpretation ·
   verification · comparison · advisor-specific analysis · portability · judgment ·
-  decision quality) durable. **Open (Evidence Before Opinion):** the four cited 2026
-  articles' *texts are not in the repo* — per-article analysis (author, publication,
-  summary, bias, methodology limits) is held until the founder brings the sources in.
+  decision quality) durable. Per-article analysis **completed** (founder provided
+  summaries 2026-07-25): source-independence separated — two of four are Diamond
+  Consultants (industry-participant positioning/data), one is independent trade press
+  (Financial Planning), one is unattributed trend commentary. Crystallized
+  positioning captured: *"Advisors do not need more information or more options — they
+  need a better way to determine which option, if any, is right for their business,
+  clients, and future."*
 - `docs/method/BOOK_PORTABILITY.md` — Book Portability & Transferability defined as a
   central VYNE Method capability (six dimensions; graduated disclosure L1–L3;
   confidence ranges; fact-vs-claim-vs-judgment distinctions; boundaries).
