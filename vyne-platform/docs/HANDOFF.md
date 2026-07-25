@@ -124,13 +124,36 @@ component) is built in strict phase order:
   requiring an approved plan before code.)
 
 **Phase 1 deliverables (in order), each experience-strategy BEFORE UX:**
-1. **Digital Experience Strategy** (renamed from "Website Strategy") —
-   `docs/experience/DIGITAL_EXPERIENCE_STRATEGY.md` **(drafted, for founder review).**
-   Governs every digital surface (website, email, research, reports, portal, AI
-   search, workspaces); centers the Advisor + Emotional Journey. No pages/UI/color.
+1. **Digital Experience Strategy** — `docs/experience/DIGITAL_EXPERIENCE_STRATEGY.md`
+   **(rev 2, for founder review).** Ten-stage Advisor + Emotional Journey (added a
+   **Perspective** stage; per-stage *Advisor Needs* + *How Trust Is Earned*);
+   **direct-firm digital path** + **self-directed path**; assumes an already-informed,
+   already-leaning advisor. No pages/UI/color.
 2. **Advisor Journey** (deeper standalone) · 3. **Brand Standards** · 4. **Messaging
    Architecture** · 5. **Content Architecture** · 6. **AEO Strategy** · 7.
    **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+
+**Competitive intelligence & method (added 2026-07-25):**
+- `docs/market/2026_RECRUITER_RELEVANCE_AND_DIRECT_FIRM_COMPETITION.md` — direct-firm
+  digital recruiting (LPL, Raymond James) + AEO as a first-order competitive force;
+  recruiting activities commoditizing, consulting advantages (interpretation ·
+  verification · comparison · advisor-specific analysis · portability · judgment ·
+  decision quality) durable. **Open (Evidence Before Opinion):** the four cited 2026
+  articles' *texts are not in the repo* — per-article analysis (author, publication,
+  summary, bias, methodology limits) is held until the founder brings the sources in.
+- `docs/method/BOOK_PORTABILITY.md` — Book Portability & Transferability defined as a
+  central VYNE Method capability (six dimensions; graduated disclosure L1–L3;
+  confidence ranges; fact-vs-claim-vs-judgment distinctions; boundaries).
+  `docs/method/README.md` — the VYNE Method registry.
+
+**Registered future work (no code/UI):** Book Portability Methodology · Firm &
+Channel Portability Intelligence · Product & Program Compatibility Taxonomy · Revenue
+Portability Modeling · Portability Confidence & Evidence Standards · Advisor
+Information Requirements by Disclosure Level · Portability Comparison Deliverable (all
+in `docs/method/BOOK_PORTABILITY.md`) · Professional Standards for VYNE Consultants
+(`docs/method/README.md`) · Compensation & Conflict Disclosure Standards
+(`docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`) · Self-Directed Advisor
+Research Experience (`docs/experience/DIGITAL_EXPERIENCE_STRATEGY.md` §7).
 
 Each Phase-1 doc derives from the foundation and passes the three-question review
 gate. Milestone retrospective: `docs/milestone-reports/M4_learnings.md`. The

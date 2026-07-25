@@ -48,6 +48,15 @@ Advisors are encouraged to remain where they are whenever that is the best outco
 for their clients, businesses, and long-term goals. We do not recommend a
 transition unless we believe it is in the advisor's best interest."*
 
+## Registered future work item
+
+- **Compensation & Conflict Disclosure Standards** — the formal standards for what
+  VYNE discloses to advisors and the public about how it is paid and how conflicts
+  are managed, and where those disclosures appear (this document, public
+  disclosures, legal, website FAQ, and the consulting process itself). Seeded by the
+  draft disclosure statement above; ties to *Professional Standards for VYNE
+  Consultants* (`../method/README.md`). Not yet written.
+
 ## Its relationship to the foundation
 
 Bound by the Constitution — especially **Decisions Over Transactions**, **Advisor
