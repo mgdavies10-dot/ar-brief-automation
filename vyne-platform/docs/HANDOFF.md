@@ -153,10 +153,21 @@ component) is built in strict phase order:
    tagged stage · conversation · complexity; grows to hundreds). Every future content/AEO/
    report/consultation/AI artifact must trace to ≥1 question here. The connective tissue
    between Messaging and everything downstream.
-   5. **Content Architecture** *(NEXT — asks "which advisor question deserves which answer
-   FORMAT?"; content type follows the question's complexity, reading from 4b — not "what
-   should we publish?")* · 6. **AEO Strategy** · 7. **Lead-Capture Philosophy** ·
-   8. **Consultation Experience.**
+   4c. **Advisor Decision Intelligence Research** —
+   `docs/market/ADVISOR_DECISION_INTELLIGENCE_RESEARCH.md` **(first evidence-grounded pass,
+   for founder review).** Real cited sources (Kitces, Diamond, Bridgemark, WealthManagement,
+   AdvisorHub, Financial Planning, Fidelity, checklists); every claim tagged **[E]** evidenced
+   / **[H]** hypothesis; no fabricated demand scores. Deliverables: exec summary · methodology
+   · decision landscape · expanded question set (folded into 4b) · competitor coverage matrix ·
+   gap analysis · a Decision Intelligence Framework (classification taxonomy) · recommendations.
+   **Key neutral finding:** "independent/unbiased/advisor-centric" is **table-stakes** (every
+   competitor claims it) — VYNE must differentiate on *demonstrated method*, not the claim; the
+   real **white space** is confidential, advisor-specific, whole-business decision analysis
+   (nobody publishes it). Founder **paused Content Architecture** until this research is
+   reviewed.
+   5. **Content Architecture** *(paused pending research review — "which advisor question
+   deserves which answer FORMAT?"; complexity drives format, reading from 4b)* ·
+   6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**

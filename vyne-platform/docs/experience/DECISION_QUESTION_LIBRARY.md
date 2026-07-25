@@ -121,6 +121,29 @@ brackets.
 
 ---
 
+## Research-surfaced additions (2026-07-25 — evidence-grounded)
+
+Found in real marketplace sources (see `../market/ADVISOR_DECISION_INTELLIGENCE_RESEARCH.md`,
+§4). `[E]` = evidenced with a cited source.
+
+- `(e)` What happens to my book if I leave the *new* firm? *(exit options — most-forgotten
+  question)* `[E]` *[Moderate]*
+- `(e)` Can I legally take my clients — what do Reg S-P, Broker Protocol, and my non-solicit
+  actually allow? Do I need affirmative consent? `[E]` *[Complex — legal boundary]*
+- `(e)` How does a forgivable-loan / transition deal actually work, and how is it taxed?
+  `[E]` *[Moderate]*
+- `(e)` Should I take the counteroffer if my firm makes one? `[E]` *[Complex — emotional]*
+- `(e)` Is the extra payout actually worth it after I run my own infrastructure? `[E]` *[Complex]*
+- `(i)` Do I actually want independence — or do I just want better economics? `[E]` *[Complex]*
+- `(e)` How long will this really take, and when does revenue dip? `[E]` *[Moderate]*
+- `(e)` Who can I talk to who recently made this exact move? `[E]` *[Simple]*
+- `(i)` Do I want to *run a business*, or just serve clients? *(the supported-independence
+  fork)* `[E]` *[Complex]*
+
+**Two tags to add to every question** (research finding — sharpest predictors of VYNE value):
+**AI-sufficiency** (AI alone suffices · AI helps but can't personalize · only confidential
+consulting can answer) and **personalization** (generic · advisor-specific · book-specific).
+
 ## Governance (how the library stays canonical)
 
 - **One inventory, everywhere.** Every content, AEO, report, consultation, and AI artifact
