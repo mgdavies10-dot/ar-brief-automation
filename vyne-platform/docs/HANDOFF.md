@@ -142,13 +142,21 @@ component) is built in strict phase order:
    hypothesis**; craftsmanship question added to the decision test; "behavior is the
    brand" elevated to a guardrail. *Left open:* brand promise, signature-assessment name,
    bronze-on-screen validation.
-   4. **Messaging Architecture** — `docs/experience/MESSAGING_ARCHITECTURE.md` **(drafted,
-   for founder review).** Organized around the **advisor's evolving questions, not VYNE's
-   features** (founder rule): the three conversations (advisor internal · advisor external ·
-   VYNE interpretive), a question map by journey stage (questions that *don't name VYNE*),
-   and "one conversation, many surfaces" (website/articles/reports/consultation/AEO/lead
-   capture all answer the same questions in the same voice). · 5. **Content Architecture** ·
-   6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+   4. **Messaging Architecture** — `docs/experience/MESSAGING_ARCHITECTURE.md` **(FROZEN,
+   founder 2026-07-25).** Organized around the **advisor's evolving questions, not VYNE's
+   features**: the three conversations — advisor **internal** · advisor **external** · **the
+   interpretive** conversation (renamed from "VYNE's" to center the advisor; VYNE
+   *facilitates* it) — a question map by journey stage (questions that *don't name VYNE*),
+   and "one conversation, many surfaces."
+   4b. **Decision Question Library** — `docs/experience/DECISION_QUESTION_LIBRARY.md`
+   **(living inventory; drafted).** The canonical inventory of advisor questions (~55 seed,
+   tagged stage · conversation · complexity; grows to hundreds). Every future content/AEO/
+   report/consultation/AI artifact must trace to ≥1 question here. The connective tissue
+   between Messaging and everything downstream.
+   5. **Content Architecture** *(NEXT — asks "which advisor question deserves which answer
+   FORMAT?"; content type follows the question's complexity, reading from 4b — not "what
+   should we publish?")* · 6. **AEO Strategy** · 7. **Lead-Capture Philosophy** ·
+   8. **Consultation Experience.**
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**

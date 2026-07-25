@@ -1,6 +1,6 @@
 # The VYNE Messaging Architecture
 
-**Status:** DRAFT for founder review · **Date:** 2026-07-25 · **Phase:** 1 — Expression
+**Status:** FROZEN (founder, 2026-07-25) · **Phase:** 1 — Expression
 **Derived from:** the Constitution, Founder Alignment Memo, VYNE Story, Digital
 Experience Strategy, Advisor Journey, Practice Transition Assessment, The VYNE Standard,
 and Brand Standards.
@@ -42,8 +42,10 @@ into one (the sales pitch). VYNE keeps them separate and addresses each in its o
 2. **The advisor's external conversation** — *"What is this firm actually offering me?"*
    Analytical: firms, economics, capabilities, portability, risk. **VYNE brings rigor here**
    (evidence, verification, consistent comparison).
-3. **VYNE's conversation** — *"Here's what we believe matters most."* Interpretive: VYNE's
-   independent read. **VYNE offers this last** (professional judgment, calibrated).
+3. **The interpretive conversation** — *"Here's what actually matters."* VYNE's independent
+   read, offered **in service of the advisor's decision** and **last** (professional
+   judgment, calibrated). Naming it *interpretive* rather than "VYNE's" is deliberate: the
+   company *facilitates* this conversation — it is not about the company.
 
 Messaging must always know *which conversation it is in.* Answering an internal, emotional
 question with an external, analytical answer (or a VYNE pitch) is the classic recruiter
@@ -70,7 +72,7 @@ message must **do** (answer, without leading with VYNE) · the **dominant conver
   external question from *"which firm pays most?"* to *"what happens to my business?"* —
   introducing whole-business thinking without yet selling anything.
 
-### Perspective  *(dominant: VYNE interpretive + external)*
+### Perspective  *(dominant: interpretive + external)*
 - **Internal:** "What actually applies to *my* situation? Am I over- or under-thinking this?"
 - **External:** "Which of these firm claims matter for me? How much of my book really moves?
   What am I not seeing?"
@@ -79,7 +81,7 @@ message must **do** (answer, without leading with VYNE) · the **dominant conver
   questions. This is the crystallized positioning: *you don't need more information; you need
   a way to know what applies to you.*
 
-### Evaluation / due diligence  *(dominant: external + VYNE interpretive)*
+### Evaluation / due diligence  *(dominant: external + interpretive)*
 - **Internal:** "Can I trust this analysis — and my own judgment here?"
 - **External:** "Which risks matter? Which promises should I believe? What should I verify?
   What don't I know yet? What are the real economics after attrition and costs?"
@@ -87,7 +89,7 @@ message must **do** (answer, without leading with VYNE) · the **dominant conver
   risks, calibrate confidence, and show the verification plan. Trust is earned through
   evidence, not reassurance.
 
-### Decision  *(dominant: internal + VYNE interpretive)*
+### Decision  *(dominant: internal + interpretive)*
 - **Internal:** "Should I move? Should I wait? Should I stay? How confident can I be? Will I
   regret this?"
 - **External:** "Does the recommendation hold up? What are the conditions?"
@@ -130,9 +132,9 @@ message must **do** (answer, without leading with VYNE) · the **dominant conver
   of their domain. Message: *VYNE coordinates and provides consulting judgment; it does not
   practice law or tax.*
 
-## 6. VYNE's conversation — what we say about ourselves (only after the questions)
+## 6. What VYNE says about itself (minimal, and last)
 
-Kept minimal and interpretive, and always *after* the advisor's questions are answered: who
+Kept minimal, and always *after* the advisor's questions are answered: who
 VYNE is (an independent consulting firm), what we believe matters most (interpretation over
 access; the whole business, not just the book; no preferred destination), how our judgment
 is disciplined (The VYNE Standard), and how we're paid (plain disclosure). VYNE never leads
