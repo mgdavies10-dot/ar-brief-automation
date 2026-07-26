@@ -23,6 +23,22 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Phase 1 (Expression) FROZEN; Phase 2 (Architecture) begins. Ontology final: Ownership
+  and Enterprise Value are separate families; advisor-paid consulting deferred as Future Business Model
+  Expansion.** The founder ruled Phase 1 complete and directed a stop to strategy refinement. Two final
+  Ontology revisions: (1) **Ownership** (a decision — employee/partner/owner, equity structure, what I
+  own) and **Enterprise Value** (a consequence + management discipline — valuation, how buyers price
+  me, increasing value, growth's effect, monetization, capital) are kept as **separate families** (not
+  merged); (2) **Capability Requirements** preserved exactly (capabilities drive the model; the model
+  drives the firm). **Advisor-paid consulting** and hands-on RIA-launch engagements are **deferred as
+  Future Business Model Expansion** — not open blockers — to be learned from real post-launch demand.
+  Strategic identity crystallized: **VYNE is a decision advisory for financial advisors making
+  consequential business decisions; recruiting is one outcome the methodology can support.** **Phase 1
+  strategy docs frozen** (Constitution · Founder Memo · Story · Method · Journey · Messaging · Brand ·
+  Decision Question Library · Decision Ontology · Commercial Principles) — factual corrections only, no
+  redesign; the Question Library still accrues new questions (not a redesign). **Phase 2 begins with
+  Content Architecture**, now downstream of the Ontology (Content · AEO · Assessment · Consultation ·
+  AI · CRM architectures). Change level 2 (strategy/docs; no code/scope change).
 - 2026-07-25 — **Core business model established: hiring-firm-paid, success-based; manage-and-disclose
   conflicts, never claim none. Fee economics are confidential (founder-only).** The founder
   moved the compensation model from "open" to **established direction**: the advisor generally does

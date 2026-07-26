@@ -151,10 +151,14 @@ firm-specific terms are never disclosed — see §10.)*
 7. How does VYNE handle a conclusion that the advisor should **stay** or **wait**?
 8. How does VYNE handle an advisor who wants to **launch an RIA** where no provider pays VYNE?
 
-**Optional advisor-paid consulting**
-9. Will VYNE offer advisor-paid engagements for: stay-vs-move · offer comparison · non-paying
-   destinations · RIA-launch evaluation · succession analysis · independent second opinions?
-10. If introduced, how does advisor-paid consulting stay clearly separate from firm-paid recruiting?
+**Future Business Model Expansion (deferred — NOT an open blocker; founder ruling 2026-07-25)**
+9. Whether VYNE offers advisor-paid engagements (stay-vs-move · offer comparison · non-paying
+   destinations · RIA-launch evaluation · succession · second opinions) is **deliberately deferred** —
+   do not solve a problem that doesn't exist yet. Launch, get advisors, and learn where friction
+   actually occurs (nobody may want it; or second opinions may be constant; or RIA-launch may become a
+   real business; or firms may compensate VYNE for those engagements — unknown pre-launch).
+10. *If* advisor-paid consulting is ever introduced, how it stays clearly separate from firm-paid
+    recruiting is decided **then**, with real demand evidence — not now.
 
 **Influence controls**
 11. Does compensation influence: firms presented · rankings · assessment scoring · recommendations ·
@@ -226,12 +230,15 @@ hiring-firm-paid and success-based; advisors do not pay for traditional recruiti
 transition-consulting services. Specific fee economics are confidential (§10).*
 
 **Remaining open decisions** (this document tracks): disclosure detail · non-paying alternatives ·
-stay/wait outcomes · optional advisor-paid consulting · RIA-launch engagements · fee confidentiality ·
-referral compensation · conflict controls · submission authorization · verification · payment timing ·
-clawbacks · legal documentation.
+stay/wait outcomes · referral compensation · conflict controls · submission authorization ·
+verification · payment timing · clawbacks · legal documentation.
 
-**The business model is no longer a blocker to the Advisor Decision Ontology or to the strategy
-sequence.** The open items above are governance/legal work items, not gates.
+**Future Business Model Expansion (deferred, not open):** advisor-paid consulting and hands-on
+RIA-launch engagements are **parked** until real post-launch advisor demand is observed — not decided
+now.
+
+**The business model is not a blocker to any strategy work.** The open items above are governance/legal
+work items, not gates.
 
 ## 10 · Founder-Restricted Confidential Commercial Information
 

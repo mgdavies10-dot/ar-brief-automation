@@ -122,10 +122,18 @@ component) is built in strict phase order:
 
 - **Phase 0 — Foundation: ✅ COMPLETE.** Outcome: one coherent company; every future
   decision has a philosophical home (`docs/foundation/`).
-- **Phase 1 — Expression: IN PROGRESS.** Make the company visible through
-  *experience*, not software. No code, UI, CRM, or database in this phase.
-- **Phase 2 — Product Experience** (later): design what the workspaces / intelligence
-  layers are trying to *accomplish*, now that the experience defines them.
+- **Phase 1 — Expression: ✅ COMPLETE / FROZEN (founder 2026-07-25).** The company made
+  visible through *experience*, not software. Frozen deliverables (factual corrections
+  only, no redesign): Constitution · Founder Memo · Story · Method (PTA / VYNE Standard /
+  Book Portability) · Advisor Journey · Messaging Architecture · Brand Standards · Decision
+  Question Library · **Advisor Decision Ontology** · Commercial Principles. *(The Question
+  Library still accrues newly discovered questions — that is not a redesign. Commercial
+  Principles is operational and evolves with governance/legal work.)*
+- **Phase 2 — Architecture: IN PROGRESS (founder 2026-07-25).** All downstream of the
+  Ontology: **Content Architecture** (started) → AEO · Assessment · Consultation · AI ·
+  CRM architectures. Still *experience/strategy*, pre-software — no code, UI, or database.
+  *(Note: this renames the roadmap's former "Phase 2 — Product Experience"; software still
+  waits for Phase 3.)*
 - **Phase 3 — Platform** (later): decide what software supports the experience.
   (M5 — advisor-facing publishing — lives here; still an EA-001 milestone stop
   requiring an approved plan before code.)
@@ -209,27 +217,31 @@ component) is built in strict phase order:
    commercial doc §10) — never in advisor-facing, public, AEO, or product surfaces; advisor-facing
    language is limited to the §5 disclosure sentences. Legal/contractual items flagged for counsel.
    4e. **Advisor Decision Ontology (Advisor Decision Map)** —
-   `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(REVISED after final structural review, for founder
-   approval; founder-requested 2026-07-25).** The strategy layer **between** the Decision Question
-   Library and Content Architecture — framed as **the VYNE Operating System** (everything references
-   it) under the doctrine *"VYNE supports decisions rather than publishing content."* **~34 fundamental
-   decisions in 12 families + the Strategic Outcome:** A Personal & Professional Objectives *(first —
-   frames everything)* · B Capability Requirements *(new — drives affiliation)* · C Affiliation &
-   Operating Model · D Enterprise Value & Ownership · E Economics · F Clients & Book · G Team · H Growth
-   · I Succession & Exit · J Risk/Legal/Compliance · K Negotiation & Due Diligence · L Transition
+   `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(FROZEN — Phase 1, founder-approved 2026-07-25).**
+   The strategy layer **between** the Decision Question Library and Content Architecture — framed as
+   **the VYNE Operating System** (everything references it) under the doctrine *"VYNE supports decisions
+   rather than publishing content."* **~38 fundamental decisions in 13 families + the Strategic
+   Outcome:** A Personal & Professional Objectives *(first — frames everything)* · B Capability
+   Requirements *(drives the model; the model drives the firm)* · C Affiliation & Operating Model ·
+   **D Ownership** *(a decision)* · **E Enterprise Value** *(a consequence + management discipline —
+   kept SEPARATE from Ownership per founder ruling)* · F Economics · G Clients & Book · H Team · I
+   Growth · J Succession & Exit · K Risk/Legal/Compliance · L Negotiation & Due Diligence · M Transition
    Strategy → **★ The Strategic Outcome** *(the synthesis, produced last — was "Direction")*.
    **Structural review applied (founder's 7 challenges):** Direction → Strategic Outcome (output, not
-   family); Personal Objectives moved first; Capability Requirements added; Ownership/Affiliation kept
-   orthogonal (supported-independence proof); Practice Value broadened to Enterprise Value & Ownership;
-   **decision-owner** dimension added; **pure execution excluded** (repapering/ACATS/systems = ops, not
-   choice). Elevates **"asset portability ≠ revenue portability"** to a named principle; visualizes the
-   **Education → Consulting → Specialist** ladder. Mapping spine **question → decision → family → PTA
-   area → assessment module → content → AI → report**; delivery axis general=education/AI-sufficient,
-   advisor-specific=consulting. Fee terms confidential — none appear in the ontology.
-   5. **Content Architecture** *(still PAUSED; now organizes BY DECISION — "which advisor question,
-   under which decision, deserves which answer FORMAT?"; complexity drives format, reading from 4b/4e)* ·
+   family); Personal Objectives first; Capability Requirements added; Ownership/Affiliation orthogonal;
+   **Ownership and Enterprise Value are SEPARATE families** (Ownership = choice; Enterprise Value =
+   consequence/discipline); **decision-owner** dimension; **pure execution excluded** (repapering/ACATS/
+   systems = ops, not choice). Named principle **"asset portability ≠ revenue portability"**; visualized
+   **Education → Consulting → Specialist** ladder. Fee terms confidential — none appear in the ontology.
+   Registered (not built): per-decision evidence → confidence → dependencies → AI-sufficiency → human
+   judgment.
+   **— END OF PHASE 1 (Expression). Phase 1 strategy docs FROZEN (factual corrections only). —**
+   5. **Content Architecture** — **PHASE 2, IN PROGRESS** (`docs/experience/CONTENT_ARCHITECTURE.md`):
+   organizes BY DECISION — "which advisor question, under which decision, deserves which answer
+   FORMAT?"; format follows the question's complexity + the delivery-ladder rung, reading from 4b/4e ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
-   *(Founder's revised sequence: Ontology → Content Architecture → AEO → Lead-Capture → Consultation.)*
+   *(Phase 2 architectures, all downstream of the Ontology: Content · AEO · Assessment · Consultation ·
+   AI · CRM.)*
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**

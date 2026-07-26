@@ -17,11 +17,15 @@ there — content type follows the question's complexity, not the reverse — re
 library.)*
 
 **Where this sits.** Questions are the surface layer; **beneath them are decisions.** Every
-question here rolls **up** to one of the ~34 fundamental decisions (12 families + the Strategic
+question here rolls **up** to one of the ~38 fundamental decisions (13 families + the Strategic
 Outcome) in the **[Advisor Decision Ontology](./ADVISOR_DECISION_ONTOLOGY.md)** — the VYNE Operating
 System (question → decision → decision family). It is what makes Content Architecture a matter of
 *systematically supporting decisions* rather than "publishing content." When adding a question, name
 the decision it supports.
+
+*(Phase-1 freeze note: this remains a **living inventory** — adding newly discovered advisor questions
+is expected and is **not** a redesign. The freeze applies to the strategy/structure, not to accruing
+questions.)*
 
 ## How questions are tagged
 
