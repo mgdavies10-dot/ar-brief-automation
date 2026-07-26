@@ -23,6 +23,36 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Core business model established: advisor-free, hiring-firm-paid, success-based
+  (~8%–16% of verified T12/TTMP); manage-and-disclose conflicts, never claim none.** The founder
+  moved the compensation model from "open" to **established direction**: the advisor generally does
+  not pay for the traditional recruiting engagement; the **hiring firm** pays a success-based
+  placement/transition fee only if the advisor authorizes a submission, joins a firm, and fee
+  conditions are met — so **stay / wait / renegotiate / non-paying destination / RIA-launch can yield
+  no fee.** Recorded the resulting **structural incentives** (outcome · destination · contracted-market
+  · timing · production) and the governing rule **"manage and disclose conflicts, not claim they do
+  not exist."** **Prohibited claims:** conflict-free · compensation-neutral · inherently unbiased ·
+  paid regardless of recommendation · represents the complete market · identical economics across
+  destinations. Credibility comes from **transparent conflict management + demonstrated method** —
+  compensation is **one component of trust, not the differentiator, and not gating.** Added to
+  `docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`: the operating model, incentive
+  analysis, trust model, **28 governance questions**, an **Advisor Submission Standard**, and **7
+  method controls** (compensation-blind initial assessment; fit scoring separated from VYNE revenue;
+  open-market notation incl. non-paying options; recommendation rationale; higher-conflict review;
+  disclosure record; no unsupported "best firm"). Compensation/disclosure questions added to the
+  Decision Question Library (classified PE/D/C/L/ASI). **Legal/contractual items (fee earn/pay timing,
+  T12 verification, clawbacks, procuring-cause/lead-ownership, dual/referral comp, submission terms)
+  flagged for counsel — not resolved.** Not a blocker to the Advisor Decision Ontology. Change level 2
+  (commercial/operational strategy; docs only; no code/scope change).
+- 2026-07-25 — **Advisor Decision Ontology inserted before Content Architecture.** The founder
+  requested a strategy layer between the Decision Question Library and Content Architecture: the ~33
+  fundamental advisor decisions (13 families; everything else a sub-question), how they relate, and
+  the mapping spine (question → decision → family → PTA framework → assessment module → content → AI →
+  report) with a public-education-vs-personalized-consulting delivery axis. Created
+  `docs/experience/ADVISOR_DECISION_ONTOLOGY.md`. Also corrected the Wave-2 finding: the business model
+  is **not** the gating differentiator — the moat is **how VYNE reaches conclusions** (the combination
+  no one else fields). Content Architecture stays **PAUSED** until the Ontology is reviewed. Change
+  level 2 (strategy/docs; no code/scope change).
 - 2026-07-25 — **Phase 1 (Expression) direction: signature engagement, engagement model,
   and brand strategy.** Building the company's *expression* before software. Key
   founder decisions/directions (all in `docs/` — foundation untouched): (1) elevate Book

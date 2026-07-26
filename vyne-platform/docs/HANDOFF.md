@@ -100,10 +100,16 @@ question, not a constitutional or strategy gap.** The Constitution is
 compensation-independent *by design* (it must survive any future revenue model);
 compensation, conflicts, disclosure, and neutrality safeguards live in a separate
 **operational** document, registered as a future work item:
-`docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`. Intended model:
-**firm-paid** (like established transition consultancies), made compatible with
-advisor-first advice by an **Incentive-Alignment** principle (advisor's long-term
-interests take precedence) plus disclosure. **Constitution and Memo are
+`docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`. Model **now
+FOUNDER-ESTABLISHED (2026-07-25):** advisor-free, **hiring-firm-paid,
+success-based** (~8%–16% of verified T12/TTMP), made compatible with
+advisor-first advice by the **Incentive-Alignment** principle (advisor's
+long-term interests take precedence) **plus transparent conflict management** —
+VYNE *manages and discloses* structural incentives (outcome · destination ·
+contracted-market · timing · production), never claims to have none. The
+commercial doc now carries the operating model, incentive analysis, trust model,
+28 governance questions, an Advisor Submission Standard, and 7 method controls;
+legal/contractual items are flagged for counsel. **Constitution and Memo are
 unchanged.** Design/strategy reviews open with three questions (see
 `FOUNDATION_README.md`).
 
@@ -189,8 +195,15 @@ component) is built in strict phase order:
    Question Library + evidence classification + confidence levels + unknowns + alternatives +
    provenance + a genuine willingness to recommend stay/wait/any legitimate destination. The
    **Business-Model / Incentive-Alignment** decision is **one dimension of trust that *supports* the
-   method — not the differentiator, and not gating.** It stays an open operational item; it does **not**
-   block Content Architecture. Corrected dossiers reframed accordingly (finding #1 + recommendation).
+   method — not the differentiator, and not gating.** It does **not** block Content Architecture.
+   Corrected dossiers reframed accordingly (finding #1 + recommendation). **Core model now
+   FOUNDER-ESTABLISHED (2026-07-25):** advisor-free, **hiring-firm-paid, success-based**, ~8%–16% of
+   verified T12/TTMP; VYNE **manages and discloses** real incentives (never claims none). Full model,
+   incentive analysis, trust model, **28 governance questions**, Advisor Submission Standard, and **7
+   method controls** in `docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`; DL entry
+   2026-07-25. Prohibited claims: conflict-free / compensation-neutral / inherently unbiased / paid
+   regardless of recommendation / represents the complete market / identical economics — reflect this
+   in **all** future strategy work. Legal/contractual items flagged for counsel.
    4e. **Advisor Decision Ontology (Advisor Decision Map)** —
    `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(DRAFT, for founder review; founder-requested
    2026-07-25).** The strategy layer **between** the Decision Question Library and Content

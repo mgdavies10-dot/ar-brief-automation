@@ -218,16 +218,20 @@ portability · capability compatibility · enterprise continuity · calibrated r
   software-first. Prefer describing the *judgment*, not the tooling.
 - *methodology / comprehensive* — fine if real; avoid implying finished methods we
   haven't built.
-- *fiduciary-like / unbiased* — **hazardous.** "Fiduciary-like" risks legal
-  misimplication; "unbiased" overclaims — prefer *independent* and *neutral*, and
-  disclose incentives.
+- *fiduciary-like / unbiased / neutral / conflict-free* — **hazardous / prohibited as
+  self-description** (founder ruling 2026-07-25). "Fiduciary-like" risks legal
+  misimplication; "unbiased," "neutral," and "conflict-free" **overclaim** given VYNE's
+  hiring-firm-paid model. VYNE *manages and discloses* incentives, never denies them —
+  prefer *independent · transparent about how we're paid · conflicts managed, not hidden*
+  (see `../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`).
 - *confidential* — supportable and central; express as behavior (graduated disclosure),
   not a slogan.
 
 **Avoid:** best firm · perfect match · guaranteed · exclusive deal · highest offer ·
-maximize your transition package · frictionless move · unbiased · complete objectivity ·
-AI matching · instant recommendation · marketplace platform · move your book · "we'll get
-you the best deal" · "one-click / self-serve analysis."
+maximize your transition package · frictionless move · unbiased · neutral · conflict-free ·
+complete objectivity · paid regardless of the recommendation · AI matching · instant
+recommendation · marketplace platform · move your book · "we'll get you the best deal" ·
+"one-click / self-serve analysis."
 
 ## 10. Visual-direction principles (not final designs)
 

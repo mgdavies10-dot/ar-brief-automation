@@ -196,6 +196,37 @@ destination. **Three-layer discipline:** for any question drawn from a provider/
 *provider-specific* → *market-wide* → *advisor-specific interpretive* versions distinct, so the
 Library never fills with firm-marketing questions.
 
+## Compensation, conflict & submission questions (2026-07-25, founder-directed)
+
+Advisors ask directly how the consultant is paid and whether it biases the advice. Because VYNE's
+core model is **hiring-firm-paid and success-based** (see
+`../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`), these belong in the Library and must be
+answered by **transparent conflict management + demonstrated method — never** by claiming VYNE has no
+conflicts. *Classification tags:* **[PE]** public education · **[D]** disclosure · **[C]** consultation
+· **[L]** legal/contractual review · **[ASI]** advisor-specific interpretation.
+
+- `(e)` How is my consultant or recruiter paid? **[PE][D]**
+- `(e)` Who pays the fee if I move? **[D]**
+- `(e)` Does the recruiter earn anything if I stay? **[D]**
+- `(e)` Does the recruiter make more if I choose one firm rather than another? **[D]**
+- `(e)` Does the recruiter work with every firm? **[D]**
+- `(int)` Could the best firm for me be one that does not pay the recruiter? **[D][ASI]**
+- `(e)` Will I still be shown firms that do not have an agreement with the recruiter? **[D]**
+- `(int)` How do I know compensation is not influencing the recommendation? **[D][C]**
+- `(e)` Will the recruiter tell me which firms compensate it? **[D]**
+- `(e)` Will the recruiter contact a firm without my permission? **[D][L]**
+- `(e)` What information will be shared before I approve it? **[D][L]**
+- `(i)` Can I explore anonymously or with limited disclosure? **[D][C]**
+- `(e)` Who owns the introduction? **[L]**
+- `(e)` What happens if I already spoke with the firm? **[L]**
+- `(int)` Does using a recruiter affect the transition package offered to me? **[ASI][L]**
+- `(e)` Does the recruiter negotiate its fee separately from my deal? **[D][L]**
+- `(e)` Is the recruiter's fee deducted from my transition package? **[D][L]**
+- `(int)` Can the hiring firm change my economics because it is paying a recruiter fee? **[ASI][L]**
+- `(i)` What happens if I decide to launch my own RIA instead? **[C][ASI]**
+- `(i)` Can I pay for an independent analysis without committing to a move? **[C]** *(depends on the
+  open advisor-paid-consulting decision)*
+
 ## Governance (how the library stays canonical)
 
 - **One inventory, everywhere.** Every content, AEO, report, consultation, and AI artifact

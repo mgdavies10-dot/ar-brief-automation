@@ -147,6 +147,16 @@ provider-specific → market-wide → advisor-specific — expressed as *decisio
 
 ## Open items (unchanged by this doc)
 
-The Business-Model / Incentive-Alignment decision remains a *trust dimension* (not gating; the moat is
-the method). Demand quantification and first-party evidence remain additive. Whether VYNE ever performs
-hands-on RIA-launch implementation remains an open operating-model decision.
+The **core business model is now founder-established** (2026-07-25): advisor-free,
+**hiring-firm-paid, success-based**, ~8%–16% of verified T12/TTMP (see
+`../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`). It is **one component of trust — not the
+differentiator, and not gating**; the moat is the method. Because compensation is firm-paid and
+success-based, this ontology's **delivery axis carries a conflict-management duty**: VYNE *manages and
+discloses* real incentives (outcome, destination, contracted-market, timing, production) — it never
+claims to have none. Notably, several decisions conclude in **no-fee outcomes** VYNE must still be
+willing to recommend — **A1 stay**, **A2 wait**, internal renegotiation, and **C7 launch-an-RIA** —
+which is exactly why fit scoring is compensation-blind. Open governance/legal sub-questions
+(disclosure detail · advisor-paid consulting · submission authorization · verification · clawbacks)
+are tracked in the commercial doc and are **not** gates. Demand quantification and first-party
+evidence remain additive. Whether VYNE ever performs hands-on RIA-launch implementation remains an
+open operating-model decision.
