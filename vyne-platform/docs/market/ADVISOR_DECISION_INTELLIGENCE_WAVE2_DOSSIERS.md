@@ -229,8 +229,9 @@ never private-prompt data) · first-party (future).**
    destination. **The business model is ONE dimension of trust that *supports* the method — not the
    differentiator, and not gating.** (A CPA, banker, attorney, and broker each have a compensation
    model; reputation rests on trusted judgment, not on who pays.) **Update (2026-07-25):** VYNE's core
-   model is now founder-established — advisor-free, **hiring-firm-paid, success-based** (~8%–16% of
-   verified T12/TTMP). VYNE therefore **must not** claim to be unbiased/neutral/conflict-free; it
+   model is now founder-established — **hiring-firm-paid, success-based** (advisors don't pay for
+   traditional recruiting/transition-consulting; fee economics are **confidential**). VYNE therefore
+   **must not** claim to be unbiased/neutral/conflict-free; it
    *manages and discloses* real incentives via demonstrated method (see
    `../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`).
 2. **Question-led is not unique** — Winthrop already ships assessments + a 100-question bank. VYNE

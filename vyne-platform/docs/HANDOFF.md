@@ -101,8 +101,9 @@ compensation-independent *by design* (it must survive any future revenue model);
 compensation, conflicts, disclosure, and neutrality safeguards live in a separate
 **operational** document, registered as a future work item:
 `docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`. Model **now
-FOUNDER-ESTABLISHED (2026-07-25):** advisor-free, **hiring-firm-paid,
-success-based** (~8%–16% of verified T12/TTMP), made compatible with
+FOUNDER-ESTABLISHED (2026-07-25):** **hiring-firm-paid, success-based**
+(advisors do not pay for traditional recruiting / transition-consulting; fee
+economics are **confidential** — commercial doc §10), made compatible with
 advisor-first advice by the **Incentive-Alignment** principle (advisor's
 long-term interests take precedence) **plus transparent conflict management** —
 VYNE *manages and discloses* structural incentives (outcome · destination ·
@@ -197,24 +198,34 @@ component) is built in strict phase order:
    **Business-Model / Incentive-Alignment** decision is **one dimension of trust that *supports* the
    method — not the differentiator, and not gating.** It does **not** block Content Architecture.
    Corrected dossiers reframed accordingly (finding #1 + recommendation). **Core model now
-   FOUNDER-ESTABLISHED (2026-07-25):** advisor-free, **hiring-firm-paid, success-based**, ~8%–16% of
-   verified T12/TTMP; VYNE **manages and discloses** real incentives (never claims none). Full model,
+   FOUNDER-ESTABLISHED (2026-07-25):** **hiring-firm-paid, success-based** (advisors don't pay for
+   traditional recruiting/transition-consulting; **fee economics confidential** — commercial doc §10);
+   VYNE **manages and discloses** real incentives (never claims none). Full model,
    incentive analysis, trust model, **28 governance questions**, Advisor Submission Standard, and **7
    method controls** in `docs/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`; DL entry
    2026-07-25. Prohibited claims: conflict-free / compensation-neutral / inherently unbiased / paid
    regardless of recommendation / represents the complete market / identical economics — reflect this
-   in **all** future strategy work. Legal/contractual items flagged for counsel.
+   in **all** future strategy work. **Fee percentages/amounts/terms are CONFIDENTIAL** (founder-only,
+   commercial doc §10) — never in advisor-facing, public, AEO, or product surfaces; advisor-facing
+   language is limited to the §5 disclosure sentences. Legal/contractual items flagged for counsel.
    4e. **Advisor Decision Ontology (Advisor Decision Map)** —
-   `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(DRAFT, for founder review; founder-requested
-   2026-07-25).** The strategy layer **between** the Decision Question Library and Content
-   Architecture: the **~33 fundamental decisions** (13 families — Direction · Affiliation/Business-model ·
-   Ownership/Independence · Economics · Clients/Book · Team · Growth · Value/Monetization · Succession/Exit ·
-   Risk/Legal · Negotiation/DD · Transition/Implementation · Personal-life) every advisor eventually makes;
-   **everything else is a sub-question.** Defines how the decisions relate, and the mapping spine
-   **question → decision → family → PTA framework → assessment module → content → AI → report**, plus the
-   **public-education-vs-personalized-consulting** delivery axis (general form = education/AI-sufficient;
-   advisor-specific form = consulting — the three-layer model expressed as decisions). Makes Content
-   Architecture "systematically support decisions," not "publish content."
+   `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(REVISED after final structural review, for founder
+   approval; founder-requested 2026-07-25).** The strategy layer **between** the Decision Question
+   Library and Content Architecture — framed as **the VYNE Operating System** (everything references
+   it) under the doctrine *"VYNE supports decisions rather than publishing content."* **~34 fundamental
+   decisions in 12 families + the Strategic Outcome:** A Personal & Professional Objectives *(first —
+   frames everything)* · B Capability Requirements *(new — drives affiliation)* · C Affiliation &
+   Operating Model · D Enterprise Value & Ownership · E Economics · F Clients & Book · G Team · H Growth
+   · I Succession & Exit · J Risk/Legal/Compliance · K Negotiation & Due Diligence · L Transition
+   Strategy → **★ The Strategic Outcome** *(the synthesis, produced last — was "Direction")*.
+   **Structural review applied (founder's 7 challenges):** Direction → Strategic Outcome (output, not
+   family); Personal Objectives moved first; Capability Requirements added; Ownership/Affiliation kept
+   orthogonal (supported-independence proof); Practice Value broadened to Enterprise Value & Ownership;
+   **decision-owner** dimension added; **pure execution excluded** (repapering/ACATS/systems = ops, not
+   choice). Elevates **"asset portability ≠ revenue portability"** to a named principle; visualizes the
+   **Education → Consulting → Specialist** ladder. Mapping spine **question → decision → family → PTA
+   area → assessment module → content → AI → report**; delivery axis general=education/AI-sufficient,
+   advisor-specific=consulting. Fee terms confidential — none appear in the ontology.
    5. **Content Architecture** *(still PAUSED; now organizes BY DECISION — "which advisor question,
    under which decision, deserves which answer FORMAT?"; complexity drives format, reading from 4b/4e)* ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**

@@ -1,14 +1,20 @@
 # The Advisor Decision Ontology (Advisor Decision Map)
 
-**Status:** DRAFT for founder review · **Date:** 2026-07-25 · **Phase:** 1 — Expression
+**Status:** REVISED after final structural review — for founder approval · **Date:** 2026-07-25 ·
+**Phase:** 1 — Expression
 **Sits between** the Decision Question Library and Content Architecture. **Derived from** the
 Practice Transition Assessment, the Advisor Journey, and the decision-intelligence research.
+
+> **What this is.** Not documentation — **the VYNE Operating System.** The ontology is the spine that
+> the assessment, CRM, AI, reports, articles, AEO, consultations, and meeting agendas all reference.
+> Its purpose is one sentence, and that sentence is doctrine:
+>
+> ## **VYNE supports decisions rather than publishing content.**
 
 **Why this exists.** Questions are one layer; **underneath them are decisions.** An advisor asks
 hundreds of questions, but they are making a **finite set of fundamental decisions.** This map names
 those decisions and how they relate, so that every question, framework, assessment module, content
-piece, AI interaction, and report maps to a **decision** — and VYNE systematically *supports
-decisions* rather than "publishing content."
+piece, AI interaction, and report maps to a **decision.**
 
 **The layering:**
 
@@ -21,142 +27,211 @@ outcome — including **stay** and **wait**.
 
 ---
 
-## The fundamental decisions (13 families, ~33 decisions)
+## The shape of the map
 
-### A · Direction *(the meta-decision, above all others)*
-1. Should I change anything at all? *(act · wait · stay)*
-2. Is now the right time? *(timing)*
+**Objectives come first; the outcome is produced last.** The advisor's **Personal & Professional
+Objectives (A)** frame everything — nothing is evaluated before objectives. The input families (A–L)
+are the *decisions the advisor makes*. **The Strategic Outcome (★)** is not a family — it is the
+**synthesis** the methodology produces after evaluating the inputs, and it is *concluded last*.
 
-### B · Affiliation & business model *(where and how I operate)*
-3. Which affiliation model? *(employee/wirehouse · regional · independent BD · supported independence
-   · own RIA · join an RIA · enterprise/platform · hybrid)*
-4. Which specific firm or platform *within* the chosen model?
-5. Which custodian / broker-dealer?
+```
+  A · Personal & Professional Objectives   ── frames everything
+        │
+        ▼
+  B · Capability Requirements  ─────────────┐
+  C · Affiliation & Operating Model         │
+  D · Enterprise Value & Ownership          │   the decisions the advisor makes
+  E · Economics (transition)                │   (evaluated together, non-linearly)
+  F · Clients & Book                        │
+  G · Team                                  │
+  H · Growth                                │
+  I · Succession & Exit                     │
+  J · Risk, Legal & Compliance              │
+  K · Negotiation & Due Diligence           │
+  L · Transition Strategy  ─────────────────┘
+        │
+        ▼
+  ★ THE STRATEGIC OUTCOME  ── the synthesis, produced last (stay · wait · renegotiate ·
+                               move · launch · join · merge · sell · succeed · retire)
+```
 
-### C · Ownership & independence
-6. Employee, partner, or owner — what's my role in the business?
-7. Full independence or supported independence?
-8. What do I want to own? *(firm · ADV · client relationships · brand)*
+## The fundamental decisions (12 families + the Strategic Outcome; ~34 decisions)
 
-### D · Economics
-9. Is the move/launch economics worth it — deal *and* long-term, net of costs and risk?
-10. How do I finance a move, launch, or acquisition? *(loans · notes · capital)*
+### A · Personal & Professional Objectives *(first — frames everything; PTA Area 1)*
+1. What kind of life and career am I building? *(values · lifestyle · time · family · legacy)*
+2. What does "better" actually mean for me? *(economics · autonomy · ownership · clients · team ·
+   growth · simplicity · succession)*
+3. What are my constraints and non-negotiables? *(geography · time horizon · health · partners)*
 
-### E · Clients & book
-11. How portable is my book — how much realistically transfers to *this* option?
-12. What is the client impact, and how do I protect continuity?
+### B · Capability Requirements *(what the business needs — upstream of affiliation; PTA Area 4 input)*
+4. What capabilities must my business have to serve my clients and goals? *(planning · investments /
+   alternatives · lending / banking · trust · tax · insurance · trading · research · technology ·
+   compliance · marketing · family-office)*
+5. Which capabilities are must-have vs. nice-to-have — and for each, **build, buy, or outsource**?
 
-### F · Team
-13. Do my team and junior advisors move with me — and how are they structured, paid, and owned?
+### C · Affiliation & Operating Model *(whose platform/brand/BD — distinct from ownership; PTA Areas 4, 9)*
+6. Which affiliation model? *(employee/wirehouse · regional · IBD · supported independence · own RIA ·
+   join an RIA · enterprise/platform · hybrid)*
+7. Which specific firm or platform *within* that model?
+8. Which custodian / broker-dealer?
 
-### G · Growth
-14. Should I grow by recruiting advisors?
-15. Should I grow by acquiring a practice?
-16. Should I merge with another team or firm?
+### D · Enterprise Value & Ownership *(what I own + what it's worth + building it; PTA Area 6)*
+9. Employee, partner, or owner — what's my role in the business?
+10. Full independence or supported independence — how much do I want to rely on a platform?
+    *(straddles C — an ownership choice with an affiliation consequence)*
+11. What do I want to own? *(firm · ADV · client relationships · brand · equity)*
+12. What is my business worth today?
+13. How do I **build and grow** enterprise value over time?
+14. When and how do I monetize — partial or full?
 
-### H · Practice value & monetization
-17. What is my practice worth?
-18. How do I increase enterprise value?
-19. When and how do I monetize — partial or full?
+### E · Economics — transition *(the economics of a given option; PTA Area 5)*
+15. Is a given move/launch economically worth it — deal *and* long-term, net of costs and risk?
+16. How do I finance a move, launch, or acquisition?
 
-### I · Succession & exit
-20. Internal successor or external sale?
-21. Sell now, or later?
-22. Retire / wind down — and how?
+### F · Clients & Book *(PTA Areas 3, 7)*
+17. How portable is my book — how much realistically transfers to a given option?
+18. What is the client impact, and how do I protect continuity?
 
-### J · Risk, legal & compliance
-23. What do my restrictive covenants / Broker Protocol / non-solicit actually allow?
-24. What registration and regulatory path applies *(especially launching an RIA)*?
-25. What are my operational, execution, and reputational risks?
+> ### A VYNE principle — **Asset portability ≠ revenue portability.**
+> What *can* move (accounts, assets) is not what *will* stay and keep producing (relationships,
+> revenue). Every portability conclusion separates the two. *(Candidate signature principle — internal
+> now; may become advisor-facing education, never marketing shorthand.)*
 
-### K · Negotiation & due diligence
-26. Which offer or firm, and on what terms? *(negotiation)*
-27. What must I verify, and which promises should I believe? *(due diligence)*
-28. Counteroffer — accept or decline?
+### G · Team *(PTA Area 8)*
+19. Do my team and junior advisors move with me — and how are they structured, paid, and owned?
 
-### L · Transition & implementation
-29. How do I execute the move or launch?
-30. What do I outsource vs. keep internal?
-31. How and when do I communicate with clients?
+### H · Growth *(PTA Area 6; cross-cutting)*
+20. Should I grow by **recruiting** advisors?
+21. Should I grow by **acquiring** a practice?
+22. Should I **merge** with another team or firm?
 
-### M · The personal / life decision *(frames everything)*
-32. What do I want the next chapter of my career to be? *(goals · values · lifestyle)*
-33. Does this decision fit my life, my family, and my long-term goals?
+### I · Succession & Exit *(PTA Area 6)*
+23. Internal successor or external sale?
+24. Sell now, or later?
+25. Retire / wind down — and how?
+
+### J · Risk, Legal & Compliance *(PTA Areas 10, 11)*
+26. What do my restrictive covenants / Broker Protocol / non-solicit allow?
+27. What registration/regulatory path applies *(especially launching an RIA)*?
+28. What are my operational, execution, and reputational risks?
+
+### K · Negotiation & Due Diligence *(PTA Area 11)*
+29. Which offer or firm, and on what terms?
+30. What must I verify, and which promises should I believe?
+31. Counteroffer — accept or decline?
+
+### L · Transition Strategy *(the transition *choices* — not the paperwork; PTA Area 9)*
+32. What do I **outsource vs. keep internal** in the transition?
+33. **How and when do I communicate with clients** through the change?
+34. How do I **sequence and time** the transition to protect clients, team, and continuity?
+
+### ★ The Strategic Outcome *(not a family — the synthesis, produced last; PTA Area 12)*
+- Should I change anything at all? *(act · wait · stay)* · Is now the right time?
+- **The integrated recommendation** across every legitimate outcome — stay · wait · renegotiate ·
+  move · launch · join · merge · sell · succeed · retire — **calibrated to the strength of the
+  evidence** (Levels 1–3; The VYNE Standard). This is the *output* of the methodology, never an input.
+
+## Outside the ontology — execution, not choice
+
+Per the execution-vs-choice test, **pure execution mechanics are deliberately excluded** — they are
+downstream *operational workflow*, not advisor decisions: repapering / ACATS transfers, systems and
+technology setup, licensing/registration filing, office build-out, vendor onboarding, paperwork
+processing. The *choices* about them live in **L (Transition Strategy)**; the *doing* of them belongs
+to delivery operations, not the decision map.
 
 ## How the decisions relate
 
-- **Direction (A)** sits atop all — and is *concluded last*, from the others.
-- **The personal decision (M)** frames Direction and everything downstream — it is the objectives
-  layer (nothing is evaluated before objectives).
-- **Affiliation (B)** depends on **Ownership (C)**, **Economics (D)**, **Book portability (E)**,
-  **Team (F)**, and **capability compatibility**.
-- **Economics (D)** depends on **Book (E)**, **Team (F)**, and the chosen **model (B/C)** — *asset
-  portability ≠ revenue portability*.
-- **Value & monetization (H)** underlies **Succession (I)**, acquisitive **Growth (G)**, and
-  **Economics (D)**.
-- **Growth (G)** and **Succession (I)** are *alternative* Directions, not only sub-steps of a move.
-- **Risk/Legal (J)** constrains every option; **Negotiation/DD (K)** applies once options narrow;
-  **Transition (L)** follows the decision.
+- **A (Objectives)** frames everything and is evaluated first; **★ (Strategic Outcome)** is concluded
+  last, synthesized from all inputs.
+- **B (Capability Requirements)** is upstream of **C (Affiliation)** — you cannot choose a firm before
+  you know what capabilities the business needs. **Capability requirements drive affiliation.**
+- **C (Affiliation) and D (Ownership)** are **orthogonal** — *supported independence* is the proof: you
+  can be affiliated with a platform yet own your RIA; you can be an employee (no ownership) at a
+  wirehouse. Whose brand you operate under ≠ who owns the business.
+- **E (Economics)** depends on **F (Book)**, **G (Team)**, and the chosen **C/D** — asset portability
+  ≠ revenue portability.
+- **D (Enterprise Value)** is built by **H (Growth)**, realized in **I (Succession/Exit)**, and
+  financed through **E** — value is about *building*, not only selling.
+- **J (Risk/Legal)** constrains every option; **K (Negotiation/DD)** applies once options narrow;
+  **L (Transition Strategy)** follows the decision.
 
-## The mapping model (worked examples)
+## The mapping model (worked examples, with decision owner)
 
-Each decision maps to a **Practice-Transition-Assessment area** (the consulting framework), a
-**question cluster** (Decision Question Library), and a **delivery mode** (public education vs.
-personalized consulting). Representative rows:
+Each decision maps to a **PTA area** (framework), a **question cluster** (Decision Question Library),
+a **delivery mode**, and a **primary decision owner**. *Owners:* Advisor · Advisor+spouse ·
+Advisor+team · Advisor+CPA · Advisor+attorney · Advisor+VYNE · Advisor+destination · shared.
 
-| Decision | PTA area | Question cluster | Delivery mode |
+| Decision | PTA area | Delivery mode | Primary owner |
 |---|---|---|---|
-| A1 Should I change anything? | 12 Integrated conclusion | Curiosity / Direction | public education → consulting |
-| B3 Which affiliation model? | 4 Capability compatibility, 9 Operating-model | Affiliation, independence, BD-change | education (the models) → **consulting** (fit to me) |
-| C7 Full vs. supported independence? | 2 Current practice, 9 Operating-model | Launch-an-RIA, independence | education → **consulting** |
-| D9 Is the economics worth it? | 5 Transition economics | Economics, deal structure | education (mechanics) → **consulting** (my net) |
-| E11 How portable is my book? | 3 Book portability | Portability, client impact | **consulting** (book-specific) |
-| H17 What is my practice worth? | 6 Enterprise continuity/value | Sell/valuation | education (methods) → **consulting** (my value) |
-| I20 Internal vs. external succession? | 6 Enterprise value | Succession | education → **consulting** |
-| J23 What do my covenants allow? | 10 Risk, 11 Verification | Legal/portability | education (general) → **legal counsel** (my case) |
+| A2 What does "better" mean? | 1 Objectives | consulting | Advisor + spouse |
+| B4 What capabilities must my business have? | 4 Capability | education → **consulting** | Advisor + VYNE |
+| C6 Which affiliation model? | 4, 9 | education (models) → **consulting** (fit) | Advisor + VYNE |
+| D11 What do I want to own? | 6 Enterprise value | education → **consulting** | Advisor + attorney |
+| D12 What is my business worth? | 6 | education (methods) → **consulting** (my value) | Advisor + VYNE |
+| E15 Is the economics worth it? | 5 Transition economics | education → **consulting** (my net) | Advisor + CPA |
+| F17 How portable is my book? | 3 Book portability | **consulting** (book-specific) | Advisor + VYNE |
+| J26 What do my covenants allow? | 10, 11 | education (general) → **legal counsel** | Advisor + attorney |
+| K30 Which promises should I believe? | 11 Verification | **consulting** | Advisor + VYNE |
+| L33 How/when to tell clients? | 9 Operating-model | **consulting** | Advisor + VYNE |
+| ★ Should I move, stay, or wait? | 12 Integrated conclusion | **consulting** (the synthesis) | Advisor *(decides)* |
 
-*The rule for all 33:* the **general** form of a decision (the model, the mechanics, the ranges) is
+*The rule for all 34:* the **general** form of a decision (the model, the mechanics, the ranges) is
 **public education / AI-sufficient**; the **advisor-specific** form (what applies to *my* book, team,
 economics, and objectives) is **personalized consulting.** This is the three-layer model —
 provider-specific → market-wide → advisor-specific — expressed as *decisions*.
 
-## Public education vs. personalized consulting (the delivery axis)
+## The delivery ladder — Education → Consulting → Specialist
 
-- **Public education (AI-sufficient / general):** what the affiliation models are; how forgivable
-  loans/deal structures and taxes work at a high level; typical valuation ranges; what Broker Protocol
-  and non-solicits generally mean; RIA-launch/compliance basics; succession structures. *These are the
-  factual backdrop to a decision — where AI and good content already do well; VYNE adds interpretation.*
-- **Personalized consulting (book-specific, confidential, interpretive):** every decision's
-  *advisor-specific* form — how much of **my** book transfers, **my** net economics, **my** enterprise
-  value, which model fits **my** practice, and the **integrated recommendation** across stay/move/sell/
-  succeed. *This is VYNE's ground and cannot be answered responsibly by generic content.*
-- **Specialist referral:** the advisor-specific form of J23/J24 (legal), high-level tax, and hands-on
-  implementation — VYNE evaluates and coordinates; specialists execute.
+Every decision has a *general* form and an *advisor-specific* form; the ladder routes each:
+
+```
+  ┌───────────────────────────────────────────────────────────────────┐
+  │  EDUCATION (public / AI-sufficient)                                │
+  │  the general form of a decision — models, mechanics, ranges,       │
+  │  what the law generally allows.  AI & content already do this well.│
+  └───────────────────────────────────────────────────────────────────┘
+                    │  advisor's situation enters
+                    ▼
+  ┌───────────────────────────────────────────────────────────────────┐
+  │  CONSULTING (confidential / advisor-specific)  ◀── VYNE's ground    │
+  │  my book, my economics, my value, which model fits me, the         │
+  │  integrated recommendation.  Cannot be answered by generic content.│
+  └───────────────────────────────────────────────────────────────────┘
+                    │  regulated / executional expertise required
+                    ▼
+  ┌───────────────────────────────────────────────────────────────────┐
+  │  SPECIALIST (referral / coordination)                              │
+  │  legal (covenants, registration), tax, and hands-on implementation.│
+  │  VYNE evaluates & coordinates; specialists execute.                │
+  └───────────────────────────────────────────────────────────────────┘
+```
 
 ## How this feeds the next layers
 
 - **Content Architecture** organizes *by decision*, not by topic: each decision gets the content types
-  its delivery mode calls for (education for the general form; assessment/consultation for the
-  advisor-specific form). No content exists that doesn't support a decision.
+  its rung on the ladder calls for. No content exists that doesn't support a decision.
 - **Assessment modules** are the PTA areas, mapped above — the ontology tells the assessment which
   decisions an engagement must serve.
-- **AEO** targets the *general* form of high-demand decisions (education) while routing the
-  advisor-specific form to consultation.
-- **The Decision Question Library** now rolls **up** to this map: every question supports a decision;
-  every decision belongs to a family.
+- **AEO** targets the *education* rung of high-demand decisions while routing the advisor-specific form
+  to consultation.
+- **The Decision Question Library** rolls **up** to this map: every question supports a decision; every
+  decision belongs to a family.
+
+## Conflict-management duty (compensation is firm-paid)
+
+Because VYNE's core model is **hiring-firm-paid and success-based**, this ontology's delivery axis
+carries a conflict-management duty: VYNE *manages and discloses* real incentives — it never claims to
+have none (see `../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`). Several outcomes conclude
+in **no fee** and VYNE must still be willing to reach them — **★ stay**, **★ wait**, internal
+renegotiation, and the **launch-an-RIA** path — which is exactly why fit scoring (B/C) is
+compensation-blind. *(VYNE's specific fee terms are confidential and never appear in advisor-facing or
+public surfaces — commercial doc §10.)*
 
 ## Open items (unchanged by this doc)
 
-The **core business model is now founder-established** (2026-07-25): advisor-free,
-**hiring-firm-paid, success-based**, ~8%–16% of verified T12/TTMP (see
-`../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`). It is **one component of trust — not the
-differentiator, and not gating**; the moat is the method. Because compensation is firm-paid and
-success-based, this ontology's **delivery axis carries a conflict-management duty**: VYNE *manages and
-discloses* real incentives (outcome, destination, contracted-market, timing, production) — it never
-claims to have none. Notably, several decisions conclude in **no-fee outcomes** VYNE must still be
-willing to recommend — **A1 stay**, **A2 wait**, internal renegotiation, and **C7 launch-an-RIA** —
-which is exactly why fit scoring is compensation-blind. Open governance/legal sub-questions
-(disclosure detail · advisor-paid consulting · submission authorization · verification · clawbacks)
-are tracked in the commercial doc and are **not** gates. Demand quantification and first-party
-evidence remain additive. Whether VYNE ever performs hands-on RIA-launch implementation remains an
-open operating-model decision.
+The core business model is founder-established — **hiring-firm-paid, success-based**; it is **one
+component of trust, not the differentiator, and not gating** (the moat is the method). Open
+governance/legal sub-questions (disclosure detail · advisor-paid consulting · submission authorization
+· verification · clawbacks) are tracked in the commercial doc and are **not** gates. Demand
+quantification and first-party evidence remain additive. Whether VYNE ever performs hands-on RIA-launch
+implementation remains an open operating-model decision.

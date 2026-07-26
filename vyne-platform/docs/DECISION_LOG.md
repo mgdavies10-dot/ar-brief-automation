@@ -23,8 +23,8 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
-- 2026-07-25 — **Core business model established: advisor-free, hiring-firm-paid, success-based
-  (~8%–16% of verified T12/TTMP); manage-and-disclose conflicts, never claim none.** The founder
+- 2026-07-25 — **Core business model established: hiring-firm-paid, success-based; manage-and-disclose
+  conflicts, never claim none. Fee economics are confidential (founder-only).** The founder
   moved the compensation model from "open" to **established direction**: the advisor generally does
   not pay for the traditional recruiting engagement; the **hiring firm** pays a success-based
   placement/transition fee only if the advisor authorizes a submission, joins a firm, and fee

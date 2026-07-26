@@ -1,5 +1,11 @@
 # Business Model & Commercial Principles
 
+> ⚠️ **CONFIDENTIAL — FOUNDER / AUTHORIZED INTERNAL USE ONLY.** This document contains
+> VYNE's confidential commercial terms (fee economics). The fee range and any firm-specific
+> economics live **only** in the *Founder-Restricted Confidential Commercial Information*
+> section (§10) and must **never** be reproduced in advisor-facing, public, or downstream
+> systems. Only the public/advisor disclosure language in §5 may leave this document.
+
 **Status:** Core direction **FOUNDER-ESTABLISHED (2026-07-25)**; sub-decisions open ·
 **Registered:** 2026-07-24
 **Type:** **Operational, not foundational.** This document sits *outside* the foundation trio
@@ -24,8 +30,10 @@ into the enduring documents would date them. This is where the commercial mechan
 
 ## 1 · The core operating model (founder-established, 2026-07-25)
 
-> **VYNE's core recruiting model is generally advisor-free, hiring-firm-paid, and success-based,
-> with expected fees commonly ranging from approximately 8%–16% of verified T12/TTMP.**
+> **VYNE's core recruiting model is hiring-firm-paid and success-based:** advisors do not pay VYNE
+> for traditional recruiting and transition-consulting services; the **hiring firm** pays a
+> success-based fee (a percentage of the advisor's verified production) only upon a successful
+> placement. *(The specific fee range is confidential — see §10, Founder-Restricted.)*
 
 The advisor generally does **not** pay VYNE for the traditional recruiting engagement. The intended
 process:
@@ -41,8 +49,8 @@ process:
 5. **Success-based fee.** If the advisor chooses a firm, joins it, and the fee conditions are
    satisfied, the **hiring firm** pays VYNE a recruiting / placement / transition-assistance (or
    similar) success-based fee.
-6. **Fee range.** Expected fee generally ~**8%–16% of verified trailing-twelve-month production /
-   revenue** (T12 / TTMP).
+6. **Fee.** A success-based fee — a percentage of the advisor's **verified trailing-twelve-month
+   production / revenue** (T12 / TTMP). *(Specific range is confidential — see §10.)*
 7. **Variability.** Fees may vary by firm, agreement, advisor profile, production level, placement
    structure, calendar-year threshold, or other contractual terms.
 8. **No-fee outcomes.** If the advisor stays, waits, renegotiates internally, chooses a non-paying
@@ -57,8 +65,8 @@ require governance, disclosure, and methodological controls.
 1. **Outcome incentive.** VYNE generally earns a fee if the advisor completes a compensable move, and
    may earn nothing if the advisor stays, waits, restructures internally, or selects a non-paying
    path.
-2. **Destination incentive.** VYNE's fee may differ among firms — a firm paying 16% of T12 may
-   produce twice the revenue of a firm paying 8%.
+2. **Destination incentive.** VYNE's fee may differ among firms — a higher-paying firm can produce
+   materially more revenue for VYNE than a lower-paying one for the same placement.
 3. **Contracted-market incentive.** VYNE may have economic relationships with some firms and not
    others.
 4. **Timing incentive.** A success-based fee may create pressure — actual or perceived — to
@@ -102,11 +110,25 @@ of how VYNE is compensated, its incentives must encourage objective advice, inte
 recommendations made in the advisor's best interest. **When commercial incentives and advisor
 outcomes conflict, the advisor's long-term interests take precedence.**
 
-**Disclosure statement (draft — not final public copy):** *"VYNE is generally compensated by
-participating hiring firms under written success-based agreements, typically a percentage of verified
-production. Our compensation does not determine our recommendations. Advisors are encouraged to remain
-where they are — or to wait — whenever that is the best outcome for their clients, businesses, and
-long-term goals. We disclose how we are paid and manage the conflicts that arise."*
+### Approved public / advisor-facing disclosure language (the ONLY compensation language that may leave this doc)
+
+No percentages or dollar amounts appear in any advisor-facing or public use.
+
+- **Standard sentence:** *"VYNE is compensated by the hiring firm when an advisor or team
+  successfully joins that organization. Advisors do not pay VYNE for traditional recruiting and
+  transition-consulting services."*
+- **Fuller disclosure (e.g., a Compensation Disclosure page):** *"VYNE Strategies is generally
+  compensated by hiring firms under private recruiting or placement agreements when an advisor or team
+  successfully joins a participating firm. Compensation arrangements may vary by firm and engagement.
+  Advisors are not charged for VYNE's traditional recruiting and transition-consulting services. VYNE
+  manages potential conflicts through advisor-controlled introductions, disclosure of its role, and a
+  documented process for evaluating relevant alternatives."*
+
+**Meaningful conflict disclosure to an advisor consists of:** VYNE is paid by the hiring firm ·
+compensation is **success-based** (contingent on a completed placement) · arrangements **may vary** by
+firm or engagement · VYNE **may not be compensated for every alternative** · **the advisor controls
+every submission and introduction.** *(Exact percentages, amounts, step-ups, payment timing, and
+firm-specific terms are never disclosed — see §10.)*
 
 ## 6 · Required governance questions — Business-Model / Incentive-Alignment decision
 
@@ -114,8 +136,13 @@ long-term goals. We disclose how we are paid and manage the conflicts that arise
 
 **Disclosure**
 1. When and how is the advisor told VYNE is paid by the hiring firm?
-2. Will the advisor be told the exact fee percentage for each firm evaluated?
-3. If exact compensation is confidential, what meaningful disclosure can still be given?
+2. Will the advisor be told the exact fee percentage for each firm evaluated? — **RESOLVED (founder
+   2026-07-25): No.** Exact percentages and firm-specific terms are confidential, unless disclosure is
+   required by law, regulation, contract, or counsel.
+3. If exact compensation is confidential, what meaningful disclosure can still be given? — **RESOLVED
+   (founder 2026-07-25):** the five points above — paid by the hiring firm · success-based ·
+   arrangements may vary · VYNE may not be compensated for every alternative · advisor controls every
+   submission. *(No percentages or amounts.)*
 4. Will VYNE disclose when one firm may pay materially more than another?
 5. Will VYNE disclose when a firm has **no** compensation agreement with VYNE?
 6. Can a non-paying firm remain in the comparison and recommendation set?
@@ -195,7 +222,8 @@ long-term goals. We disclose how we are paid and manage the conflicts that arise
 ## 9 · Business-model status
 
 **Founder-established direction (no longer open in its entirety):** *core recruiting model is
-generally advisor-free, hiring-firm-paid, and success-based, ~8%–16% of verified T12/TTMP.*
+hiring-firm-paid and success-based; advisors do not pay for traditional recruiting and
+transition-consulting services. Specific fee economics are confidential (§10).*
 
 **Remaining open decisions** (this document tracks): disclosure detail · non-paying alternatives ·
 stay/wait outcomes · optional advisor-paid consulting · RIA-launch engagements · fee confidentiality ·
@@ -204,6 +232,27 @@ clawbacks · legal documentation.
 
 **The business model is no longer a blocker to the Advisor Decision Ontology or to the strategy
 sequence.** The open items above are governance/legal work items, not gates.
+
+## 10 · Founder-Restricted Confidential Commercial Information
+
+> ⚠️ **CONFIDENTIAL — FOUNDER / AUTHORIZED INTERNAL USE ONLY.** Do not reproduce below this line in
+> any advisor-facing, public, or downstream system.
+
+**Confidentiality rule (governing):** *VYNE's fee percentages, fee amounts, payment schedules,
+step-ups, clawback economics, and firm-specific commercial terms are confidential business information
+and are not disclosed publicly or to advisors except where legally or contractually required.* Not
+disclosed to advisors, prospects, destination firms other than the contractual counterparty,
+competitors, or the public, except where disclosure is legally or contractually required or directed
+by counsel.
+
+**Fee range (restricted).** The expected success-based fee is generally **~8%–16% of the advisor's
+verified trailing-twelve-month production / revenue (T12 / TTMP)**, varying by firm, agreement,
+advisor profile, production level, placement structure, calendar-year threshold, and other contractual
+terms.
+
+**Retained internal uses** (why the range lives here): financial modeling · firm-contract strategy ·
+recruiter compensation · revenue forecasting · incentive-governance analysis · founder and counsel
+review.
 
 ## Its relationship to the foundation
 
