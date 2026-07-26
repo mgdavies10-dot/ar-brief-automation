@@ -16,6 +16,13 @@ only. *(Which question gets which answer format is decided in Content Architectu
 there — content type follows the question's complexity, not the reverse — reads from this
 library.)*
 
+**Where this sits.** Questions are the surface layer; **beneath them are decisions.** Every
+question here rolls **up** to one of the ~33 fundamental decisions in the
+**[Advisor Decision Ontology](./ADVISOR_DECISION_ONTOLOGY.md)** (question → decision → decision
+family). The ontology is the organizing spine — it is what makes Content Architecture a matter of
+*systematically supporting decisions* rather than "publishing content." When adding a question,
+name the decision it supports.
+
 ## How questions are tagged
 
 Each question carries (at least) three tags today, with more to develop:

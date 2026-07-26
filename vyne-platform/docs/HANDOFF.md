@@ -180,14 +180,32 @@ component) is built in strict phase order:
    Adds the **launch-an-RIA** path (VYNE evaluates/compares/coordinates; hands-on RIA-launch
    implementation is an **OPEN operating-model decision**), the **three-layer question model**, an
    **AEO pattern library**, and a **relationship-by-journey matrix**. **HIGHEST-PRIORITY finding
-   (challenges VYNE):** Successful OnBoarding markets a *free-to-advisor, firm-paid* model as
-   "unbiased/advisor-first" — the **same structural family as VYNE's intended firm-paid model** — so
-   differentiation rests on **demonstrated method + a real incentive/neutrality structure**, not the
-   "independent" claim. Elevates the open **Business-Model / Incentive-Alignment** decision; recommend
-   resolving or explicitly parking it **before** Content Architecture.
-   5. **Content Architecture** *(paused pending research review — "which advisor question
-   deserves which answer FORMAT?"; complexity drives format, reading from 4b)* ·
+   (challenges VYNE) — CORRECTED per founder ruling 2026-07-25:** Successful OnBoarding markets a
+   *free-to-advisor, firm-paid* model as "unbiased/advisor-first" — the **same structural family as
+   VYNE's intended firm-paid model.** The correct conclusion is **not** that the compensation model is
+   VYNE's differentiator (or a gate); it is that the *claim* differentiates nobody. **VYNE's moat is
+   HOW it reaches conclusions — the *combination* no one else fields:** Constitution + Practice
+   Transition Assessment + The VYNE Standard + Advisor Journey + Messaging Architecture + Decision
+   Question Library + evidence classification + confidence levels + unknowns + alternatives +
+   provenance + a genuine willingness to recommend stay/wait/any legitimate destination. The
+   **Business-Model / Incentive-Alignment** decision is **one dimension of trust that *supports* the
+   method — not the differentiator, and not gating.** It stays an open operational item; it does **not**
+   block Content Architecture. Corrected dossiers reframed accordingly (finding #1 + recommendation).
+   4e. **Advisor Decision Ontology (Advisor Decision Map)** —
+   `docs/experience/ADVISOR_DECISION_ONTOLOGY.md` **(DRAFT, for founder review; founder-requested
+   2026-07-25).** The strategy layer **between** the Decision Question Library and Content
+   Architecture: the **~33 fundamental decisions** (13 families — Direction · Affiliation/Business-model ·
+   Ownership/Independence · Economics · Clients/Book · Team · Growth · Value/Monetization · Succession/Exit ·
+   Risk/Legal · Negotiation/DD · Transition/Implementation · Personal-life) every advisor eventually makes;
+   **everything else is a sub-question.** Defines how the decisions relate, and the mapping spine
+   **question → decision → family → PTA framework → assessment module → content → AI → report**, plus the
+   **public-education-vs-personalized-consulting** delivery axis (general form = education/AI-sufficient;
+   advisor-specific form = consulting — the three-layer model expressed as decisions). Makes Content
+   Architecture "systematically support decisions," not "publish content."
+   5. **Content Architecture** *(still PAUSED; now organizes BY DECISION — "which advisor question,
+   under which decision, deserves which answer FORMAT?"; complexity drives format, reading from 4b/4e)* ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
+   *(Founder's revised sequence: Ontology → Content Architecture → AEO → Lead-Capture → Consultation.)*
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**

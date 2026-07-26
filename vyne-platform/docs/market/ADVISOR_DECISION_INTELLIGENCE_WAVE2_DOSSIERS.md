@@ -218,11 +218,17 @@ never private-prompt data) · first-party (future).**
 
 ## Findings that challenge VYNE (preserved)
 
-1. **The differentiation problem (highest priority).** "Unbiased/advisor-centric/firm-agnostic" is
-   universal; and Successful OnBoarding proves a *free-to-advisor, firm-paid* model can market itself
-   exactly as VYNE intends to. **VYNE's edge is not the claim — it is demonstrated method + a genuine
-   incentive/neutrality structure.** This elevates the open **Business-Model / Incentive-Alignment**
-   decision from "nice to have" to "the thing the whole differentiation rests on."
+1. **"Unbiased" is category language — and the moat is the *method*, not the money** (founder ruling
+   2026-07-25). "Unbiased / advisor-centric / firm-agnostic" is universal; Successful OnBoarding shows
+   a *free-to-advisor, firm-paid* model markets itself exactly as VYNE intends. The correct conclusion
+   is **not** that the compensation model is the differentiator (or the gate) — it is that **the claim
+   differentiates nobody.** VYNE's moat is **how it reaches conclusions** — the *combination* no one
+   else fields: Constitution + Practice Transition Assessment + The VYNE Standard + Advisor Journey +
+   Messaging + Decision Question Library + evidence classification + confidence levels + unknowns +
+   alternatives + provenance + a genuine willingness to recommend *stay / wait / any* legitimate
+   destination. **The business model is ONE dimension of trust that *supports* the method — not the
+   differentiator, and not gating.** (A CPA, banker, attorney, and broker each have a compensation
+   model; reputation rests on trusted judgment, not on who pays.)
 2. **Question-led is not unique** — Winthrop already ships assessments + a 100-question bank. VYNE
    must win on advisor-**specific** depth, not the format.
 3. **Competitors show real strengths** — placement proof (Successful OnBoarding), market data
@@ -232,10 +238,9 @@ never private-prompt data) · first-party (future).**
 ## Recommendation on readiness (answers "sufficient for Content Architecture?")
 
 The **organization model is now corrected**, the **outcome set is complete** (stay → launch → retire),
-and the **priority dossiers are done.** The Library is broad enough that Content Architecture *could*
-proceed. **But** the research surfaced one issue that outranks more research: **VYNE's differentiation
-depends on the Business-Model / Incentive-Alignment decision** (finding #1), which is a **founder
-decision, not a research gap.** Recommendation: **resolve (or explicitly park) the business-model
-differentiation question next; then proceed to Content Architecture.** Remaining research gaps
-(measured demand; direct community threads; Tier-3 escalations) stay **additive/non-blocking** — a
-narrow Wave 3 only if demand quantification is wanted.
+and the **priority dossiers are done.** The **differentiation is already in hand** — the methodology
+stack (finding #1), *not* the compensation model. The Business-Model / Incentive-Alignment doc remains
+a real (open) *trust dimension* to complete, but it is **not gating** for Content Architecture, and
+demand quantification / community threads / Tier-3 escalations stay **additive/non-blocking** (a narrow
+Wave 3 only if wanted). **Recommendation:** insert one strategy layer first — the **Advisor Decision
+Ontology** (`../experience/ADVISOR_DECISION_ONTOLOGY.md`) — then proceed to Content Architecture.
