@@ -165,6 +165,30 @@ The advisor decision is not only "change firms." Questions across adjacent prima
 - **Changing broker-dealer** `[E]`: How do payout, technology, PM flexibility, compliance, and
   transition resources compare? *[Moderate]*
 
+## Launch-an-RIA / independence domain (2026-07-25, evidence-grounded)
+
+The advisor may evaluate *building* an independent business — a formal decision path (see
+`../market/ADVISOR_DECISION_INTELLIGENCE_WAVE2_DOSSIERS.md`, "Start-an-RIA"):
+
+- `(i)` Am I suited to *owning and operating a business*, not just serving clients? *[Complex]*
+- `(i)` Do I want full independence or supported independence — or to join an existing RIA? *[Complex]*
+- `(e)` What will I actually own (firm, ADV, client relationships), and who employs my team? *[Complex]*
+- `(e)` What capabilities must I replace, and what compliance/tech/operating structure is required
+  (Form ADV, CCO, written policies, custodian, entity, insurance)? *[Complex]*
+- `(e)` How much capital, how long, and how much revenue disruption should I expect? *[Complex]*
+- `(e)` What should I outsource vs. keep internal — turnkey platform, supported-independence
+  provider, consultant, or multiple specialists? *[Complex]*
+- `(int)` How do I compare providers (e.g., Dynasty and others) — and what conflicts arise when a
+  launch provider recommends its own services? *[Complex]*
+- `(int)` What can VYNE evaluate, vs. what needs legal, compliance, tax, or operational specialists?
+  *[Moderate]*
+
+**Full outcome coverage (confirmed).** The Library now spans **stay · wait · renegotiate/restructure
+· move · launch an RIA · join · merge · sell · acquire · succession · retire** — no default
+destination. **Three-layer discipline:** for any question drawn from a provider/firm, keep the
+*provider-specific* → *market-wide* → *advisor-specific interpretive* versions distinct, so the
+Library never fills with firm-marketing questions.
+
 ## Governance (how the library stays canonical)
 
 - **One inventory, everywhere.** Every content, AEO, report, consultation, and AI artifact

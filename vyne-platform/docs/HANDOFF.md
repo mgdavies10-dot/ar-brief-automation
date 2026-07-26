@@ -171,6 +171,20 @@ component) is built in strict phase order:
    Content Architecture**; two gaps remain non-blocking/additive (measured search/community
    demand; first-party data) — a **narrow Wave 3** only if the founder wants demand
    *quantification* first.
+   4d. **Wave 2 CORRECTED** — `docs/market/ADVISOR_DECISION_INTELLIGENCE_WAVE2_DOSSIERS.md`
+   **(for founder review).** Fixes the org model: **Group A direct competitors** vs. **Group B
+   advisor-question/AEO sources**; relationship classified **by journey stage**; tiered dossiers
+   (Tier 1: Diamond, Bridgemark, Elite, Spartan, **Successful OnBoarding**, **Winthrop**,
+   **Financial Advisor Transitions**, **Dynasty**). **VYNE's destination universe is OPEN** — named
+   firms are examples/sources, not a closed set; outcomes span stay→launch→retire, **no default**.
+   Adds the **launch-an-RIA** path (VYNE evaluates/compares/coordinates; hands-on RIA-launch
+   implementation is an **OPEN operating-model decision**), the **three-layer question model**, an
+   **AEO pattern library**, and a **relationship-by-journey matrix**. **HIGHEST-PRIORITY finding
+   (challenges VYNE):** Successful OnBoarding markets a *free-to-advisor, firm-paid* model as
+   "unbiased/advisor-first" — the **same structural family as VYNE's intended firm-paid model** — so
+   differentiation rests on **demonstrated method + a real incentive/neutrality structure**, not the
+   "independent" claim. Elevates the open **Business-Model / Incentive-Alignment** decision; recommend
+   resolving or explicitly parking it **before** Content Architecture.
    5. **Content Architecture** *(paused pending research review — "which advisor question
    deserves which answer FORMAT?"; complexity drives format, reading from 4b)* ·
    6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**

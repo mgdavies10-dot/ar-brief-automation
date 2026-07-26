@@ -1,5 +1,13 @@
 # Advisor Decision Intelligence Research — Wave 2
 
+> **Corrected (2026-07-25) by `ADVISOR_DECISION_INTELLIGENCE_WAVE2_DOSSIERS.md`.** That doc
+> fixes the organization model here: it **separates direct competitors (Group A) from
+> advisor-question/AEO sources (Group B)**, adds Tier-1 dossiers (incl. Successful OnBoarding,
+> Financial Advisor Transitions, Winthrop, Dynasty), the launch-an-RIA decision path, the
+> three-layer question model, and an AEO pattern library. **The named firms in this doc are NOT
+> a closed destination universe** — VYNE's research universe is open and no destination is the
+> default. Read the dossiers doc for the current model.
+
 **Status:** Research & synthesis — broadened public audit; extends Wave 1 · **Date:** 2026-07-25
 **Type:** Operational (decision intelligence). Bound by the Constitution; delivered to The VYNE
 Standard. **Preserves** Wave 1 (`ADVISOR_DECISION_INTELLIGENCE_RESEARCH.md`).
