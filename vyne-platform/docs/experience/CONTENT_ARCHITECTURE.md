@@ -1,7 +1,8 @@
 # Content Architecture
 
-**Status:** **FROZEN — Phase 2 (founder-approved with revisions 2026-07-25).** Factual corrections
-only; no structural redesign. · **Date:** 2026-07-25
+**Status:** **PERMANENTLY FROZEN — Phase 2 (founder-approved with revisions 2026-07-25).** Factual
+corrections only; **no further refinement** — additional changes are unlikely to produce materially
+better outcomes (founder ruling). · **Date:** 2026-07-25
 **Phase:** 2 — Architecture · **System:** *Knowledge & Demand* (not *Advisor Decision Experience*)
 **Reads from (frozen):** the **[Advisor Decision Ontology](./ADVISOR_DECISION_ONTOLOGY.md)** (spine) and
 the **[Decision Question Library](./DECISION_QUESTION_LIBRARY.md)** (inventory). **Governed by** the
@@ -259,9 +260,14 @@ scaling.
     product and account constraints; carries the principle **asset portability ≠ revenue portability**.
   - **D. How VYNE Works** — the confidential process · advisor-controlled introductions · the approved
     compensation disclosure (§15) · professional boundaries (§7).
-  - **E. One consultation-entry orientation questionnaire** — advisor objectives · business profile ·
-    primary concerns · preferred disclosure level · **no client PII**. *(Orientation, not assessment —
-    §3.)*
+  - **E. Advisor Orientation** — the consultation-entry *experience*, not merely a form. It includes:
+    the **questionnaire** (advisor objectives · business profile · primary concerns · preferred
+    disclosure level · **no client PII**), the **confidentiality explanation**, a **consulting-process
+    overview**, **what to expect / advisor and VYNE responsibilities**, **disclosure options**, the
+    **recommendation philosophy** (VYNE may conclude stay/wait/any legitimate outcome), and
+    **introduction authorization** (no firm is contacted without the advisor's explicit approval).
+    *(Orientation, not assessment — §3. The confidential engagement that follows is governed by the
+    Assessment Architecture.)*
 - **First 90 days:**
   - Decision hubs for **D Ownership**, **E Enterprise Value**, **F Economics**, **J Succession & Exit**.
   - **RIA-launch readiness** + **due-diligence** checklists.
@@ -424,5 +430,11 @@ obligation.
    readiness, and due-diligence libraries moved to first-90-days (§12).
 7. **Two-system Phase 2 preserved**, with the systems developing **in parallel** after this freeze (§0).
 8. **Sequencing:** Assessment Architecture is the immediate next deliverable; AEO may follow (§0).
+9. **Final additions before permanent freeze (founder, 2026-07-25):** launch item E broadened from an
+   "orientation questionnaire" to the **Advisor Orientation** experience (questionnaire ·
+   confidentiality · process overview · expectations & responsibilities · disclosure options ·
+   recommendation philosophy · introduction authorization); and an **Advisor Working Agreement** is
+   required in the Assessment Architecture immediately after Engagement Entry. **Document permanently
+   frozen** — no further refinement.
 
 *Not started (by direction): AEO Architecture, web copy, page design, code, public interactive tools.*

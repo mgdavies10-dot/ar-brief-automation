@@ -23,6 +23,27 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Advisor Working Agreement required; Advisor Orientation broadened; Content
+  Architecture PERMANENTLY FROZEN; Assessment Architecture begun.** Two final founder additions before
+  the permanent freeze: (1) an **Advisor Working Agreement** is inserted into the Assessment
+  Architecture immediately after Engagement Entry and **before** Graduated Disclosure — *not a legal
+  contract but the consulting equivalent of an engagement letter*, establishing the relationship before
+  any analysis: what the advisor should expect · what VYNE will and will not do · confidentiality
+  expectations · how recommendations are formed · **the advisor controls every introduction** · **no
+  firm contacted without authorization** · VYNE may conclude stay/wait/move/launch/merge/succession/etc.
+  (including outcomes producing **no fee**) · the approved compensation disclosure · that additional
+  information may strengthen or change conclusions · the limits of the assessment · when specialists
+  become necessary. It is a **trust artifact delivered and acknowledged before assessment begins**.
+  (2) The launch "orientation questionnaire" is broadened into the **Advisor Orientation** experience
+  (questionnaire · confidentiality explanation · process overview · advisor and VYNE responsibilities ·
+  disclosure options · recommendation philosophy · introduction authorization) — a premium consulting
+  entry, not a form. **Content Architecture is now PERMANENTLY FROZEN** (factual corrections only; no
+  further refinement — additional changes unlikely to produce materially better outcomes).
+  **Assessment Architecture drafted** (`docs/experience/ASSESSMENT_ARCHITECTURE.md`) — the confidential
+  experience: the crossing · engagement entry · Working Agreement · graduated disclosure (L1–L3 bounded
+  to conclusion levels) · the 12 PTA modules mapped to Ontology decisions · evidence & confidence ·
+  **compensation-blind sequencing** · calibrated conclusions · outputs/handoffs · boundaries ·
+  governance. Change level 2 (strategy/docs; no code/scope change).
 - 2026-07-25 — **Content Architecture APPROVED WITH REVISIONS and FROZEN; Phase 2 restructured into two
   parallel systems; Assessment Architecture is next.** Founder approved
   `docs/experience/CONTENT_ARCHITECTURE.md` subject to eight targeted revisions, all applied:

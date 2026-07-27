@@ -135,8 +135,8 @@ component) is built in strict phase order:
     ✅ FROZEN** · AEO Architecture · Editorial & Research Architecture ·
     Public-to-Confidential Conversion Architecture.
   - **Advisor Decision Experience** *(how VYNE delivers the relationship)*: **Assessment
-    Architecture (NEXT)** · Consultation Architecture · Recommendation & Report
-    Architecture · Advisor-Journey handoffs.
+    Architecture (DRAFT — for founder review)** · Consultation Architecture ·
+    Recommendation & Report Architecture · Advisor-Journey handoffs.
   **AI and CRM requirements are defined from those systems — they do not lead them.**
   Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
   two develop **in parallel** now that Content Architecture is frozen. **Sequencing:**
@@ -262,10 +262,27 @@ component) is built in strict phase order:
    out; AEO may prioritize within Education but never redefines the method; fee terms never in public/
    advisor-facing content. **Launch set (5):** Strategic Outcome Gateway · Affiliation Model Hub +
    comparison · Book Portability Hub (*asset ≠ revenue*) · How VYNE Works · one consultation-entry
-   orientation questionnaire (no client PII).
-   **Phase 2 continues in two parallel systems — see the phase block above.** Immediate next:
-   **Assessment Architecture**. Then AEO · Consultation · Recommendation & Report · then AI/CRM
-   requirements derived from those systems.
+   **Advisor Orientation** (the consultation-entry *experience*: questionnaire · confidentiality ·
+   process overview · expectations & responsibilities · disclosure options · recommendation philosophy ·
+   introduction authorization; no client PII). **PERMANENTLY FROZEN 2026-07-25** — factual corrections
+   only, no further refinement.
+   6. **Assessment Architecture** — **DRAFT, for founder review**
+   (`docs/experience/ASSESSMENT_ARCHITECTURE.md`). Answers *"what exactly happens when an advisor
+   crosses from public education into VYNE's confidential decision process?"* Eleven parts: the crossing
+   (what changes at the boundary) · engagement entry · **the Advisor Working Agreement** *(founder-
+   required; a consulting engagement letter — expectations, what VYNE will/won't do, confidentiality,
+   how recommendations are formed, advisor controls every introduction, no firm contacted without
+   authorization, VYNE may conclude stay/wait/any outcome incl. no-fee ones, compensation disclosure,
+   conclusions may strengthen or change, limits, when specialists are needed — delivered and
+   acknowledged **before** analysis)* · graduated disclosure (L1/L2/L3 mapped to conclusion levels) ·
+   the 12 PTA assessment modules mapped to Ontology decisions (scan all, deepen where warranted) ·
+   evidence & confidence · **compensation-blind sequencing** (modules 1/2/4/10 before firm-specific
+   comp reaches the recommending consultant; fee never a fit variable; open-market notation;
+   higher-conflict founder review) · calibrated conclusions (L1–3) · outputs & handoffs · boundaries &
+   referrals · governance (authorship, cooling rule, founder-only approval, what's recorded). Four open
+   founder questions at the end.
+   **Phase 2 continues in two parallel systems — see the phase block above.** Then AEO · Consultation ·
+   Recommendation & Report · then AI/CRM requirements derived from those systems.
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**
