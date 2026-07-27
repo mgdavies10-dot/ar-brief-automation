@@ -169,6 +169,14 @@ why the perspective is a living artifact that is *refined*, not re-issued, and w
 we say plainly when new information could still change our view. Architecturally:
 never gate the perspective behind a hard binary; let it deepen.
 
+> **Amended (founder, 2026-07-25).** "Evolve, not flip" remains the norm, but it is
+> **not an absolute promise** — new evidence can legitimately reverse a preliminary
+> conclusion. The governing statement is now: ***Recommendations should evolve as
+> evidence develops. A material change in direction must be supported by newly
+> discovered or newly verified information, and documented clearly.*** What is
+> prohibited is an *unexplained* reversal, not a reversal itself. See
+> `../experience/ASSESSMENT_ARCHITECTURE.md` §3, §8.
+
 ## The Premium Artifact — F3 (founder direction, 2026-07-22)
 
 **The artifact is not a deliverable — it is a milestone in the relationship.**

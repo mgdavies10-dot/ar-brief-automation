@@ -135,7 +135,7 @@ component) is built in strict phase order:
     ✅ FROZEN** · AEO Architecture · Editorial & Research Architecture ·
     Public-to-Confidential Conversion Architecture.
   - **Advisor Decision Experience** *(how VYNE delivers the relationship)*: **Assessment
-    Architecture (DRAFT — for founder review)** · Consultation Architecture ·
+    Architecture ✅ APPROVED** · **Consultation Architecture (NEXT)** ·
     Recommendation & Report Architecture · Advisor-Journey handoffs.
   **AI and CRM requirements are defined from those systems — they do not lead them.**
   Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
@@ -266,7 +266,7 @@ component) is built in strict phase order:
    process overview · expectations & responsibilities · disclosure options · recommendation philosophy ·
    introduction authorization; no client PII). **PERMANENTLY FROZEN 2026-07-25** — factual corrections
    only, no further refinement.
-   6. **Assessment Architecture** — **DRAFT, for founder review**
+   6. **Assessment Architecture** — **✅ APPROVED (founder 2026-07-25)**
    (`docs/experience/ASSESSMENT_ARCHITECTURE.md`). Answers *"what exactly happens when an advisor
    crosses from public education into VYNE's confidential decision process?"* Eleven parts: the crossing
    (what changes at the boundary) · engagement entry · **the Advisor Working Agreement** *(founder-
@@ -276,11 +276,19 @@ component) is built in strict phase order:
    conclusions may strengthen or change, limits, when specialists are needed — delivered and
    acknowledged **before** analysis)* · graduated disclosure (L1/L2/L3 mapped to conclusion levels) ·
    the 12 PTA assessment modules mapped to Ontology decisions (scan all, deepen where warranted) ·
-   evidence & confidence · **compensation-blind sequencing** (modules 1/2/4/10 before firm-specific
-   comp reaches the recommending consultant; fee never a fit variable; open-market notation;
-   higher-conflict founder review) · calibrated conclusions (L1–3) · outputs & handoffs · boundaries &
-   referrals · governance (authorship, cooling rule, founder-only approval, what's recorded). Four open
-   founder questions at the end.
+   evidence & confidence · **compensation-SEPARATED sequencing** (*renamed from "blind"* — objectives/
+   practice/capability/risk documented before firm-specific options are ranked; compensation never
+   enters a score, comparison, suitability assessment, or recommendation rationale; the consultant may
+   know compensation exists but must not let it improve an option's fit; all four notation classes stay
+   eligible; higher-conflict review when VYNE's financially preferable outcome differs from the
+   advisor's stronger one; **"compensation may affect VYNE's commercial operations — it must never
+   improve an option's advisor-fit recommendation"**) · calibrated conclusions (L1–3) · outputs &
+   handoffs · boundaries & referrals · governance. **Founder decisions recorded:** Working Agreement =
+   short written artifact acknowledged before substantive work (**counsel review required** on the
+   production version; may become "Advisor Engagement Understanding") · **broad** Orientation access,
+   **selective** assessment access (founder decides at launch) · engagements **begin at L1**, never
+   auto-advancing · **light scan of all 12 areas → materiality → selective depth** (*every module
+   acknowledged; only material modules deeply assessed*).
    **Phase 2 continues in two parallel systems — see the phase block above.** Then AEO · Consultation ·
    Recommendation & Report · then AI/CRM requirements derived from those systems.
 

@@ -23,6 +23,39 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Assessment Architecture APPROVED; compensation-blind → compensation-SEPARATED; four
+  entry/disclosure/scan decisions; two language corrections.** Founder approved
+  `docs/experience/ASSESSMENT_ARCHITECTURE.md` with one material correction and several rulings.
+  **Material correction:** "compensation-**blind** sequencing" → "compensation-**separated**
+  sequencing" — "blind" implies the consultant does not know how VYNE is compensated, which is
+  operationally unrealistic in a founder-led business and hard to prove; the real control is that
+  **compensation is analytically separated from advisor-fit and cannot affect scoring, rankings, or
+  recommendations.** The consultant may know compensation exists but must not use its amount or
+  availability to improve an option's advisor-fit assessment; compensating / potentially compensating /
+  non-compensating / compensation-unknown options all remain eligible; higher-conflict review applies
+  when VYNE's financially preferable outcome differs from the substantively stronger advisor outcome.
+  **Governing principle: *Compensation may affect VYNE's commercial operations. It must never improve an
+  option's advisor-fit recommendation.*** **Four decisions:** (1) **Working Agreement** = a short,
+  plain-English **written artifact** acknowledged before substantive assessment (~2–3 pages; **outside
+  counsel must review the production version**; may later be renamed **"Advisor Engagement
+  Understanding"** for advisor-facing use); (2) **entry threshold** = **broad** access to Advisor
+  Orientation, **selective** access to full assessment (founder decides fit/readiness/scope/capacity at
+  launch; outcomes: proceed · limited scope · gather more · refer · wait · decline — preserving access
+  without becoming a free research desk); (3) **disclosure default** = **begin at L1**, advance only
+  when the decision requires it *and* the advisor affirmatively chooses; **never advance automatically**
+  by stage; L1 must not feel superficial; (4) **scan depth** = **universal light scan of all 12 PTA
+  areas → materiality determination (low/moderate/high/unknown/out-of-scope) → selective depth**;
+  operating rule ***every module is acknowledged; only material modules are deeply assessed*** (the
+  framework is never reduced below 12 areas). **Two language corrections:** "recommendations evolve, not
+  flip" softened to ***recommendations should evolve as evidence develops; a material change in
+  direction must be supported by newly discovered or newly verified information and documented
+  clearly*** (amending the 2026-07-22 M4 principle — an unexplained reversal is prohibited, not a
+  reversal itself); and "VYNE evaluates and coordinates; specialists execute" → ***VYNE identifies
+  decision dependencies and may facilitate appropriate specialist involvement; specialists remain
+  responsible for their professional advice and execution*** (avoids implying VYNE manages counsel, tax,
+  valuation, or implementation providers). **Next: Consultation Architecture** — how VYNE's view is
+  **tested with** the advisor, not merely presented. Change level 2 (strategy/docs; no code/scope
+  change).
 - 2026-07-25 — **Advisor Working Agreement required; Advisor Orientation broadened; Content
   Architecture PERMANENTLY FROZEN; Assessment Architecture begun.** Two final founder additions before
   the permanent freeze: (1) an **Advisor Working Agreement** is inserted into the Assessment

@@ -1,6 +1,7 @@
 # Assessment Architecture
 
-**Status:** DRAFT — for founder review · **Date:** 2026-07-25
+**Status:** **APPROVED (founder, 2026-07-25)** — revisions applied; four founder decisions recorded.
+Factual corrections only. · **Date:** 2026-07-25
 **Phase:** 2 — Architecture · **System:** *Advisor Decision Experience* (with Consultation,
 Recommendation & Report, Advisor-Journey handoffs)
 **Reads from (frozen):** the **[Advisor Decision Ontology](./ADVISOR_DECISION_ONTOLOGY.md)** ·
@@ -69,7 +70,23 @@ Entry establishes, before any analysis:
   or *this needs a specialist*.
 - **Disclosure comfort** — how much the advisor is willing to share at this stage (§4).
 
-**Entry may conclude "not now" or "not us."** That is a legitimate, recorded outcome — not a failure.
+### Two gates (founder decision, 2026-07-25)
+
+- **Orientation eligibility — broad.** Almost any legitimate advisor may enter: a financial professional
+  facing a real business decision within VYNE's scope.
+- **Assessment eligibility — selective.** A full assessment proceeds only where VYNE has enough **fit,
+  readiness, information, and capacity** to produce useful work **to The VYNE Standard.** *At launch,
+  the founder makes the final determination.*
+
+**A full assessment may be declined or deferred when:** there is no real decision to evaluate · the
+advisor is only collecting deal numbers · the advisor wants mass submissions · the advisor refuses the
+minimum information needed · the request falls outside VYNE's scope · legal, compliance, or employment
+risks require specialist review first · the advisor appears unlikely to act in good faith · VYNE lacks
+the capacity or expertise to support the engagement responsibly.
+
+**Entry outcomes:** proceed · proceed with limited scope · gather more information · refer to a
+specialist · wait · decline. **"Not now" and "not us" are legitimate, recorded outcomes — not
+failures.** This preserves accessibility without turning VYNE into a free research desk.
 
 ## 3 · The Advisor Working Agreement *(required, before assessment begins)*
 
@@ -98,8 +115,11 @@ The Working Agreement states:
   upon a successful placement; advisors do not pay for traditional recruiting and transition-consulting
   services; arrangements may vary; **VYNE may not be compensated for every alternative**; the advisor
   controls every submission. *(No percentages, amounts, or firm-specific terms — ever.)*
-- **That conclusions can strengthen or change** — additional information may confirm, sharpen, or revise
-  a conclusion; recommendations **evolve, not flip**.
+- **That conclusions can strengthen or change** — **recommendations should evolve as evidence develops.
+  A material change in direction must be supported by newly discovered or newly verified information,
+  and documented clearly.** *(Refines the M4 principle "evolve, not flip," founder 2026-07-25: evolution
+  is the norm, but new evidence can legitimately reverse a preliminary conclusion — what matters is that
+  a reversal is evidence-driven and explained, never unexplained.)*
 - **The limits of the assessment** — what it cannot determine, and at what disclosure level.
 - **When specialists become necessary** — legal, tax, valuation, compliance, implementation (§10).
 
@@ -116,6 +136,19 @@ levels (carried forward from Book Portability / the Advisor Journey):
 | **L1 — High-level** | aggregate profile: AUM, production band, tenure, channel, team size, goals | orientation, issue-spotting, option framing; **Level 1 (decision-support)** conclusions only |
 | **L2 — Structured** | segment/product/account structure, revenue composition, team structure, constraints | comparative analysis, portability and economics *ranges*; **Level 2 (conditional)** conclusions |
 | **L3 — Detailed** | verified detail sufficient for advisor-specific analysis (**never client PII**) | full advisor-specific analysis; **Level 3 (full)** conclusions where evidence supports |
+
+**Every engagement begins at L1** (founder decision, 2026-07-25) and advances only when the decision
+requires it **and the advisor affirmatively chooses** to provide more. **Disclosure levels never advance
+automatically merely because the process reached a later stage.**
+
+**L1 must not feel superficial.** It is sized to: clarify objectives · identify the decisions in scope ·
+scan the practice · surface material issues · determine whether deeper analysis would be useful. VYNE
+then says plainly:
+
+> *"Here is what we can conclude now, here is what remains uncertain, and here is what additional
+> information would allow us to evaluate."*
+
+The advisor decides whether to move to L2 or L3.
 
 **Rules:** the conclusion level can never exceed what the disclosure level supports; VYNE states plainly
 what a higher level would enable; a reluctance to share is a legitimate constraint, not an obstacle to
@@ -142,8 +175,21 @@ each serving specific Ontology decisions:
 | 11 | Due diligence / verification | **L** Negotiation & Due Diligence |
 | 12 | Integrated conclusion | **★** The Strategic Outcome |
 
-**Scan-then-deepen:** the scan exists to find what matters — including areas the advisor did not raise.
-Depth is a documented choice, with a reason.
+### Scan depth — the three-step model (founder decision, 2026-07-25)
+
+The framework is **never** reduced below 12 areas — that risks missing a material issue simply because
+the advisor did not raise it. But a *scan* is not a full analysis:
+
+1. **Universal light scan** — all 12 areas receive a small number of structured questions or consultant
+   observations.
+2. **Materiality determination** — each area is classified **low · moderate · high · unknown · out of
+   scope**.
+3. **Selective depth** — only **material** areas receive deeper evidence gathering and analysis.
+
+> **Operating rule:** **Every module is acknowledged. Only material modules are deeply assessed.**
+
+This delivers completeness without making every engagement enormous. Depth is a documented choice, with
+a reason; **unknown** is a legitimate classification that itself may justify depth.
 
 ## 6 · Evidence & confidence inside the assessment
 
@@ -159,23 +205,32 @@ to the individual:
 - **Provenance** — where each material input came from, and when.
 - **Contradictory evidence is preserved**, not smoothed away.
 
-## 7 · Compensation-blind sequencing *(a binding method control)*
+## 7 · Compensation-separated sequencing *(a binding method control)*
 
-From Commercial Principles §8, applied concretely:
+*Renamed from "compensation-blind" (founder, 2026-07-25): "blind" implies the consultant does not know
+how VYNE is compensated — operationally unrealistic in a founder-led business, and difficult to prove.
+The real, provable control is **analytical separation**.*
 
-1. **Modules 1, 2, 4, 10 (objectives, current practice, capability requirements, risk) are completed
-   before firm-specific compensation information reaches the consultant forming the initial
-   recommendation.**
-2. **VYNE's expected fee is never a fit criterion or an assessment variable** — it appears in no module,
-   no score, no ranking.
-3. **Open-market notation:** every relevant option is recorded as compensating · potentially
-   compensating · non-compensating · compensation-unknown. **Non-compensating options are never
-   auto-removed.**
-4. **Higher-conflict review** (founder review required) when: the recommended firm pays materially more
+1. **Advisor objectives, current-practice characteristics, capability requirements, and material risks
+   are documented before firm-specific options are ranked or recommended.**
+2. **VYNE compensation is maintained separately from advisor-fit criteria** and does not enter any
+   score, comparison, suitability assessment, or recommendation rationale.
+3. **The consultant may know that compensation exists**, but must not use the amount or availability of
+   compensation to improve an option's advisor-fit assessment.
+4. **Compensating, potentially compensating, non-compensating, and compensation-unknown alternatives
+   remain eligible for consideration** (open-market notation; non-compensating options are never
+   auto-removed).
+5. **Higher-conflict review** applies when a financially preferable outcome for VYNE differs from the
+   substantively stronger outcome for the advisor — including: the recommended firm pays materially more
    than a close alternative · a non-paying alternative looks substantively stronger · the advisor is
-   considering **staying** · the advisor is considering **launching an RIA** · a fee agreement is
-   established *after* analysis began · another financial relationship with a provider exists.
-5. **Compensation disclosure record** — what the advisor was told, and when.
+   considering **staying** or **waiting** · the advisor is considering **launching an RIA** · a fee
+   agreement is established *after* analysis began · another financial relationship with a provider
+   exists.
+6. **The record documents** the advisor-facing compensation disclosure and any conflict review
+   performed.
+
+> **Governing principle:** **Compensation may affect VYNE's commercial operations. It must never improve
+> an option's advisor-fit recommendation.**
 
 ## 8 · Calibrated conclusions
 
@@ -188,8 +243,9 @@ VYNE gives **the strongest conclusion the evidence supports — no stronger, and
   alternatives.
 
 Every conclusion documents: **why it fits · material drawbacks · assumptions · unknowns · alternatives
-considered · what could change it.** **No "best firm" language.** **Recommendations evolve, not flip.**
-The **advisor always decides**.
+considered · what could change it.** **No "best firm" language.** **Recommendations should evolve as
+evidence develops; a material change in direction must be supported by newly discovered or newly
+verified information and documented clearly.** The **advisor always decides**.
 
 ## 9 · Outputs & handoffs
 
@@ -211,9 +267,16 @@ derived from these outputs later — they do not shape the assessment.**
 
 Same lines as content (Content Architecture §7), enforced inside the engagement: **legal** (covenants,
 solicitation, registration) · **tax** · **regulatory/compliance** (ADV, CCO) · **formal valuation** ·
-**M&A papering** · **hands-on implementation** (repapering, ACATS, systems). VYNE **evaluates and
-coordinates**; specialists execute. Boundary-crossings are named to the advisor at the moment they
-arise, per the Working Agreement (§3).
+**M&A papering** · **hands-on implementation** (repapering, ACATS, systems).
+
+> **VYNE identifies decision dependencies and may facilitate appropriate specialist involvement;
+> specialists remain responsible for their professional advice and execution.**
+
+*(Revised from "VYNE evaluates and coordinates; specialists execute" — founder 2026-07-25: "coordinates"
+overstates the role and could imply responsibility for managing counsel, tax professionals, valuation
+experts, or implementation providers. VYNE does not carry that responsibility unless such a service is
+formally defined.)* Boundary-crossings are named to the advisor at the moment they arise, per the
+Working Agreement (§3).
 
 ## 11 · Governance
 
@@ -230,17 +293,25 @@ arise, per the Working Agreement (§3).
 
 ---
 
-## Open questions for the founder
+## Founder decisions — resolved (2026-07-25)
 
-1. **Working Agreement form** — a written artifact the advisor receives and acknowledges, or a
-   structured conversation VYNE documents? *(Recommendation: a written artifact — it is the first proof
-   of the standard.)*
-2. **Entry threshold** — does VYNE accept every advisor who wants an assessment at launch, or is there a
-   fit/readiness bar (and who decides)?
-3. **Disclosure-level default** — does an engagement start at L1 and climb only as needed
-   *(recommended)*, or open at L2 for efficiency?
-4. **Scan depth at launch** — is a full 12-area scan realistic for the first engagements, or should the
-   launch scan be narrower with the rest reached on demand?
+1. **Working Agreement form:** a **written artifact** delivered and acknowledged **before substantive
+   assessment begins** — short, polished, plain-English (eventually ~2–3 pages), **not** a long legal
+   document. The advisor acknowledges: the nature and limits of VYNE's work · confidentiality
+   expectations · **no client PII** · advisor-controlled introductions · possible outcomes including
+   **stay** or **wait** · compensation disclosure · specialist boundaries · graduated disclosure · that
+   conclusions depend on the information provided. **The final production version requires outside
+   counsel review** (it addresses confidentiality, compensation, professional boundaries, and
+   authorization) even though it is *not* the commercial contract.
+   *Naming (later, not blocking): "**Advisor Engagement Understanding**" may replace "Working Agreement"
+   for advisor-facing use — more professional, less suggestive of an employment or legal agreement.
+   "Working Agreement" remains fine internally.*
+2. **Entry threshold:** **broad access to Advisor Orientation; selective access to full assessment**
+   (§2).
+3. **Disclosure default:** **begin at L1**; advance to L2/L3 only when the decision requires it **and**
+   the advisor affirmatively chooses to provide more (§4).
+4. **Scan depth:** **light scan across all 12 PTA areas; only material areas are deepened** (§5).
+5. **Compensation-separated sequencing** replaces "compensation-blind" (§7).
 
 *Not started: Consultation Architecture, Recommendation & Report Architecture, AEO Architecture, web
 copy, page design, code, public interactive tools.*
