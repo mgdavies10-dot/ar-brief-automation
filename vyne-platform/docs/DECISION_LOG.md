@@ -23,6 +23,34 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Content Architecture APPROVED WITH REVISIONS and FROZEN; Phase 2 restructured into two
+  parallel systems; Assessment Architecture is next.** Founder approved
+  `docs/experience/CONTENT_ARCHITECTURE.md` subject to eight targeted revisions, all applied:
+  (1) **Strategic Outcome is not a decision family or pillar** — it becomes the public **Strategic
+  Outcome Gateway** (entry point + consultation gateway), with the hierarchy restated as *Advisor
+  Decision System → Gateway → Decision Families → Decision Hub → Question/Guide/Comparison/Framework/
+  FAQ/Checklist → Confidential Assessment/Consultation/Report*; (2) "a question has one purpose"
+  replaced — each **asset** has one primary purpose and may have limited secondary purposes, and one
+  question may support multiple assets; (3) **editorial verification separated from legal review** —
+  every firm-specific claim needs sourcing/attribution/date/source-owner/refresh/editorial approval, but
+  counsel is triggered only by materially legal subject matter (contracts · covenants · solicitation ·
+  registration · regulatory · privacy · compensation · employment · transition conduct · legal
+  interpretation · risky comparative claims); (4) public tools are **interactive orientation, NOT
+  automated assessment** — no public firm recommendation, stay-or-move score, portability percentage,
+  best-fit model, firm match, or advisor-specific conclusion at launch; (5) the canonical knowledge
+  object becomes a **canonical source record governance standard** — explicitly **no** database, CMS, or
+  synchronization engine required at launch (automation is a Phase-3 product concern); (6) **launch
+  inventory tightened to five items** — Strategic Outcome Gateway · Affiliation Model Hub + comparison ·
+  Book Portability Hub · How VYNE Works · one consultation-entry orientation questionnaire (no client
+  PII) — with Ownership, Enterprise Value, Economics, Succession, RIA readiness, and due-diligence moved
+  to first-90-days; (7) **Phase 2 restructured into two systems** — *Knowledge & Demand* (Content · AEO ·
+  Editorial & Research · Public-to-Confidential Conversion) and *Advisor Decision Experience* (Assessment
+  · Consultation · Recommendation & Report · Advisor-Journey handoffs), **developing in parallel** (K&D
+  need not finish first), with **AI and CRM defined from those systems, never leading them**;
+  (8) **sequencing** — freeze Content Architecture, then **Assessment Architecture is the immediate next
+  deliverable** (the public conversion handoff can't be designed without knowing the confidential
+  experience); AEO may begin after the freeze. No web copy, page design, code, or public interactive
+  tools. Change level 2 (strategy/docs; no code/scope change).
 - 2026-07-25 — **Phase 1 (Expression) FROZEN; Phase 2 (Architecture) begins. Ontology final: Ownership
   and Enterprise Value are separate families; advisor-paid consulting deferred as Future Business Model
   Expansion.** The founder ruled Phase 1 complete and directed a stop to strategy refinement. Two final

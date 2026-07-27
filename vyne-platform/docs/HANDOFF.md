@@ -130,8 +130,20 @@ component) is built in strict phase order:
   Library still accrues newly discovered questions — that is not a redesign. Commercial
   Principles is operational and evolves with governance/legal work.)*
 - **Phase 2 — Architecture: IN PROGRESS (founder 2026-07-25).** All downstream of the
-  Ontology: **Content Architecture** (started) → AEO · Assessment · Consultation · AI ·
-  CRM architectures. Still *experience/strategy*, pre-software — no code, UI, or database.
+  frozen Ontology, in **two parallel systems** (founder structure):
+  - **Knowledge & Demand** *(how advisors discover and learn)*: **Content Architecture
+    ✅ FROZEN** · AEO Architecture · Editorial & Research Architecture ·
+    Public-to-Confidential Conversion Architecture.
+  - **Advisor Decision Experience** *(how VYNE delivers the relationship)*: **Assessment
+    Architecture (NEXT)** · Consultation Architecture · Recommendation & Report
+    Architecture · Advisor-Journey handoffs.
+  **AI and CRM requirements are defined from those systems — they do not lead them.**
+  Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
+  two develop **in parallel** now that Content Architecture is frozen. **Sequencing:**
+  Assessment Architecture is the immediate next deliverable (the public conversion handoff
+  can't be designed without knowing what the confidential experience is); AEO Architecture
+  may begin any time after the Content freeze. Still *experience/strategy*, pre-software —
+  no code, UI, database, web copy, page design, or public interactive tools.
   *(Note: this renames the roadmap's former "Phase 2 — Product Experience"; software still
   waits for Phase 3.)*
 - **Phase 3 — Platform** (later): decide what software supports the experience.
@@ -236,12 +248,24 @@ component) is built in strict phase order:
    Registered (not built): per-decision evidence → confidence → dependencies → AI-sufficiency → human
    judgment.
    **— END OF PHASE 1 (Expression). Phase 1 strategy docs FROZEN (factual corrections only). —**
-   5. **Content Architecture** — **PHASE 2, IN PROGRESS** (`docs/experience/CONTENT_ARCHITECTURE.md`):
-   organizes BY DECISION — "which advisor question, under which decision, deserves which answer
-   FORMAT?"; format follows the question's complexity + the delivery-ladder rung, reading from 4b/4e ·
-   6. **AEO Strategy** · 7. **Lead-Capture Philosophy** · 8. **Consultation Experience.**
-   *(Phase 2 architectures, all downstream of the Ontology: Content · AEO · Assessment · Consultation ·
-   AI · CRM.)*
+   5. **Content Architecture** — **✅ FROZEN (approved with revisions, founder 2026-07-25)**
+   (`docs/experience/CONTENT_ARCHITECTURE.md`). Organizes BY DECISION; format follows the question's
+   complexity + delivery-ladder rung, reading from 4b/4e. Key settled points: **Strategic Outcome
+   Gateway** (the synthesis as a public entry point — *not* a family/pillar); hierarchy *Advisor
+   Decision System → Gateway → Decision Families → Decision Hub → Question/Guide/Comparison/Framework/
+   FAQ/Checklist → Confidential Assessment/Consultation/Report*; each **asset** has one primary purpose
+   (a question may feed several assets); **editorial verification** for every firm-specific claim vs.
+   **legal review** only for materially legal subject matter; **interactive orientation, NOT automated
+   assessment** at launch (no public scores, portability %, firm matches, or best-fit models);
+   **canonical source record** as a *governance discipline* (no CMS/database/sync engine at launch);
+   six evidence classes; professional boundaries; outcome quota so stay/wait/succession aren't crowded
+   out; AEO may prioritize within Education but never redefines the method; fee terms never in public/
+   advisor-facing content. **Launch set (5):** Strategic Outcome Gateway · Affiliation Model Hub +
+   comparison · Book Portability Hub (*asset ≠ revenue*) · How VYNE Works · one consultation-entry
+   orientation questionnaire (no client PII).
+   **Phase 2 continues in two parallel systems — see the phase block above.** Immediate next:
+   **Assessment Architecture**. Then AEO · Consultation · Recommendation & Report · then AI/CRM
+   requirements derived from those systems.
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**
