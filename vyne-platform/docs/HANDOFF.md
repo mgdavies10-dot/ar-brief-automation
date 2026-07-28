@@ -135,8 +135,8 @@ component) is built in strict phase order:
     ✅ FROZEN** · AEO Architecture · Editorial & Research Architecture ·
     Public-to-Confidential Conversion Architecture.
   - **Advisor Decision Experience** *(how VYNE delivers the relationship)*: **Assessment
-    Architecture ✅ APPROVED** · **Consultation Architecture (NEXT)** ·
-    Recommendation & Report Architecture · Advisor-Journey handoffs.
+    Architecture ✅ APPROVED** · **Consultation Architecture ✅ APPROVED & FROZEN** ·
+    **Recommendation & Report Architecture (NEXT)** · Advisor-Journey handoffs.
   **AI and CRM requirements are defined from those systems — they do not lead them.**
   Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
   two develop **in parallel** now that Content Architecture is frozen. **Sequencing:**
@@ -289,8 +289,29 @@ component) is built in strict phase order:
    **selective** assessment access (founder decides at launch) · engagements **begin at L1**, never
    auto-advancing · **light scan of all 12 areas → materiality → selective depth** (*every module
    acknowledged; only material modules deeply assessed*).
-   **Phase 2 continues in two parallel systems — see the phase block above.** Then AEO · Consultation ·
-   Recommendation & Report · then AI/CRM requirements derived from those systems.
+   7. **Consultation Architecture** — **✅ APPROVED & FROZEN (founder 2026-07-25)**
+   (`docs/experience/CONSULTATION_ARCHITECTURE.md`). Governing premise: *consultation is the process
+   through which VYNE's assessment is **tested with** the advisor, not merely presented to them.*
+   **Two layers (§2):** the **advisor-facing five-part conversation** — **Listen · Reflect · Test ·
+   Decide · Commit** — over an **internal discipline** (preparation checklist · detailed agenda ·
+   state/source/test/resolve · evidence classification · documentation · conflict controls ·
+   governance) that is *never* read aloud or shown as a form. Also: the disagreement protocol
+   (**artificial consensus prohibited**; a terminal "remain unresolved" branch); the six evidence
+   classes applied to advisor-specific work; **compensation-separated conduct** in the room;
+   **Higher-Conflict Decision Gate** (§14) — *renamed from "review" because at founder-led launch the
+   founder is both recommending consultant and reviewer, which is **not** independent review*; six
+   launch-state gate requirements, with genuine second-person review deferred to the scaled state;
+   professional-boundary referrals; **two-tier documentation** (Tier 1 every session, Tier 2 on trigger)
+   plus **two records** (Internal Consultation Record vs. Advisor Consultation Summary). *A conclusion
+   becomes **recommendation-ready**, not "final," once tested — and remains subject to material new
+   information.* **Founder decisions:** structured pre-read (no polished recommendation beforehand) ·
+   **founder-only consultations at launch** · two records · generally facilitate a legitimate
+   advisor-chosen weaker option (decline only on **material harm or integrity**) · standard launch scope
+   (1 orientation · 1 initial · up to 2 focused · 1 final) with **no hard cap** · two-tier documentation
+   approved.
+   **Phase 2 continues in two parallel systems — see the phase block above.** Next: **Recommendation &
+   Report Architecture**; then AEO · Editorial & Research · Public-to-Confidential Conversion; then
+   AI/CRM requirements derived from those systems.
 
 Company operating logic (founder framing): **Foundation (why) → Method (how we think) →
 Journey (how it's experienced) → Brand (how it feels) → Messaging (what we say).**

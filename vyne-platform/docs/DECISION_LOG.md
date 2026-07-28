@@ -23,6 +23,46 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Consultation Architecture APPROVED & FROZEN; two-layer consultation experience;
+  Higher-Conflict Decision Gate replaces "review"; six founder decisions resolved.** Founder approved
+  `docs/experience/CONSULTATION_ARCHITECTURE.md` with two structural corrections. **(1) The consultation
+  needs a human experience layer.** "It's a preparation tool, not a script" was insufficient; the
+  architecture now formally separates the **advisor-facing consultation experience** — a five-part
+  conversation, **Listen · Reflect · Test · Decide · Commit** — from the **internal consultation
+  discipline** (preparation checklist, detailed agenda, state/source/test/resolve, evidence
+  classification, documentation, conflict controls, governance), which stays behind the scenes and is
+  never read aloud or shown as a form. *The advisor experiences a thoughtful conversation; VYNE operates
+  from rigorous internal structure — that distinction is how a premium consulting experience coexists
+  with strong governance.* **(2) Founder review is not an independent control when the founder is also
+  the consultant.** At launch the founder is both the recommending consultant and the reviewer, so
+  "higher-conflict review" overstated the control — the same failure mode as the rejected
+  "compensation-blind" language. Replaced with the **Higher-Conflict Decision Gate**, requiring at
+  launch: a documented conflict check · compensating and non-compensating alternatives identified ·
+  confirmation that compensation appears in **no** fit rationale · a written explanation of why the
+  conclusion stands **without** compensation · a **cooling period** before the recommendation or
+  submission authorization is final · specialist involvement for legal/tax/regulatory/valuation
+  judgment. **Genuine second-person review is deferred to the scaled state** (once another qualified
+  consultant exists). **Six founder decisions:** (a) send a **structured pre-read** (decisions in scope,
+  objectives understood, facts to confirm, assumptions, unknowns, alternatives, questions to resolve) —
+  a provisional working direction may be included if clearly labeled, but **no polished final
+  recommendation** beforehand, and no theatrical concealment either; (b) **founder conducts all
+  consultations at launch** — delegation only after pilot engagements and documented training standards,
+  with Level 3 recommendations, higher-conflict cases, and material direction changes initially
+  retaining founder approval; (c) **two records** — an Internal Consultation Record and a separate
+  **Advisor Consultation Summary** (raw internal notes are never provided); (d) VYNE **generally
+  facilitates** a legitimate advisor-chosen option it considers weaker, after documenting reservations —
+  declining only where the action appears unlawful, unethical, materially harmful, misleading, outside
+  scope or competence, or inconsistent with the Advisor Submission Standard — **the threshold is
+  material harm or integrity, never "VYNE would have chosen differently"**; (e) **no arbitrary cap** on
+  consultations, with a standard launch scope of 1 Advisor Orientation · 1 initial assessment
+  consultation · up to 2 focused consultations · 1 final recommendation consultation, beyond which an
+  explicit rescope/pause/convert/conclude decision is required; (f) **two-tier documentation approved**
+  (Tier 1 every session; Tier 2 on trigger). **Language refinement:** "a conclusion becomes **final**
+  only after it survives testing" → *"a conclusion becomes **recommendation-ready** only after it has
+  been tested with the advisor; it remains subject to material new information or changed
+  circumstances"* — aligning with the changed-facts consultation. **Next: Recommendation & Report
+  Architecture** — the tangible work product the advisor receives. Change level 2 (strategy/docs; no
+  code/scope change).
 - 2026-07-25 — **Assessment Architecture APPROVED; compensation-blind → compensation-SEPARATED; four
   entry/disclosure/scan decisions; two language corrections.** Founder approved
   `docs/experience/ASSESSMENT_ARCHITECTURE.md` with one material correction and several rulings.
