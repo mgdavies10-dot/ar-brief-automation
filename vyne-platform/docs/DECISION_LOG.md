@@ -23,6 +23,22 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **"Frozen" clarified: approved documents are a controlled V1.0 baseline, not permanently
+  immutable doctrine. Operating Artifact Sprint begins.** Founder clarification: frozen strategy and
+  architecture documents are **not casually reopened**, but pilots may reveal a **real operating
+  defect**, and refusing to learn from real engagements is as poor a governance posture as constant
+  rewriting. **Any future amendment to a frozen document requires all of:** (1) a **documented pilot
+  finding**; (2) identification of the **affected frozen doctrine**; (3) the **proposed amendment**;
+  (4) **why the change is necessary**; (5) **founder approval**; (6) a **new version number and a
+  Decision Log entry**. Absent those six, frozen documents stand as written. **Direction:** stop
+  producing architecture; begin the **Operating Artifact Sprint**, with **engagement-record standards
+  first** (every artifact created afterward needs a home, a naming convention, and a status), then
+  Advisor Orientation → Working Agreement → L1 assessment/materiality worksheet → internal consultation
+  preparation template → Advisor Consultation Summary → Recommendation & Decision Record →
+  firm/model comparison appendix → Higher-Conflict Decision Gate form → firm-specific authorization
+  form. Then run five simulated cases (stay · wait · employee-firm move · supported independence ·
+  advisor chooses against VYNE's recommendation). Change level 2 (governance/process; no code/scope
+  change).
 - 2026-07-25 — **Recommendation & Report Architecture APPROVED & FROZEN; gate made internal-only and
   narrowed; five founder decisions resolved; project shifts from architecture to operating artifacts.**
   Founder approved `docs/experience/RECOMMENDATION_AND_REPORT_ARCHITECTURE.md` with five corrections:
