@@ -23,6 +23,43 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Recommendation & Report Architecture APPROVED & FROZEN; gate made internal-only and
+  narrowed; five founder decisions resolved; project shifts from architecture to operating artifacts.**
+  Founder approved `docs/experience/RECOMMENDATION_AND_REPORT_ARCHITECTURE.md` with five corrections:
+  (1) *"it advocates nothing"* → *"it is **not promotional** and is not designed to sell a firm, model,
+  or transaction; it **may recommend a direction when the evidence supports one**"* (a Level 2/3 Record
+  does advocate a supported direction); (2) the advisor-facing third layer renamed **"Decision Basis and
+  Supporting Evidence,"** with **"Internal Supporting Record"** reserved exclusively for VYNE's
+  workpapers; (3) **all Higher-Conflict Decision Gate fields are INTERNAL** — the advisor-facing Record
+  carries the approved compensation disclosure and never displays trigger/status/completion-date/
+  basis-without-compensation/cooling/second-person-review; the completed internal gate permits or blocks
+  issuance without being described to the advisor; (4) **worked example B3 corrected — recommending an
+  option that pays VYNE *less* does NOT by itself trigger the gate**; that is evidence the separation
+  held, not a conflict, and expanding the gate to every compensation difference would dilute the trigger
+  that matters (the gate stays focused on situations where VYNE's economics could reasonably *distort*
+  the recommendation); (5) compensation disclosure appears in **exactly three places** (standing section
+  of the Record · consultation when a new specific firm enters · the firm-specific authorization
+  artifact) and is **not repeated beside each firm** in a comparison, which could imply firm-specific
+  compensation disclosure — still unresolved. **Five founder decisions:** (A) a written Record in
+  **every substantive engagement**, scaled by level (Decision-Support / Conditional / Full) — *the
+  requirement is a durable conclusion, not maximum length*; (B) **VYNE retains ownership** of
+  methodology, templates, frameworks, and internal records; the advisor receives a **confidential-use
+  copy** shareable with spouse/attorney/CPA/team/named advisers but **not** publicly posted, commercially
+  reproduced, or sent to hiring firms without written consent — firms receive an **approved excerpt or
+  firm-facing summary**, never the full Record automatically (**counsel must finalize**); (C) the Record
+  is **delivered live** in a final recommendation consultation, then left with the advisor — never first
+  encountered alone in an email, and not a theatrical reveal since it was already tested; (D) engagements
+  ending without a decision receive a concise **Decision Status and Closure Record** (*"no decision" is a
+  legitimate status and does not erase the work*); (E) **no numerical retention period is frozen into the
+  methodology** — a written, counsel-approved retention and destruction policy is required before
+  production use, with legal-hold, active-dispute, contractual, and statutory overrides. **Lifecycle
+  field "tested with" → "consultation completed with,"** with the clarifier carried into the Record:
+  *the advisor's participation confirms the recommendation was discussed and tested; it does not mean the
+  advisor agreed.* **Direction: stop producing architecture.** The core advisor decision experience is
+  designed end to end (Orientation → Working Agreement → Assessment → Consultation → Recommendation &
+  Decision Record → advisor-controlled next step); next value comes from **operating artifacts and
+  simulated pilot cases**, not more conceptual layers. Change level 2 (strategy/docs; no code/scope
+  change).
 - 2026-07-25 — **Consultation Architecture APPROVED & FROZEN; two-layer consultation experience;
   Higher-Conflict Decision Gate replaces "review"; six founder decisions resolved.** Founder approved
   `docs/experience/CONSULTATION_ARCHITECTURE.md` with two structural corrections. **(1) The consultation

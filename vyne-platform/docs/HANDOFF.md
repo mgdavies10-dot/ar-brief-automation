@@ -136,7 +136,21 @@ component) is built in strict phase order:
     Public-to-Confidential Conversion Architecture.
   - **Advisor Decision Experience** *(how VYNE delivers the relationship)*: **Assessment
     Architecture ✅ APPROVED** · **Consultation Architecture ✅ APPROVED & FROZEN** ·
-    **Recommendation & Report Architecture (NEXT)** · Advisor-Journey handoffs.
+    **Recommendation & Report Architecture ✅ APPROVED & FROZEN** · Advisor-Journey
+    handoffs. **The core advisor decision experience is now designed end to end:**
+    *Orientation → Working Agreement → Assessment → Consultation → Recommendation &
+    Decision Record → advisor-controlled next step.*
+  - **NEXT: stop writing architecture; build operating artifacts and pilot readiness**
+    (founder direction 2026-07-25). Build sequence: 1 Advisor Orientation · 2 Advisor
+    Working Agreement / Engagement Understanding · 3 L1 assessment + materiality
+    worksheet · 4 internal consultation preparation template · 5 Advisor Consultation
+    Summary · 6 Recommendation & Decision Record template · 7 firm/model comparison
+    appendix · 8 Higher-Conflict Decision Gate form · 9 firm-specific authorization
+    form · 10 secure engagement folder + naming/version rules. **Then run simulated
+    cases** (stay · wait · employee-firm move · supported independence · advisor
+    chooses against VYNE's recommendation) **before writing more architecture** — to
+    test whether the system feels premium or bureaucratic and how long a Record
+    actually takes to produce.
   **AI and CRM requirements are defined from those systems — they do not lead them.**
   Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
   two develop **in parallel** now that Content Architecture is frozen. **Sequencing:**
