@@ -60,7 +60,7 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 | VYNE interpretation | judgment must be labelled as judgment | evidence class 5 | **A** |
 | **Materiality** | the whole point of L1 — determines depth | governing premise | **E** |
 | **Confidence** | separate axis; high materiality + limited confidence is what justifies deepening | Assessment §6 | **E** |
-| Specialist dependency + what it affects | routes regulated questions out and records blocking vs. parallel | Consultation §13 | **A** |
+| Specialist dependency + what it affects | routes regulated questions out; records whether it is a **prerequisite to a directional conclusion on that issue**, or parallel | Consultation §13 | **A** |
 | Deepen? Yes / No / Not yet **+ reason for either answer** | requiring a reason for "No" is deliberate — an unexamined "No" is how material issues get missed | scan discipline | **E** |
 | Minimum additional information needed | keeps requests proportionate; the advisor is asked for the least that resolves it | minimum-necessary | **A** |
 | Effect on the advisor's decision | forces the "so what" test on every entry | decision orientation | **E** |
@@ -101,7 +101,9 @@ arrangement).
 **Module 10 — risk.** *Materiality **High** · Confidence **Limited**.* The advisor described a non-solicit
 from memory as *"pretty standard, I think it's a year."* No copy on hand. Also: the firm was acquired
 18 months ago and the advisor is unsure whether the covenant travelled or was replaced. **Specialist
-dependency: counsel — blocking.** Verification status of the covenant terms: **unverified**.
+dependency: counsel review is a prerequisite to any directional conclusion materially dependent on the
+covenant issue** — VYNE continues assessing unaffected areas meanwhile. Verification status of the
+covenant terms: **unverified**.
 
 **Module 3 — book portability.** *Materiality High · Confidence Limited.* Concentration: roughly 40% of
 revenue in the top eight relationships (band). Origination mixed — several inherited from a retiring
@@ -126,8 +128,9 @@ recorded reason for not deepening.
   Exit**, **D Ownership**, **K Risk/Legal**, **G Book portability**. *(The succession decision was not in
   the advisor's original framing.)*
 - **Material areas:** Modules 6, 10, 3, 8.
-- **Specialist dependencies:** counsel (**blocking** — covenant); valuation and counsel (later, for
-  succession/equity); CPA (forfeiture treatment).
+- **Specialist dependencies:** counsel — **a prerequisite to any directional conclusion materially
+  dependent on the covenant**, while unaffected areas continue to be assessed; valuation and counsel
+  (later, for succession/equity); CPA (forfeiture treatment).
 - **Recommended scope:** advance **Modules 3, 6, and 10** to L2; hold 5 at L1 pending the covenant answer.
 - **Recommended disclosure progression:** selected areas to L2, **at the advisor's election.**
 - **Consultation purpose:** test the reframing — that this may be a succession-and-ownership decision that
@@ -139,8 +142,9 @@ succession reframing is *the* answer — only that it is now in scope and untest
 
 **Handoff §6 (highest-impact unknowns), as written:**
 > 1. *Whether the non-solicit survived the acquisition and what it actually restricts.* Resolved by:
->    counsel review of the executed agreement. **Blocking** — several options cannot be compared until
->    this is known.
+>    counsel review of the executed agreement. **A prerequisite to any directional conclusion materially
+>    dependent on the covenant** — several comparisons cannot be completed until it is known, though
+>    unaffected areas continue.
 > 2. *Whether the junior advisor's succession expectation matches the advisor's.* Resolved by: a
 >    conversation the advisor has not yet had. Materially changes both the team and succession picture.
 
@@ -188,7 +192,44 @@ succession reframing is *the* answer — only that it is now in scope and untest
   item at L1 — but the worked example shows exactly why it earns its place: inherited relationships were
   the decisive portability factor and the advisor had not flagged them. **Recommend keeping both.**
 
-## 5 · Recommendation
+## 5 · Recommendation — resolved
+
+**APPROVED as a controlled operating draft (founder, 2026-07-25); revisions applied.** Both revisions I
+recommended were adopted, plus two the founder added.
+
+### Change log — v0.1 → v0.2 (2026-07-25)
+
+1. **Launch duration standard added** *(Guide §1a)* — advisor-facing scan **45–60 min**; **mandatory
+   pause at 75 min** to preserve what was learned, identify unfinished areas, and schedule a focused
+   follow-up **rather than rush the remaining modules**; worksheet + handoff **20–30 min**; total
+   benchmark **75–90 min**. Explicitly **launch operating targets, not permanent doctrine**, with a
+   five-point review after the first three engagements and adjustments recorded as an
+   **operating-version change** — not an amendment to frozen methodology unless a genuine methodological
+   defect appears. *This resolves the "nothing enforces brevity" gap I flagged; the mandatory pause is the
+   enforcement, and it protects quality rather than merely capping time.*
+2. **Five-field shortened path added** *(Worksheet)* — current L1 understanding · materiality ·
+   confidence · deepen: No · reason and next action *(with "none currently required" explicitly a
+   complete answer)*. **May not be used for Moderate, High, or Unknown.** I added one clarification:
+   **Unknown is never shortened** — insufficient information to bound materiality is a reason to record
+   *more*, not less.
+3. **Scope-setting boundary stated** *(Guide, Module 12)* — *"L1 may revise the questions and decisions in
+   scope. It may not rank the resulting outcomes or state which direction appears preferable,"* with the
+   permitted and prohibited examples verbatim and the governing distinction: **a scope change identifies
+   what must be assessed; a recommendation tells the advisor what to do.** *This directly answers the item
+   I flagged for founder attention — the reframing behaviour is now bounded by rule rather than by
+   judgment alone.*
+4. **Specialist language refined** *(Handoff §9, worked example)* — "blocking" replaced throughout with
+   **"a prerequisite to any directional conclusion materially dependent on this issue,"** paired with the
+   explicit statement that **assessment of unaffected areas continues**. The handoff's binary
+   blocking/parallel checkbox was rewritten accordingly. *The old wording implied an engagement-wide
+   stop, which was never the intent and would have idled work unnecessarily.*
+
+**Status: APPROVED as a controlled operating draft.** Versioned v0.2. Not production-frozen — these are
+operating artifacts expected to change with pilot experience under the operating-version rule above.
+
+---
+
+### Original recommendation (superseded, retained for the record)
 
 **Approve with revisions.** The three artifacts implement the governing premise and rule faithfully:
 all twelve modules are acknowledged with selective depth, materiality and confidence are separate axes,

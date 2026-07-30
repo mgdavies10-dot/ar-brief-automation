@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # L1 Assessment Handoff — Assessment → Consultation
 
-**Artifact:** 4C · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review · **One page. Internal. Not advisor-facing.**
+**Artifact:** 4C · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25) · **One page. Internal. Not advisor-facing.**
 
 > **This handoff is not a recommendation.** It transfers a materiality map and a scope proposal into the
 > consultation. The strongest conclusion available at L1 is **Level 1 — Decision-Support.**
@@ -52,7 +52,10 @@ ENGAGEMENT: E-__-___          DISCLOSURE LEVEL: L1          DATE: __________
    ☐ counsel  ☐ CPA/tax  ☐ compliance  ☐ valuation  ☐ M&A counsel
    ☐ implementation  ☐ none
    What each affects: ____________________________________________________
-   Blocking? ☐ yes — must resolve before a conclusion   ☐ no — parallel
+   Scope of the dependency:
+     ☐ Prerequisite to any directional conclusion materially dependent on
+       this issue — assessment of unaffected areas continues
+     ☐ Parallel — does not gate any conclusion
 
 10 · DECISION PARTICIPANTS         (roles; names only if advisor volunteered)
    Involved / affected: __________________________________________________

@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # L1 Assessment Guide
 
-**Artifact:** 4A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review · **Audience:** the VYNE consultant conducting the assessment
+**Artifact:** 4A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied) · **Audience:** the VYNE consultant conducting the assessment
 **Reads from (frozen):** Practice Transition Assessment (modules 1–12) · Assessment Architecture ·
 Advisor Decision Ontology · Advisor Orientation + Internal Orientation Review.
 
@@ -52,6 +52,27 @@ information looks inconsistent · circumstances have changed · or the advisor w
 > written decision naming the specific firm."
 
 ---
+
+## 1a · Duration — launch operating targets
+
+> **Target advisor-facing L1 scan: 45–60 minutes.**
+>
+> **At 75 minutes, the consultant must pause the scan**, preserve what has been learned, identify
+> unfinished areas, and **schedule a focused follow-up rather than rush the remaining modules.**
+>
+> **Target internal worksheet completion and handoff: 20–30 minutes.**
+>
+> **Initial total consultant-time benchmark: 75–90 minutes per L1 assessment.**
+
+**These are launch operating targets, not permanent doctrine.** They exist to keep a twelve-module scan
+from becoming an interrogation, and they are expected to change.
+
+**After the first three simulated or real engagements, review:** advisor conversation time · internal
+documentation time · which modules consistently take longest · which questions produce little decision
+value · how often the shortened immaterial-module path is used.
+
+**Any adjustment is recorded as an operating-version change** — not as an amendment to frozen
+methodology, unless a genuine methodological defect appears.
 
 ## 2 · Sequence — compensation-separated
 
@@ -429,6 +450,22 @@ next consultation.
 > percentage · a best-fit firm · a Level 2 or Level 3 conclusion.
 >
 > **The strongest conclusion available at L1 is Level 1 — Decision-Support.**
+
+### The scope-setting boundary
+
+> **L1 may revise the questions and decisions in scope. It may not rank the resulting outcomes or state
+> which direction appears preferable.**
+
+**Permitted:** *"This is not only a firm-change question. Succession, ownership, and covenant risk must
+also be evaluated."*
+
+**Prohibited:** *"Because succession is the real issue, moving is probably not the answer."*
+
+> **A scope change identifies what must be assessed. A recommendation tells the advisor what to do.**
+
+Reframing what is genuinely in scope is the most valuable thing an L1 scan does — an advisor who came in
+asking one question often needs three evaluated. But the moment a scope change acquires a direction
+("…so probably X"), it has stopped being scope and become an untested recommendation.
 
 **Drift check before you close.** Read what you have written and ask: *does any sentence here tell the
 advisor which way to go?* If yes, it does not belong at L1. Reframe it as **"what we would need to know

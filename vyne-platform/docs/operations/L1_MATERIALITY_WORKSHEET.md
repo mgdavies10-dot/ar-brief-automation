@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # L1 Materiality Worksheet
 
-**Artifact:** 4B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 4B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 **Completed by VYNE. Never handed to the advisor as a form.**
 
 **Engagement:** E-__-___ · **Disclosure level:** L1 · **Prepared by:** ________ · **Date:** ________
@@ -111,10 +111,32 @@ sequence: **1, 2, 4, 10**, then **3, 5, 6, 7, 8, 9, 11**, then **12**.*
 └──────────────────────────────────────────────────────────────────────────────
 ```
 
+## Shortened path — modules classified Low or Out of scope
+
+*Acknowledgment is mandatory; depth is selective. A module that does not bear on the decision is closed
+in five fields, not eighteen.*
+
+```
+┌─ MODULE __ · ____________________________________  [SHORTENED PATH]
+│  1. Current L1 understanding: _____________________________________________
+│  2. Materiality:  ☐ Low   ☐ Out of scope
+│  3. Confidence:   ☐ Limited  ☐ Developing  ☐ Supported
+│  4. Deepen beyond L1:  No
+│  5. Reason and next action: _______________________________________________
+│     (e.g. "No ownership or succession question in play; none currently
+│      required." — "none currently required" is a complete next action.)
+└──────────────────────────────────────────────────────────────────────────────
+```
+
+> **The shortened path may not be used for a module classified Moderate, High, or Unknown.**
+> Those modules use the full relevant worksheet fields above. **Unknown** in particular is never
+> shortened — insufficient information to bound materiality is a reason to record *more*, not less.
+
 ## Module roster — all twelve, each acknowledged exactly once
 
-*Every module gets a completed block, including those classified Low or Out of scope. **Acknowledgment is
-mandatory; depth is selective.***
+*Every module gets a completed block. Low and Out-of-scope modules may use the **shortened path** above;
+Moderate, High, and Unknown modules use the full block. **Acknowledgment is mandatory; depth is
+selective.***
 
 | # | Module | Ontology family / decisions | Block complete? | Materiality | Deepen? |
 |---|---|---|---|---|---|
