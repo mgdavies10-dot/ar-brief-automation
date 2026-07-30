@@ -18,6 +18,65 @@ effect (§1 defers that to counsel). VYNE has also deliberately avoided claims o
 independence, conflict-freedom, or market completeness, and excludes all fee percentages and
 firm-specific commercial terms from every advisor-facing document. Please preserve those constraints.
 
+---
+
+## Founder business positions — settled before counsel review (2026-07-25)
+
+*These are instructions to counsel, not questions for counsel. Counsel is asked to implement them and to
+confirm consistency with VYNE's firm-side agreements.*
+
+### BP-1 · Compensation following withdrawal
+
+- The advisor **may pause or withdraw without owing VYNE a fee.**
+- **VYNE's compensation rights arise only under separate agreements with hiring firms.**
+- If the advisor later joins a firm VYNE introduced, any compensation payable to VYNE is **governed by
+  VYNE's agreement with that firm**, not by anything in this document.
+- The advisor is **not responsible for calculating, paying, protecting, or enforcing** VYNE's
+  compensation.
+- **The Advisor Engagement Understanding must not impose:** an advisor fee · a placement tail ·
+  liquidated damages · a fee-protection obligation · or any restriction against the advisor dealing
+  directly with a firm.
+- **Counsel must confirm consistency** with VYNE's firm agreements, prior-contact rules, procuring-cause
+  language, and any firm-side tail — and flag any conflict between the firm-side terms and this
+  advisor-side position.
+- **Advisor-facing language now in §17:** *"Withdrawing from the engagement does not create a payment
+  obligation for you. VYNE may have separate compensation rights under an agreement with a hiring firm if
+  a placement later occurs."*
+
+### BP-2 · Authorization upon withdrawal
+
+- **Advisor-facing language now in §17:** *"When an advisor withdraws, all unused firm-specific
+  authorizations are automatically revoked unless the advisor confirms otherwise in writing. An
+  introduction already completed cannot be undone, but VYNE will not make additional disclosures or take
+  further action without renewed authorization."*
+- **Counsel review required**, and the provision must be **synchronized with the separate authorization
+  artifact** when that artifact is drafted (revocation mechanics, notice to a firm already contacted,
+  whether renewed authorization is a new instrument or a reinstatement).
+
+### BP-3 · NDA sequencing
+
+- **Decision: do not require a standalone NDA before every Advisor Orientation.**
+- **Before Orientation, VYNE relies on:** a concise confidentiality and privacy notice · no-client-PII
+  instructions · need-to-know access language · confirmation that no firm will be contacted · the
+  Orientation acknowledgment.
+- **A separate mutual NDA may be used when:** the advisor requests it · unusually sensitive information
+  must be discussed before the Engagement Understanding · multiple owners, team members, sellers, buyers,
+  or outside parties are involved · proprietary practice information must be exchanged early · counsel
+  determines the engagement requires it.
+- **Constraint:** do **not** describe the NDA as the foundation of ordinary confidentiality practices.
+  Confidentiality controls apply from first contact and do not depend on a separate agreement — §7 now
+  states this and offers an NDA on request.
+
+### BP-4 · Electronic acknowledgment and version capture
+
+**Operating requirement — acceptance must record:** advisor identity · **document version** · date and
+time · acceptance method · **delivery of a copy to the advisor** · acknowledgment of material later
+amendments where required.
+
+**Counsel to determine** the exact electronic-consent, enforceability, retention, and state-law
+requirements (E-SIGN/UETA and any state variations). *Version capture is also being added to the
+engagement-record standards as an operating control, independent of the legal analysis.*
+
 **Legend — Approval:** **R** = counsel approval required before production use · **A** = advisory review
 (business language, low legal risk) · **M** = may need to move or be mirrored in another instrument.
 
@@ -227,13 +286,20 @@ Counsel should treat these as the highest-risk items, in this order:
 - **Language.** Advisor may pause or withdraw at any time without explanation; VYNE may pause, narrow,
   decline, or conclude on stated grounds; outstanding firm authorizations identified and status
   confirmed; possible Decision Status and Closure Record; retention governed by policy.
-- **Legal question.** **Does VYNE's ability to decline or conclude need defined notice?** What happens to
-  a **pending submission** at withdrawal — is authorization automatically revoked, and how is a firm
-  notified? **If a placement later occurs with a firm VYNE previously introduced, does any compensation
-  entitlement survive withdrawal or conclusion?** *(This is the commercially significant question in this
-  section and is not addressed in the advisor-facing draft — deliberately, pending counsel.)* Any
-  post-engagement obligations (confidentiality survival, tail periods)?
-- **May move to:** termination and survival provisions; procuring-cause/tail terms in firm agreements.
+- **Now also states (BP-1, BP-2):** withdrawal creates **no payment obligation for the advisor**; VYNE's
+  compensation rights arise only under firm agreements; the advisor need not calculate, pay, protect, or
+  enforce VYNE's compensation and is not restricted from dealing directly with a firm; **unused
+  firm-specific authorizations are automatically revoked on withdrawal** unless the advisor confirms
+  otherwise in writing, with completed introductions acknowledged as not undoable and no further
+  disclosure without renewed authorization.
+- **Legal question.** **Does VYNE's ability to decline or conclude need defined notice?** For a
+  **pending** submission at withdrawal: how is a firm already contacted notified, and is renewed
+  authorization a new instrument or a reinstatement? **Confirm the advisor-side position in BP-1 does not
+  conflict with firm-side procuring-cause or tail terms** — if a firm's agreement would make VYNE's fee
+  contingent on advisor conduct VYNE has just disclaimed any right to require, flag it. Any
+  post-engagement obligations (confidentiality survival)?
+- **May move to:** termination and survival provisions; **procuring-cause/tail terms belong in firm
+  agreements, never here**; revocation mechanics to the authorization artifact.
 
 ### §18 · Records and retention — **R · M**
 
@@ -262,8 +328,11 @@ Counsel should treat these as the highest-risk items, in this order:
 
 ## Cross-cutting questions for counsel
 
-1. **Sequencing.** Is an NDA needed at **Orientation**, before this document exists? Orientation already
-   collects practice information under a confidentiality promise (`ADVISOR_ORIENTATION.md`).
+1. **Sequencing — RESOLVED by BP-3.** No standalone NDA is required before Orientation; confidentiality
+   controls apply from first contact via the Orientation's confidentiality notice, no-PII instructions,
+   need-to-know language, no-firm-contact confirmation, and acknowledgment. A **mutual NDA is available on
+   request** or where circumstances warrant. *Counsel is asked to confirm this pre-Orientation posture is
+   adequate — not to decide whether an NDA gates ordinary engagements.*
 2. **Instrument architecture.** Should VYNE have: (a) this plain-English Understanding, (b) a formal
    engagement agreement, (c) a privacy notice, (d) an authorization form, (e) a retention policy — and
    which provisions live where? *(This schedule flags candidates with **M**.)*
@@ -302,24 +371,26 @@ Counsel should treat these as the highest-risk items, in this order:
   execution mechanics → a signature/e-signature block. **§17's compensation-survival question belongs in
   the formal agreement and in firm-side terms, not here.**
 
-## Recommendation
+## Recommendation — resolved
 
-**Approve as counsel-review draft, with two revisions first.**
+**APPROVED AS COUNSEL-REVIEW DRAFT (founder, 2026-07-25). NOT production-approved.** Both revisions
+identified in the prior draft were resolved by founder decision, not deferred to counsel:
 
-The document accomplishes what it should: it explains the engagement in the firm's own voice, makes
-VYNE's constraints checkable, states the compensation position honestly without asserting disinterest,
-and avoids concluding anything about its own legal effect. It contains no fee terms, no neutrality
-claims, and no market-completeness claim.
+- **The §17 compensation-survival question → BP-1.** The advisor owes nothing on withdrawal; VYNE's
+  rights arise only under firm agreements; the document imposes no advisor fee, tail, liquidated damages,
+  fee-protection duty, or restriction on dealing directly with a firm. *This was the right call to make as
+  a business decision — counsel would otherwise have drafted a protective default that contradicted the
+  positioning.*
+- **NDA sequencing → BP-3.** No standalone NDA gates ordinary engagements; confidentiality applies from
+  first contact, with a mutual NDA available on request or where circumstances warrant.
 
-**Two revisions I would make before it goes to counsel:**
+Also settled: **BP-2** authorization revocation on withdrawal, and **BP-4** electronic acceptance with
+version capture.
 
-1. **Founder to decide the §17 compensation-survival position** — whether any entitlement survives an
-   advisor's withdrawal where a placement later occurs with a firm VYNE introduced. Counsel will ask, and
-   it is a business decision, not a legal one. Better to instruct counsel than to be advised into a
-   default.
-2. **Resolve whether an NDA precedes Orientation** — Orientation already promises confidentiality before
-   this document exists. If the answer is yes, this document's §7 should cross-reference it rather than
-   appear to be the first confidentiality undertaking.
+**Remaining vagueness, unchanged and acknowledged:** §7's unnamed "approved providers" and §18's
+retention with no period. Both are honest placeholders awaiting the vendor list and the retention policy.
+
+**The document must not be shown to any advisor until counsel review is complete.**
 
 *Not drafted: separate legal terms, privacy policy, authorization form, retention policy, UI, code, CRM
 fields, later artifacts.*

@@ -5,8 +5,9 @@ DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
 
 # Advisor Engagement Understanding
 
-**Artifact:** 3 · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review, then counsel review
+**Artifact:** 3 · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED AS COUNSEL-REVIEW DRAFT** (founder, 2026-07-25) — **NOT production-approved.**
+Counsel review is required before any advisor sees this document.
 *Internal note: this is the artifact previously referred to as the **Advisor Working Agreement**.
 "Advisor Engagement Understanding" is the advisor-facing title.*
 
@@ -97,6 +98,11 @@ Our conclusions are only as good as what we are working from, so we ask that you
 - Your identity and the information you provide are distinct from client-identifying information, and
   are handled under this engagement's confidentiality and privacy controls.
 
+These controls apply from your first contact with us — they do not depend on a separate confidentiality
+agreement. **If you would prefer a mutual non-disclosure agreement**, or if the circumstances call for
+one — unusually sensitive information, multiple owners or outside parties, or proprietary practice
+information exchanged early — we are glad to put one in place.
+
 ## 8 · No client PII
 
 We do not want, ask for, or keep client names, account numbers, statements, addresses, dates of birth,
@@ -140,7 +146,8 @@ All of these are real conclusions we reach and recommend:
 **stay · wait · renegotiate where you are · move to another firm · launch your own firm · join an
 existing firm · merge · acquire · sell · plan a succession · retire or wind down.**
 
-**Several of these pay us nothing.** We say so plainly here because you should be able to hold us to it.
+**Several of these outcomes may result in no compensation to VYNE.** We state that plainly because those
+outcomes must remain legitimate conclusions in our process.
 
 ## 12 · How VYNE is compensated
 
@@ -212,11 +219,21 @@ Record.
 support useful work; information proves unreliable; a professional boundary requires a specialist first;
 we do not have the capacity to do the work properly; or the matter falls outside our scope.
 
+**Withdrawing from the engagement does not create a payment obligation for you.** VYNE may have separate
+compensation rights under an agreement with a hiring firm if a placement later occurs. You are not
+responsible for calculating, paying, protecting, or enforcing our compensation, and nothing here restricts
+you from dealing directly with any firm.
+
+**Authorizations end when you withdraw.** When an advisor withdraws, all unused firm-specific
+authorizations are automatically revoked unless the advisor confirms otherwise in writing. An
+introduction already completed cannot be undone, but VYNE will not make additional disclosures or take
+further action without renewed authorization.
+
 If an engagement pauses or ends, we will **identify any firm authorization that is still outstanding**
-and confirm its status — normally, no authorization remains active. Where useful work has been done, we
-may issue a short **Decision Status and Closure Record** setting out what we could and could not
-conclude, what remains unknown, and what circumstances should cause you to revisit the decision. Ending
-without a decision is a legitimate outcome and does not erase the work completed.
+and confirm its status. Where useful work has been done, we may issue a short **Decision Status and
+Closure Record** setting out what we could and could not conclude, what remains unknown, and what
+circumstances should cause you to revisit the decision. Ending without a decision is a legitimate outcome
+and does not erase the work completed.
 
 Retention of records remains governed by our approved retention policy (§18).
 

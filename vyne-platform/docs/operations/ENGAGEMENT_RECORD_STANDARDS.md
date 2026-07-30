@@ -77,6 +77,17 @@ in any filename, ever.**
 The advisor never sees a version number as the document's identity. The Record is *"Our perspective as
 of [Month Year]"*; the version lives in the filename and the record-details block.
 
+### Acceptance and version capture
+
+Where an artifact is **accepted or acknowledged** by the advisor (Orientation, Engagement Understanding,
+firm-specific authorization), the record must capture: **advisor identity · the document version
+accepted · date and time · acceptance method · delivery of a copy to the advisor · acknowledgment of
+material later amendments where required.**
+
+**The advisor must be demonstrably shown to have accepted *that specific version*.** A later amendment
+does not inherit the earlier acceptance. *(Electronic-consent validity, enforceability, and state-law
+requirements are counsel's determination — this is the operating control, which stands regardless.)*
+
 ## 5 · Status
 
 **Draft → Approved → Issued → Superseded**, plus **Withdrawn**.
