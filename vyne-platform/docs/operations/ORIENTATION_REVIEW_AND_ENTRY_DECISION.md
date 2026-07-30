@@ -54,6 +54,21 @@ move?" is frequently an unstated objectives, economics, or succession question.)
 - Is the advisor's thinking developed enough that analysis would change something? ________________
 - Are objectives articulable, or is that itself the first piece of work? ________________
 
+### Decision authority and participants *(from Orientation §4)*
+
+*Who else is involved changes readiness, who attends consultations, and whether the advisor can act
+alone. Record roles only — names only if the advisor volunteered them.*
+
+- **Others involved or affected:** ☐ spouse/partner ☐ business partner ☐ team members
+  ☐ succession partner ☐ attorney ☐ CPA/tax ☐ other adviser ☐ no one else ☐ not yet sure
+- **Can the advisor decide alone, or is agreement required from someone else?** ________________
+  *(If agreement is required and that person is not engaged, readiness is lower regardless of how
+  developed the advisor's own thinking is.)*
+- **Who should participate in a consultation before a recommendation?** ________________
+- **Bearing on other areas:** team implications *(Ontology **H**)* ________ · personal/family objectives
+  *(Ontology **A**)* ________ · succession partner in play *(Ontology **J**)* ________ · specialist
+  already engaged *(→ §6)* ________
+
 ## 4 · Fit
 
 *Can VYNE do useful work here, to standard?*

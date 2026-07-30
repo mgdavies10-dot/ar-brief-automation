@@ -159,20 +159,44 @@ production-based prioritization.
   request. *Recommend softening to "anything you already know won't transfer easily" or deferring to
   assessment.*
 
-## 3 · Recommendation
+## 3 · Recommendation — resolved
 
-**Approve with revisions.** The Orientation accomplishes all five required purposes, honors every
-prohibition, and reads as a confidential professional intake rather than a lead form. The three
-disclosure commitments (§6) and the six named next steps including decline (§9) are the elements most
-likely to differentiate it in an advisor's experience.
+**Approved as an operating artifact draft (founder, 2026-07-25); revisions applied.** All three
+identified weaknesses were resolved, plus two corrections to the Engagement Record Standards and one
+transparency addition.
 
-**Three revisions I'd make before it goes to a real advisor:**
+### Change log — v0.1 → v0.2 (2026-07-25)
 
-1. **Add "Who else is part of this decision?"** — the one genuine gap for the entry decision, and it
-   also determines who should be in consultations.
-2. **Soften or defer §5's product/platform-constraints question** — it reads as a records request at a
-   stage where trust hasn't been established.
-3. **Decide the §8 form** — checkbox list *(as drafted)* or a short signed confirming paragraph. The
-   paragraph would read more premium; the checkboxes are cleaner evidence of discrete understandings.
+1. **Decision-participant question added (§4)** — *"Who else may be involved in or affected by this
+   decision?"* with nine role options, **no names required**, plus *"Are there any people who should
+   participate in a future consultation before VYNE reaches a recommendation?"* Mapped in artifact 1B §3
+   to readiness, decision authority, team (**H**), personal objectives (**A**), succession (**J**), and
+   consultation participation. **This closed the one genuine gap in the entry decision.**
+2. **Product/platform question softened (§5)** → *"Are there any capabilities, services, or limitations
+   that are already affecting your practice or clients?"* with examples and the explicit release:
+   *"You do not need to research or provide detailed product information now."* Capability inquiry is
+   **retained** — it is central to the methodology (Ontology **B** drives **C**) — but no longer reads as
+   a records request.
+3. **Acknowledgment consolidated (§8)** — the five-checkbox grid became **four statements plus one
+   affirmative acknowledgment** ("I understand and agree"). Preserves a clean record while reading as a
+   confidential consulting intake rather than a compliance form.
+4. **Scale-question transparency added (§3)** — before the AUM and production bands: *"These ranges help
+   VYNE understand the scale and complexity of your practice. They are **not** used to rank your
+   commercial attractiveness or determine whether your decision matters."* This makes the difference
+   from a recruiting intake **visible to the advisor** rather than only true internally — it directly
+   addresses the "too recruiter-like" residual risk, which I had flagged as *"the advisor cannot yet
+   see"* the distinction. Now they can.
+5. **Engagement Record Standards — archive rule corrected.** "Never delete" conflicted with the future
+   counsel-approved retention policy. Now: *within the active retention period, issued and superseded
+   artifacts are not silently deleted and are archived with a pointer to the current version; once the
+   approved retention period expires, records may be securely destroyed subject to legal holds, active
+   disputes, contractual requirements, and applicable law.* **Traceability preserved without creating
+   permanent retention by accident.**
+6. **Engagement Record Standards — `07_internal/` rule corrected.** "Never shared" was an impossible
+   absolute. Now: *not advisor-facing and never in ordinary advisor or firm distributions; access
+   restricted to authorized VYNE personnel and approved professional advisers on a documented
+   need-to-know basis; legally required disclosure handled under counsel direction; advisor-facing
+   answers rewritten into an approved artifact rather than forwarding the internal file.*
 
-**Optional if length is a concern:** trim §4's objectives grid from eleven rows to six.
+**Still open (optional):** trimming §4's objectives grid from eleven rows to six, if length proves a
+problem in practice. Best judged from the first real Orientation, not decided now.

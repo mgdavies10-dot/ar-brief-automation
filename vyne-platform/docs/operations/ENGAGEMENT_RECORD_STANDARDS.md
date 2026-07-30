@@ -38,9 +38,13 @@ place the mapping exists.
     99_archive/          superseded versions only
 ```
 
-**`07_internal/` is never shared, excerpted, or attached to advisor correspondence.** If an advisor
-question can only be answered from `07_internal/`, the answer is rewritten as advisor-facing content —
-the file itself does not travel.
+**`07_internal/` is not advisor-facing and is never included in ordinary advisor or firm
+distributions.** Access is restricted to authorized VYNE personnel and approved professional advisers on
+a **documented need-to-know basis** *(e.g. VYNE counsel, an insurer, an authorized compliance or security
+reviewer, a future qualified internal reviewer)*. **Any legally required disclosure** — a court,
+regulator, or similar — **is handled under counsel direction.** Advisor-facing answers derived from
+internal records must be **rewritten into an approved advisor-facing artifact** rather than forwarding
+the internal file.
 
 ## 3 · File naming
 
@@ -106,13 +110,14 @@ Corrections are **visible, never silent.** Every issued artifact carries a short
 
 ## 7 · Archive and replacement
 
-Superseded versions move to `99_archive/` **with a pointer to their replacement**. They are **never
-deleted or overwritten** — the history of VYNE's thinking is part of the record, and a corrected fact is
-only demonstrable if the prior version survives.
+**Within the active retention period, issued and superseded artifacts are not silently deleted.** They
+are archived in `99_archive/` **with a pointer to the current version** — the history of VYNE's thinking
+is part of the record, and a corrected fact is only demonstrable if the prior version survives. **Once
+the approved retention period expires, records may be securely destroyed according to the retention
+policy, subject to legal holds, active disputes, contractual requirements, and applicable law.**
 
 **Retention and destruction** follow a **written, counsel-approved retention policy required before
-production use.** Legal holds, active disputes, contractual obligations, and applicable law override
-ordinary destruction schedules. **No retention period is set here.**
+production use.** **No retention period is set here.**
 
 ## 8 · No client PII — a standing rule
 

@@ -140,17 +140,27 @@ component) is built in strict phase order:
     handoffs. **The core advisor decision experience is now designed end to end:**
     *Orientation → Working Agreement → Assessment → Consultation → Recommendation &
     Decision Record → advisor-controlled next step.*
-  - **NEXT: stop writing architecture; build operating artifacts and pilot readiness**
-    (founder direction 2026-07-25). Build sequence: 1 Advisor Orientation · 2 Advisor
-    Working Agreement / Engagement Understanding · 3 L1 assessment + materiality
-    worksheet · 4 internal consultation preparation template · 5 Advisor Consultation
-    Summary · 6 Recommendation & Decision Record template · 7 firm/model comparison
-    appendix · 8 Higher-Conflict Decision Gate form · 9 firm-specific authorization
-    form · 10 secure engagement folder + naming/version rules. **Then run simulated
-    cases** (stay · wait · employee-firm move · supported independence · advisor
-    chooses against VYNE's recommendation) **before writing more architecture** — to
-    test whether the system feels premium or bureaucratic and how long a Record
-    actually takes to produce.
+  - **OPERATING ARTIFACT SPRINT — IN PROGRESS** (founder direction 2026-07-25: stop
+    writing architecture; build things usable with a real advisor). Founder-reordered
+    sequence, standards first because every later artifact needs a home/name/status:
+    **1 Engagement Record Standards ✅** (`docs/operations/ENGAGEMENT_RECORD_STANDARDS.md`)
+    · **2 Advisor Orientation ✅ APPROVED as an operating artifact draft, v0.2**
+    (`ADVISOR_ORIENTATION.md` + internal `ORIENTATION_REVIEW_AND_ENTRY_DECISION.md` +
+    `ADVISOR_ORIENTATION_REVIEW_NOTES.md`) · **3 Advisor Working Agreement / Advisor
+    Engagement Understanding (NEXT — draft only, clearly marked COUNSEL REVIEW REQUIRED
+    BEFORE PRODUCTION USE)** · 4 L1 Assessment & Materiality Worksheet · 5 Internal
+    Consultation Preparation Template · 6 Advisor Consultation Summary ·
+    7 Recommendation & Decision Record · 8 Firm/Model Comparison Appendix ·
+    9 Higher-Conflict Decision Gate form · 10 Firm-Specific Authorization Form.
+    **Then run five simulated cases** (stay · wait · employee-firm move · supported
+    independence · advisor chooses against VYNE's recommendation) **before writing more
+    architecture** — to test whether the system feels premium or bureaucratic and how
+    long a Record actually takes to produce.
+  - **Governance clarification (founder 2026-07-25): "frozen" = a controlled V1.0
+    baseline, not permanently immutable doctrine.** Do not casually reopen. A pilot may
+    reveal a real operating defect; any amendment requires **a documented pilot finding ·
+    the affected frozen doctrine · the proposed amendment · why it is necessary · founder
+    approval · a new version + Decision Log entry.**
   **AI and CRM requirements are defined from those systems — they do not lead them.**
   Knowledge & Demand need **not** finish before Advisor Decision Experience begins; the
   two develop **in parallel** now that Content Architecture is frozen. **Sequencing:**

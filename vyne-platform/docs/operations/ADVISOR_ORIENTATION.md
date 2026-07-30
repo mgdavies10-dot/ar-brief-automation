@@ -4,8 +4,8 @@ ADVISOR-FACING
 
 # Advisor Orientation
 
-**Artifact:** 1A · Operating Artifact Sprint · **Status:** DRAFT for founder review ·
-**Date:** 2026-07-25 · **Version:** v0.1
+**Artifact:** 1A · Operating Artifact Sprint · **Status:** **APPROVED as an operating artifact draft**
+(founder, 2026-07-25; revisions applied) · **Date:** 2026-07-25 · **Version:** v0.2
 *(Content only — no UI, form, or web implementation. Language below is the advisor-facing draft.)*
 
 ---
@@ -93,6 +93,13 @@ moving.*
 | **Current channel / affiliation** | wirehouse · regional · independent BD · supported independence · hybrid · RIA (own) · RIA (employee/partner) · bank · insurance · other |
 | **Your role** | sole practitioner · team lead · partner · equity owner · employee advisor · other |
 | **Years in the industry / years at current firm** | |
+
+> **About the two ranges below.** These ranges help VYNE understand the scale and complexity of your
+> practice. They are **not** used to rank your commercial attractiveness or determine whether your
+> decision matters.
+
+| | |
+|---|---|
 | **Approximate AUM** | *(band)* |
 | **Approximate annual production or revenue** | *(band)* |
 | **Team size and rough structure** | e.g. "two advisors, one CSA, one associate" |
@@ -133,6 +140,24 @@ this often matters more than the numbers, and we won't press for detail):*
 
 **What kind of business do you want to be running in five years?**
 
+### Who else is part of this decision
+
+**Who else may be involved in or affected by this decision?** *Select any that apply — no names needed
+unless you'd like to share them.*
+
+- [ ] Spouse or partner
+- [ ] Business partner
+- [ ] Advisor team members
+- [ ] Succession partner
+- [ ] Attorney
+- [ ] CPA or tax adviser
+- [ ] Other professional adviser
+- [ ] No one else at this stage
+- [ ] Not yet sure
+
+**Are there any people who should participate in a future consultation before VYNE reaches a
+recommendation?** ________________
+
 ---
 
 ## 5 · Concerns and constraints
@@ -144,7 +169,12 @@ this often matters more than the numbers, and we won't press for detail):*
 - **Contracts or restrictive covenants** — non-solicit, non-compete, garden leave, Protocol status
 - **Team dependencies** — who would move with you, and who is uncertain?
 - **Portability concerns** — anything that makes you unsure what would transfer
-- **Product or platform constraints** — holdings, programs, or accounts that may not travel
+- **Are there any capabilities, services, or limitations that are already affecting your practice or
+  clients?** Examples may include lending, planning, alternatives, trust services, technology,
+  investment access, service support, or another known constraint. High-level observations are enough at
+  this stage.
+  *You do not need to research or provide detailed product information now. VYNE can explore this more
+  deeply later if it becomes material.*
 - **Pending succession or retirement** — yours or a partner's
 - **Prior recruiter or firm contact** — have you already spoken with any firm or recruiter, and which?
   *(This matters for reasons we'll explain; it protects you.)*
@@ -211,17 +241,19 @@ keep, re-read, and discuss with your spouse, attorney, or CPA.
 
 ## 8 · Acknowledgment
 
-*Please confirm your understanding of the following. This is not an engagement agreement — if we proceed,
-we'll provide a separate Working Agreement that sets out how we'll work together.*
+*This is not an engagement agreement — if we proceed, we'll provide a separate Working Agreement that
+sets out how we'll work together.*
 
-- ☐ The information I've provided is accurate to the best of my knowledge.
-- ☐ I have **not** provided any client-identifying information.
-- ☐ I understand that **completing this Orientation does not authorize VYNE to contact any firm** on my
-  behalf.
-- ☐ I understand that **additional information may change VYNE's conclusions**, and that conclusions are
-  based on the information available.
-- ☐ I understand that **completing this Orientation does not guarantee that VYNE will proceed** to a
-  full assessment.
+Before submitting this Orientation, I understand that:
+
+- I have not included client names, account information, statements, or other client-identifying
+  information.
+- This Orientation does not authorize VYNE to contact or share information with any firm.
+- The information provided is accurate to the best of my knowledge, and additional information may
+  change VYNE's conclusions.
+- Completing the Orientation does not guarantee acceptance into a full VYNE assessment.
+
+**Acknowledgment: I understand and agree.**
 
 **Name:** ________________ **Date:** ________________
 
