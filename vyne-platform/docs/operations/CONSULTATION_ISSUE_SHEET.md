@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Consultation Issue Sheet *(optional — material matters only)*
 
-**Artifact:** 5B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 5B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 **When to prepare one.** Only for a matter that is **material and needs depth** — typically one of the
 three-to-five items on the Consultation Brief §5, or a High/Unknown module from the L1 worksheet.

@@ -4,7 +4,7 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # L1 Assessment Handoff — Assessment → Consultation
 
-**Artifact:** 4C · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Artifact:** 4C · Operating Artifact Sprint · **Version:** v0.3 · **Date:** 2026-07-25
 **Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25) · **One page. Internal. Not advisor-facing.**
 
 > **This handoff is not a recommendation.** It transfers a materiality map and a scope proposal into the
@@ -92,6 +92,13 @@ ENGAGEMENT: E-__-___          DISCLOSURE LEVEL: L1          DATE: __________
      or this handoff. Any PII volunteered was not retained.
 
 15 · PREPARED BY: ______________________     DATE: ______________________
+
+─────────────────────────────────────────────────────────────────────────────
+16 · TIME (internal; pilot capacity tracking — see PILOT_TIME_LOG.md)
+   L1 advisor conversation: ______ min
+   Worksheet + handoff — started: ______ completed: ______
+   Consultant minutes: ______   Rework minutes, if any: ______
+   Shortened-path modules used: ______ of 12
 ─────────────────────────────────────────────────────────────────────────────
 ```
 

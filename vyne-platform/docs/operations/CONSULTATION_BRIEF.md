@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Consultation Brief *(one page)*
 
-**Artifact:** 5A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 5A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing premise
 > **The advisor experiences Listen · Reflect · Test · Decide · Commit.**
@@ -14,6 +14,21 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 > ## Rule
 > **Enter the session with this one page. Detailed support lives only in optional internal issue
 > sheets** (5B) — never on the brief, and never read aloud.
+
+## The one-page discipline
+
+> **The Consultation Brief should fit on one page in ordinary engagements. A second page is permitted
+> when the matter genuinely requires it. The response to complexity is sharper selection or a narrower
+> session — not smaller type, denser formatting, or transferring every L1 issue into the Brief.**
+>
+> **A Brief that routinely exceeds two pages indicates that the consultation purpose is too broad or the
+> engagement requires multiple sessions.**
+
+One page is a **discipline, not a prohibition.** It exists to force selection, and length is the symptom
+that tells you selection has not happened.
+
+**Two forms of this artifact:** the **full Brief** below, and the **Short-Form Brief** at the end of this
+document for focused, follow-up, and single-issue sessions.
 
 ---
 
@@ -60,12 +75,28 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 ─────────────────────────────────────────────────────────────────────────────────
 5 · WHAT MUST BE TESTED          (THREE TO FIVE ONLY — not every worksheet item)
- #  What (claim/assumption/interpretation/confidence/unknown)  Why it matters  Test
- 1 ____________________________________________________________________________
- 2 ____________________________________________________________________________
- 3 ____________________________________________________________________________
- 4 ____________________________________________________________________________
- 5 ____________________________________________________________________________
+ SELECTED from the L1 record, not copied from it. Each item must earn its place by
+ being necessary to the stated session purpose (§2). If all five slots are filled,
+ reconsider whether the purpose is too broad or the consultation should be divided.
+
+ For EACH item, complete the sentence. If it cannot be completed meaningfully,
+ the item does not belong on the Brief.
+
+ 1 What: ______________________________________________________________________
+   Why it matters: ____________________  Intended test: ________________________
+   "If we resolve this, it will help us determine: __________________________"
+ 2 What: ______________________________________________________________________
+   Why it matters: ____________________  Intended test: ________________________
+   "If we resolve this, it will help us determine: __________________________"
+ 3 What: ______________________________________________________________________
+   Why it matters: ____________________  Intended test: ________________________
+   "If we resolve this, it will help us determine: __________________________"
+ 4 What: ______________________________________________________________________
+   Why it matters: ____________________  Intended test: ________________________
+   "If we resolve this, it will help us determine: __________________________"
+ 5 What: ______________________________________________________________________
+   Why it matters: ____________________  Intended test: ________________________
+   "If we resolve this, it will help us determine: __________________________"
 
 ─────────────────────────────────────────────────────────────────────────────────
 6 · PRINCIPAL UNKNOWNS                              (highest-impact only)
@@ -129,8 +160,84 @@ INTERNAL — NOT FOR ADVISOR RELEASE
  ☐ No firm contact or authorization is implied.
  ☐ No client PII appears.
  ☐ This brief can be used conversationally — it is not a script.
+
+─────────────────────────────────────────────────────────────────────────────────
+14 · PREPARATION TIME                          (internal; pilot capacity tracking)
+ Preparation started: __________   Preparation completed: __________
+ Consultant minutes: ______        Rework minutes, if any: ______
+ Issue sheets prepared: ______     Brief form: ☐ full  ☐ short
 ═════════════════════════════════════════════════════════════════════════════════
 ```
+
+---
+
+# Short-Form Consultation Brief
+
+**Use for:** focused issue sessions · changed-facts follow-ups · specialist debriefs · one unresolved
+assumption · one material disagreement · limited portability or economics follow-ups.
+
+**Do not use** for an initial assessment consultation or a final recommendation consultation — those
+take the full Brief.
+
+```
+═════════════════════════════════════════════════════════════════════════════════
+SHORT-FORM CONSULTATION BRIEF
+
+A · HEADER
+ Engagement: E-__-___   Date: ________   Format: ______________________________
+ Participants: ________________________________________________________________
+ Decision authority: ☐ advisor alone ☐ another's agreement required (who: ______)
+   ☐ not yet established
+
+B · WHAT CHANGED SINCE THE PRIOR SESSION
+ ____________________________________________________________________________
+ (new facts · specialist answer · changed objectives · new offer · market or firm
+  change · advisor reflection — or "nothing; this is a deferred item")
+
+C · SESSION PURPOSE AND SUCCESS CONDITION
+ "This session is intended to _______________________________________________"
+ Success would be: __________________________________________________________
+ A successful session does NOT require an immediate decision.
+
+D · MATTERS TO TEST                                   (ONE TO THREE ONLY)
+ 1 What: ____________________________________________________________________
+   Why it matters: ______________  Intended test: ___________________________
+ 2 What: ____________________________________________________________________
+   Why it matters: ______________  Intended test: ___________________________
+ 3 What: ____________________________________________________________________
+   Why it matters: ______________  Intended test: ___________________________
+
+E · HIGHEST-IMPACT UNKNOWN OR CONTRADICTION
+ ____________________________________________________________________________
+ Consequence: _______________________  Resolved by: ________________________
+
+F · SPECIALIST DEPENDENCY                                  (if applicable)
+ Dependency: ____________________  Type: __________________________________
+ Scope: ☐ prerequisite to a directional conclusion on that issue
+        ☐ parallel, non-gating   ☐ not yet determined
+
+G · INTENDED NEXT-STEP DECISION
+ ☐ remain at L1 ☐ deepen to L2 ☐ deepen to L3 ☐ gather evidence
+ ☐ specialist first ☐ pause or wait ☐ another consultation format
+ ☐ move toward recommendation-ready ☐ conclude the engagement
+
+H · CONFLICT-SENSITIVE AWARENESS                           (if applicable)
+ ☐ none foreseeable  ☐ ____________________________________________________
+ The Higher-Conflict Decision Gate is NOT performed here.
+
+I · DRIFT AND AUTHORIZATION CHECK
+ ☐ no unsupported direction   ☐ no fee terms   ☐ no client PII
+ ☐ no unverified urgency      ☐ no firm-contact authorization implied
+
+ PREPARATION TIME
+ Started: ______  Completed: ______  Consultant minutes: ____  Rework: ____
+═════════════════════════════════════════════════════════════════════════════════
+```
+
+**The full alternatives section is not required** when the follow-up is genuinely limited to one factual,
+specialist, or changed-facts issue. If alternatives are genuinely in play, use the full Brief.
+
+---
 
 ## Using the brief
 

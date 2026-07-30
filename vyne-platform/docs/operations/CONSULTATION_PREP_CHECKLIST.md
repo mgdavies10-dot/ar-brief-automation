@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Consultation Preparation — Completion Checklist, Pre-Read Control & Documentation Boundary
 
-**Artifact:** 5C · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 5C · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > **No consultation proceeds without preparation.** An unprepared consultation is a quality failure, not
 > a scheduling inconvenience.

@@ -188,7 +188,49 @@ question, which is handled from the brief.
   pretending otherwise would invite either cramped writing or content pushed into issue sheets that
   don't warrant them.** Better to state the target as a discipline than to enforce it as a rule.
 
-## 5 · Recommendation
+## 5 · Recommendation — resolved
+
+**APPROVED as a controlled operating draft (founder, 2026-07-25); revisions applied.** All three
+revisions I recommended were adopted, plus a fourth the founder added.
+
+### Change log — v0.1 → v0.2 (2026-07-25)
+
+1. **One-page discipline stated, not absolutised** *(5A, new section)* — one page in ordinary
+   engagements; a second page permitted when the matter genuinely requires it; **the response to
+   complexity is sharper selection or a narrower session — not smaller type, denser formatting, or
+   transferring every L1 issue into the Brief.** A Brief routinely exceeding two pages signals a purpose
+   too broad or an engagement needing multiple sessions. *This resolves the honesty problem I flagged:
+   claiming one page absolutely would have produced cramped writing or spurious issue sheets.*
+2. **Short-Form Consultation Brief created** *(5A, second form)* — nine sections **A–I** for focused issue
+   sessions, changed-facts follow-ups, specialist debriefs, one unresolved assumption, one material
+   disagreement, and limited portability or economics follow-ups. **One to three matters to test.** The
+   full alternatives section is **not required** when the follow-up is genuinely limited to one factual,
+   specialist, or changed-facts issue. Explicitly **not** for initial assessment or final recommendation
+   consultations. *This closes the mismatch that would otherwise have produced perfunctory preparation.*
+3. **Selection-not-transcription control added** *(5A §5)* — *"selected from the L1 record; they are not
+   copied from it. Each item must earn its place by being necessary to the stated session purpose. If all
+   five slots are filled, reconsider whether the purpose is too broad or the consultation should be
+   divided."* Each item now carries the completion test **"If we resolve this, it will help us determine:
+   ______"** — and an item that cannot complete it meaningfully does not belong on the Brief. *That
+   sentence is the strongest single control in the package: it makes an item prove its decision relevance
+   rather than merely its interest.*
+4. **Time tracking added** *(founder addition)* — preparation started / completed / consultant minutes /
+   rework minutes on the full Brief (§14), the Short-Form Brief, and the L1 Handoff (§16, with
+   shortened-path module count). Plus a new lean **`PILOT_TIME_LOG.md` (5D)**: seven time fields from
+   Orientation review through Recommendation Record, total founder time, engagement shape (issue sheets,
+   Brief form, consultations, whether a decision occurred, conclusion level), and a short qualitative
+   note on whether the process felt **focused, repetitive, premium, or procedural**. **Time targets and
+   capacity assumptions will be evaluated after five simulated cases and are not permanent doctrine.**
+   *This directly answers the item I raised for founder attention — cumulative time is the binding
+   capacity constraint, and it is now measured rather than estimated.*
+
+**Status: APPROVED as a controlled operating draft.** Versioned v0.2 (Pilot Time Log v0.1; L1 Handoff
+v0.3). Not production-frozen — operating artifacts change with pilot experience under the
+operating-version rule.
+
+---
+
+### Original recommendation (superseded, retained for the record)
 
 **Approve with revisions.** The three components implement the governing premise: the advisor experiences
 a five-part conversation while the consultant works from real structure, and depth is genuinely displaced
