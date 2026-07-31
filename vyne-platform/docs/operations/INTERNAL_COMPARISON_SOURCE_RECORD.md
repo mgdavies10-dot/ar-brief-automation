@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Internal Comparison Source and Normalization Record
 
-**Artifact:** 8B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 8B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing rule
 > **Every material comparison statement must be traceable to a source, date, verification status, and
@@ -25,7 +25,22 @@ Appendix can be traced back — and so that a forced normalization cannot happen
  Preparation started: ________  completed: ________
  Consultant minutes: ______   Rework minutes: ______   (→ PILOT_TIME_LOG)
  Information current through: ________
+
+ SCOPE AND COST TRACKING                    (→ five-case review)
+ Material comparison points: ______   Source Bundles: ______
+
+ COLUMN-ORDER RULE APPLIED
+ ☐ current path first, then alphabetical
+ ☐ alphabetical (no current-path baseline)
+ ☐ advisor-requested order — reason: __________________________________
+ Confirm: ordering was NOT based on recommendation, attractiveness,
+ economic value, source strength, VYNE compensation, probability of
+ selection, or perceived quality.  ☐ confirmed
 ```
+
+> **Source strength affects how confidently and precisely information may be presented. It does not
+> determine option quality. Better documentation permits more precise description; it does not establish
+> that the better-documented option is substantively better.**
 
 ## 2 · Option registry
 
@@ -54,20 +69,81 @@ Appendix can be traced back — and so that a forced normalization cannot happen
 
 *Never exposed advisor-facing. The Appendix uses plain descriptions only (§6 of 8A).*
 
+## 3a · Material comparison points — scoping the sourcing burden
+
+> **A material comparison point is a value or statement that could meaningfully affect the advisor's
+> understanding or decision. It is not automatically every visual cell in the Appendix.**
+
+**Provisional launch operating norm:**
+
+| | |
+|---|---|
+| **Ordinary Appendix** | **8–20 material comparison points** |
+| **21–28** | permitted, **with a stated reason** |
+| **More than 28** | **triggers** a narrowing review · a separate due-diligence schedule · or division into focused comparisons |
+
+*Pilot operating targets, not permanent doctrine. Reviewed after five simulated cases.*
+
+```
+ Material comparison points this Appendix: ______
+ If 21–28, reason: _____________________________________________________
+ If >28, action taken: ☐ narrowing review ☐ separate due-diligence schedule
+                      ☐ divided into focused comparisons
+```
+
+## 3b · Source Bundles — record metadata once, reference many times
+
+**When multiple comparison points rely on the same proposal, term sheet, policy document, firm material,
+or other source, record the full metadata once and reference the bundle identifier from each applicable
+point.**
+
+> **Do not duplicate identical metadata for every cell merely for formality.** Clerical duplication is
+> not traceability, and it does not produce better analysis.
+
+```
+ SOURCE BUNDLE  SB-__
+ Source description: ___________________________________________________
+ Source-hierarchy category (1–9): ______
+ Document or representation type: ______________________________________
+ Version: ______________________
+ Source date: __________  Effective date: __________
+ Retrieval date: __________
+ Verification status: __________________________________________________
+ Currency: ☐ current ☐ stale ☐ unknown
+ Limitations: __________________________________________________________
+ Refresh trigger: ______________________________________________________
+```
+
+*Example:*
+
+```
+ SOURCE BUNDLE  SB-03
+ Firm A advisor-specific proposal
+ Source-hierarchy category: 2 (written advisor-specific proposal)
+ Version: June 18, 2026        Effective through: August 31, 2026
+ Verification status: documented, subject to final agreement
+```
+
+> **Every material advisor-facing statement must remain traceable to a Source Bundle, an individual
+> source record, or a missing-information record.** Bundling changes where the metadata lives — it does
+> not remove the traceability requirement.
+
 ## 4 · Comparison-point source record
 
-*One row per material cell or statement in the Appendix.*
+*One row per **material comparison point** (§3a) — not per visual cell. Cite a Source Bundle where one
+applies rather than repeating its metadata.*
 
 | Field | |
 |---|---|
 | Dimension | |
 | Option | |
 | Statement or value | |
-| Source hierarchy category | 1–9 |
-| Source reference | |
-| Document version | |
-| Retrieval date | |
-| Effective date | |
+| **Source Bundle ref.** *(or individual source below)* | SB-__ |
+| Source hierarchy category *(if not bundled)* | 1–9 |
+| Source reference *(if not bundled)* | |
+| Document version *(if not bundled)* | |
+| Retrieval date *(if not bundled)* | |
+| Effective date *(if not bundled)* | |
 | Verification status | verified · advisor-confirmed · unverified · disputed · n.a. |
 | Currency | ☐ current ☐ stale ☐ unknown |
 | Owner | |
@@ -98,13 +174,27 @@ Appendix can be traced back — and so that a forced normalization cannot happen
  Limitation: ___________________________________________________________
 
  NORMALIZATION DEFENSIBLE?  ☐ yes  ☐ NO
-   If NO → the Appendix must state: "These figures are not directly
-   comparable on the information currently available," and show what each
-   figure actually measures.
+```
+
+**If NO — confirm the required advisor-facing pattern (8A §8) is complete:**
+
+```
+ ☐ A · conclusion stated ("not directly comparable on the information
+       currently available")
+ ☐ B · what each figure measures, stated per option
+ ☐ C · why the difference matters — mismatches named
+ ☐ D · what would be required for a defensible comparison
+ ☐ E · what narrower comparison can still be made now, if any
+       (not optional where one exists)
+ If a partial comparison is presented:
+ ☐ its scope is explicit
+ ☐ it is not portrayed as a comparison of total value
 ```
 
 > **Do not force a normalized result.** If normalization is not defensible, say so. A forced number hides
 > the judgment inside something that looks objective.
+>
+> ### **The refusal to normalize is itself an analytical conclusion when normalization would require unsupported assumptions.**
 
 ## 6 · Economic comparison integrity checks
 
@@ -209,6 +299,12 @@ Appendix can be traced back — and so that a forced normalization cannot happen
  ☐ No ranking or score
  ☐ No implicit winner through design (colour, icons, ordering, bolding,
    check marks, totals, badges)
+ ☐ Neutral column-order rule applied and recorded (§1)
+ ☐ Material comparison points within the operating norm, or reason stated
+ ☐ Every material statement traceable to a Source Bundle, individual
+   source record, or missing-information record
+ ☐ Where normalization failed, the full A–E pattern is present in the
+   Appendix, and any partial comparison states its scope
  ☐ No VYNE fee terms
  ☐ Compensation status remains internal
  ☐ Advisor economics normalized, or limitations stated

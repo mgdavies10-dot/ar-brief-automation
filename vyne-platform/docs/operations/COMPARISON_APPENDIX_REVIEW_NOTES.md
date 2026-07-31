@@ -204,7 +204,53 @@ than leaving it to the consultant's discretion.
   not the deliverable. The premium quality lives in the Record. **What would make this bad** is a wide
   table with thin cells and no basis statements — which is exactly what §5, §6, and §8 exist to prevent.
 
-## 5 · Recommendation
+## 5 · Recommendation — resolved
+
+**APPROVED as a controlled operating draft (founder, 2026-07-25); revisions applied.** All three
+revisions were adopted, in sharper form than proposed, plus two principles the founder added.
+
+### Change log — v0.1 → v0.2 (2026-07-25)
+
+1. **Material comparison points + Source Bundles** *(8B §3a, §3b)* — replaces per-cell metadata, which
+   the founder correctly identified as unworkable and not productive of better analysis. *"A material
+   comparison point is a value or statement that could meaningfully affect the advisor's understanding
+   or decision. It is not automatically every visual cell."* Norm: **8–20 ordinary · 21–28 with a stated
+   reason · >28 triggers narrowing, a separate due-diligence schedule, or division.** Source Bundles
+   record metadata **once** and are referenced by identifier, with the standing rule that **bundling
+   changes where the metadata lives, not the traceability requirement.** Tracking added for material
+   points, bundles, and preparation/rework minutes. *This resolves my revision 1 better than I proposed —
+   I suggested a tighter width norm; the founder changed the unit of measurement instead, which is the
+   right fix.*
+2. **Incomparability pattern moved into the template** *(8A §8 and 8B §5)* — the five-part A–E sequence:
+   state the conclusion · state what each figure measures · explain why the difference matters ·
+   **state what would be required** · **state what narrower comparison can still be made now.**
+   8B §5's `NORMALIZATION DEFENSIBLE? NO` now drives a completion checklist for all five parts.
+   **Part E is the founder's addition and is the most important one** — it prevents *"not comparable"*
+   from becoming an escape hatch when something useful can still be compared. Paired with: *"A partial
+   comparison may be presented only when its scope is explicit and it is not portrayed as a comparison
+   of total value."*
+3. **Neutral column-order rule** *(8A §11, recorded in 8B §1)* — current path first when it is the
+   baseline · then alphabetical by displayed name · alphabetical throughout when there is no baseline ·
+   advisor-requested order permitted with the reason recorded. **Never ordered by** recommendation,
+   attractiveness, economic value, source strength, VYNE compensation, probability of selection, or
+   perceived quality. Plus the formatting control barring override through colour, type size, badges,
+   check marks, column width, or visual prominence. *This closes the last implicit-ranking channel and
+   removes a recurring judgment call.*
+4. **Two governing principles added verbatim:**
+   - **"The refusal to normalize is itself an analytical conclusion when normalization would require
+     unsupported assumptions."** *(8A §8 and 8B §5)*
+   - **"Source strength affects how confidently and precisely information may be presented. It does not
+     determine option quality. Better documentation permits more precise description; it does not
+     establish that the better-documented option is substantively better."** *(8A §9 and 8B §1)*
+
+   *The second was implicit in worked example 3.2 and is now stated as doctrine — which is where it
+   belongs, because the asymmetric-documentation trap will recur in nearly every firm-level comparison.*
+
+**Status: APPROVED as a controlled operating draft.** 8A and 8B at v0.2. Not production-frozen.
+
+---
+
+### Original recommendation (superseded, retained for the record)
 
 **Approve with revisions.** The artifact holds the boundary the founder set: **VYNE's compensation and
 commercial terms never appear; advisor-relevant firm economics do**, properly sourced, normalized, and

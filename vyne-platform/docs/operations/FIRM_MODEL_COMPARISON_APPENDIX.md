@@ -4,8 +4,8 @@ CONFIDENTIAL — ADVISOR-FACING
 
 # Firm / Model Comparison Appendix — template
 
-**Artifact:** 8A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 8A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing premise
 > **The Comparison Appendix supports the Recommendation & Decision Record by showing material
@@ -173,15 +173,40 @@ basis.**
 **Where normalization is possible:** state the common basis explicitly, in the Appendix, where the
 advisor will see it.
 
-**Where normalization is not possible:**
+### When figures are not directly comparable — required response pattern
 
-> **"These figures are not directly comparable on the information currently available."**
+*Use all applicable parts, in order. This is a required pattern, not a suggestion.*
 
-Then **show the difference rather than pretending the terms are comparable** — state what each figure
-actually measures, and what would be required to compare them.
+**A · State the conclusion.**
+> *"These figures are not directly comparable on the information currently available."*
+
+**B · State what each figure measures.**
+> *"Option A presents a gross multiyear transition package."*
+> *"Option B presents estimated current annual cash compensation plus a contingent equity interest."*
+
+**C · Explain why the difference matters** — naming the relevant mismatches from the checklist above
+*(time horizon, tax treatment, contingency, retention requirements, valuation assumptions, and so on)*.
+
+**D · State what would be required** for a defensible comparison — the specific information,
+assumptions, documentation, specialist analysis, or common basis.
+
+**E · State what narrower comparison can still be made now, if any.**
+> *"Guaranteed first-year cash can be compared on the current information. Total long-term economic
+> value cannot."*
+
+> **Part E is not optional where a narrower comparison exists.** *"Not comparable"* must not become an
+> escape hatch when something useful can still be compared.
+
+> **A partial comparison may be presented only when its scope is explicit and it is not portrayed as a
+> comparison of total value.**
+
+**Never:** create a rough equivalent · create a blended total · select assumptions merely to force
+comparability · present a partial comparison as total value.
 
 > **Do not create false comparability.** A forced normalization is worse than an acknowledged
 > incomparability, because it hides the judgment inside a number that looks objective.
+>
+> ### **The refusal to normalize is itself an analytical conclusion when normalization would require unsupported assumptions.**
 
 ## §9 · Firm claims — *required where any appear*
 
@@ -194,6 +219,13 @@ actually measures, and what would be required to compare them.
 
 > **Inclusion in this Appendix does not convert marketing language, verbal representations, public
 > claims, or market observations into verified fact.**
+
+> ### Source strength and option quality are different things
+> **Source strength affects how confidently and precisely information may be presented. It does not
+> determine option quality.**
+>
+> **Better documentation permits more precise description. It does not establish that the
+> better-documented option is substantively better.**
 
 ## §10 · Missing and unverified information — *required*
 
@@ -221,8 +253,24 @@ score · readiness score · weighted total · red/yellow/green result.
 
 > ### No implicit winner through design
 > **Do not create a winner through formatting**: colour · icons · ordering · bolding · check marks ·
-> totals · badges. Column order is not a ranking, and must not be allowed to read as one — where order
-> could be misread, say what determines it.
+> totals · badges.
+
+### Column-order rule — the neutral default
+
+**Order is not improvised per engagement. Apply, in sequence:**
+
+1. **The current path appears first** when it is included as the comparison baseline.
+2. **Remaining options appear alphabetically** by their displayed firm or model name.
+3. **If there is no current-path baseline, all options appear alphabetically.**
+4. **A different order may be used at the advisor's request**, with the reason recorded internally.
+
+> **Never order options based on:** VYNE's recommendation · attractiveness · economic value · source
+> strength or completeness · compensation to VYNE · probability of selection · perceived quality.
+
+> **Neutral column order must not be overridden through stronger colour, larger type, badges, check
+> marks, column width, visual prominence, or other design treatment that creates an implicit winner.**
+
+*The ordering rule applied is recorded in the Internal Comparison Source and Normalization Record.*
 
 ## §12 · Matters requiring due diligence — *when applicable*
 
