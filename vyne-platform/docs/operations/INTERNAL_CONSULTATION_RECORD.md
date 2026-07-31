@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Internal Consultation Record
 
-**Artifact:** 6B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 6B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 **Distinct from the advisor-facing Summary (6A).** This record holds VYNE's internal reasoning,
 governance trail, and evidence discipline. **Raw internal notes are never sent to the advisor**; where an

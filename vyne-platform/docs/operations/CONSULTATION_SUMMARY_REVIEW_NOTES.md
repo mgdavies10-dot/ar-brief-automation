@@ -237,7 +237,51 @@ follow-up should produce a focused Summary.
   this lands is whether consultants have the confidence to leave sections out** — and a new consultant's
   instinct will be to complete the template.
 
-## 6 · Recommendation
+## 6 · Recommendation — resolved
+
+**APPROVED as a controlled operating draft (founder, 2026-07-25); revisions applied.** All three
+revisions I recommended were adopted — each in a sharper form than I proposed — plus two founder
+additions.
+
+### Change log — v0.1 → v0.2 (2026-07-25)
+
+1. **§8a "Material matters not addressed or intentionally deferred" added** *(conditional)* — matter ·
+   why it wasn't addressed · whether it remains in scope · next step. Explicitly **only** for material
+   **in-scope** deferrals, with the stated guard that it is *not* a list of every subject that did not
+   arise and the Summary is *not* an exhaustive transcript. *Better than my proposed generic omission
+   line: a broad "not covered" heading would have implied the Summary is a transcript, which is the
+   failure mode the whole artifact is designed against.*
+2. **§4 transcript-drift guard added** — *"records only information that materially changed, corrected,
+   or clarified the decision record. It is not a recap of everything discussed."* With the explicit
+   no-change formulation: *"No material facts, objectives, assumptions, or priorities changed in this
+   session."* **That sentence makes a no-change session a valid, complete Summary** rather than an
+   apparent omission — which is what would otherwise tempt a consultant to pad §4.
+3. **Standing footer replaces repeated closing notes** — one compact "About this Summary" paragraph on
+   every Summary. **Two deliberate exclusions:** §11 authorization status **stays in the body every
+   time** (it is a decision record, not a standing note), and §12 compensation disclosure **stays
+   conditional** under its four triggers and does not migrate into the footer.
+4. **Silence-is-not-agreement clause added** *(founder addition, §13)* — *"Not responding to this Summary
+   does not mean that you agree with every point. Any matter shown as disputed or unresolved remains so
+   unless it is later confirmed or resolved."* **This closes the largest residual risk I identified.** My
+   version relied on the correction invitation, which only works if the advisor responds; this states the
+   default directly, so an unanswered Summary cannot later be read as ratification.
+5. **Delivery standard sharpened** *(founder addition)* — **preferred: next business day; required launch
+   target: no later than two business days.** The purpose is now stated in the artifact — *to preserve the
+   advisor's ability to accurately correct the record* — with the operating consequence: **a short
+   accurate Summary delivered on time is preferable to a late elaborate one.** Five-case review added
+   (average delivery time · correction rate · whether advisors still recall enough to correct accurately ·
+   preparation time · whether the artifact is being **overproduced**), with timing changes classed as
+   **operating-version decisions**, not methodology changes.
+
+*On my "before memory fades" suggestion: the founder was right to reject it as the operating rule. It is
+the **reason** for the standard, not a measurable one — and an unmeasurable standard is not a standard.
+It is now recorded as the purpose, with two business days as the rule.*
+
+**Status: APPROVED as a controlled operating draft.** Both artifacts at v0.2. Not production-frozen.
+
+---
+
+### Original recommendation (superseded, retained for the record)
 
 **Approve with revisions.** Both artifacts do what the premise requires: the Summary records what changed,
 where the decision stands, what's unresolved, and what's next — without minutes, without a recommendation,

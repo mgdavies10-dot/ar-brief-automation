@@ -4,8 +4,8 @@ ADVISOR-FACING
 
 # Advisor Consultation Summary — template
 
-**Artifact:** 6A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 6A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing premise
 > **The Advisor Consultation Summary is a concise record of what materially changed, where the decision
@@ -62,6 +62,10 @@ saying "none."
 
 ## §4 · What changed or was clarified — *required*
 
+> **This section records only information that materially changed, corrected, or clarified the decision
+> record. It is not a recap of everything discussed. If nothing material changed, state: "No material
+> facts, objectives, assumptions, or priorities changed in this session."**
+
 *Material items only.*
 
 | | |
@@ -110,6 +114,15 @@ of it.*
 |---|---|---|---|---|
 | | | | | ☐ more information ☐ deeper detail ☐ another conversation ☐ specialist ☐ time ☐ may remain unresolved |
 
+## §8a · Material matters not addressed or intentionally deferred — *when applicable*
+
+*Include **only** when a material **in-scope** issue was deferred. This is **not** a list of every
+subject that did not arise, and this Summary is **not** an exhaustive transcript.*
+
+| The matter | Why it wasn't addressed | Still in scope? | Next step, if any |
+|---|---|---|---|
+| | | ☐ yes ☐ no | |
+
 ## §9 · Where a specialist is needed — *when applicable*
 
 | Specialist | The issue | What it affects | |
@@ -149,28 +162,61 @@ discussion · the compensation context materially changed · or counsel later re
 > Compensation arrangements may vary by firm and engagement, and we may not be compensated for every
 > alternative we evaluate — including staying, waiting, or building your own firm.
 
-## §13 · Closing — *required*
+## §13 · Correcting this record — *required*
 
 > **Please tell us if this Summary is inaccurate or incomplete. Correcting the record is part of the
 > process, not a disagreement with it.**
+>
+> **Not responding to this Summary does not mean that you agree with every point. Any matter shown as
+> disputed or unresolved remains so unless it is later confirmed or resolved.**
 
-- Our conclusions depend on the information available to us.
-- Material new information may change where this decision stands.
-- This Summary does not replace advice from your own legal, tax, or other professional advisers.
-- **This Summary authorizes nothing.**
+## Standing footer — *on every Summary*
+
+*Compact, and placed at the foot of the document. It replaces repeated standing-note sections — a long
+closing repeated in every Summary is a closing advisors stop reading.*
+
+> **About this Summary:** It reflects our understanding based on the information available as of the date
+> shown. Material new information may change where the decision stands. It does not replace legal, tax,
+> compliance, valuation, or other specialist advice. It authorizes no firm contact or disclosure. Please
+> tell us if anything is inaccurate or incomplete.
+
+**Two things stay out of the footer:**
+
+- **§11 Authorization status remains a required body section in every Summary** — it is a decision
+  record, not a standing note, and burying it would weaken it.
+- **§12 compensation disclosure remains conditional** under its four triggers. It does not move into the
+  footer and is not shown automatically.
 
 ---
 
 ## Delivery standard
 
-**Launch target: issue within two business days of a meaningful consultation.**
+> **Preferred delivery: the next business day.**
+> **Required launch target: no later than two business days after a meaningful consultation.**
+
+**The purpose is to preserve the advisor's ability to accurately correct the record.** That is why the
+standard exists, and it is why **a short accurate Summary delivered on time is preferable to a late
+elaborate one.**
 
 - **Factual corrections are made visibly**, under the Engagement Record Standards — never silently.
 - **A material change in direction** returns to assessment/consultation and, where applicable, to the
   Recommendation & Decision Record lifecycle. A Summary does not carry a direction change on its own.
 
 **Required in every Summary:** §1 header · §2 decision discussed · §3 where things stand · §4 what
-changed or was clarified · §8 unresolved matters · §10 next actions · §11 authorization status.
+changed or was clarified · §8 unresolved matters · §10 next actions · §11 authorization status ·
+§13 correction invitation · standing footer.
 
 **Included only when applicable:** §5 settled matters · §6 trade-offs · §7 differences in view ·
-§9 specialist dependencies · §12 compensation disclosure · changed-facts trigger.
+**§8a material matters deferred** · §9 specialist dependencies · §12 compensation disclosure ·
+changed-facts trigger.
+
+### Review after five simulated cases
+
+- average delivery time;
+- correction rate;
+- whether advisors still recall enough to correct accurately;
+- Summary preparation time;
+- whether the artifact is being **overproduced**.
+
+**Any timing change is an operating-version decision** — not a methodology change, unless a substantive
+defect is found.
