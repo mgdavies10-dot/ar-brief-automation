@@ -113,25 +113,42 @@ this mode.
 > and enterprise value, with the drawbacks stated: more operational responsibility, a longer runway to
 > stability, and real transition risk.
 >
-> **§4 — your decision.** ☑ *You selected a different legitimate direction:* an employee-firm offer with
-> a larger transition package.
-> *Your decision does not retroactively change what we recommended. Where the two differ, both are
-> stated separately.*
+> **§4 — your decision.** ☑ *You selected a different legitimate direction:* an employee-firm offer.
+>
+> > VYNE recommended supported independence based on the capability, ownership, and enterprise-value
+> > considerations described in this Record. The advisor ultimately selected the employee-firm path,
+> > placing greater weight on near-term transition economics and the familiarity of the employee model.
+> > Both positions are recorded because the difference reflects how the trade-offs were weighted, not a
+> > disagreement about the underlying facts.
 >
 > **§12 — where our views differ.** *Our view:* the capability gap in lending and alternatives is
-> material to your client base, and the employee model forecloses the enterprise value you said you
-> wanted. *Your view:* near-term liquidity outweighs both, and the capability gap is manageable through
-> referral. *Basis for each:* stated. *Practical consequence:* if our reading is right, the value
-> question returns in five to seven years. *May this remain unresolved:* yes — it is a weighting
-> difference, not a factual one.
+> material to this client base, and the employee model does not build the enterprise value described in
+> the advisor's objectives. *The advisor's view:* near-term transition economics carry more weight, and
+> the capability gap is manageable through referral arrangements. *Basis for each:* stated. *Practical
+> consequence:* the enterprise-value question is likely to return on a five-to-seven-year horizon.
+> *May this remain unresolved:* **yes — this is a weighting difference, not a factual one.**
 >
 > **§5 — authorization status.** ☑ **No firm-specific authorization has been issued.**
-> *This Record authorizes no firm contact… Any authorization exists only through a separate
-> firm-specific authorization artifact.*
+> *Any authorization exists only through a separate firm-specific authorization artifact.*
 
 **The three separations, visible on one document:** VYNE recommended A · the advisor chose B · **no
 authorization exists**, and choosing B did not create one. The reservation appears **once**, in §12, and
 is not repeated as pressure.
+
+> ### Tone standard for this section — binding
+>
+> The Record must not sound as though **VYNE was rejected**, the advisor **ignored advice**, VYNE is
+> **preserving evidence that it was right**, or the advisor **must defend their decision**.
+>
+> **Prohibited phrasings:** *"despite our recommendation"* · *"the advisor chose to disregard"* ·
+> *"against VYNE's advice"* · *"VYNE continues to believe"* · any construction implying the advisor owes
+> a justification.
+>
+> **The correct register is descriptive, not adversarial:** both positions stated, the difference
+> characterized accurately as a **weighting difference rather than a factual disagreement**, and VYNE's
+> material reservations stated **once**, neutrally. Note the phrasing above uses *"the advisor's view"*
+> rather than *"your view"* in §12 — the third person is deliberately cooler where a difference is being
+> recorded, while §4 stays in the second person where the advisor's own decision is being confirmed.
 
 **Internally (7B):** compensation notation records that the recommended option was *non-compensating*
 while the chosen one was *compensating* — **and that notation appears nowhere in the advisor-facing
@@ -197,7 +214,54 @@ which is not the place for it (that language lives in the Engagement Understandi
   is a summary of the sections that follow is bureaucratic. The skeleton is built for the former; nothing
   enforces it.
 
-## 5 · Recommendation
+## 5 · Recommendation — resolved
+
+**APPROVED as a controlled operating draft (founder, 2026-07-25); revisions applied.** All three
+revisions were adopted, plus a tone standard the founder specified and a status cleanup.
+
+### Change log — v0.1 → v0.2 (2026-07-25)
+
+1. **Protective statements repositioned — all four retained** *(7A)*. Placement now: participation-≠-
+   agreement → **§17 Record details** *(moved out of the header)* · the Record authorizes nothing →
+   **§5 Authorization status** · silence-≠-agreement → **§18 corrections** · current-through date,
+   changed facts, specialist boundaries, confidentiality and permitted use → **§19 footer**. The
+   authorization line was **removed from the footer** because §5 owns it, and repeating it is what made
+   the aggregate read defensive. A placement note in §1 states that the opening and page one lead with
+   the advisor's decision, the conclusion, reasons, drawbacks, conditions, and next step — **not with
+   VYNE's protections.**
+2. **Comparison bounded** *(7A §6)* — *"compares only the dimensions that materially differentiate the
+   live options, typically four to seven. A dimension does not belong merely because it exists in the
+   Ontology."* Plus an operating norm on options: **ordinarily two to four live options; five only where
+   genuinely necessary; more than five ordinarily means the decision has not narrowed enough for a
+   recommendation comparison** — which is itself a finding and belongs in §3 rather than a wider table.
+   Artifact 8 is noted as **subordinate to the Record**: a support for decisions already narrowed to real
+   models or firms, not a marketplace table and not a ranking engine.
+3. **Full-mode target marked provisional** *(7A page targets)* — *initial pilot target 5–8 pages excluding
+   a necessary comparison appendix*, not frozen until Artifact 8 exists, five simulated cases are
+   completed, production time is measured, and advisor reaction to the depth is reviewed. With the
+   governing line: **length is not a goal.** Hitting eight pages is not success; a five-page Full Record
+   that carries the decision is better than an eight-page one that pads it.
+4. **Example 3.3 rewritten for neutrality, and a binding tone standard added** *(both 7A §4 and the
+   example)*. The §4 model phrasing is now in the template itself, so it governs every Record and not
+   just this example. **Prohibited constructions** named explicitly: *"despite our recommendation"* ·
+   *"the advisor chose to disregard"* · *"against VYNE's advice"* · *"VYNE continues to believe"* · any
+   construction implying the advisor owes a justification.
+   *One deliberate craft choice in the rewrite:* §12 uses **"the advisor's view"** rather than
+   **"your view"** — third person is cooler where a difference is being recorded, while §4 stays second
+   person where the advisor's own decision is being confirmed. The difference is characterized as
+   **a weighting difference, not a factual disagreement**, which is both accurate and the least
+   adversarial true framing available.
+5. **Calculator status corrected.** The Lead Engineer's closing line — *"the calculator question remains
+   open — options 1, 2, or 3"* — **was stale and is withdrawn.** Current status: separate **Phase-3
+   website-product backlog** · narrow scenario-calculator exception approved · no formula, default,
+   design, specification, or code approved · professional-review gates required · **the Operating Artifact
+   Sprint continues unaffected.** *This will not be resurfaced unless the founder reopens it.*
+
+**Status: APPROVED as a controlled operating draft.** 7A and 7B at v0.2. Not production-frozen.
+
+---
+
+### Original recommendation (superseded, retained for the record)
 
 **Approve with revisions.** The artifact does what the premise requires and, most importantly, makes the
 **three separations structurally visible** rather than merely stated — §3, §4, and §5 are distinct

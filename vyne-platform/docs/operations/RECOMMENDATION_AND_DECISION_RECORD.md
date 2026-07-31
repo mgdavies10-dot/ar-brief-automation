@@ -4,8 +4,8 @@ CONFIDENTIAL — ADVISOR-FACING
 
 # Recommendation & Decision Record — modular template
 
-**Artifact:** 7A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 7A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing premise
 > **The Recommendation & Decision Record states VYNE's professional judgment clearly, while preserving
@@ -60,10 +60,12 @@ CONFIDENTIAL — ADVISOR-FACING
  in this document.
 ```
 
-> **The advisor's participation in consultation confirms that the matter was discussed and tested. It
-> does not mean the advisor agreed with VYNE's conclusion.**
-
 *Disclosure level is stated in plain language — never as "L1 / L2 / L3."*
+
+> **Placement note.** The participation-≠-agreement statement lives in **§17 Record details**, not here.
+> The opening and page one lead with **the advisor's decision, our conclusion, reasons, drawbacks,
+> conditions, and next step** — not with VYNE's protections. All four protections are retained; they are
+> distributed so the Record does not open like a disclaimer.
 
 ## §2 · Page one — the whole decision — *required, all modes*
 
@@ -121,6 +123,18 @@ CONFIDENTIAL — ADVISOR-FACING
 
 *Where they differ, our reservations are recorded once, in §12 — not repeated as pressure.*
 
+> ### Tone standard where the advisor decides differently — binding
+> The Record must not sound as though VYNE was rejected, the advisor ignored advice, VYNE is preserving
+> evidence that it was right, or the advisor must defend their decision.
+>
+> **Prohibited:** *"despite our recommendation"* · *"the advisor chose to disregard"* · *"against VYNE's
+> advice"* · *"VYNE continues to believe"* · any construction implying the advisor owes a justification.
+>
+> **Model phrasing:** *"VYNE recommended [X] based on the [considerations] described in this Record. The
+> advisor ultimately selected [Y], placing greater weight on [factors]. Both positions are recorded
+> because the difference reflects how the trade-offs were weighted, not a disagreement about the
+> underlying facts."*
+
 ## §5 · Authorization status — *required, all modes*
 
 *Use one:*
@@ -141,9 +155,26 @@ CONFIDENTIAL — ADVISOR-FACING
 **Decision-Support mode:** show the legitimate paths **still in scope**. **Do not rank them.**
 
 **Conditional and Full modes:** compare the relevant alternatives on **consistent dimensions applied
-identically to every option** — capabilities · affiliation and operating model · economics ·
+identically to every option**, drawn from — capabilities · affiliation and operating model · economics ·
 portability · client impact · team impact · ownership · enterprise value · risk · implementation
 implications · timing · unresolved issues.
+
+> ### Bounding the comparison
+> **The Record compares only the dimensions that materially differentiate the live options, typically
+> four to seven. A dimension does not belong merely because it exists in the Ontology. If it does not
+> meaningfully affect this advisor's decision among the options being compared, omit it or address it
+> briefly in Decision Basis and Supporting Evidence (§8).**
+
+**Operating norm on options:**
+
+- **Ordinarily two to four live options.**
+- **Five only where genuinely necessary.**
+- **More than five ordinarily means the decision has not narrowed enough for a recommendation
+  comparison** — which is itself a finding, and belongs in §3 rather than in a wider table.
+
+*The main Record carries the most consequential dimensions. Additional firm or model detail may later be
+carried by the comparison appendix (Artifact 8), which is subordinate to this Record — a support for
+decisions already narrowed to real models or firms, not a marketplace table and not a ranking engine.*
 
 **Include stay and wait wherever they are legitimate.**
 
@@ -279,6 +310,9 @@ comes from.*
  Changed-facts triggers: _______________________________________________
 ```
 
+> **The advisor's participation in consultation confirms that the matter was discussed and tested. It
+> does not mean the advisor agreed with VYNE's conclusion.**
+
 ## §18 · Corrections — *required, all modes*
 
 > **Please tell us if any factual statement in this Record is inaccurate or incomplete. Your
@@ -289,8 +323,11 @@ comes from.*
 
 > **About this Record:** It reflects information available to us as of the date shown. Material new
 > information may change our conclusion. It does not replace legal, tax, compliance, valuation, M&A, or
-> implementation advice. It authorizes no firm contact or disclosure. It is confidential and subject to
-> the permitted-use terms of your engagement.
+> implementation advice. It is confidential and subject to the permitted-use terms of your engagement.
+
+*The footer carries **four** things: the current-through date · changed facts · specialist boundaries ·
+confidentiality and permitted use. **Authorization is not repeated here** — §5 owns it, and repeating it
+is what makes the aggregate read defensive.*
 
 ```
 DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
@@ -372,8 +409,16 @@ DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
 |---|---|
 | Decision-Support Record | **1–2 pages** |
 | Conditional Recommendation Record | **3–5 pages** |
-| Full Recommendation Record | **5–8 pages**, excluding a necessary comparison appendix |
+| Full Recommendation Record | **Initial pilot target: 5–8 pages**, excluding a necessary comparison appendix — **provisional** |
 | Decision Status and Closure Record | **1–2 pages** |
+
+> **The Full-mode target is provisional and is not frozen as a permanent requirement until:** Artifact 8
+> (the comparison appendix) exists · the five simulated cases are completed · actual production time is
+> measured · advisor reaction to the depth is reviewed.
+
+> **Length is not a goal. The goal is to deliver the decision with enough support and no unnecessary
+> weight.** Hitting eight pages is not success; a five-page Full Record that carries the decision is
+> better than an eight-page one that pads it.
 
 **A Record exceeding its target requires a stated reason.**
 

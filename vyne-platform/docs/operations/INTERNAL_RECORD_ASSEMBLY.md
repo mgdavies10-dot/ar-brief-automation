@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Internal Record Assembly and Issuance Record
 
-**Artifact:** 7B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review
+**Artifact:** 7B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-07-25; revisions applied)
 
 > ## Governing rule
 > **Reference the authoritative source artifact; summarize only what is necessary to support issuance,
