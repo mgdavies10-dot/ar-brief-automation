@@ -23,6 +23,35 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-07-25 — **Public scenario calculators: narrow Phase-3 product exception approved; frozen doctrine
+  NOT amended.** Prompted by a competitor (Bridgemark Strategies) publishing four public calculators. The
+  Lead Engineer surfaced a conflict with frozen doctrine (Content Architecture §13 "no calculators
+  promising personal numbers"; §3 public tools may not produce advisor-specific conclusions;
+  Recommendation & Report §8 enterprise value never a bare number, §12 no formal valuation) and offered
+  three options. **The founder ruled the framing too narrow** and established a better cut:
+  **calculation is not recommendation.** Approved principle: *"VYNE may provide public scenario
+  calculators that generate transparent numerical estimates or ranges from user-selected assumptions.
+  These tools may explain formulas, mechanics, sensitivities, and information gaps. They may not issue a
+  strategic recommendation, formal valuation, firm ranking, portability conclusion, best-fit conclusion,
+  or other advisor-specific consulting conclusion."* **This is a narrow product exception, not a broad
+  amendment** — VYNE's doctrine is not amended to permit automated advisor recommendations, the launch
+  prohibition stands, and no frozen document is reopened. Four planned tools (Independent Advisor
+  Economics Explorer · Employee Advisor Economics Explorer · Practice Value Scenario Explorer · Sunset
+  Program Scenario Explorer). **Governance:** do not copy Bridgemark's layout, wording, help text,
+  charts, disclaimers, code, or visual expression; build independently from the mathematics; **the
+  formulas discussed are preliminary industry mechanics, not a verified specification and not proof of
+  Bridgemark's mechanics**; every input/default/range/source/effective-date/formula/rounding/tax
+  treatment/disclaimer documented before development; assumptions visible and editable; **hidden industry
+  assumptions prohibited**; where no defensible default can be sourced, leave blank or require entry;
+  outputs described as modeled estimates or ranges; **"take-home pay" prohibited unless taxes are
+  actually modeled**; practice value as ranges, never formal/certified/defensible; sunset primarily
+  advisor-entered terms; **counsel review required** for disclaimers, valuation positioning, data
+  collection, and IP/trade-dress before publication. Recorded as a **Phase-3 website product backlog**
+  item (`docs/backlog/CALCULATOR_INITIATIVE.md`) with phased approach A–D, formula risks, tax-engine
+  maintenance risk, and professional-review gates. **No formula, default, design, copy, or code
+  approved.** The Operating Artifact Sprint continues unaffected. *(Note: a second external analysis was
+  referenced as research input but did not arrive — the message contained only a placeholder; recorded in
+  Appendix A and not reconstructed.)* Change level 2 (product-scope decision; docs only; no code).
 - 2026-07-25 — **"Frozen" clarified: approved documents are a controlled V1.0 baseline, not permanently
   immutable doctrine. Operating Artifact Sprint begins.** Founder clarification: frozen strategy and
   architecture documents are **not casually reopened**, but pilots may reveal a **real operating
