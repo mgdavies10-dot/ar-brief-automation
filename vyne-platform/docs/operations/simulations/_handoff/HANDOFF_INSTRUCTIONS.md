@@ -33,22 +33,51 @@ mkdir -p ~/vyne-consultant-sim/case1
 ```bash
 SRC=~/Documents/ar-brief-automation/vyne-platform/docs
 DST=~/vyne-consultant-sim/case1
+HO="$SRC/operations/simulations/_handoff"
 
-cp "$SRC/operations/simulations/_handoff/CASE1_CONSULTANT_LAUNCH_PACKAGE.md" "$DST/"
+cp "$HO/CASE1_CONSULTANT_LAUNCH_PACKAGE.md"                    "$DST/"
+cp "$HO/CONSULTANT_OPERATING_PRINCIPLES.md"                    "$DST/"
 cp "$SRC/operations/ADVISOR_ORIENTATION.md"                    "$DST/"
 cp "$SRC/operations/ORIENTATION_REVIEW_AND_ENTRY_DECISION.md"  "$DST/"
 cp "$SRC/operations/ENGAGEMENT_RECORD_STANDARDS.md"            "$DST/"
 cp "$SRC/foundation/THE_VYNE_CONSTITUTION.md"                  "$DST/"
 cp "$SRC/experience/ADVISOR_DECISION_ONTOLOGY.md"              "$DST/"
-cp "$SRC/commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md" "$DST/"
 ```
 
 **Seven files. Nothing else.**
 
-> ⚠ **`BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md` contains §10 — the founder-restricted fee range.**
-> The Consultant does not need it and should not have it. **Either redact §10 from the copy, or omit the
-> file entirely** and instead give the Consultant only the approved disclosure paragraph. *Recommend
-> redacting §10 — the rest of the document is genuinely useful for entry-stage conduct.*
+> ### `BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md` is NOT copied — founder decision, 2026-08-01
+> **Not the original, and not a redacted version of it.** §10 carries the founder-restricted fee range,
+> and a redacted copy can still leak through missed text, comments, version history, metadata, or a later
+> edit that reinstates the section.
+>
+> **It is replaced by `CONSULTANT_OPERATING_PRINCIPLES.md`** — a clean derivative **written from approved
+> doctrine**, not produced by deleting a section. It carries the approved disclosure paragraph and nothing
+> about fee economics.
+>
+> **The access principle: the Consultant receives what is necessary to do the work — not the entire VYNE
+> doctrine merely because it exists.**
+
+## 2a · Sanitize the copies — required
+
+**`ADVISOR_DECISION_ONTOLOGY.md` contains a live relative pointer to the restricted commercial
+document.** It must be neutralized **in the copy** — the repository original is frozen and is not edited.
+
+```bash
+cd "$DST"
+sed -i 's|(see `\.\./commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES\.md`)|(see the Consultant Operating Principles)|' ADVISOR_DECISION_ONTOLOGY.md
+grep -n "commercial/" ADVISOR_DECISION_ONTOLOGY.md   # expect: no output
+```
+
+**Then confirm no copy contains a path back to the controller:**
+
+```bash
+grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   # expect: no output
+```
+
+> **Why this matters:** a relative path is a signpost. Even where it does not resolve, it tells the
+> Consultant that a commercial document exists and names it — which is exactly the pointer this handoff
+> is designed to remove.
 
 ## 3 · What must NOT be copied
 
@@ -84,9 +113,26 @@ reviews and approves the framing.
 
 ```
  ☐ Consultant workspace is OUTSIDE the controller repository
- ☐ Exactly the seven listed files are present
- ☐ §10 of the Commercial Principles copy is redacted (or the file omitted)
+ ☐ Exactly the seven listed files are present — and BUSINESS_MODEL_AND_
+   COMMERCIAL_PRINCIPLES.md is NOT among them, in any form
+ ☐ CONSULTANT_OPERATING_PRINCIPLES.md is present in its place
+ ☐ Ontology copy sanitized — grep for "commercial/" returns nothing
+ ☐ grep -rnE '\.\./|ar-brief-automation|vyne-platform' returns nothing
+ ☐ No .git directory, no symlinks, no hidden files copied
+     verify:  ls -la "$DST"   and   find "$DST" -type l
  ☐ No simulation, charter, setup, packet, or review-notes file is present
+ ☐ No fee percentage, range, amount, step-up, clawback, or payment term anywhere
+     verify:  grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"
  ☐ The launch prompt contains no reference to testing, hidden facts, or expected outcomes
  ☐ The Controller thread is not being used to produce the assessment
 ```
+
+### Note on Gate references — reviewed, acceptable
+
+The Entry Decision record and the Engagement Record Standards both mention the **Higher-Conflict Decision
+Gate** — the entry record asks whether one is *likely to trigger later*, and the standards list it as an
+issuance control.
+
+**These are legitimate doctrine, not simulation leakage.** The Consultant should know a conflict gate
+exists downstream; that is part of working at VYNE. **It reveals nothing about Case 1's design, and
+nothing about the Case 4 stress test.** No action required.

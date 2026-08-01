@@ -21,7 +21,7 @@ stop and report.
 | `ORIENTATION_REVIEW_AND_ENTRY_DECISION.md` | the internal entry record — complete it |
 | `ENGAGEMENT_RECORD_STANDARDS.md` | naming, versioning, status, no-PII rule |
 | `THE_VYNE_CONSTITUTION.md` · `ADVISOR_DECISION_ONTOLOGY.md` | how VYNE thinks; the decision families |
-| `BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md` | how VYNE is paid, and the disclosure language |
+| `CONSULTANT_OPERATING_PRINCIPLES.md` | entry-stage conduct, and the approved compensation disclosure |
 
 **That is the complete set.** If you find yourself wanting information that is not here, **say so
 explicitly in your report** — that is a finding, not a failure.
