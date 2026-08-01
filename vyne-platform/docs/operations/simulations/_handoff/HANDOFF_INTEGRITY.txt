@@ -1,0 +1,151 @@
+================================================================================
+VYNE SIMULATION — CASE 1 CONSULTANT HANDOFF INTEGRITY RECORD
+Controller record. Not copied to the Consultant workspace.
+================================================================================
+
+HANDOFF PACKAGE
+  Controller commit ........ 8e75fb8
+  Branch ................... claude/vyne-ea-001-vertical-slice-xly1ws
+  Record created (UTC) ..... 2026-08-01T15:44:19Z
+  Case ..................... SIM-01 (Stay)
+  Scope .................... Orientation + Entry Review only; stops at Checkpoint A
+
+--------------------------------------------------------------------------------
+1. SOURCE FILES — SHA-256 AS OF COMMIT 8e75fb8
+--------------------------------------------------------------------------------
+Paths are relative to  vyne-platform/docs/
+
+ff5dc09e8f86820de8e35c123372ea1a2ea64c865e35e8bfbe400e9cafb921ce
+    operations/simulations/_handoff/CASE1_CONSULTANT_LAUNCH_PACKAGE.md
+247d2537f8a6002ce86c1c511ad85493adc91b9b279a0fd38534dd31c4f1809c
+    operations/simulations/_handoff/CONSULTANT_OPERATING_PRINCIPLES.md
+7d4011d1b72b00a79b816ad2e2773d306da0a1bc6d955b9c982b6c6df51a0623
+    operations/ADVISOR_ORIENTATION.md
+2ff9306f681c31f69f323b92ec594efb68fdb4d2374c652f9a8d074b279e1584
+    operations/ORIENTATION_REVIEW_AND_ENTRY_DECISION.md
+77781fcc19657b7c76b68d77efcc2b84bdc1de4bea08a02431b434dafdcb038e
+    operations/ENGAGEMENT_RECORD_STANDARDS.md
+1c117b68ec3c9d81b19d044107a3d9cc3ad8a4ebd17938853d4f01ea141cfe21
+    foundation/THE_VYNE_CONSTITUTION.md
+027269d4af1219d0be60f19ef006713793cc4b8e47a43a94fdf681d23066025d
+    experience/ADVISOR_DECISION_ONTOLOGY.md
+
+Seven files. BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md is NOT among them,
+in original or redacted form. It is replaced by the clean derivative
+CONSULTANT_OPERATING_PRINCIPLES.md, written from approved doctrine rather
+than produced by deleting a section.
+
+--------------------------------------------------------------------------------
+2. EXPECTED DIVERGENCE — ONTOLOGY POINTER NEUTRALIZATION
+--------------------------------------------------------------------------------
+ADVISOR_DECISION_ONTOLOGY.md is the ONLY file whose Consultant copy is
+expected to differ from source.
+
+  Reason ......... line 246 of the source contains a live relative pointer:
+                   "(see `../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`)"
+                   A relative path is a signpost — even where it does not
+                   resolve, it names a restricted document.
+  Change ......... that phrase becomes "(see the Consultant Operating Principles)"
+  Applied to ..... the Consultant COPY ONLY
+  Repository ..... frozen original UNCHANGED — verify with:
+                     git diff --stat HEAD -- vyne-platform/docs/experience/ADVISOR_DECISION_ONTOLOGY.md
+                   (expect: no output)
+
+All other six copies must checksum-match their source exactly.
+
+--------------------------------------------------------------------------------
+3. TO BE COMPLETED AT COPY TIME
+--------------------------------------------------------------------------------
+Workspace path ......................... ______________________________
+Copy performed (UTC) ................... ______________________________
+Performed by ........................... ______________________________
+
+Copy-side SHA-256 (run in the workspace):
+    cd "$DST" && sha256sum *.md
+
+  CASE1_CONSULTANT_LAUNCH_PACKAGE.md ... ______________________________
+  CONSULTANT_OPERATING_PRINCIPLES.md ... ______________________________
+  ADVISOR_ORIENTATION.md ............... ______________________________
+  ORIENTATION_REVIEW_AND_ENTRY_DECISION  ______________________________
+  ENGAGEMENT_RECORD_STANDARDS.md ....... ______________________________
+  THE_VYNE_CONSTITUTION.md ............. ______________________________
+  ADVISOR_DECISION_ONTOLOGY.md ......... ______________________________
+      (expected to DIFFER from source — see §2)
+
+  [ ] Six of seven match source exactly
+  [ ] The one divergence is the Ontology, and only the §2 change explains it
+
+--------------------------------------------------------------------------------
+4. CONTAMINATION CHECK — CONTROLLER-SIDE, RUN AT 8e75fb8
+--------------------------------------------------------------------------------
+  Fee range / percentages / amounts / step-ups / clawbacks ....... CLEAN
+  Case 1 hidden facts ........................................... CLEAN
+  Release schedules / expected outcomes / stress tests .......... CLEAN
+  Simulation language / references to Cases 2-5 ................. CLEAN
+  Founder-restricted markers .................................... CLEAN
+  Approved compensation disclosure present and unmodified ....... VERIFIED
+
+  Two defects found and fixed before this record:
+    (a) launch-package manifest still listed the commercial document — corrected
+    (b) Ontology contained a live pointer to it — post-copy sanitization added
+
+  Reviewed and ACCEPTED (not leakage):
+    Entry Decision record and Engagement Record Standards both reference the
+    Higher-Conflict Decision Gate. Legitimate doctrine — the Consultant should
+    know a conflict gate exists downstream. Reveals nothing about Case 1 design
+    or the Case 4 stress test.
+
+--------------------------------------------------------------------------------
+5. WORKSPACE ISOLATION — CONFIRM AT COPY TIME
+--------------------------------------------------------------------------------
+  [ ] Workspace is OUTSIDE the controller repository
+        (repo containment verified impossible: a session at the repo root can
+         read SIMULATION_CASE_PACKETS.md, which holds every hidden fact)
+  [ ] No .git directory ............ ls -la "$DST"
+  [ ] No symlinks .................. find "$DST" -type l      (expect: none)
+  [ ] No path back to controller ... grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"
+  [ ] Ontology pointer gone ........ grep -n "commercial/" "$DST/ADVISOR_DECISION_ONTOLOGY.md"
+  [ ] No fee terms anywhere ........ grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"
+        (all four greps expect: no output)
+  [ ] Workspace is read-only relative to the controller repository —
+      the Consultant cannot write into the repo
+
+--------------------------------------------------------------------------------
+6. EXACT LAUNCH PROMPT
+--------------------------------------------------------------------------------
+Fresh Claude Code session, working directory = the Consultant workspace.
+Send only this, verbatim:
+
+    Read CASE1_CONSULTANT_LAUNCH_PACKAGE.md and follow it.
+    Everything you need is in this folder.
+
+NOT SAID to the Consultant:
+    that this is a simulation ..... that this is Case 1
+    that hidden facts exist ....... that the intended outcome may be "stay"
+    which controls are tested ..... what the Controller expects to happen
+    that the advisor is synthetic
+
+Launch prompt actually used ............ ______________________________
+Session opened (UTC) ................... ______________________________
+
+--------------------------------------------------------------------------------
+7. RETURN PATH
+--------------------------------------------------------------------------------
+Moved or pasted back to the Controller — ONLY these four:
+  [ ] completed Orientation / Entry Review record
+  [ ] Consultant's entry report
+  [ ] time log
+  [ ] explicit information requests or stated limitations
+
+Nothing else returns. The Consultant does not write into the repository.
+
+Returned (UTC) ......................... ______________________________
+
+--------------------------------------------------------------------------------
+8. AFTER RETURN
+--------------------------------------------------------------------------------
+Controller assembles Founder Checkpoint A and STOPS.
+The L1 Assessment does not begin until the founder reviews and approves the
+framing at Checkpoint A.
+
+================================================================================
