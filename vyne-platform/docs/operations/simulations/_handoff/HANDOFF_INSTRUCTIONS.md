@@ -82,8 +82,11 @@ grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   # expect: no output
 ## 3 · What must NOT be copied
 
 `SIMULATION_CASE_PACKETS.md` · `SIMULATION_SETUP.md` · `SIMULATION_PHASE_CHARTER.md` · any review-notes
-file · any artifact not listed above · **anything under `_handoff/` other than the launch package
-itself** — including this file.
+file · any artifact not listed in §2.
+
+**From `_handoff/`, exactly two files are copied** — `CASE1_CONSULTANT_LAUNCH_PACKAGE.md` and
+`CONSULTANT_OPERATING_PRINCIPLES.md`. **Everything else in `_handoff/` stays behind**, including
+`HANDOFF_INSTRUCTIONS.md` (this file) and `HANDOFF_INTEGRITY.txt`.
 
 ## 4 · Launch
 
