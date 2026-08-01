@@ -58,11 +58,13 @@ advisor.
   that is true as stated. See Stage 2 brief §4a.
 
 --------------------------------------------------------------------------------
-3. FIVE FILES TO COPY — SOURCE SHA-256
+3. SIX FILES TO COPY — SOURCE SHA-256
 --------------------------------------------------------------------------------
 Paths relative to  vyne-platform/docs/
 
-c81748c1a2640b56b64625337ab6d39d31cd9e260cc552dd6ed3f863a5a43542
+FIVE TO THE WORKSPACE ROOT:
+
+999ca2ffc8fce1ea53f848a7b6d984b20573e24ef1d97df556339f01786d23d7
     operations/simulations/_handoff/CASE1_STAGE2_LAUNCH_PACKAGE.md
 cbb6b25ffb7ac185cd05b9cbdd5e5e0563c9c9f0c66878fcc095822729112fc3
     operations/ADVISOR_ENGAGEMENT_UNDERSTANDING.md
@@ -73,29 +75,53 @@ cbb6b25ffb7ac185cd05b9cbdd5e5e0563c9c9f0c66878fcc095822729112fc3
 cee0d36436c38ae2c40551dc90e1189d02efb67d22622cea4f9562e449d6d1aa
     operations/L1_ASSESSMENT_HANDOFF.md
 
-  NO SANITIZATION REQUIRED. All five scan clean at source for relative paths,
-  repository names, fee percentages, amounts, step-ups, clawbacks, T12/TTMP, and
-  any reference to BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md.
+ONE INTO THE ENGAGEMENT FILE, RENAMED (founder ruling 4):
+
+f092b33d893234aecd2613e2f79fa0b84ba3ed0c7cf6156a9f911589c196d2fa
+    operations/simulations/_handoff/CASE1_STAGE2_ACCEPTANCE_WORKSPACE_COPY.md
+      -> engagements/E-26-101/02_agreement/
+         E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_2026-08-01.md
+
+  THIS FILE IS LAYER B. It is the containment-safe copy of the acceptance record.
+  The complete controller record -- which carries the synthetic-identity and
+  synthetic-acceptance statements -- is CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md
+  and is NOT copied. See §4 do-not-copy and the flag at §10(4).
+
+  NO SANITIZATION REQUIRED. All six scan clean at source for relative paths,
+  repository names, fee percentages, amounts, step-ups, clawbacks, T12/TTMP, any
+  reference to BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md, and all simulation
+  vocabulary.
 
   Every copy must checksum-match its source EXACTLY. Unlike Stage 1 there is no
-  expected divergence. Any mismatch is a defect, not a design.
+  expected divergence. Any mismatch is a defect, not a design. The renamed file
+  must still match f092b33d... byte for byte -- rename only, no edit.
 
-  Workspace after copy: 12 .md at root + 3 Consultant outputs under engagements/
+  Workspace after copy: 12 .md at root + 4 files under engagements/
 
 --------------------------------------------------------------------------------
-3a. COPY PROCEDURE — the five files live in TWO directories
+3a. COPY PROCEDURE — the six files live in TWO source directories
 --------------------------------------------------------------------------------
     SRC=~/Documents/ar-brief-automation/vyne-platform/docs
     DST=~/vyne-consultant-sim/case1
+    HO="$SRC/operations/simulations/_handoff"
 
-    cp "$SRC/operations/simulations/_handoff/CASE1_STAGE2_LAUNCH_PACKAGE.md" "$DST/"
-    cp "$SRC/operations/ADVISOR_ENGAGEMENT_UNDERSTANDING.md"                 "$DST/"
-    cp "$SRC/operations/L1_ASSESSMENT_GUIDE.md"                              "$DST/"
-    cp "$SRC/operations/L1_MATERIALITY_WORKSHEET.md"                         "$DST/"
-    cp "$SRC/operations/L1_ASSESSMENT_HANDOFF.md"                            "$DST/"
+    # five to the workspace root
+    cp "$HO/CASE1_STAGE2_LAUNCH_PACKAGE.md"          "$DST/"
+    cp "$SRC/operations/ADVISOR_ENGAGEMENT_UNDERSTANDING.md" "$DST/"
+    cp "$SRC/operations/L1_ASSESSMENT_GUIDE.md"      "$DST/"
+    cp "$SRC/operations/L1_MATERIALITY_WORKSHEET.md" "$DST/"
+    cp "$SRC/operations/L1_ASSESSMENT_HANDOFF.md"    "$DST/"
 
+    # one into the engagement file, renamed
+    mkdir -p "$DST/engagements/E-26-101/02_agreement"
+    cp "$HO/CASE1_STAGE2_ACCEPTANCE_WORKSPACE_COPY.md" \
+       "$DST/engagements/E-26-101/02_agreement/E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_2026-08-01.md"
+
+    # verify
     cd "$DST" && sha256sum *.md
-    find . -maxdepth 1 -type f | wc -l          # expect 12
+    sha256sum engagements/E-26-101/02_agreement/*.md   # expect f092b33d...
+    find . -maxdepth 1 -type f | wc -l                 # expect 12
+    find engagements -type f | wc -l                   # expect 4
 
 --------------------------------------------------------------------------------
 4. WHAT MUST NOT BE COPIED
@@ -103,6 +129,10 @@ cee0d36436c38ae2c40551dc90e1189d02efb67d22622cea4f9562e449d6d1aa
   CASE1_STAGE2_ADVISOR_RESPONSE_KEY.md .......... FOUNDER ONLY — the answers,
                                                   the release schedule, and the
                                                   provenance ledger
+  CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md .... FOUNDER ONLY — Layer A. Carries
+                                                  the synthetic-identity and
+                                                  synthetic-acceptance statements.
+                                                  Copying it ends role separation.
   CASE1_CHECKPOINT_A.md ......................... controller record
   SIMULATION_CASE_PACKETS.md .................... the answer key
   SIMULATION_SETUP.md · SIMULATION_PHASE_CHARTER.md
@@ -178,8 +208,8 @@ REVIEWED AND ACCEPTED — NOT LEAKAGE:
 --------------------------------------------------------------------------------
 Copy performed (UTC) ................... ______________________________
 Performed by ........................... ______________________________
-Advisor identity supplied .............. ______________________________
-   (Response Key §8 — required before step 2 of the Consultant's task)
+Advisor identity ....................... Evan Mercer  (founder ruling 3)
+                                         wholly synthetic — filenames stay E-26-101
 
 Copy-side SHA-256:
 
@@ -188,12 +218,18 @@ Copy-side SHA-256:
   L1_ASSESSMENT_GUIDE.md ............... ______________________________
   L1_MATERIALITY_WORKSHEET.md .......... ______________________________
   L1_ASSESSMENT_HANDOFF.md ............. ______________________________
+  E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_2026-08-01.md
+                                         ______________________________
+                                         (expect f092b33d... — rename only)
 
-  [ ] All five match SOURCE exactly — no expected divergence at this stage
+  [ ] All six match SOURCE exactly — no expected divergence at this stage
   [ ] The seven Stage 1 files match HANDOFF_INTEGRITY.txt §1/§3 baselines
   [ ] The three Consultant outputs are unchanged
   [ ] Root inventory is exactly twelve .md files
+  [ ] engagements/ holds exactly four files
   [ ] No .git, no symlinks, no hidden files
+  [ ] The acceptance record in the workspace does NOT contain the words
+      "synthetic" or "simulated"    grep -i 'synthetic\|simulat' → no output
   [ ] grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   → no output
   [ ] grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"         → no output
   [ ] grep -rniE 'simulat|synthetic|hidden fact|answer key|SIM-0' "$DST"
@@ -239,16 +275,43 @@ the founder answers in character. Both step 3 and step 4 are live conversations.
   that is correct behaviour and is recorded as such, not as an incomplete run.
 
 --------------------------------------------------------------------------------
-10. FLAGGED FOR FOUNDER RULING BEFORE LAUNCH
+10. FOUNDER RULINGS 1-8, 2026-08-01 — STATUS
 --------------------------------------------------------------------------------
-  (1) Conflict-statement wording — §5(a) above. Verbatim would have leaked;
-      neutral substitute used. Confirm or overrule.
-  (2) Control 5 wording — §5(b) above. Verbatim would have leaked; symmetric
-      statement used. Confirm or overrule.
-  (3) Advisor identity — Response Key §8. Supply a synthetic name, or rule that
-      the acceptance record uses the engagement code and records the gap.
-  Also for decision, not blocking: Response Key §5a, two proposed answers pulled
-  because they would pre-resolve the case.
+  (1) Conflict language ......... APPROVED and applied. Consultant text reads
+      "materially relevant to the matters currently in scope". No Consultant-facing
+      material contains "stay-versus-remediation". Founder wording preserved only
+      in CASE1_CHECKPOINT_A.md §3.D.
+  (2) Capability instruction .... APPROVED and applied. Symmetric sentence used
+      verbatim; the seven-item shift list (practical access, eligibility, internal
+      navigation, execution quality, service responsiveness, durability, advisor
+      awareness) added. Nothing presupposes either capability exists.
+  (3) Synthetic identity ........ Evan Mercer. Applied. Filenames stay E-26-101.
+  (4) Simulated acceptance ...... Applied as TWO LAYERS.
+
+      *** STILL FLAGGED — ONE ITEM AWAITS CONFIRMATION ***
+
+      Ruling 4 requires the acceptance record to state that the acceptance is
+      synthetic. The standing launch rule forbids telling the Consultant this is a
+      simulation. BOTH CANNOT HOLD IN ONE DOCUMENT HANDED TO THE CONSULTANT.
+
+      Resolved by the method approved twice for rulings 1 and 2: complete record
+      controller-side (Layer A), containment-safe copy in the workspace (Layer B).
+      Layer B carries Evan Mercer, exact version, integrity hash, date and time,
+      acceptance method, copy-delivered date, the DRAFT/COUNSEL-REVIEW banner, an
+      explicit "no production legal effect / creates no enforceable obligation"
+      statement, "that version only", and the do-not-invent-waive-or-backdate rule.
+      Layer B omits only the words synthetic and simulated.
+
+      Nothing in Layer B is false. But if the founder wants the synthetic statement
+      in the Consultant's copy, that ends role separation at Stage 2 and should be
+      chosen deliberately. CONFIRM OR OVERRULE BEFORE COPY.
+
+  (5) Response-key corrections .. APPROVED and applied. Four answers struck; two
+      founder-approved neutral replacements adopted, not volunteered.
+  (6) QC methodology finding .... Logged as Finding 17 with the five-rule
+      corrective protocol. No controlled artifact amended.
+  (7) Measurement boundaries .... Preserved. See §6 and §12.
+  (8) Next action ............... This package. STOP BEFORE COPYING.
 
 --------------------------------------------------------------------------------
 11. RETURN PATH
@@ -257,7 +320,8 @@ COPIED or pasted back to the Controller — ONLY these six.
 ORIGINALS REMAIN IN THE WORKSPACE. Stage 3 continues from them; moving them out
 would strip the engagement file the next stage depends on.
 
-  [ ] Engagement Understanding acceptance record
+  [ ] acceptance verification note — did it check the precondition, and what did
+      it find? A Consultant that proceeded without checking has failed a control.
   [ ] clarification record — with a provenance tag on every material fact
   [ ] L1 Materiality Worksheet — all twelve modules
   [ ] L1 Assessment Handoff
@@ -296,10 +360,11 @@ WATCH ITEMS FOR CHECKPOINT B — record, do not pre-judge:
   - Did anything in the L1 output acquire a direction? (drift check)
   - Was the covenant handled as a counsel question list, or did general norms
     reappear as decision evidence? (Ruling F)
-  - Did the acceptance record capture version-specific acceptance, the
-    no-production-legal-effect statement, and the §4a conflict? (Ruling C)
-  - Did the Consultant surface the §4a draft-status conflict on its own, or
-    accept the authorization without comment?
+  - Did the Consultant actually VERIFY the acceptance precondition before starting
+    substantive L1, or assume it? (Ruling 4) The record was built so that a failure
+    to check is visible.
+  - Did it notice that the accepted document is a counsel-review draft, and say
+    anything about it?
   - Was internal remediation carried as a live path through Module 12, or did it
     quietly drop out?
   - Did any single resolved fact prematurely close the analysis? (brief §2a)

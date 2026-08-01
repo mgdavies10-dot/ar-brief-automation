@@ -395,6 +395,24 @@ redundancies cost transcription time, not advisor goodwill.
 | **14** | **Decision authority is not captured, and the participants question permits contradiction** — *spouse* and *no one else at this stage* were both selected, and sole-versus-joint authority is asked only in the internal record, never advisor-facing. | **D1** |
 | **15** | **No VYNE conflict-of-interest source record and no capacity source record exist.** Both are fields in the Entry Decision with nothing behind them. | **Governance** |
 | **16** | **Entry scope language risks being read as permission to skip the required twelve-module L1 scan.** "Proceed with limited scope" must not narrow *acknowledgment*; it narrows *depth*. | **Operational** |
+| **17** | **"The adversarial-refuter protocol was directionally biased because it instructed reviewers to default to refutation when uncertain. Its unanimous result is not valid evidence that the package was clean."** *(Founder ruling 6, 2026-08-01.)* | **Simulation QC procedure** |
+
+### Finding 17 — corrective protocol for all future QC
+
+**Binding on simulation QC from 2026-08-01. Not an amendment to any controlled operating artifact.**
+
+1. **An alleged defect must cite supporting text.** No claim without a quotation.
+2. **A refutation must cite specific contradictory evidence.** Reasoning alone does not refute.
+3. **Uncertainty resolves to `Unresolved`, never `Refuted`.** The instruction to default either way is
+   itself the defect — a reviewer told which way to fall is not reviewing.
+4. **The Controller adjudicates every Unresolved finding** on the merits, and records the adjudication.
+5. **A unanimous result triggers an instrument-bias review** before it is accepted. Ten of ten in either
+   direction is a signal about the instrument, not about the material.
+
+> **Why this is a procedure finding and not an artifact defect.** Nothing in the controlled operating
+> artifacts caused it. The Controller wrote a biased prompt, the bias produced a clean sweep, and the
+> clean sweep would have been reported as assurance had it not been checked. The fix belongs to the QC
+> procedure, and the artifacts are not amended for it.
 
 **Why Finding 1 is not a Critical Stop.** The Gate is administered at the recommendation lifecycle stage.
 Both the Gate form and `INTERNAL_RECORD_ASSEMBLY.md` §4 re-evaluate trigger status independently — the
@@ -516,9 +534,58 @@ paragraph rather than the list. **Accepted in form** — all six are now enumera
 Correct as written, and fixed: the instruction now says to fill **copies** under `engagements/E-26-101/`
 and leave originals untouched.
 
-### Still open — needs a founder answer before launch
+### Resolved by founder ruling 3
 
-**The advisor has no name.** Record Standards §4 requires advisor identity on an acceptance record, and
-that record gates substantive L1. The Consultant flagged the absence at Stage 1 and treated it correctly
-as a data gap rather than a PII issue. **Supply a synthetic name, or rule that the acceptance record uses
-the engagement code and records the gap.**
+**The advisor is Evan Mercer** — a wholly synthetic simulation identity. Governing rules and the full
+controller acceptance record: `CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md`.
+
+---
+
+## 10 · Founder rulings on the Stage-2 package — 2026-08-01
+
+**1 · Leakage correction, conflict language — APPROVED.** Consultant-facing text reads *"The founder is
+not aware of a VYNE financial relationship materially relevant to the matters currently in scope."*
+**"Stay-versus-remediation" appears in no Consultant-facing material.** The original founder wording is
+preserved only in this Controller record, §3.D.
+
+**2 · Leakage correction, capability instruction — APPROVED.** The symmetric instruction is used verbatim:
+*"If the capabilities prove absent, that does not establish that a model change is correct. If they prove
+available, that does not establish that staying is correct."* Availability, if found, shifts the issue to
+**practical access · eligibility · internal navigation · execution quality · service responsiveness ·
+durability · advisor awareness**. **Nothing reveals or presupposes that the current firm offers either
+capability.**
+
+**3 · Synthetic advisor identity — Evan Mercer.** Recorded as wholly synthetic. May appear in
+advisor-facing simulation artifacts and the acceptance record; **filenames continue to use `E-26-101`**;
+no further identifying details invented unless operationally required; spouse remains role-only; **never
+represented as real.**
+
+**4 · Simulation-only Engagement Understanding acceptance.** A version-specific acceptance record is
+created before substantive L1, containing Evan Mercer · the exact version · date and time · a simulated
+secure electronic-acceptance method · copy-delivered date · confirmation the document remains **DRAFT —
+COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE** · and a statement that the acceptance is synthetic and
+carries no production legal effect. **The Consultant receives evidence that the precondition was
+completed** and must not invent, waive, or backdate acceptance.
+
+> **Conflict recorded, not resolved silently.** The synthetic statement cannot appear in the Consultant's
+> copy without ending role separation. Resolved by the two-layer method the founder approved twice for the
+> leakage corrections — complete record controller-side, containment-safe copy in the workspace, with both
+> substantive protections (*no production legal effect*, *that version only*) stated explicitly in the
+> copy. **Flagged for founder confirmation** in `CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md` §2.
+>
+> **Side benefit:** because the Consultant no longer presents the document, the QC defect O2 — instructing
+> a Draft be shown to an advisor against Record Standards §5 — is extinguished rather than authorized.
+
+**5 · Response-key corrections — APPROVED.** Four answers struck: the advisor never having moved firms ·
+any gesture toward an internal desk before it is properly elicited · *"I don't want to run a business"* ·
+*"anything that means starting over"* is unacceptable. Two founder-approved neutral replacements adopted,
+**not volunteered before an appropriate Consultant question.**
+
+**6 · QC methodology finding — logged as Finding 17**, with the five-rule corrective protocol. **No
+controlled operating artifact is amended for it.**
+
+**7 · Stage-2 measurement boundaries — preserved.** Independent origination of the capability question =
+**Not tested at Stage 2** · **Finding 1 remains open** · one responsive fact per appropriate question ·
+exact question and release provenance logged · no automatic stay conclusion · **all twelve PTA modules
+receive the light scan**, only material modules deepen · **Stage 2 stops at Founder Checkpoint B before
+consultation preparation.**

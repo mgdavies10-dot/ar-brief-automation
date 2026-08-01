@@ -73,14 +73,17 @@ came back.
 
 ### 2a · Neither answer settles the question
 
-**Whichever way the capability question resolves, it does not by itself establish an outcome.**
+> **If the capabilities prove absent, that does not establish that a model change is correct. If they
+> prove available, that does not establish that staying is correct.**
 
-- **If the capabilities prove absent**, that does not establish that a model change is correct. It makes
-  capability one input among several.
-- **If the capabilities prove available**, that does not establish that staying is correct. It changes the
-  question from *possible capability absence* to **access · service execution · internal navigation ·
-  eligibility · responsiveness · durability** — all of which remain open and all of which may still favour
-  a different model.
+**Availability, if that is what you find, does not close the question — it moves it.** The issue would
+shift from possible capability absence to:
+
+> **practical access · eligibility · internal navigation · execution quality · service responsiveness ·
+> durability · advisor awareness**
+
+Every one of those remains open on availability alone, and any of them may still favour a different
+model. Absence, equally, is one input among several and does not on its own carry a conclusion.
 
 **Either way, the L1 work must still consider:** the broader service deterioration · remediation history ·
 practical accessibility · client impact · team impact · operating-model implications · risk · **and
@@ -108,43 +111,33 @@ interpretation to the advisor's attorney.**
 
 A counsel question list is a deliverable. A view on what the covenant probably says is not.
 
-## 4 · Engagement Understanding — required before substantive L1 analysis
+## 4 · Engagement Understanding — the precondition is already met. Verify it.
 
-`ADVISOR_ENGAGEMENT_UNDERSTANDING.md` is in this folder. **It must be presented and accepted before you
-begin substantive L1 analysis.**
+**The advisor is Evan Mercer.**
 
-### 4a · A conflict you should notice — and its authorization
+`ADVISOR_ENGAGEMENT_UNDERSTANDING.md` is in this folder for your reference, and the acceptance record is
+filed at `engagements/E-26-101/02_agreement/`.
 
-**That document is a counsel-review draft.** Its own header states that counsel review is required before
-any advisor sees it, and Record Standards §5 states that a Draft may not reach the advisor.
+> **You do not present this document and you do not solicit acceptance.** That was completed by the
+> founder before this stage. Your job is to **verify the precondition, then proceed.**
 
-**The founder has expressly authorized its use for this engagement notwithstanding that status**, on the
-condition that the limitation is recorded on the acceptance record and that a counsel-approved version,
-when it exists, requires fresh acceptance.
-
-**Record the authorization and the limitation. If you think the authorization is insufficient, say so in
-your findings** — an instruction that conflicts with a controlled artifact is exactly the kind of thing
-this engagement wants surfaced rather than quietly followed.
-
-### 4b · Acceptance capture
-
-Record everything Record Standards §4 requires:
+**Check, before any substantive L1 analysis, that the acceptance record shows:**
 
 - **advisor identity**;
-- **the document version accepted**;
+- **the exact document version accepted**, and that it matches the document in this folder;
 - **date and time**;
 - **acceptance method**;
 - **delivery of a copy to the advisor**;
-- **acknowledgment of material later amendments where required.**
+- that the document's **draft status and its lack of production legal effect** are recorded;
+- that acceptance is of **that version only**, with a later approved version requiring fresh acceptance.
 
-And record, on the same document:
+> ### The rule that matters
+> **Do not invent, waive, or backdate acceptance.** If any element is missing, inconsistent with the
+> document in this folder, or cannot be verified — **stop and report it.** Do not proceed into
+> substantive assessment on the assumption that the precondition was met.
 
-- that it is a **counsel-review draft with no production legal effect**;
-- that acceptance is of **that draft version only**;
-- that a later counsel-approved version requires **fresh, version-specific acceptance** — a later
-  amendment does not inherit an earlier acceptance.
-
-**Do not edit the Engagement Understanding.** Use it as it stands and record the acceptance separately.
+**Do not edit the Engagement Understanding or the acceptance record.** If either is defective, that is a
+finding, not something to correct.
 
 ## 5 · Conflict and capacity — determined, not open
 
@@ -185,7 +178,8 @@ three things at once and got one answer, record that.
 
 **1 · Read your own prior work** in `engagements/E-26-101/`.
 
-**2 · Present the Engagement Understanding and record acceptance** per §4 above.
+**2 · Verify the Engagement Understanding acceptance record** per §4 above. Do not proceed past this step
+if it does not check out.
 
 **3 · Conduct a targeted clarification follow-up.**
 
@@ -222,15 +216,16 @@ Summary, or Recommendation & Decision Record.
 
 ### File naming for the two records that have no template
 
-The acceptance record and the clarification record are not in the Record Standards §3 artifact-type list.
-**Use the §3 pattern and these types**, and note the gap in your findings:
+The clarification record is not in the Record Standards §3 artifact-type list. **Use the §3 pattern and
+these types**, and note the gap in your findings:
 
 ```
-E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_YYYY-MM-DD.md   →  02_agreement/
-E-26-101_ClarificationRecord_v0.1_INTERNAL_YYYY-MM-DD.md               →  03_assessment/
-E-26-101_MaterialityWorksheet_v0.1_INTERNAL_YYYY-MM-DD.md              →  03_assessment/
-E-26-101_AssessmentHandoff_v0.1_INTERNAL_YYYY-MM-DD.md                 →  03_assessment/
+E-26-101_ClarificationRecord_v0.1_INTERNAL_YYYY-MM-DD.md   →  03_assessment/
+E-26-101_MaterialityWorksheet_v0.1_INTERNAL_YYYY-MM-DD.md  →  03_assessment/
+E-26-101_AssessmentHandoff_v0.1_INTERNAL_YYYY-MM-DD.md     →  03_assessment/
 ```
+
+**Filenames use the engagement code, never the advisor's name** (Record Standards §1).
 
 **Version and status must be consistent** — Standards §4 makes `v0.x` a pre-approval draft and `v1.0` the
 first approved or issued version. If you find that rule contradicted anywhere, record it rather than
@@ -262,7 +257,8 @@ following the contradiction.
 
 Exactly these:
 
-1. **Engagement Understanding acceptance record**
+1. **Acceptance verification note** — one short paragraph confirming you checked the precondition and
+   what you found, including any element that did not check out
 2. **Clarification record** — what you asked, what you were told, what remains open, and the provenance
    tag on every material fact
 3. **L1 Materiality Worksheet** — all twelve modules

@@ -164,22 +164,33 @@ capability materiality as **Unknown** rather than **High** — the exact discipl
 > 14 at this firm means at least one prior move.** The Consultant would have caught it, and a caught
 > continuity error contaminates every answer after it.
 
-### 5a · Held back for your decision — these would pre-resolve the case
+### 5a · Removed by founder ruling 5 — and their approved replacements
 
-Two proposed answers were **removed** because they close the question Case 1 exists to test:
+**Four answers were struck** because each pre-resolves the question Case 1 exists to test:
 
-| Question | Proposed answer — **NOT approved** | Why it was pulled |
-|---|---|---|
-| **How much business do you want to run?** | *"Honestly? I don't want to run a business. I want the business I've got to work."* | Eliminates independent and supported-independent models in one sentence, before any analysis. |
-| **What would you turn down if offered?** | *"Anything that means starting over. I'm not building something from scratch at this stage."* | Same effect, and it **contradicts the Orientation**, where ownership/equity is marked ***Flexible*** — not excluded. |
+| Struck | Why |
+|---|---|
+| the advisor **never moved firms** | Contradicts 21 years industry / 14 at this firm, already in the Consultant's hands |
+| any answer **gesturing toward an internal desk** before it is properly elicited | Releases the capability position ahead of the question |
+| **"I don't want to run a business"** | Eliminates independent and supported-independent models in one sentence |
+| **"anything that means starting over"** is unacceptable | Same effect, and it contradicts the Orientation, where ownership/equity is ***Flexible*** — not excluded |
 
-**If asked either question, a neutral in-character answer that preserves the test:**
+**Founder-approved replacements. Use these — and only when properly asked:**
 
-> *"I've never really thought about it in those terms. I like serving clients. Whether I'd want to run the
-> whole thing — I don't know, I've never had to find out."*
+> **On operating complexity / how much business the advisor wants to run:**
+>
+> *"I have not decided how much additional operating complexity I would accept. My instinct is to preserve
+> simplicity, but I do not want to rule out a model before I understand what it would require."*
 
-**Your call.** If you want Case 1 to point away from independence, use the pulled answers — but change
-them **now**, before the Consultant builds on them, and record the change in §7.
+> **On disruption and what change would be justified:**
+>
+> *"I want to avoid unnecessary disruption, but I have not determined what level of change would be
+> justified if the service problem cannot be resolved."*
+
+> ### Do not volunteer these
+> **Neither response is offered before an appropriate Consultant question.** They are answers, not
+> positioning. Delivered unprompted they do the Consultant's work for it — which is the same defect as the
+> struck answers, in a more agreeable form.
 
 ---
 
@@ -222,11 +233,20 @@ consistent across stages and so the final report can separate *designed* facts f
 
 ---
 
-## 8 · Open — needs your answer before the session starts
+## 8 · The advisor's identity — settled
 
-**The advisor has no name.** Record Standards §4 requires **advisor identity** on any acceptance record,
-and §7 step 2 of the Consultant's brief requires that record before substantive L1 begins. **The
-Consultant cannot complete step 2 without one**, and it already flagged the absence at Stage 1.
+**The advisor is Evan Mercer** — a **wholly synthetic simulation identity**, ruled by the founder
+2026-08-01. Full governing rules: `CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md`.
 
-Supply a synthetic name, or rule that the acceptance record uses the engagement code alone and records the
-identity gap — either works, but it must be decided before launch, not improvised mid-session.
+**In session:**
+
+- Answer to the name. It appears in advisor-facing simulation artifacts and the acceptance record.
+- **Filenames stay `E-26-101`.** Never the name.
+- **Do not invent further identifying details** — age, city, firm name, school, prior employers — unless
+  something is operationally required. If it becomes required, log it in §7.
+- **The spouse stays role-only.** No name unless one becomes necessary.
+- **Never represent this identity as real** in any material that leaves the simulation record.
+
+**The Engagement Understanding acceptance is already recorded** and sits in the workspace at
+`engagements/E-26-101/02_agreement/`. The Consultant **verifies** it; it does not present the document or
+solicit acceptance. If it tries to, that is a finding — the precondition was met before this stage.
