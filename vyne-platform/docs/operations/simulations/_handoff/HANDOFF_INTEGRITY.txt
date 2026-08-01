@@ -78,9 +78,9 @@ All other six copies must checksum-match their source exactly.
 --------------------------------------------------------------------------------
 3. TO BE COMPLETED AT COPY TIME
 --------------------------------------------------------------------------------
-Workspace path ......................... ______________________________
-Copy performed (UTC) ................... ______________________________
-Performed by ........................... ______________________________
+Workspace path ......................... C:/Users/Greg Estrada/vyne-consultant-sim/case1
+Copy performed (UTC) ................... 2026-08-01T18:43:12Z
+Performed by ........................... Controller session (Claude Code), founder-directed
 
 WORKSPACE INVENTORY — must be EXACTLY seven files:
     find . -maxdepth 1 -type f -printf '%f\n' | sort
@@ -94,30 +94,30 @@ WORKSPACE INVENTORY — must be EXACTLY seven files:
       ORIENTATION_REVIEW_AND_ENTRY_DECISION.md
       THE_VYNE_CONSTITUTION.md
 
-  [ ] Inventory matches exactly — no extra file, no missing file
+  [x] Inventory matches exactly — no extra file, no missing file
 
 Copy-side SHA-256 (run in the workspace):
     cd "$DST" && sha256sum *.md
 
-  CASE1_CONSULTANT_LAUNCH_PACKAGE.md ... ______________________________
+  CASE1_CONSULTANT_LAUNCH_PACKAGE.md ... MATCH (verified 2026-08-01)
       expect ff5dc09e8f86820de8e35c123372ea1a2ea64c865e35e8bfbe400e9cafb921ce
-  CONSULTANT_OPERATING_PRINCIPLES.md ... ______________________________
+  CONSULTANT_OPERATING_PRINCIPLES.md ... MATCH (verified 2026-08-01)
       expect 247d2537f8a6002ce86c1c511ad85493adc91b9b279a0fd38534dd31c4f1809c
-  ADVISOR_ORIENTATION.md ............... ______________________________
+  ADVISOR_ORIENTATION.md ............... MATCH (verified 2026-08-01)
       expect 7d4011d1b72b00a79b816ad2e2773d306da0a1bc6d955b9c982b6c6df51a0623
-  ORIENTATION_REVIEW_AND_ENTRY_DECISION  ______________________________
+  ORIENTATION_REVIEW_AND_ENTRY_DECISION  MATCH (verified 2026-08-01)
       expect 2ff9306f681c31f69f323b92ec594efb68fdb4d2374c652f9a8d074b279e1584
-  ENGAGEMENT_RECORD_STANDARDS.md ....... ______________________________
+  ENGAGEMENT_RECORD_STANDARDS.md ....... MATCH (verified 2026-08-01)
       expect 77781fcc19657b7c76b68d77efcc2b84bdc1de4bea08a02431b434dafdcb038e
-  THE_VYNE_CONSTITUTION.md ............. ______________________________
+  THE_VYNE_CONSTITUTION.md ............. MATCH (verified 2026-08-01)
       expect 1c117b68ec3c9d81b19d044107a3d9cc3ad8a4ebd17938853d4f01ea141cfe21
-  ADVISOR_DECISION_ONTOLOGY.md ......... ______________________________
+  ADVISOR_DECISION_ONTOLOGY.md ......... MATCH to SANITIZED value (verified)
       expect 2a1e7815e780d4587901b19b7a995ea16783964b6ca64e3919c20f366c8c5c6f
       (SANITIZED value — differs from source by design; see §2)
 
-  [ ] Six of seven match their SOURCE hash exactly
-  [ ] The Ontology matches the EXPECTED SANITIZED hash — not merely "differs"
-  [ ] No file matches an unexpected value
+  [x] Six of seven match their SOURCE hash exactly
+  [x] The Ontology matches the EXPECTED SANITIZED hash — not merely "differs"
+  [x] No file matches an unexpected value
 
 --------------------------------------------------------------------------------
 4. CONTAMINATION CHECK — CONTROLLER-SIDE, RUN AT 8e75fb8
@@ -142,14 +142,14 @@ Copy-side SHA-256 (run in the workspace):
 --------------------------------------------------------------------------------
 5. WORKSPACE ISOLATION — CONFIRM AT COPY TIME
 --------------------------------------------------------------------------------
-  [ ] Workspace is OUTSIDE the controller repository
+  [x] Workspace is OUTSIDE the controller repository
         (repo containment verified impossible: a session at the repo root can
          read SIMULATION_CASE_PACKETS.md, which holds every hidden fact)
-  [ ] No .git directory ............ ls -la "$DST"
-  [ ] No symlinks .................. find "$DST" -type l      (expect: none)
-  [ ] No path back to controller ... grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"
-  [ ] Ontology pointer gone ........ grep -n "commercial/" "$DST/ADVISOR_DECISION_ONTOLOGY.md"
-  [ ] No fee terms anywhere ........ grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"
+  [x] No .git directory ............ ls -la "$DST"
+  [x] No symlinks .................. find "$DST" -type l      (expect: none)
+  [x] No path back to controller ... grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"
+  [x] Ontology pointer gone ........ grep -n "commercial/" "$DST/ADVISOR_DECISION_ONTOLOGY.md"
+  [x] No fee terms anywhere ........ grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"
         (all four greps expect: no output)
   [ ] Workspace is read-only relative to the controller repository —
       the Consultant cannot write into the repo
