@@ -77,13 +77,74 @@ intelligence required** · comparison dimensions · specialist dependencies · c
 *Founder may direct: gather more information · remove an option · add an option · return to
 consultation.*
 
-### E · Before Advisor-Facing Issuance
+### E · Before Advisor-Facing Issuance — select the minimum useful advisor package
 
 **Founder determines:** whether any advisor-facing document should be issued at all · which document or
 documents are useful · appropriate depth · what should be removed · **whether the recommendation and
 tone reflect founder judgment.**
 
+**Selectable:** *no formal document yet* · concise Consultation Summary · Decision Status or Closure
+Record · Recommendation & Decision Record · Firm/Model Comparison Appendix · focused firm-intelligence
+brief · due-diligence questions · economics analysis · next-steps roadmap · firm-specific authorization ·
+another narrowly defined output.
+
+**Record per case:**
+
+```
+ Documents proposed: ___________________________________________________
+ Documents approved by the founder: ____________________________________
+ Documents deliberately withheld: ______________________________________
+ Why each approved document materially helps this advisor: _____________
+ Why excluded internal artifacts remain internal: ______________________
+ Total proposed advisor-facing page count: ______
+ Does the package feel: ☐ premium ☐ useful ☐ excessive ☐ procedural
+```
+
+> **The complete set of artifacts created internally is never the default advisor package.**
+>
 > **Nothing is final until the founder approves it.**
+
+## 2a · Founder edits vs. baseline artifact changes
+
+> **The founder may revise the application of VYNE's judgment within each case — including scope,
+> materiality, questions, options, intelligence requirements, conclusions, tone, and advisor-facing
+> deliverables.**
+>
+> **These case-level founder decisions do not automatically amend the controlled artifact templates.**
+
+| **A · Case-specific founder judgment** | **B · Proposed artifact or methodology revision** |
+|---|---|
+| applies to the current advisor case | recorded in the **Simulation Defect Log** |
+| may be made at any checkpoint | **not implemented between cases** unless it qualifies as a **Critical Stop Finding** |
+| **does not change the common simulation baseline** | reviewed in the final Simulation Findings and Amendment Report |
+
+*This is what preserves the value of testing a common baseline. Editing judgment inside a case is the
+point; rewriting the templates between cases means cases 3–5 test a different system.*
+
+## 2b · Founder Intervention Log
+
+**At every checkpoint, record:**
+
+```
+ Claude's original proposed direction or treatment: ____________________
+ Founder decision: _____________________________________________________
+ Founder edits: ________________________________________________________
+ Rationale: ____________________________________________________________
+ Category: ☐ case-specific professional judgment
+           ☐ missing or inadequate firm intelligence
+           ☐ advisor-experience improvement
+           ☐ artifact defect
+           ☐ control failure
+           ☐ other: ____________
+ Downstream effect: ____________________________________________________
+ May the underlying artifact require revision after the simulations? ☐ yes ☐ no
+```
+
+> **Purpose: identify where founder judgment materially improves or changes the technology-assisted
+> work.** Without this, the final output looks like an uninterrupted AI result — which would misrepresent
+> where VYNE's value actually comes from.
+
+**Never presented to the simulated advisor.**
 
 ## 3 · The simulation is not an advisor deliverable
 
@@ -124,6 +185,34 @@ engine, and the operating artifacts must not be mistaken for the analysis.**
  ☐ What information requires advisor authorization to obtain
  ☐ What remains unknown
 ```
+
+### Sourcing approach — real public intelligence, synthetic advisor
+
+| | |
+|---|---|
+| **Synthetic in every case** | advisor · practice · team · book · objectives · constraints |
+| **REAL current public information** | Cases 3 and 4, and elsewhere where useful: actual wealth-management firms, platforms, affiliation models, industry programs |
+| **Synthetic advisor-specific proposals or confidential terms** | **only** where needed to test source asymmetry · normalization · transition economics · authorization · or recommendation controls |
+
+**Absolute limits:** **no firm is contacted** · **no confidential or nonpublic real advisor information is
+used** · **synthetic terms are labelled internally and are never represented as actual current firm
+terms.**
+
+**For every public firm-intelligence item, record:**
+
+```
+ Source: _______________________________________________________________
+ Retrieval date: ________   Effective date, if known: ________
+ Currency: ☐ current ☐ potentially stale ☐ unverified
+ Type: ☐ firm claim ☐ public document ☐ regulatory source
+       ☐ market observation ☐ other: ____________
+ What decision question it informs: ____________________________________
+ Would additional verification or authorization be required in a real
+ engagement? ☐ yes — what: ____________  ☐ no
+```
+
+> **The simulation should test whether VYNE can locate, organize, evaluate, date, and appropriately
+> qualify public firm intelligence — not merely whether the artifacts contain a field asking for it.**
 
 **Every simulated conclusion must combine all five:**
 
@@ -203,13 +292,35 @@ Proposed Advisor Package. **Not a hundred-page file.**
 *Chosen so each stresses a different control, and no two produce the same artifact set. Run **1 → 2 → 3 →
 4 → 5**, sequentially — each informs how the next is observed. **Not in parallel.***
 
-| # | Case | Primary stress | Firm-intelligence load | Expected end state |
-|---|---|---|---|---|
-| **1** | **Stay** — advisor arrives wanting to move; evidence supports staying | no-fee outcome · Gate T3 · **will VYNE actually conclude *stay*** | low–moderate: current-firm terms, one or two comparators | Full or Conditional Record · Gate triggered and cleared · **no authorization** |
-| **2** | **Wait** — a vesting date and an unresolved covenant dominate | **conditions on page one** · specialist prerequisite · Gate T3 | low: timing and program mechanics | **Conditional Record** · counsel dependency · no authorization |
-| **3** | **Employee-firm move** — narrows to two named firms | Appendix · **asymmetric source strength** · normalization · authorization chain | **high**: two named firms, one documented, one public-only | Full Record · **firm-level Appendix** · Gate · Authorization D/E/F |
-| **4** | **Supported independence** — capability-driven; a non-compensating alternative is live | Gate T1/T2 · **compensation separation** · **DD authorization *before* any Record** | **high**: platform capabilities, custody, economics | **DD Authorization (A/B/C) first** · then Record · Appendix |
-| **5** | **Advisor chooses against the recommendation** | the three separations · §12 tone · §4 advisor decision · disagreement without grievance | moderate | Full Record · advisor decision differs · **both positions recorded** |
+| # | Case | Primary stress | Firm-intelligence load | Gate | Expected end state |
+|---|---|---|---|---|---|
+| **1** | **Stay** — advisor arrives wanting to move; evidence supports staying | no-fee outcome · **will VYNE actually conclude *stay*** | moderate — **real public** | **T3 TRIGGERED** | Record · **Gate triggered, expect Cleared** · **no authorization** |
+| **2** | **Wait** — a vesting date and an unresolved covenant dominate | **conditions on page one** · specialist prerequisite | low–mod — **real public** | **T3 TRIGGERED** | **Conditional Record** · counsel dependency · no authorization |
+| **3** | **Employee-firm move** — narrows to two named firms | Appendix · **asymmetric source strength** · normalization · authorization chain | **high — REAL public, two named firms** | likely T1 | Full Record · **firm-level Appendix** · Gate · Authorization D/E/F |
+| **4** | **Supported independence** — capability-driven; a non-compensating alternative is live | **compensation separation** · **DD authorization *before* any Record** | **high — REAL public platforms** | **T1/T2 at recommendation stage** | **DD Auth (A/B/C) first** · then Record · Appendix |
+| **5** | **Advisor chooses against the recommendation** | the three separations · tone without grievance | moderate | per facts | Full Record · advisor decision differs · **both positions recorded** |
+
+### Gate expectations — corrected
+
+> **A "stay" or "wait" conclusion is not automatically conflict-free merely because VYNE earns no fee.
+> The Gate still tests whether the process and conclusion were treated consistently.**
+
+**Case 1 — Stay.** **T3 is triggered** because the advisor is considering staying. **The Gate is
+required.** Expected outcome may be *Triggered — Cleared* if the substantive and counterfactual tests
+support the stay conclusion. **No authorization should be created merely to keep the engagement moving.**
+
+**Case 2 — Wait.** **T3 is triggered** because the advisor is considering waiting. **The Gate is
+required**, and it must test **whether waiting received the same evidentiary and analytical treatment as
+a compensating move.** Specialist dependencies remain respected. **No firm-specific authorization unless
+a distinct due-diligence need arises and is separately approved.**
+
+**Case 4 — Supported independence.** Limited due-diligence authorization may occur **before** a
+Recommendation Record; **that authorization does not itself require the recommendation-stage Gate.** Once
+a directional recommendation is being prepared, **apply the frozen trigger screen** — and where
+triggered, **the Gate and cooling controls apply before any later recruiting introduction, submission, or
+transition-focused authorization.**
+
+> **Do not treat a no-fee outcome as proof that no conflict exists.**
 
 **Why this order.** Cases 1 and 2 are the least artifact-heavy and surface pacing problems early. Case 3
 first exercises the Appendix and the full authorization chain. **Case 4 is the only case that begins with
