@@ -51,6 +51,28 @@ expected to differ from source.
                      git diff --stat HEAD -- vyne-platform/docs/experience/ADVISOR_DECISION_ONTOLOGY.md
                    (expect: no output)
 
+  SOURCE hash ............ 027269d4af1219d0be60f19ef006713793cc4b8e47a43a94fdf681d23066025d
+  EXPECTED sanitized hash  2a1e7815e780d4587901b19b7a995ea16783964b6ca64e3919c20f366c8c5c6f
+
+  The expected value was computed in advance by applying the §2 sed to a
+  throwaway copy at commit 8e75fb8 and verifying the diff was EXACTLY:
+
+      246c246
+      < have none (see `../commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md`).
+      ---
+      > have none (see the Consultant Operating Principles).
+
+  One line. No other change. Residual "commercial/" matches: 0.
+
+  Why pre-computed: a hash recorded after the fact only documents what
+  happened. A pre-computed expected value proves the sanitization did what
+  was intended AND NOTHING ELSE — a later mismatch cannot be excused as
+  "the expected modification."
+
+  If the copy hash differs from the expected value, DO NOT PROCEED until the
+  cause is identified. Benign explanations exist (line-ending normalization
+  by the copy tool), but they must be confirmed rather than assumed.
+
 All other six copies must checksum-match their source exactly.
 
 --------------------------------------------------------------------------------
@@ -60,20 +82,42 @@ Workspace path ......................... ______________________________
 Copy performed (UTC) ................... ______________________________
 Performed by ........................... ______________________________
 
+WORKSPACE INVENTORY — must be EXACTLY seven files:
+    find . -maxdepth 1 -type f -printf '%f\n' | sort
+
+  Expected output, exactly:
+      ADVISOR_DECISION_ONTOLOGY.md
+      ADVISOR_ORIENTATION.md
+      CASE1_CONSULTANT_LAUNCH_PACKAGE.md
+      CONSULTANT_OPERATING_PRINCIPLES.md
+      ENGAGEMENT_RECORD_STANDARDS.md
+      ORIENTATION_REVIEW_AND_ENTRY_DECISION.md
+      THE_VYNE_CONSTITUTION.md
+
+  [ ] Inventory matches exactly — no extra file, no missing file
+
 Copy-side SHA-256 (run in the workspace):
     cd "$DST" && sha256sum *.md
 
   CASE1_CONSULTANT_LAUNCH_PACKAGE.md ... ______________________________
+      expect ff5dc09e8f86820de8e35c123372ea1a2ea64c865e35e8bfbe400e9cafb921ce
   CONSULTANT_OPERATING_PRINCIPLES.md ... ______________________________
+      expect 247d2537f8a6002ce86c1c511ad85493adc91b9b279a0fd38534dd31c4f1809c
   ADVISOR_ORIENTATION.md ............... ______________________________
+      expect 7d4011d1b72b00a79b816ad2e2773d306da0a1bc6d955b9c982b6c6df51a0623
   ORIENTATION_REVIEW_AND_ENTRY_DECISION  ______________________________
+      expect 2ff9306f681c31f69f323b92ec594efb68fdb4d2374c652f9a8d074b279e1584
   ENGAGEMENT_RECORD_STANDARDS.md ....... ______________________________
+      expect 77781fcc19657b7c76b68d77efcc2b84bdc1de4bea08a02431b434dafdcb038e
   THE_VYNE_CONSTITUTION.md ............. ______________________________
+      expect 1c117b68ec3c9d81b19d044107a3d9cc3ad8a4ebd17938853d4f01ea141cfe21
   ADVISOR_DECISION_ONTOLOGY.md ......... ______________________________
-      (expected to DIFFER from source — see §2)
+      expect 2a1e7815e780d4587901b19b7a995ea16783964b6ca64e3919c20f366c8c5c6f
+      (SANITIZED value — differs from source by design; see §2)
 
-  [ ] Six of seven match source exactly
-  [ ] The one divergence is the Ontology, and only the §2 change explains it
+  [ ] Six of seven match their SOURCE hash exactly
+  [ ] The Ontology matches the EXPECTED SANITIZED hash — not merely "differs"
+  [ ] No file matches an unexpected value
 
 --------------------------------------------------------------------------------
 4. CONTAMINATION CHECK — CONTROLLER-SIDE, RUN AT 8e75fb8
@@ -138,6 +182,12 @@ Moved or pasted back to the Controller — ONLY these four:
   [ ] explicit information requests or stated limitations
 
 Nothing else returns. The Consultant does not write into the repository.
+
+PRESERVE THE OUTPUTS AS PRODUCED.
+  Do not clean up, expand, reformat, or correct the Consultant's output before
+  returning it. Its rough edges ARE the evidence — an awkward entry record or a
+  request for information the Orientation failed to collect is a finding, not a
+  defect to be tidied away before the Controller sees it.
 
 Returned (UTC) ......................... ______________________________
 
