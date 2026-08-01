@@ -215,10 +215,13 @@ firm-specific terms are never disclosed — see §10.)*
    non-compensating options.**
 4. **Recommendation rationale.** Every conclusion documents: why it fits · material drawbacks ·
    assumptions · unknowns · alternatives considered · what could change the conclusion.
-5. **Higher-conflict review** (extra founder review) when: the recommended firm pays materially more
-   than a close alternative · a non-paying alternative looks substantively stronger · the advisor is
-   considering **staying** · the advisor is considering **launching an RIA** · VYNE establishes a fee
-   agreement **after** analysis began · VYNE has another financial relationship with a provider.
+5. **Higher-conflict review** (extra founder review) when: the recommended **option** pays materially
+   more than a close alternative · a **non-compensating** alternative looks substantively stronger · the
+   advisor is considering **staying** or **waiting** · the advisor is considering **launching an RIA** ·
+   VYNE establishes a fee agreement **after** analysis began · VYNE has another financial relationship
+   with a provider. *(Conforming amendment, founder 2026-08-01: "firm" → "option"; "non-paying" →
+   "non-compensating"; **"or waiting" restored** — aligning to the controlling Consultation Architecture
+   §14 formulation. Wording consistency only; no change to conflict-control methodology.)*
 6. **Compensation disclosure record.** Document what the advisor was told, and when.
 7. **No unsupported "best firm" language.** VYNE may identify the strongest fit the evidence supports;
    it does **not** describe a firm as universally best.

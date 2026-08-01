@@ -4,15 +4,17 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Gate Completion Guidance, Source Mapping, Worked Examples & Critique
 
-**Companion to:** 9A `HIGHER_CONFLICT_DECISION_GATE.md` · **Date:** 2026-07-25
+**Companion to:** 9A `HIGHER_CONFLICT_DECISION_GATE.md` (v0.2) · **Date:** 2026-07-25, updated 2026-08-01
 **Status:** review material, not an artifact
 
 ---
 
-## 1 · Trigger-source mapping — **⚠ conflict flagged**
+## 1 · Trigger-source mapping — **RESOLVED (founder, 2026-08-01)**
 
-**The three authoritative sources do not agree.** Per founder direction, this is flagged rather than
-silently resolved.
+> **Founder decision: Consultation Architecture §14 is the controlling formulation.** Assessment
+> Architecture §7.5 and Commercial Principles §8.5 were amended to conform *(option · non-compensating ·
+> "or waiting" restored)*. **These were consistency amendments, not a substantive expansion of doctrine.**
+> The table below records the pre-amendment state for traceability.
 
 | # | **Consultation Architecture §14** *(FROZEN)* | **Assessment Architecture §7.5** *(approved)* | **Commercial Principles §8.5** *(operational)* |
 |---|---|---|---|
@@ -40,26 +42,43 @@ firm is named.
 preferred because it matches the four-category internal notation used in every other artifact
 *(compensating / potentially compensating / non-compensating / compensation unknown)*.
 
-### Provisional resolution — **requires founder confirmation**
+### Resolution — founder decision, 2026-08-01
 
-**Adopt Consultation Architecture §14** as authoritative, because it is:
+**Consultation Architecture §14 adopted as controlling**, because it is:
 
 1. **frozen** *(Consultation Architecture is APPROVED & FROZEN)*;
 2. the **most recent** formulation;
-3. the **broadest in scope** *("option," and "staying or waiting")*;
+3. the **broadest in scope** *("option," and "staying or waiting")* — it applies **before and after**
+   specific firms are identified;
 4. **already implemented** in the built operating artifacts — Consultation Brief §10, L1 Handoff §13, and
-   Internal Consultation Record all use *staying · waiting · launching an RIA · non-compensating
-   alternative may be stronger · other*;
+   Internal Consultation Record;
 5. consistent with Commercial Principles' own status as an **operational document subordinate to the
    frozen architecture**.
 
-**T7** is not a new trigger — it records **Assessment Architecture §7.5's framing clause**, which
-presents the six as *"including"* examples of a general test. Without T7, a novel conflict fitting the
-governing test but not the six examples would pass unflagged.
+**Conforming amendments made (2026-08-01):**
 
-> **Founder action required:** confirm this resolution and authorize a **conforming amendment to
-> Commercial Principles §8.5** — adding *"or waiting"*, and aligning *option* and *non-compensating*.
-> Until then the Gate operates on the frozen formulation, and the discrepancy stands recorded.
+| Document | Amendment |
+|---|---|
+| **Assessment Architecture §7.5** | "firm" → **"option"** · "non-paying" → **"non-compensating"** *(already had "or waiting")* |
+| **Commercial Principles §8.5** | "firm" → **"option"** · "non-paying" → **"non-compensating"** · **"or waiting" restored** |
+
+*Each amendment carries an inline note recording that it is a wording-consistency change with no effect
+on conflict-control methodology. No unrelated frozen section was reopened.*
+
+### The general material-conflict screen — not a seventh trigger
+
+**T7 was renamed and relocated.** It now sits **after** the six as the **General material-conflict
+screen**, applying Assessment Architecture §7.5's governing test:
+
+> *"Does any other circumstance create a reasonable concern that VYNE's compensation may have affected
+> the options considered, evidence requested, comparison treatment, ordering, timing, rationale,
+> recommendation, or next step?"*
+
+> **This is a catch-all application of the governing conflict test. It is not a seventh enumerated
+> trigger and does not alter the frozen six-trigger set.**
+
+Same three-state response and the same rules. Without it, a novel conflict fitting the governing test but
+not the six named examples would pass unflagged.
 
 ## 2 · Status and outcome matrix
 

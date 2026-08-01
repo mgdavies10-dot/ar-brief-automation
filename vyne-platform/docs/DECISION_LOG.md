@@ -23,6 +23,37 @@ Governance metadata index and full records from DL-2026-012 onward:
 | DL-2026-012 | 2026-07-20 | Approved — Option B (conditions open) | M2 verification environment; provisional M2 acceptance; real-Supabase rerun binding — see governance/decision-log/DL-2026-012-m2-environment-decision.md |
 
 ## Founder directions recorded by the Lead Engineer (pending council DL numbering)
+- 2026-08-01 — **Higher-Conflict Decision Gate trigger set: Consultation Architecture §14 is
+  controlling; conforming amendments to two parallel documents; Artifact 9 approved.** While drafting the
+  Gate (Artifact 9), the Lead Engineer retrieved the six triggers from the frozen sources as directed and
+  **flagged a conflict** rather than inventing or silently resolving one: Consultation Architecture §14
+  said *option · non-compensating · staying **or waiting***; Assessment Architecture §7.5 said *firm ·
+  non-paying · staying or waiting*; Commercial Principles §8.5 said *firm · non-paying · **staying only***.
+  **Founder ruling:** *"The Consultation Architecture §14 trigger formulation is the controlling
+  expression because it is the most complete, applies at both model and firm level, and is already
+  incorporated into downstream operating artifacts. The amendments conform parallel and subordinate
+  documents and do not change VYNE's underlying conflict-control methodology."* Conforming amendments
+  made: **Assessment Architecture §7.5** ("firm"→"option", "non-paying"→"non-compensating") and
+  **Commercial Principles §8.5** (same, plus **"or waiting" restored**). The omission of *waiting* was the
+  material discrepancy — waiting is a common no-fee outcome and a Gate that did not fire on it would miss
+  a large share of genuine conflict situations. No unrelated frozen section reopened. **T7 kept but
+  reclassified:** it is now the **General material-conflict screen**, placed after the six and applying
+  Assessment Architecture §7.5's governing test — *"a catch-all application of the governing conflict
+  test; not a seventh enumerated trigger; does not alter the frozen six-trigger set."* **Gate rerun and
+  archive rule added:** every Gate is tied to a specific Record version and is never overwritten;
+  substantive change → new Record version and new Gate; new material information does not carry prior
+  clearance forward; a non-substantive documentation correction uses a new Gate version or addendum
+  against the same Record version; superseded Gates are archived with the Record version they governed;
+  the current Record references the current Gate; a new triggered Gate restarts the one-full-business-day
+  authorization cooling period. ***"A Gate establishes the control result for the identified Record
+  version at the stated time. It is not permanent clearance for the engagement."*** **Control-
+  effectiveness review added** after the earlier of ten triggered Gates or twelve months of production
+  use, examining triggered/pending/not-cleared counts, upstream returns, new versions required, and
+  **whether written counterfactual responses show meaningful variation** — with the standing caution:
+  ***"A Gate that never identifies a defect is not automatically evidence that every engagement was
+  unaffected by conflict. It may indicate that the trigger set, questions, administration, or review
+  process requires strengthening."*** Artifact 9 **APPROVED as a controlled operating draft**. Change
+  level 2 (operating artifacts + conforming consistency amendments; no code/scope change).
 - 2026-07-25 — **Public scenario calculators: narrow Phase-3 product exception approved; frozen doctrine
   NOT amended.** Prompted by a competitor (Bridgemark Strategies) publishing four public calculators. The
   Lead Engineer surfaced a conflict with frozen doctrine (Content Architecture §13 "no calculators

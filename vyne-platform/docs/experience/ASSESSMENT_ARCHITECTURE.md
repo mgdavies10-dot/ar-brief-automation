@@ -221,11 +221,13 @@ The real, provable control is **analytical separation**.*
    remain eligible for consideration** (open-market notation; non-compensating options are never
    auto-removed).
 5. **Higher-conflict review** applies when a financially preferable outcome for VYNE differs from the
-   substantively stronger outcome for the advisor — including: the recommended firm pays materially more
-   than a close alternative · a non-paying alternative looks substantively stronger · the advisor is
-   considering **staying** or **waiting** · the advisor is considering **launching an RIA** · a fee
-   agreement is established *after* analysis began · another financial relationship with a provider
-   exists.
+   substantively stronger outcome for the advisor — including: the recommended **option** pays materially
+   more than a close alternative · a **non-compensating** alternative looks substantively stronger · the
+   advisor is considering **staying** or **waiting** · the advisor is considering **launching an RIA** ·
+   a fee agreement is established *after* analysis began · another financial relationship with a provider
+   exists. *(Conforming amendment, founder 2026-08-01: "firm" → "option"; "non-paying" →
+   "non-compensating" — aligning to the controlling Consultation Architecture §14 formulation. Wording
+   consistency only; no change to conflict-control methodology.)*
 6. **The record documents** the advisor-facing compensation disclosure and any conflict review
    performed.
 

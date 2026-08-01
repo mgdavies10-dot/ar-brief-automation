@@ -5,8 +5,8 @@ FOUNDER-ADMINISTERED INTERNAL CONFLICT CONTROL — NOT INDEPENDENT REVIEW
 
 # Higher-Conflict Decision Gate
 
-**Artifact:** 9A · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-07-25
-**Status:** DRAFT for founder review · **⚠ Trigger-source conflict flagged — see §2 note**
+**Artifact:** 9A · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-07-25
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-08-01; conforming revisions applied)
 
 > ## Governing premise
 > **The Higher-Conflict Decision Gate is a short, auditable internal issuance control. Its purpose is to
@@ -47,13 +47,15 @@ FOUNDER-ADMINISTERED INTERNAL CONFLICT CONTROL — NOT INDEPENDENT REVIEW
 
 ## §2 · Trigger screen — from the frozen sources
 
-> ### ⚠ Source conflict — flagged, provisionally resolved, requires founder confirmation
-> The three authoritative sources **do not agree**. This Gate adopts the **Consultation Architecture §14**
-> formulation because it is the **frozen** source, the most recent, the broadest in scope, and the one the
-> already-built operating artifacts follow. **Commercial Principles §8.5 requires a conforming
-> amendment.** Full mapping in the completion guidance (9B §1).
+> ### Source resolved — founder decision, 2026-08-01
+> **Consultation Architecture §14 is the controlling formulation** of the six triggers: *option* (not
+> merely firm) · *non-compensating* (not merely non-paying) · *staying **or waiting*** (not staying
+> alone). **Assessment Architecture §7.5 and Commercial Principles §8.5 have been amended to conform.**
+> These were consistency amendments, not a change in methodology. Mapping in 9B §1.
 
-| # | Trigger *(Consultation Architecture §14 — frozen)* | Yes | No | Insuff. | Basis / source reference |
+**The six controlling triggers**
+
+| # | Trigger | Yes | No | Insuff. | Basis / source reference |
 |---|---|---|---|---|---|
 | **T1** | The recommended **option** pays materially more than a close alternative | ☐ | ☐ | ☐ | |
 | **T2** | A **non-compensating** alternative appears substantively stronger | ☐ | ☐ | ☐ | |
@@ -61,17 +63,27 @@ FOUNDER-ADMINISTERED INTERNAL CONFLICT CONTROL — NOT INDEPENDENT REVIEW
 | **T4** | The advisor is considering **launching an RIA** | ☐ | ☐ | ☐ | |
 | **T5** | A fee agreement is established **after** analysis began | ☐ | ☐ | ☐ | |
 | **T6** | **Another financial relationship** with a provider exists | ☐ | ☐ | ☐ | |
-| **T7** | **Other** — a financially preferable outcome for VYNE differs from the substantively stronger outcome for the advisor *(the governing test, per Assessment Architecture §7.5)* | ☐ | ☐ | ☐ | |
 
-**Rules**
+### General material-conflict screen
+
+*Completed after the six triggers above.*
+
+> **Does any other circumstance create a reasonable concern that VYNE's compensation may have affected
+> the options considered, evidence requested, comparison treatment, ordering, timing, rationale,
+> recommendation, or next step?**
+
+**☐ Yes ☐ No ☐ Insufficient information** — Basis: ______________________________
+
+> **This is a catch-all application of the governing conflict test. It is not a seventh enumerated
+> trigger and does not alter the frozen six-trigger set.**
+
+*If Yes, state why none of the six captured it.*
+
+**Rules — applying to the six triggers and the general screen alike**
 
 - **Any Yes → Triggered.**
 - **A material *Insufficient information* → Pending.** The Gate cannot clear on an unresolved trigger.
 - **All No → Not triggered.** *Not triggered is a valid and common result.*
-
-> **T7 is not an invented seventh trigger.** Assessment Architecture §7.5 frames the six as *"including"*
-> examples of a general test. T7 records that governing test so a novel conflict is not missed merely
-> because it is unlisted. **If T7 alone is Yes, state why the listed six did not capture it.**
 
 > **Relative compensation alone is neither proof of improper influence nor proof that no conflict
 > exists. Apply the approved triggers and the substantive tests below.**
@@ -286,7 +298,47 @@ conditions · **why legitimate alternatives were treated as they were.**
 > This attestation does not state that VYNE has no financial interest or that the review was
 > independent."**
 
-## §14 · Relationship to Artifact 7B
+## §14 · Gate rerun, versioning, and archive
+
+> **Every Gate is tied to a specific Recommendation & Decision Record version. A completed Gate is never
+> overwritten.**
+
+| Situation | Required action |
+|---|---|
+| **Substantive change** to options, weighting, rationale, conditions, recommendation, timing, or next step | **New Record version and a new Gate.** |
+| **New material information**, conclusion unchanged | Evaluate through the Record lifecycle. **Prior Gate clearance does not automatically carry forward.** If the Record is updated, a new Gate is completed where required. |
+| **Non-substantive documentation correction** | Prior Gate **preserved**. Issue a **new Gate version or completion addendum tied to the same Record version**, identifying the correction. |
+| **Any superseded Gate** | **Archived with the Record version it governed.** Never deleted, never overwritten. |
+
+```
+ This Gate governs Record version: ____
+ Supersedes Gate: ____   Archived at: ____________
+ Current Record references current Gate: ☐ confirmed
+```
+
+- **The current Record must reference the current Gate.**
+- **Prior Gates remain preserved and traceable.**
+- **If a new triggered Gate is completed, the one-full-business-day authorization cooling period
+  restarts** (§10).
+
+> **A Gate establishes the control result for the identified Record version at the stated time. It is not
+> permanent clearance for the engagement.**
+
+## §15 · Control-effectiveness review
+
+**Conduct an internal review after the earlier of: ten triggered Gates, or twelve months of production
+use.**
+
+**Review:** number triggered · number Pending · number **Not cleared** · number returned upstream ·
+number requiring a new Record version · **whether written counterfactual responses show meaningful
+variation and substance** · whether the control is identifying genuine process defects or operating as
+attestation-only.
+
+> **A Gate that never identifies a defect is not automatically evidence that every engagement was
+> unaffected by conflict. It may indicate that the trigger set, questions, administration, or review
+> process requires strengthening.**
+
+## §16 · Relationship to Artifact 7B
 
 **The completed Gate is the authoritative Gate artifact.** The interim status block in the Internal
 Record Assembly and Issuance Record (7B §4) **remains only as a summary and reference — it does not
