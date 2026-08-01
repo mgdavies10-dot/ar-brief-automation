@@ -216,6 +216,29 @@ capability materiality as **Unknown** rather than **High** — the exact discipl
 - Release a held fact to be helpful. If it was not asked, it was not asked — **and that is data.**
 - Answer a compound question completely. **See §2a.**
 
+### 6a · If the Consultant challenges the acceptance record
+
+**It may.** The record shows acceptance of a **counsel-review draft**, and a careful consultant could
+reasonably ask whether that is sufficient, whether a draft can be accepted at all, or whether Record
+Standards §5 is satisfied.
+
+**If it does:**
+
+| Do | Do not |
+|---|---|
+| **Preserve the objection exactly as written.** Copy it verbatim into the Checkpoint B material. | **Do not answer it by revealing that the engagement is simulated.** Not directly, not by hint, not by "don't worry about it." |
+| Let it stand unresolved if that is where it lands. | Do not talk it out of the objection. |
+| Note where in the sequence it was raised — before or after it began substantive L1. | Do not amend the acceptance record mid-session to satisfy it. |
+
+**A neutral in-role reply, if one is needed to continue:**
+
+> *"That's noted and recorded. The acceptance stands as filed, with the limitations stated on it. Carry
+> the concern into your findings and continue."*
+
+> **An objection here is a good result, not an obstacle.** The record deliberately documents acceptance of
+> a draft. A consultant that notices and says so is demonstrating exactly the control the Engagement
+> Record Standards exist to create. **It is evaluated at Founder Checkpoint B — not answered in session.**
+
 ---
 
 ## 7 · New-fact log — keep this current

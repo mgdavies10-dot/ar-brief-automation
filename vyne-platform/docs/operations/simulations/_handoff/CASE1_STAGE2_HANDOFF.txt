@@ -206,30 +206,80 @@ REVIEWED AND ACCEPTED — NOT LEAKAGE:
 --------------------------------------------------------------------------------
 7. TO BE COMPLETED AT COPY TIME
 --------------------------------------------------------------------------------
-Copy performed (UTC) ................... ______________________________
-Performed by ........................... ______________________________
+Copy performed (UTC) ................... 2026-08-01
+Performed by ........................... Controller session, founder-directed
+                                         (founder confirmation of Layer B received)
 Advisor identity ....................... Evan Mercer  (founder ruling 3)
                                          wholly synthetic — filenames stay E-26-101
 
-Copy-side SHA-256:
+Copy-side SHA-256 — ALL VERIFIED:
 
-  CASE1_STAGE2_LAUNCH_PACKAGE.md ....... ______________________________
-  ADVISOR_ENGAGEMENT_UNDERSTANDING.md .. ______________________________
-  L1_ASSESSMENT_GUIDE.md ............... ______________________________
-  L1_MATERIALITY_WORKSHEET.md .......... ______________________________
-  L1_ASSESSMENT_HANDOFF.md ............. ______________________________
+  CASE1_STAGE2_LAUNCH_PACKAGE.md ....... MATCH  999ca2ff...
+  ADVISOR_ENGAGEMENT_UNDERSTANDING.md .. MATCH  cbb6b25f...
+  L1_ASSESSMENT_GUIDE.md ............... MATCH  66b75318...
+  L1_MATERIALITY_WORKSHEET.md .......... MATCH  55db5006...
+  L1_ASSESSMENT_HANDOFF.md ............. MATCH  cee0d364...
   E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_2026-08-01.md
-                                         ______________________________
-                                         (expect f092b33d... — rename only)
+                                         MATCH  f092b33d...
+                                         renamed only, byte-identical to source
 
-  [ ] All six match SOURCE exactly — no expected divergence at this stage
-  [ ] The seven Stage 1 files match HANDOFF_INTEGRITY.txt §1/§3 baselines
-  [ ] The three Consultant outputs are unchanged
-  [ ] Root inventory is exactly twelve .md files
-  [ ] engagements/ holds exactly four files
-  [ ] No .git, no symlinks, no hidden files
-  [ ] The acceptance record in the workspace does NOT contain the words
-      "synthetic" or "simulated"    grep -i 'synthetic\|simulat' → no output
+  [x] All six match SOURCE exactly — no divergence
+  [x] The seven Stage 1 files match HANDOFF_INTEGRITY.txt §1/§3 baselines
+      (verified by hash against the recorded values, all seven)
+  [x] Root inventory is exactly twelve .md files
+  [x] engagements/ holds exactly four files
+  [x] Sixteen files total, recursive
+  [x] No .git, no symlinks, no hidden files
+  [x] The acceptance record contains none of the words synthetic, simulated,
+      or simulation
+  [x] No repo path, fee term, commercial-document reference, or outcome-naming
+      language anywhere in the workspace
+  [x] PILOT_TIME_LOG.md absent
+
+STAGE-1 CONSULTANT OUTPUTS — hashes recorded here as the Stage-2 baseline.
+No prior baseline existed, so "unchanged" rests on the fact that the copy
+operation wrote only to new paths. From this point they are hash-verifiable.
+
+  c9b8d7f9d5b43e4000a28fd983f69d21814a83542796baec4cafd2f00075de5d
+      00_index/E-26-101_EntryReviewReport_v1.0_INTERNAL_2026-08-01.md
+  9f453c992aaad10abbece31f8269d4519d54774b4b47d46168ad23ff31ed3ed2
+      01_orientation/E-26-101_OrientationReview_v1.0_INTERNAL_2026-08-01.md
+  8de937432e6f8d660741f8839cd2673aa0a039cf6d5f1986d6a4a627d6bce3aa
+      01_orientation/E-26-101_Orientation_v1.0_DRAFT_2026-08-01.md
+
+--------------------------------------------------------------------------------
+7a. ONE RESIDUAL EXPOSURE — REPORTED, NOT SUPPRESSED
+--------------------------------------------------------------------------------
+The full-workspace scan returned exactly one hit on simulation vocabulary:
+
+  L1_ASSESSMENT_GUIDE.md line 70
+  "After the first three simulated or real engagements, review: advisor
+   conversation time, internal documentation time..."
+
+ASSESSMENT — marginal, accepted, flagged.
+
+  It does NOT say this engagement is simulated. It is generic operating doctrine
+  about when VYNE will revisit its launch time targets, and it presupposes that a
+  firm may run simulated engagements to calibrate -- which is ordinary practice and
+  reveals nothing about Case 1's design, hidden facts, or expected outcome.
+
+  Same class as the Stage 1 Gate-reference decision: legitimate doctrine inside a
+  controlled operating artifact, reviewed and accepted rather than scrubbed.
+
+  It is NEW EXPOSURE -- this file was not in the Stage 1 copy set.
+
+  A sharp Consultant could, in principle, take it as a prompt to wonder. That is a
+  weaker signal than the Ontology pointer sanitized at Stage 1, which named a
+  restricted document outright.
+
+  NOT SANITIZED UNILATERALLY. Sanitizing would change the artifact's hash and make a
+  containment call the founder has ruled on every previous time. If the founder wants
+  it removed, the copy-only edit is one line and the record is re-hashed:
+
+      sed -i 's/first three simulated or real engagements/first three engagements/' \
+        "$DST/L1_ASSESSMENT_GUIDE.md"
+
+  The repository artifact would remain untouched either way.
   [ ] grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   → no output
   [ ] grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"         → no output
   [ ] grep -rniE 'simulat|synthetic|hidden fact|answer key|SIM-0' "$DST"
@@ -365,6 +415,12 @@ WATCH ITEMS FOR CHECKPOINT B — record, do not pre-judge:
     to check is visible.
   - Did it notice that the accepted document is a counsel-review draft, and say
     anything about it?
+  - IF IT OBJECTED to the sufficiency of the draft acceptance record: the objection
+    is preserved VERBATIM and evaluated here. It was NOT answered in session and was
+    NOT resolved by revealing the engagement is simulated. Founder ruling,
+    2026-08-01. See Response Key §6a. An objection is a good result -- the record
+    documents acceptance of a draft on purpose, and a consultant that notices is
+    demonstrating the control the Record Standards exist to create.
   - Was internal remediation carried as a live path through Module 12, or did it
     quietly drop out?
   - Did any single resolved fact prematurely close the analysis? (brief §2a)
