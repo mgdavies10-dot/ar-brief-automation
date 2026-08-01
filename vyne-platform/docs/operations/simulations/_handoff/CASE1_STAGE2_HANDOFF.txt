@@ -1,0 +1,310 @@
+================================================================================
+VYNE SIMULATION — CASE 1 STAGE 2 HANDOFF AND INTEGRITY RECORD
+Controller record. Not copied to the Consultant workspace.
+================================================================================
+
+STAGE
+  Stage ...................... 2 of 2 before Checkpoint B
+  Covers ..................... Engagement Understanding acceptance (simulated)
+                               targeted clarification follow-up
+                               L1 Assessment (all twelve modules)
+  Stops at ................... Founder Checkpoint B, before consultation prep
+  Authorized by .............. Founder rulings A-G, 2026-08-01
+                               Founder controls 1-7, 2026-08-01
+  Case ....................... SIM-01 (Stay)
+  Workspace .................. C:/Users/Greg Estrada/vyne-consultant-sim/case1
+                               (exists; Stage 1 verified 2026-08-01)
+
+  STATUS: PREPARED — NOT LAUNCHED.
+  Blocking: founder approval of the Advisor Response Key, the advisor identity
+  question (Response Key §8), and the three flagged items in §10 below.
+
+--------------------------------------------------------------------------------
+1. THIS IS A DELTA, NOT A NEW WORKSPACE
+--------------------------------------------------------------------------------
+The Stage 1 workspace stands. Its seven files and the three Consultant outputs
+under engagements/E-26-101/ remain in place and are NOT re-copied, moved, or
+edited.
+
+  Do NOT delete CASE1_CONSULTANT_LAUNCH_PACKAGE.md. It is the record of the
+  entry-stage instruction. The Stage 2 brief carries an explicit supersession
+  line (line 13) so the fresh session cannot mistake which governs.
+
+  Do NOT edit the Consultant's three returned files. They are evidence.
+
+  Stage 1 baseline hashes for the seven files: HANDOFF_INTEGRITY.txt §1 and §3.
+  Verify against those, not from memory.
+
+--------------------------------------------------------------------------------
+2. SIMULATION-ONLY USE OF THE ENGAGEMENT UNDERSTANDING — CONFIRMED
+--------------------------------------------------------------------------------
+ADVISOR_ENGAGEMENT_UNDERSTANDING.md is used in Stage 2 ONLY as a synthetic
+simulation instrument, with SIMULATED version-specific acceptance by a SYNTHETIC
+advisor.
+
+  It remains: DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE.
+
+  It has NO production legal effect. Nothing recorded in this simulation
+  constitutes acceptance by any real person, creates any obligation, or
+  advances counsel review.
+
+  FOR PRODUCTION: no substantive assessment may begin until the counsel-approved
+  version is accepted by the advisor, version-specifically.
+
+  The Consultant is NOT told this is a simulation. It is told the document is a
+  counsel-review draft with no production legal effect, that the founder has
+  expressly authorized its use for this engagement notwithstanding that status,
+  and that a later counsel-approved version requires fresh acceptance. All of
+  that is true as stated. See Stage 2 brief §4a.
+
+--------------------------------------------------------------------------------
+3. FIVE FILES TO COPY — SOURCE SHA-256
+--------------------------------------------------------------------------------
+Paths relative to  vyne-platform/docs/
+
+c81748c1a2640b56b64625337ab6d39d31cd9e260cc552dd6ed3f863a5a43542
+    operations/simulations/_handoff/CASE1_STAGE2_LAUNCH_PACKAGE.md
+cbb6b25ffb7ac185cd05b9cbdd5e5e0563c9c9f0c66878fcc095822729112fc3
+    operations/ADVISOR_ENGAGEMENT_UNDERSTANDING.md
+66b7531899b4b1bb87e98f22d92a58ef661343d0db795f083845df7c9ead1e49
+    operations/L1_ASSESSMENT_GUIDE.md
+55db5006abb10ed8e9025965b23cf26e6c248984086b761a603956017e3a6f0a
+    operations/L1_MATERIALITY_WORKSHEET.md
+cee0d36436c38ae2c40551dc90e1189d02efb67d22622cea4f9562e449d6d1aa
+    operations/L1_ASSESSMENT_HANDOFF.md
+
+  NO SANITIZATION REQUIRED. All five scan clean at source for relative paths,
+  repository names, fee percentages, amounts, step-ups, clawbacks, T12/TTMP, and
+  any reference to BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md.
+
+  Every copy must checksum-match its source EXACTLY. Unlike Stage 1 there is no
+  expected divergence. Any mismatch is a defect, not a design.
+
+  Workspace after copy: 12 .md at root + 3 Consultant outputs under engagements/
+
+--------------------------------------------------------------------------------
+3a. COPY PROCEDURE — the five files live in TWO directories
+--------------------------------------------------------------------------------
+    SRC=~/Documents/ar-brief-automation/vyne-platform/docs
+    DST=~/vyne-consultant-sim/case1
+
+    cp "$SRC/operations/simulations/_handoff/CASE1_STAGE2_LAUNCH_PACKAGE.md" "$DST/"
+    cp "$SRC/operations/ADVISOR_ENGAGEMENT_UNDERSTANDING.md"                 "$DST/"
+    cp "$SRC/operations/L1_ASSESSMENT_GUIDE.md"                              "$DST/"
+    cp "$SRC/operations/L1_MATERIALITY_WORKSHEET.md"                         "$DST/"
+    cp "$SRC/operations/L1_ASSESSMENT_HANDOFF.md"                            "$DST/"
+
+    cd "$DST" && sha256sum *.md
+    find . -maxdepth 1 -type f | wc -l          # expect 12
+
+--------------------------------------------------------------------------------
+4. WHAT MUST NOT BE COPIED
+--------------------------------------------------------------------------------
+  CASE1_STAGE2_ADVISOR_RESPONSE_KEY.md .......... FOUNDER ONLY — the answers,
+                                                  the release schedule, and the
+                                                  provenance ledger
+  CASE1_CHECKPOINT_A.md ......................... controller record
+  SIMULATION_CASE_PACKETS.md .................... the answer key
+  SIMULATION_SETUP.md · SIMULATION_PHASE_CHARTER.md
+  HANDOFF_INSTRUCTIONS.md · HANDOFF_INTEGRITY.txt · this file
+  PILOT_TIME_LOG.md ............................. contains simulation language
+                                                  ("Case: simulated / real";
+                                                  "five simulated cases")
+  BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md ... in any form, redacted or not
+  Any review-notes file · any artifact not listed in §3
+
+  From _handoff/, exactly ONE file is copied at Stage 2:
+  CASE1_STAGE2_LAUNCH_PACKAGE.md. Everything else stays behind.
+
+  DANGLING POINTER — ACCEPTED, DO NOT "HELPFULLY" RESOLVE:
+    L1_ASSESSMENT_HANDOFF.md line 97 reads "see PILOT_TIME_LOG.md". That file is
+    NOT copied and MUST NOT BE. It contains the words "simulated" and "five
+    simulated cases". The Consultant will find the pointer unresolvable and
+    should record it as a finding — that is the correct outcome. Supplying the
+    file to be helpful would contaminate the workspace.
+
+--------------------------------------------------------------------------------
+5. CONTAMINATION CHECK — CONTROLLER-SIDE, RUN 2026-08-01 (post-revision)
+--------------------------------------------------------------------------------
+CASE1_STAGE2_LAUNCH_PACKAGE.md — grep results:
+
+  Relative paths / repo names ................................... NONE
+  Fee terms, percentages, step-ups, clawbacks, T12/TTMP ......... NONE
+  Reference to the commercial document .......................... NONE
+  simulat* / synthetic / hidden / packet / checkpoint /
+    controller / answer key / stress test / expected outcome /
+    SIM-0 / release schedule / Cases 1-5 ........................ NONE
+  "gate" / "trigger" / "higher-conflict" / "T3" ................. NONE
+  "stay-versus-" / outcome-naming phrasing ...................... NONE
+
+TWO LEAKS FOUND AND FIXED IN THIS REVISION:
+
+  (a) The Ruling D conflict statement, copied verbatim, contained the phrase
+      "the current stay-versus-remediation framing". Recording that in the
+      Consultant's engagement file would have told it the founder had already
+      collapsed the question onto the two non-move paths. The Consultant-facing
+      copy now reads "materially relevant to the matters currently in scope".
+      SUBSTANCE UNCHANGED. The founder's verbatim wording is preserved in
+      CASE1_CHECKPOINT_A.md §3.D. FLAGGED FOR FOUNDER RULING.
+
+  (b) Founder control 5 as issued began "Discovery that the current firm offers
+      the capabilities does not establish that staying is the correct outcome."
+      Copied verbatim, that presupposes the discovery and releases Module 4's
+      held fact in the launch brief itself. Stage 2 brief §2a now states the
+      proposition SYMMETRICALLY — neither resolution settles the question — and
+      carries the founder's full downstream list unchanged. FLAGGED.
+
+REVIEWED AND ACCEPTED — NOT LEAKAGE:
+
+  L1_ASSESSMENT_HANDOFF.md §13 lists four Higher-Conflict Decision Gate triggers
+  by name, including "advisor considering staying". Legitimate doctrine in a
+  controlled operating artifact, consistent with the Stage 1 ruling on Gate
+  references. Generic checkbox list, not case-specific.
+
+--------------------------------------------------------------------------------
+6. FINDING 1 REMAINS OPEN — RECORDED AS RULED
+--------------------------------------------------------------------------------
+  "If the Consultant identifies T3 after reading an L1 artifact that lists the
+   trigger, that demonstrates the downstream artifact can support correct
+   trigger identification. It does not cure the Entry Decision defect, because
+   the entry-stage field still asks for a prediction without supplying the
+   controlling trigger framework."
+
+  Finding 1 remains OPEN through the final Simulation Findings and Amendment
+  Report. A Stage 2 pass does not retire it and must not be recorded as doing so.
+
+--------------------------------------------------------------------------------
+7. TO BE COMPLETED AT COPY TIME
+--------------------------------------------------------------------------------
+Copy performed (UTC) ................... ______________________________
+Performed by ........................... ______________________________
+Advisor identity supplied .............. ______________________________
+   (Response Key §8 — required before step 2 of the Consultant's task)
+
+Copy-side SHA-256:
+
+  CASE1_STAGE2_LAUNCH_PACKAGE.md ....... ______________________________
+  ADVISOR_ENGAGEMENT_UNDERSTANDING.md .. ______________________________
+  L1_ASSESSMENT_GUIDE.md ............... ______________________________
+  L1_MATERIALITY_WORKSHEET.md .......... ______________________________
+  L1_ASSESSMENT_HANDOFF.md ............. ______________________________
+
+  [ ] All five match SOURCE exactly — no expected divergence at this stage
+  [ ] The seven Stage 1 files match HANDOFF_INTEGRITY.txt §1/§3 baselines
+  [ ] The three Consultant outputs are unchanged
+  [ ] Root inventory is exactly twelve .md files
+  [ ] No .git, no symlinks, no hidden files
+  [ ] grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   → no output
+  [ ] grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"         → no output
+  [ ] grep -rniE 'simulat|synthetic|hidden fact|answer key|SIM-0' "$DST"
+                                                                   → no output
+  [ ] PILOT_TIME_LOG.md is NOT present
+
+--------------------------------------------------------------------------------
+8. EXACT LAUNCH PROMPT
+--------------------------------------------------------------------------------
+FRESH Claude Code session. Working directory = the Consultant workspace.
+NOT the session that ran Stage 1 — a fresh session, so the folder is the only
+context.
+
+Send only this, verbatim, as plain text:
+
+    Read CASE1_STAGE2_LAUNCH_PACKAGE.md and follow it.
+    Everything you need is in this folder.
+
+NOT SAID to the Consultant:
+    that this is a simulation ........ that this is Case 1 of five
+    that hidden facts exist .......... that a release schedule exists
+    that "stay" may be the outcome ... which controls are being tested
+    that the advisor is synthetic .... what Checkpoint A found
+
+--------------------------------------------------------------------------------
+9. DURING THE SESSION — THE FOUNDER VOICES THE ADVISOR
+--------------------------------------------------------------------------------
+Unlike Stage 1, this stage requires live participation. The Consultant will put
+clarification questions AND twelve modules of L1 prompts into the session, and
+the founder answers in character. Both step 3 and step 4 are live conversations.
+
+  Keep CASE1_STAGE2_ADVISOR_RESPONSE_KEY.md open in a separate window.
+  It must NEVER be pasted or copied into the Consultant workspace.
+
+  Release rules ......... Response Key §2 and §2a — one fact per question
+  Release record ........ Response Key §2b — complete a row per release
+  Provenance ledger ..... Response Key §3 — six tags; yours governs
+  Character rules ....... Response Key §6
+  New-fact log .......... Response Key §7 — log improvisation as it happens
+
+  The Assessment Guide's 75-minute pause rule applies to the advisor-facing
+  scan. If the Consultant pauses and schedules a follow-up rather than rushing,
+  that is correct behaviour and is recorded as such, not as an incomplete run.
+
+--------------------------------------------------------------------------------
+10. FLAGGED FOR FOUNDER RULING BEFORE LAUNCH
+--------------------------------------------------------------------------------
+  (1) Conflict-statement wording — §5(a) above. Verbatim would have leaked;
+      neutral substitute used. Confirm or overrule.
+  (2) Control 5 wording — §5(b) above. Verbatim would have leaked; symmetric
+      statement used. Confirm or overrule.
+  (3) Advisor identity — Response Key §8. Supply a synthetic name, or rule that
+      the acceptance record uses the engagement code and records the gap.
+  Also for decision, not blocking: Response Key §5a, two proposed answers pulled
+  because they would pre-resolve the case.
+
+--------------------------------------------------------------------------------
+11. RETURN PATH
+--------------------------------------------------------------------------------
+COPIED or pasted back to the Controller — ONLY these six.
+ORIGINALS REMAIN IN THE WORKSPACE. Stage 3 continues from them; moving them out
+would strip the engagement file the next stage depends on.
+
+  [ ] Engagement Understanding acceptance record
+  [ ] clarification record — with a provenance tag on every material fact
+  [ ] L1 Materiality Worksheet — all twelve modules
+  [ ] L1 Assessment Handoff
+  [ ] time log
+  [ ] findings and stated limitations
+
+Nothing else. The Consultant does not write into the repository.
+
+PRESERVE THE OUTPUTS AS PRODUCED.
+  Do not clean up, expand, reformat, or correct anything before returning it.
+  A module classified wrongly, a shortened path used where it should not have
+  been, or a sentence that drifts into a direction — each is a finding, and
+  tidying it away destroys the only evidence this phase produces.
+
+Returned (UTC) ......................... ______________________________
+
+--------------------------------------------------------------------------------
+12. AFTER RETURN
+--------------------------------------------------------------------------------
+Controller assembles Founder Checkpoint B and STOPS.
+
+  Consultation preparation does not begin until the founder reviews and approves
+  the L1 materiality map and scope proposal at Checkpoint B.
+
+WATCH ITEMS FOR CHECKPOINT B — record, do not pre-judge:
+
+  - How was capability materiality classified, and does the classification match
+    the evidence actually available at the time it was made? (Ruling B)
+    Unknown is not automatically the right answer — Low, Moderate, and High are
+    each defensible on the right evidence. What is NOT defensible is High on
+    unchanged advisor assertion.
+  - Were all twelve modules acknowledged, or did limited scope silently become
+    limited coverage? (Ruling A, Finding 16)
+  - Was the shortened path used on any Moderate, High, or Unknown module?
+    Prohibited by the worksheet — that would be a control failure.
+  - Did anything in the L1 output acquire a direction? (drift check)
+  - Was the covenant handled as a counsel question list, or did general norms
+    reappear as decision evidence? (Ruling F)
+  - Did the acceptance record capture version-specific acceptance, the
+    no-production-legal-effect statement, and the §4a conflict? (Ruling C)
+  - Did the Consultant surface the §4a draft-status conflict on its own, or
+    accept the authorization without comment?
+  - Was internal remediation carried as a live path through Module 12, or did it
+    quietly drop out?
+  - Did any single resolved fact prematurely close the analysis? (brief §2a)
+  - Provenance reconciliation: how many material facts did the Consultant tag
+    "consultant elicited" that the Controller ledger records as founder-directed
+    or Controller-released? That difference is the measure.
+
+================================================================================

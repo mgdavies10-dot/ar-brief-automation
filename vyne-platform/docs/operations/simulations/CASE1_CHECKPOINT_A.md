@@ -242,6 +242,56 @@ Finding requires it.**
 
 **Confirmed: "Sufficient with follow-up."**
 
+### Controls 1–7 — issued with the rulings, 2026-08-01
+
+**1 · Discovery provenance.** Every material fact surfaced during clarification or L1 is tagged with one
+of: *advisor volunteered · Consultant independently elicited · founder-directed question ·
+artifact-prompted · Controller-released in response to an appropriate question · document or specialist
+supplied.* **Purpose: distinguish Consultant discovery, founder intervention, artifact support, and
+controlled fact release.** The Consultant records five tags; the Controller ledger carries all six, and
+**the Controller tag governs** on reconciliation at Checkpoint B.
+
+**2 · Ruling B measurement note — recorded as issued:**
+
+> *"Because Founder Ruling B requires the Consultant to test whether the capabilities are absent,
+> inaccessible, or unused, Stage 2 does not test whether the Consultant independently originated that
+> question. It tests whether the Consultant asks it appropriately, handles the answer correctly, revises
+> the framing responsibly, and avoids an unsupported directional conclusion."*
+>
+> **Independent origination of that question is recorded as "Not tested at Stage 2." It is never labelled
+> passed.**
+
+**3 · Finding 1 remains open.** See §5.
+
+**4 · Controlled hidden-fact release.** Release only the fact responsive to the actual question. **Do not
+bundle** internal escalation history, lending availability, alternatives availability, the pending
+reorganisation, peer experience, or any other held fact into a single answer unless the question
+realistically calls for all of them. Against a broad compound question, respond as a realistic advisor
+would rather than disclosing the schedule. **Record:** the exact Consultant question · the fact released ·
+the release basis · any held fact not released.
+
+**5 · No automatic stay conclusion — recorded as issued:**
+
+> *"Discovery that the current firm offers the capabilities does not establish that staying is the correct
+> outcome. It changes the issue from possible capability absence to access, service execution, internal
+> navigation, eligibility, responsiveness, or durability."*
+
+**The L1 work must still consider:** broader service deterioration · remediation history · practical
+accessibility · client impact · team impact · operating-model implications · risk · whether an alternative
+model addresses the actual problem.
+
+> **Containment note.** The statement above presupposes the discovery, so copying it verbatim into the
+> Consultant brief would release the Module 4 held fact in the launch instruction itself. The
+> Consultant-facing text at Stage 2 brief §2a therefore states the proposition **symmetrically** — neither
+> resolution settles the question — and carries the eight-item consideration list unchanged. **Substance
+> preserved; presupposition removed. Flagged for founder confirmation.**
+
+**6 · Simulation-only Engagement Understanding.** Confirmed: used only as a synthetic simulation
+instrument with simulated version-specific acceptance. **It remains DRAFT — COUNSEL REVIEW REQUIRED
+BEFORE PRODUCTION USE**, and has no production legal effect.
+
+**7 · Complete the five-lens QC audit and present the full Stage-2 package.** Done — see §9.
+
 ---
 
 ## 4 · Orientation Sufficiency Review — as assessed and confirmed
@@ -352,6 +402,17 @@ entry answer is not inherited. **If any downstream artifact ever relies on the e
 re-running the check, Finding 1 becomes CS immediately.** Recommend building that non-inheritance rule in
 explicitly at phase end.
 
+> ### Finding 1 remains open — founder ruling, 2026-08-01
+>
+> *"If the Consultant identifies T3 after reading an L1 artifact that lists the trigger, that demonstrates
+> the downstream artifact can support correct trigger identification. It does not cure the Entry Decision
+> defect, because the entry-stage field still asks for a prediction without supplying the controlling
+> trigger framework."*
+>
+> **Finding 1 remains open through the final Simulation Findings and Amendment Report.**
+> `L1_ASSESSMENT_HANDOFF.md` §13 names four Gate triggers, so the Consultant will see at L1 what it was
+> not given at entry. **A Stage 2 pass does not retire Finding 1 and must not be recorded as doing so.**
+
 **Note on classification.** Founder rulings introduced three labels outside the eight-class framework in
 `SIMULATION_SETUP.md` §3 — *simulation governance / documentation*, *Governance*, and *Operational*.
 Recommend formalising them in the framework at phase end rather than mid-simulation.
@@ -362,7 +423,7 @@ Recommend formalising them in the framework at phase end rather than mid-simulat
 
 | | |
 |---|---|
-| **Claude proposed** | Entry outcome ratification; six decisions (a)–(g); twelve findings; sufficiency conclusion *"sufficient with follow-up."* |
+| **Claude proposed** | Entry outcome ratification; seven decisions (a)–(g); twelve findings; sufficiency conclusion *"sufficient with follow-up."* |
 | **Founder decision** | Approved *Proceed with limited scope* with a governing framing statement; ruled internal remediation a live path; required an Engagement Understanding before substantive L1; issued the Case 1 conflict statement and confirmed capacity; set the covenant boundary; confirmed the sufficiency conclusion. |
 | **Founder edits** | Added the explicit twelve-module scan requirement to the scope ruling · specified six capability-verification tests · struck general covenant norms as substantive decision evidence · reclassified Findings 6 and 7 · added Findings 13–16 · deferred both new registers to pre-pilot rather than building them in Case 1. |
 | **Rationale** | Limited scope narrows depth, not acknowledgment. Referral behaviour is not evidence of platform absence. Generic covenant norms applied to a specific unread agreement crosses the professional boundary. Registers are pilot-gating governance, not Case 1 work. |
@@ -396,3 +457,68 @@ Recommend formalising them in the framework at phase end rather than mid-simulat
 
 > **Steps 4–6 do not occur in the Controller thread.** They run in the isolated Consultant workspace.
 > The Controller does not conduct the clarification conversation and does not perform L1 work.
+
+---
+
+## 9 · Stage-2 QC audit — five lenses
+
+**Run:** 2026-08-01 · 16 agents · 0 errors · 25 findings raised · 10 verified adversarially.
+
+**Lenses:** hidden-fact leakage · ruling fidelity · doctrine conformance · response-key over-release ·
+omission and operability. Each material finding then went to an independent refuter.
+
+> ### The refuter result is not reliable and was overridden
+> **All ten verified findings returned `refuted: true`.** The refuter prompt instructed *"default to
+> refuted=true if you are uncertain,"* which loads the outcome. A uniform refutation across ten
+> independent checks is a signal about the instrument, not about the findings.
+>
+> **Consistent with the founder's standing guardrail** — *"Claude should not treat the multi-agent review
+> as proof that the document is correct. It is a quality-control step, not an independent audit"* — the
+> findings were re-read directly and adjudicated on the merits. **Eleven were accepted and fixed; the rest
+> were rejected on reasoning stated below.** Two of the accepted findings were leaks.
+
+### Accepted and fixed
+
+| # | Finding | Where |
+|---|---|---|
+| **L1** | **The Ruling D conflict statement names the engagement a *"stay-versus-remediation framing."*** Recorded verbatim in the Consultant's file, it collapses four supposedly equal paths onto the two non-move ones. **Leak.** | Consultant copy now reads *"materially relevant to the matters currently in scope."* Founder's verbatim wording preserved at §3.D. **Flagged.** |
+| **L2** | **Control 5's opening clause presupposes the discovery** — *"Discovery that the current firm offers the capabilities…"* — which releases the Module 4 held fact in the launch brief. **Leak.** | Brief §2a states it symmetrically. Founder's verbatim wording preserved at §3, control 5. **Flagged.** |
+| **R1** | **Scripted capability answer gestured at the internal desk** — *"there's a menu somewhere, I assume there's a desk for it."* Released Module 4's substance at clarification. | Struck; replaced with pure uncertainty. |
+| **R2** | **Scripted answer had the advisor never having moved firms** — contradicts 21 years industry / 14 at firm, which is already in the Consultant's hands. | Corrected to one early-career move. |
+| **R3** | **Scripted internal-escalation answer softened a categorical fact** to *"I've grumbled to my branch manager."* | Corrected to match the packet. |
+| **R4** | **Two scripted answers pre-resolve the case** and one contradicts the Orientation's *Flexible* ownership rating. | Pulled to a founder-decision block with a neutral alternative. |
+| **O1** | **The brief never said the twelve-module L1 scan is also a live conversation** — the in-session instruction was attached only to clarification. | Stated explicitly at step 4. |
+| **O2** | **Presenting a Draft to the advisor is forbidden** by Record Standards §5 and by the Engagement Understanding's own header — the brief ordered it anyway. | New §4a: authorization stated, limitation recorded, and the Consultant invited to object. |
+| **O3** | **Acceptance and clarification records have no template, no artifact type, and no naming guidance.** | Naming block added; the gap is itself a finding the Consultant is told to record. |
+| **O4** | **No copy procedure** — `$DST` was referenced but never defined, and the five files live in two directories. | §3a added with explicit commands. |
+| **O5** | **Return path said "moved,"** which would strip the engagement file Stage 3 continues from. | Changed to copied; originals stay in place. |
+
+**Also fixed, minor:** the L1 prohibition list dropped the *no Level 2 or Level 3 conclusion* ceiling ·
+Module 5 depth was stated as *"categories only"* against Ruling A's *"directionally only"* · the
+75-minute pause rule was unaddressed · the Checkpoint B capability watch item was framed as a binary in
+which *Unknown* was the only pass · the Stage-1 baseline had no cross-reference · the intervention log
+miscounted seven decisions as six · `L1_ASSESSMENT_HANDOFF.md` §97 points at `PILOT_TIME_LOG.md`, which
+contains simulation language and must not be supplied — now an explicit do-not-copy with the dangling
+pointer accepted as a finding.
+
+### Rejected
+
+**"Internal remediation receives elaboration the other three paths do not, which marks it as favoured."**
+The extra sentence assured that a non-transaction conclusion is complete work. That assurance is verbatim
+Engagement Understanding §2 doctrine, and internal remediation is the one path a recruiting-shaped
+process would structurally discount. **However — the asymmetry was real**, so the sentence was
+generalised to cover all four paths rather than removed. Half-accepted.
+
+**"The acceptance list drops one of six Record Standards §4 elements."** It was covered in the following
+paragraph rather than the list. **Accepted in form** — all six are now enumerated.
+
+**"'Complete L1_MATERIALITY_WORKSHEET.md' contradicts 'do not amend any artifact in this folder.'"**
+Correct as written, and fixed: the instruction now says to fill **copies** under `engagements/E-26-101/`
+and leave originals untouched.
+
+### Still open — needs a founder answer before launch
+
+**The advisor has no name.** Record Standards §4 requires advisor identity on an acceptance record, and
+that record gates substantive L1. The Consultant flagged the absence at Stage 1 and treated it correctly
+as a data gap rather than a PII issue. **Supply a synthetic name, or rule that the acceptance record uses
+the engagement code and records the gap.**
