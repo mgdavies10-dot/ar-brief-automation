@@ -4,8 +4,8 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 # Internal Authorization and Disclosure Activity Record
 
-**Artifact:** 10B · Operating Artifact Sprint · **Version:** v0.1 · **Date:** 2026-08-01
-**Status:** DRAFT for founder review
+**Artifact:** 10B · Operating Artifact Sprint · **Version:** v0.2 · **Date:** 2026-08-01
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-08-01; revisions applied)
 
 > ## Governing rule
 > **The signed advisor-facing authorization establishes authority. The internal record proves what VYNE
@@ -30,7 +30,7 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 ## 2 · Preconditions
 
-**For limited due diligence** *(purposes A, B)*
+**For limited due diligence** *(purposes A, B, C — no Record required)*
 
 ```
  ☐ Current Advisor Engagement Understanding accepted
@@ -43,7 +43,7 @@ INTERNAL — NOT FOR ADVISOR RELEASE
  ☐ Conflict-sensitive issue considered
 ```
 
-**For introduction or submission** *(purposes C, D)*
+**For recruiting introduction or submission** *(purposes D, E, F)*
 
 ```
  ☐ Current Recommendation & Decision Record identified — version ____
@@ -73,7 +73,21 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 ## 4 · Disclosure activity log
 
-*One row per contact, request, disclosure, or follow-up.*
+> ### Contemporaneous standard — binding
+> **Each contact, request, disclosure, meeting arrangement, follow-up, or advocacy action must be
+> recorded as it occurs or no later than the end of the same business day — and always before the next
+> action under that authorization.**
+
+- **If the activity record is not current, further contact or disclosure pauses** until it is.
+- **Reference** authoritative emails, messages, documents, or call records **rather than duplicating
+  sensitive content.**
+- **Later corrections remain visible and do not silently overwrite the original entry** — record the
+  correction date, reason, and person making it.
+- **Engagement closure must not be the first time the activity log is completed.**
+- **Founder review tests whether the log was created contemporaneously, not merely whether it is
+  eventually complete.**
+
+*One row per contact, request, disclosure, meeting arrangement, follow-up, or advocacy action.*
 
 | Field | |
 |---|---|
@@ -90,7 +104,10 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 | Treatment | ☐ exact ☐ range ☐ redacted ☐ aggregated |
 | Information source artifact | |
 | **Minimum-necessary check** | ☐ confirmed |
+| **Aggregation / re-identification check** *(where aggregated data shared)* | ☐ aggregation reviewed ☐ small-group risk considered ☐ broadened / ranged / combined / omitted where required |
 | **Within authorization scope** | ☐ yes ☐ **no → §10** |
+| **Entry made** | ☐ at the time ☐ same business day — time: ______ |
+| Correction *(if any)* | date ____ reason ____ by ____ *(original preserved)* |
 | Firm response | |
 | Follow-up permitted | ☐ yes ☐ no |
 | Onward-sharing concern | |
@@ -101,7 +118,7 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 ## 5 · Request and term-advocacy log
 
-*Completed only where §3E advocacy was authorized.*
+*Completed only where §3F advocacy was authorized.*
 
 | Field | |
 |---|---|

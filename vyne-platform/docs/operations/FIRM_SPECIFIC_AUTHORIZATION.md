@@ -5,8 +5,8 @@ DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
 
 # Firm-Specific Authorization
 
-**Artifact:** 10A · Operating Artifact Sprint *(final artifact)* · **Version:** v0.1 · **Date:** 2026-08-01
-**Status:** DRAFT for founder review
+**Artifact:** 10A · Operating Artifact Sprint *(final artifact)* · **Version:** v0.2 · **Date:** 2026-08-01
+**Status:** **APPROVED as a controlled operating draft** (founder, 2026-08-01; revisions applied)
 
 > ## Governing premise
 > **Firm-specific authorization is the only instrument through which the advisor authorizes VYNE to
@@ -20,7 +20,20 @@ DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
 > authorization to obtain firm-specific information **during due diligence, before a directional
 > recommendation can responsibly be completed.** *(§4 sets the basis for each type.)*
 
-**Ordinarily one page.** No advisor names in filenames.
+**One modular template with conditional sections.** Page targets by purpose (§20). No advisor names in
+filenames.
+
+---
+
+## Before you begin
+
+> **You remain in control of every firm interaction. Before VYNE contacts a firm, you choose the specific
+> firm, the purpose of the contact, who may receive information, and exactly what VYNE may share. Signing
+> this authorization does not commit you to move, accept an offer, or follow VYNE's recommendation, and
+> it does not permit VYNE to bind you.**
+>
+> **The detail in this form is intentional. It allows VYNE to gather information and advocate for you
+> without assuming broader permission than you intended to give.**
 
 ---
 
@@ -59,17 +72,45 @@ blanket marketplace authority.
 
 ## §3 · Purpose — select every applicable purpose separately
 
+**Due-diligence purposes — no Recommendation Record required**
+
 - ☐ **A · Anonymous due-diligence inquiry.** VYNE may contact the named firm **without identifying you**
   and request general or program-level information. *This does not indicate that VYNE recommends the
   firm.*
 - ☐ **B · Identified due-diligence inquiry.** VYNE may disclose your identity and request specified
   information. *This does not by itself indicate a final recommendation or a decision by you.*
-- ☐ **C · Introduction or meeting request.** VYNE may identify you and request or arrange a meeting.
-- ☐ **D · Submission or request for advisor-specific terms.** VYNE may provide the specifically
+- ☐ **C · Identified due-diligence meeting.** You may participate in a **fact-finding conversation** with
+  the firm to gather, clarify, or verify information — **before** any recommendation exists.
+
+  *A fact-finding meeting may cover:* platform capabilities · service model · custody · technology ·
+  transition support · compliance structure · economics · ownership · implementation requirements · other
+  matters necessary to complete the assessment.
+
+  **Conditions:** the purpose is gathering, clarifying, or verifying information · your identity
+  disclosure is expressly authorized · **no submission is made unless separately authorized** · **no
+  transition commitment is implied** · **VYNE does not represent that it recommends the firm** · only
+  specifically authorized information is disclosed · advisor-specific terms may be requested **only if
+  selected below**.
+
+**Recommendation-stage purposes — Record, Gate result, and cooling controls apply**
+
+- ☐ **D · Recruiting introduction or transition-focused meeting.** Use when the firm is being presented
+  as a **narrowed transition option**, the meeting **begins recruiting or candidacy discussions**, VYNE
+  provides a submission or advisor-specific candidacy profile, or VYNE begins **transition-focused
+  advocacy**.
+- ☐ **E · Submission or request for advisor-specific terms.** VYNE may provide the specifically
   authorized profile information and request terms specific to you.
-- ☐ **E · Term clarification and advocacy.** VYNE may communicate your questions and preferences,
+- ☐ **F · Term clarification and advocacy.** VYNE may communicate your questions and preferences,
   request clarification, request modified or improved terms, and convey positions you have approved.
-- ☐ **F · Other, narrowly described:** ______________________________________
+- ☐ **G · Other, narrowly described:** ______________________________________
+
+> ### Classifying a meeting
+> **A meeting is classified by its purpose and authorized activity — not merely by the fact that you and
+> the firm speak.**
+>
+> The same conversation is **C** when it is fact-finding and **D** when it is transition-focused. If the
+> purpose shifts during the engagement, that is a **scope change under §14** requiring a new
+> authorization — not a reinterpretation of this one.
 
 > **Authorization to communicate, facilitate, or advocate does not permit VYNE to accept or reject
 > terms, execute documents, bind you, or make any legal commitment on your behalf.**
@@ -78,7 +119,7 @@ blanket marketplace authority.
 
 ## §4 · Basis for this authorization
 
-**☐ LIMITED DUE-DILIGENCE AUTHORIZATION** *(purposes A, B — no Record required)*
+**☐ LIMITED DUE-DILIGENCE AUTHORIZATION** *(purposes A, B, C — **no Record required**)*
 
 ```
  Assessment or consultation basis: _____________________________________
@@ -89,7 +130,7 @@ blanket marketplace authority.
 > **No directional recommendation is implied by this authorization.** The information obtained **may
 > affect** later assessment or recommendation — including by making an option look better or worse.
 
-**☐ INTRODUCTION OR SUBMISSION AUTHORIZATION** *(purposes C, D)*
+**☐ RECRUITING INTRODUCTION OR SUBMISSION AUTHORIZATION** *(purposes D, E, F)*
 
 ```
  Recommendation & Decision Record: ____________  Version: ____
@@ -150,6 +191,18 @@ history · identifiable client financial information · **any information that c
 an individual client.**
 
 > **This prohibition cannot be overridden by a write-in field, and it cannot be waived by the advisor.**
+
+### Aggregation and re-identification
+
+> **Aggregated information may be shared only when it cannot reasonably identify an individual client
+> through a small category, unusual characteristic, combination of fields, geographic detail, or other
+> context. Small groups must be broadened, converted to ranges, combined, or omitted.**
+
+*Example of what is **not** permitted even though no name appears:* *"three clients over age 90 with more
+than $20 million each in one specific town."* **Aggregation is not anonymity when the category is small
+enough to point at someone.**
+
+**This rule cannot be overridden by the advisor.**
 
 If client information reaches VYNE, it is handled under the Engagement Record Standards and is **not
 retained or transmitted through this process.**
@@ -236,11 +289,18 @@ scope is permitted; **agency is not.***
 > acceptance.** A shorter or longer period may be selected based on purpose; a period materially longer
 > than 60 days has its reason recorded internally.
 
-**At expiration:** VYNE stops new contact, disclosure, requests, and follow-up. **Previously completed
-contacts and disclosures cannot be undone.** Further action requires renewal or a new authorization.
+- **Shorter periods should be used when the authorized purpose is narrow or time-sensitive.**
+- **A period materially longer than 60 days requires an internal reason.**
+- **No automatic renewal.**
+- **An expired authorization cannot be revived through continued discussion or prior acceptance.**
+- **A renewal requires a new version and your acceptance.**
 
-*The 60-day default is an operating pilot standard, not permanent doctrine — reviewed after five
-simulated cases.*
+**At expiration:** VYNE stops new contact, disclosure, requests, and follow-up. **Previously completed
+contacts and disclosures cannot be undone.**
+
+*The 60-day default is an operating pilot standard, not permanent doctrine. After five simulated
+engagements: review expirations, renewals, whether authority stayed active longer than needed, advisor
+friction, and whether a different default is justified.*
 
 ## §14 · Change in scope
 
@@ -315,3 +375,22 @@ advocacy not previously authorized · continuing after expiration · taking any 
 ```
 DRAFT — COUNSEL REVIEW REQUIRED BEFORE PRODUCTION USE
 ```
+
+---
+
+## §20 · Page targets by purpose — provisional
+
+| Authorization type | Target |
+|---|---|
+| **Anonymous or identified due diligence** *(A, B, C)* | **one page** |
+| **Recruiting introduction, submission, or term advocacy** *(D, E, F)* | **up to two pages** where necessary |
+
+**One modular template with conditional sections** — not separate legal frameworks. Sections not
+relevant to the selected purpose are omitted.
+
+> **Do not, to meet a page target:** reduce information-selection granularity · shrink type · use dense
+> formatting · omit recipient controls · or compress the client-PII prohibition.
+>
+> **The information-permission table (§6) is the core confidentiality control and is never compressed.**
+
+*Pilot operating targets, not permanent doctrine.*

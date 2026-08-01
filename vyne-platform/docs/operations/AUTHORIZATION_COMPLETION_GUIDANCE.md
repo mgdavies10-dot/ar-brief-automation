@@ -36,20 +36,43 @@ INTERNAL — NOT FOR ADVISOR RELEASE
 
 ## 2 · Purpose and precondition matrix
 
-| | **A · Anonymous DD** | **B · Identified DD** | **C · Introduction** | **D · Submission** | **E · Term advocacy** |
-|---|---|---|---|---|---|
-| **Record required** | **no** | **no** | **yes** | **yes** | follows the underlying purpose |
-| **Gate required** | no *(unless triggered by other facts)* | no *(same)* | **Not required / Not triggered / Cleared** | **same** | same |
-| **Cooling** | n/a unless triggered Gate | same | **1 business day if Gate triggered** | **same** | same |
-| **Advisor identity disclosed** | **no** | yes | yes | yes | yes |
-| **Recommendation implied** | **no** | **no** | **no** | **no** | **no** |
-| **Typical information scope** | none advisor-specific | limited profile | profile + contact | authorized profile for terms | as already authorized |
-| **May VYNE bind the advisor** | **no** | **no** | **no** | **no** | **no** |
+**Due-diligence purposes — no Record required**
 
-> **The critical boundary:** A and B exist so VYNE can **gather firm-specific evidence before a
-> recommendation is possible.** C and D exist only **after** the decision has narrowed. **Moving from
-> due diligence to submission is a scope change requiring a new authorization** (§14) — it is never a
-> continuation of the same instrument.
+| | **A · Anonymous inquiry** | **B · Identified inquiry** | **C · Identified DD meeting** |
+|---|---|---|---|
+| **Record required** | **no** | **no** | **no** |
+| **Gate** | not unless triggered by other facts | same | same |
+| **Cooling** | n/a unless triggered Gate | same | same |
+| **Advisor identity disclosed** | **no** | yes | yes |
+| **Recommendation implied** | **no** | **no** | **no** |
+| **Submission made** | no | no | **no — unless separately authorized** |
+| **Advisor-specific terms requested** | no | only if selected | **only if selected** |
+| **Typical information scope** | none advisor-specific | limited profile | limited profile |
+| **May VYNE bind the advisor** | **no** | **no** | **no** |
+
+**Recommendation-stage purposes — Record, Gate result, and cooling apply**
+
+| | **D · Recruiting introduction** | **E · Submission** | **F · Term advocacy** |
+|---|---|---|---|
+| **Record required** | **yes** | **yes** | follows the underlying purpose |
+| **Gate** | **Not required / Not triggered / Cleared** | same | same |
+| **Cooling** | **1 business day if Gate triggered** | same | same |
+| **Advisor identity disclosed** | yes | yes | yes |
+| **Recommendation implied** | **no** — authorization is not acceptance | **no** | **no** |
+| **Typical information scope** | profile + contact | authorized profile for terms | as already authorized |
+| **May VYNE bind the advisor** | **no** | **no** | **no** |
+
+> ### The critical boundary
+> **A, B, and C exist so VYNE can gather firm-specific evidence *before* a recommendation is possible.**
+> **D, E, and F exist only *after* the decision has narrowed.**
+>
+> **A meeting is classified by its purpose and authorized activity — not merely by the fact that the
+> advisor and firm speak.** The same conversation is **C** when fact-finding and **D** when
+> transition-focused.
+>
+> **Moving from due diligence to a recruiting introduction or submission is a scope change requiring a
+> new authorization** (§14) — never a continuation of the same instrument, and never a reinterpretation
+> of the existing one.
 
 ## 3 · Permission and information-scope matrix
 
