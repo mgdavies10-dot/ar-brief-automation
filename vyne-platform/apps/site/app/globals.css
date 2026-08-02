@@ -28,7 +28,7 @@ body{
 h1,h2,h3{font-family:var(--vyne-font-serif);font-weight:400;color:var(--vyne-navy);margin:0;letter-spacing:-.01em}
 p{margin:0}
 a{color:var(--vyne-navy);text-underline-offset:3px;text-decoration-thickness:1px}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--vyne-bronze);outline-offset:3px;border-radius:2px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--vyne-bronze);outline-offset:3px}
 
 /* ───────────── layout ───────────── */
 
@@ -167,14 +167,14 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 
 .cta{
   display:inline-block;background:var(--vyne-navy);color:var(--vyne-ivory);
-  font-family:var(--vyne-font-sans);font-size:15px;letter-spacing:.02em;
-  padding:16px 32px;border-radius:2px;text-decoration:none;
+  font-family:var(--vyne-font-sans);font-size:15px;font-weight:600;letter-spacing:.02em;
+  padding:16px 32px;border-radius:6px;text-decoration:none;
   border:1px solid var(--vyne-navy);
-  transition:background var(--vyne-motion-slow) var(--vyne-motion-easing),border-color var(--vyne-motion-slow) var(--vyne-motion-easing);
+  transition:opacity var(--vyne-motion-slow) var(--vyne-motion-easing);
 }
-.cta:hover{background:var(--vyne-charcoal);border-color:var(--vyne-bronze)}
+.cta:hover{opacity:.92}
 .cta-inverse{background:var(--vyne-ivory);color:var(--vyne-navy);border-color:var(--vyne-ivory)}
-.cta-inverse:hover{background:var(--vyne-white);border-color:var(--vyne-bronze)}
+.cta-inverse:hover{opacity:.92}
 
 /* ───────────── questions ───────────── */
 
@@ -220,7 +220,7 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 .outcomes li{
   font-family:var(--vyne-font-serif);font-size:18px;color:var(--vyne-navy);
   background:var(--vyne-white);border:1px solid var(--vyne-hairline);
-  border-bottom:2px solid var(--vyne-hairline);border-radius:2px;padding:11px 20px;
+  border-bottom:2px solid var(--vyne-hairline);border-radius:999px;padding:11px 20px;
   transition:border-bottom-color var(--vyne-motion-slow) var(--vyne-motion-easing);
 }
 .outcomes li:hover{border-bottom-color:var(--vyne-bronze)}
@@ -243,7 +243,7 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 
 .disclosure{
   background:var(--vyne-white);border:1px solid var(--vyne-hairline);
-  border-left:3px solid var(--vyne-bronze);border-radius:2px;
+  border-left:3px solid var(--vyne-bronze);border-radius:var(--vyne-radius-card);
   padding:36px 40px;font-size:17px;line-height:1.72;
 }
 .disclosure p+p{margin-top:20px}
@@ -277,5 +277,5 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 /* ───────────── pending-counsel pages ───────────── */
 
 .notice{min-height:70vh;display:flex;align-items:center;padding:60px 0}
-.notice-card{background:var(--vyne-white);border:1px solid var(--vyne-hairline);border-left:3px solid var(--vyne-warning);border-radius:2px;padding:44px;max-width:62ch}
+.notice-card{background:var(--vyne-white);border:1px solid var(--vyne-hairline);border-left:3px solid var(--vyne-warning);border-radius:var(--vyne-radius-card);padding:44px;max-width:62ch}
 .notice-card h1{font-size:clamp(24px,3vw,32px);margin:14px 0 18px}
