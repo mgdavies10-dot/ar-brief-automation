@@ -1,4 +1,5 @@
 import { pendingCounsel } from "@/content/copy";
+import { Logo } from "./Brand";
 
 /**
  * Privacy and Terms placeholders.
@@ -7,17 +8,25 @@ import { pendingCounsel } from "@/content/copy";
  */
 export function PendingCounsel({ title }: { title: string }) {
   return (
-    <main className="notice">
-      <div className="shell">
-        <div className="notice-card">
-          <p className="eyebrow">{title}</p>
-          <h1>{pendingCounsel.banner}</h1>
-          <p className="lede" style={{ marginBottom: 28 }}>
-            {pendingCounsel.body}
-          </p>
-          <a href="/">{pendingCounsel.back}</a>
+    <>
+      <header className="masthead">
+        <div className="shell masthead-inner">
+          <a href="/" className="masthead-brand" aria-label="VYNE Strategies, home">
+            <Logo height={64} />
+          </a>
         </div>
-      </div>
-    </main>
+        <div className="masthead-band" role="presentation" />
+      </header>
+      <main className="notice">
+        <div className="shell">
+          <div className="notice-card">
+            <p className="eyebrow">{title}</p>
+            <h1>{pendingCounsel.banner}</h1>
+            <p className="lede" style={{ marginBottom: 28 }}>{pendingCounsel.body}</p>
+            <a href="/">{pendingCounsel.back}</a>
+          </div>
+        </div>
+      </main>
+    </>
   );
 }

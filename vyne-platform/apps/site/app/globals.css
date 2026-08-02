@@ -1,360 +1,266 @@
 /*
- * VYNE Strategies public site — EA-WEB-001.
- * Every colour resolves from @vyne/ui tokens. No hardcoded hex in this file.
- * Brand Guide: documents over widgets, hairlines not shadows, sentence case,
- * bronze rare and budgeted, no gradients, no decorative ornament.
+ * VYNE Strategies — "Modern Heritage with Private Advisory depth"
+ * Founder-selected direction, 2026-08-02 (Direction C blended with B).
+ *
+ * Every colour resolves from @vyne/ui tokens. No hardcoded hex.
+ * Brand Guide: hairlines not shadows · one card style · sentence case ·
+ * bronze rare and budgeted · no gradients · no decorative ornament.
+ *
+ * Depth comes from SURFACE and COLOUR BLOCKING, never from shadow —
+ * ivory canvas, white one step up, navy as a full-bleed band.
  */
 @import "@vyne/ui/tokens.css";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+*,*::before,*::after{box-sizing:border-box}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-text-size-adjust: 100%;
+body{
+  margin:0;background:var(--vyne-ivory);color:var(--vyne-charcoal);
+  font-family:var(--vyne-font-sans);font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
+h1,h2,h3{font-family:var(--vyne-font-serif);font-weight:400;color:var(--vyne-navy);margin:0;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--vyne-navy);text-underline-offset:3px;text-decoration-thickness:1px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--vyne-bronze);outline-offset:3px;border-radius:2px}
+
+/* ───────────── layout ───────────── */
+
+.shell{max-width:1200px;margin:0 auto;padding:0 var(--vyne-page-gutter)}
+@media (max-width:820px){.shell{padding:0 24px}body{font-size:16px}}
+
+.measure{max-width:62ch}
+
+section{padding:calc(var(--vyne-unit)*13) 0;position:relative}
+@media (max-width:820px){section{padding:calc(var(--vyne-unit)*8) 0}}
+
+/* The two-column editorial rhythm: a standing label rail, then the body.
+   This is the "modern heritage" structure — an institutional report grid. */
+.split{display:grid;grid-template-columns:190px 1fr;gap:56px;align-items:start}
+.split-label{position:sticky;top:132px}
+.split-body{max-width:70ch}
+@media (max-width:960px){
+  .split{grid-template-columns:1fr;gap:0}
+  .split-label{position:static;margin-bottom:20px}
 }
 
-body {
-  margin: 0;
-  background: var(--vyne-ivory);
-  color: var(--vyne-charcoal);
-  font-family: var(--vyne-font-sans);
-  font-size: 17px;
-  line-height: 1.65;
-  -webkit-font-smoothing: antialiased;
+.band-ivory{background:var(--vyne-ivory);border-top:1px solid var(--vyne-hairline)}
+.band-navy{background:var(--vyne-navy);color:var(--vyne-stone-gray);border-top:0}
+.band-navy h2,.band-navy h3{color:var(--vyne-ivory)}
+.band-navy .eyebrow{color:var(--vyne-bronze)}
+.band-navy .lede{color:var(--vyne-stone-gray)}
+.band-navy a{color:var(--vyne-ivory)}
+.band-navy-deep{padding:calc(var(--vyne-unit)*16) 0}
+@media (max-width:820px){.band-navy-deep{padding:calc(var(--vyne-unit)*10) 0}}
+
+.stack>*+*{margin-top:20px}
+
+/* ───────────── type ───────────── */
+
+.eyebrow{
+  font-family:var(--vyne-font-sans);font-size:var(--vyne-type-micro);
+  letter-spacing:.2em;text-transform:uppercase;color:var(--vyne-bronze-text);margin:0;
 }
+h1{font-size:clamp(36px,5vw,60px);line-height:1.1}
+h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin-bottom:26px}
+h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
+.lede{font-size:clamp(17px,1.8vw,20px);line-height:1.62;color:var(--vyne-slate)}
 
-h1, h2, h3 {
-  font-family: var(--vyne-font-serif);
-  font-weight: 400;
-  color: var(--vyne-navy);
-  margin: 0;
-  letter-spacing: -0.01em;
+/* ───────────── masthead — the logo lives here ───────────── */
+
+.masthead{position:sticky;top:0;z-index:20;background:var(--vyne-ivory)}
+.masthead-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px 0}
+.masthead-brand{display:inline-flex;text-decoration:none}
+.masthead-band{height:3px;background:var(--vyne-navy)}
+
+/* The asset has a white ground and no alpha. LOGO_USAGE permits letting that
+   ground read as an intentional plate — so the plate becomes the device. */
+.logo-plate{
+  display:inline-block;background:var(--vyne-white);
+  border:1px solid var(--vyne-hairline);padding:6px 12px;
 }
+.logo-plate img{display:block;height:var(--logo-h);width:auto}
 
-p { margin: 0; }
+.masthead-nav{display:flex;gap:24px;font-size:var(--vyne-type-meta);letter-spacing:.02em}
+.masthead-nav a{color:var(--vyne-slate);text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent;transition:color var(--vyne-motion-fast) var(--vyne-motion-easing),border-color var(--vyne-motion-fast) var(--vyne-motion-easing)}
+.masthead-nav a:hover{color:var(--vyne-navy);border-bottom-color:var(--vyne-bronze)}
+@media (max-width:1060px){.masthead-nav{display:none}}
 
-a {
-  color: var(--vyne-navy);
-  text-underline-offset: 3px;
-  text-decoration-thickness: 1px;
+/* mobile navigation — identity stays visible, disclosure is CSS-only */
+.masthead-mobile{display:none}
+@media (max-width:1060px){.masthead-mobile{display:block;position:relative}}
+.masthead-mobile summary{list-style:none;cursor:pointer;padding:10px 4px;display:inline-flex}
+.masthead-mobile summary::-webkit-details-marker{display:none}
+.rule-stack{display:inline-block;width:26px}
+.rule-stack i{display:block;height:1px;background:var(--vyne-navy)}
+.rule-stack i+i{margin-top:7px}
+.masthead-mobile[open] summary .rule-stack i{background:var(--vyne-bronze-text)}
+.masthead-mobile nav{
+  position:absolute;right:0;top:calc(100% + 10px);min-width:230px;
+  background:var(--vyne-white);border:1px solid var(--vyne-hairline);
+  border-top:2px solid var(--vyne-bronze);display:flex;flex-direction:column;
 }
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid var(--vyne-navy);
-  outline-offset: 3px;
-  border-radius: 2px;
+.masthead-mobile nav a{
+  padding:13px 18px;font-size:15px;color:var(--vyne-navy);text-decoration:none;
+  border-bottom:1px solid var(--vyne-hairline);
 }
+.masthead-mobile nav a:last-child{border-bottom:0}
 
-/* ---------- layout ---------- */
+/* ───────────── branching decision-path motif ─────────────
+   Parallel rules at the angle already present in the approved mark, fanning
+   from one origin like paths diverging from a decision point.
+   Pure CSS. Nothing traced, extracted or derived from the glyph.
+   MAXIMUM TWO MAJOR PLACEMENTS PER PAGE. */
 
-.shell {
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 var(--vyne-page-gutter);
+.branching{position:relative;overflow:hidden;pointer-events:none}
+.branching i{
+  position:absolute;left:0;width:190%;height:1px;
+  transform-origin:left center;background:var(--vyne-hairline);
 }
+.branching-dark i{background:color-mix(in srgb,var(--vyne-stone-gray) 26%,transparent)}
+.branching i:nth-child(1){top:8%;transform:rotate(-20deg)}
+.branching i:nth-child(2){top:22%;transform:rotate(-16deg)}
+.branching i:nth-child(3){top:36%;transform:rotate(-12deg);background:var(--vyne-bronze)}
+.branching-dark i:nth-child(3){background:var(--vyne-bronze)}
+.branching i:nth-child(4){top:50%;transform:rotate(-8deg)}
+.branching i:nth-child(5){top:64%;transform:rotate(-4deg)}
+.branching i:nth-child(6){top:78%;transform:rotate(0deg)}
+.branching i:nth-child(7){top:92%;transform:rotate(4deg)}
 
-@media (max-width: 720px) {
-  .shell { padding: 0 24px; }
-  body { font-size: 16px; }
+/* ───────────── hero ───────────── */
+
+.hero{padding:calc(var(--vyne-unit)*15) 0 calc(var(--vyne-unit)*14)}
+.hero-grid{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:stretch}
+.hero-copy{max-width:64ch}
+.hero-motif{border-left:1px solid var(--vyne-hairline);min-height:340px}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-motif{min-height:88px;border-left:0;border-top:1px solid var(--vyne-hairline);margin-top:36px}
+  .hero{padding:calc(var(--vyne-unit)*8) 0}
 }
+.hero h1{margin:18px 0 0}
+.hero-rule{width:72px;height:2px;background:var(--vyne-bronze);margin:30px 0}
+.hero-cta{margin-top:40px}
 
-.measure { max-width: 62ch; }
-.measure-wide { max-width: 74ch; }
+/* ───────────── calls to action ───────────── */
 
-section {
-  padding: calc(var(--vyne-unit) * 12) 0;
-  border-top: 1px solid var(--vyne-hairline);
+.cta{
+  display:inline-block;background:var(--vyne-navy);color:var(--vyne-ivory);
+  font-family:var(--vyne-font-sans);font-size:15px;letter-spacing:.02em;
+  padding:16px 32px;border-radius:2px;text-decoration:none;
+  border:1px solid var(--vyne-navy);
+  transition:background var(--vyne-motion-slow) var(--vyne-motion-easing),border-color var(--vyne-motion-slow) var(--vyne-motion-easing);
 }
+.cta:hover{background:var(--vyne-charcoal);border-color:var(--vyne-bronze)}
+.cta-inverse{background:var(--vyne-ivory);color:var(--vyne-navy);border-color:var(--vyne-ivory)}
+.cta-inverse:hover{background:var(--vyne-white);border-color:var(--vyne-bronze)}
 
-section:first-of-type { border-top: 0; }
+/* ───────────── questions ───────────── */
 
-@media (max-width: 720px) {
-  section { padding: calc(var(--vyne-unit) * 8) 0; }
+.questions{list-style:none;margin:0;padding:0}
+.questions li{
+  font-family:var(--vyne-font-serif);font-size:clamp(19px,2.1vw,23px);line-height:1.45;
+  color:var(--vyne-navy);padding:20px 0 20px 28px;
+  border-top:1px solid var(--vyne-hairline);border-left:2px solid transparent;
+  transition:border-left-color var(--vyne-motion-slow) var(--vyne-motion-easing),padding-left var(--vyne-motion-slow) var(--vyne-motion-easing);
 }
+.questions li:hover{border-left-color:var(--vyne-bronze);padding-left:34px}
+.questions li:first-child{border-top:0}
 
-/* ---------- masthead ---------- */
+/* ───────────── statement block ───────────── */
 
-.masthead {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: var(--vyne-ivory);
-  border-bottom: 1px solid var(--vyne-hairline);
+.statement-block{
+  margin-top:56px;background:var(--vyne-navy);color:var(--vyne-ivory);
+  padding:44px 48px;border-left:3px solid var(--vyne-bronze);
 }
-
-.masthead-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: 20px 0;
+.statement-block p{
+  font-family:var(--vyne-font-serif);font-size:clamp(21px,2.6vw,29px);
+  line-height:1.4;max-width:34ch;margin:0;
 }
+@media (max-width:820px){.statement-block{padding:28px 24px;margin-top:36px}}
 
-.wordmark {
-  font-family: var(--vyne-font-serif);
-  font-size: 19px;
-  letter-spacing: 0.16em;
-  color: var(--vyne-navy);
-  text-decoration: none;
-  white-space: nowrap;
+/* ───────────── process steps (on navy) ───────────── */
+
+.steps{counter-reset:step}
+.step{
+  display:grid;grid-template-columns:60px 1fr;gap:22px;padding:26px 0;
+  border-top:1px solid color-mix(in srgb,var(--vyne-stone-gray) 22%,transparent);
 }
+.step:first-child{border-top:0}
+.step-number{counter-increment:step;font-family:var(--vyne-font-serif);font-size:15px;color:var(--vyne-bronze);padding-top:5px}
+.step-number::before{content:counter(step,decimal-leading-zero)}
+.step h3{margin-bottom:8px}
+.step p{color:var(--vyne-stone-gray)}
+@media (max-width:820px){.step{grid-template-columns:42px 1fr;gap:16px}}
 
-.wordmark span { color: var(--vyne-bronze-text); }
+/* ───────────── outcomes ───────────── */
 
-.masthead-nav {
-  display: flex;
-  gap: 22px;
-  font-size: var(--vyne-type-meta);
-  color: var(--vyne-slate);
+.outcomes{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0 0 34px;padding:0}
+.outcomes li{
+  font-family:var(--vyne-font-serif);font-size:18px;color:var(--vyne-navy);
+  background:var(--vyne-white);border:1px solid var(--vyne-hairline);
+  border-bottom:2px solid var(--vyne-hairline);border-radius:2px;padding:11px 20px;
+  transition:border-bottom-color var(--vyne-motion-slow) var(--vyne-motion-easing);
 }
+.outcomes li:hover{border-bottom-color:var(--vyne-bronze)}
 
-.masthead-nav a {
-  color: var(--vyne-slate);
-  text-decoration: none;
-  transition: color var(--vyne-motion-fast) var(--vyne-motion-easing);
+/* ───────────── confidentiality ───────────── */
+
+.conf-motif{position:absolute;inset:0;opacity:.55}
+.conf-motif i{width:130%}
+.pledge{
+  font-family:var(--vyne-font-serif);font-size:clamp(21px,2.5vw,29px);line-height:1.42;
+  color:var(--vyne-ivory);max-width:26ch;margin:0 0 44px;
+  padding-left:26px;border-left:3px solid var(--vyne-bronze);
 }
+.conf-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;max-width:1000px}
+.conf-grid p{font-size:15.5px;line-height:1.7}
+@media (max-width:900px){.conf-grid{grid-template-columns:1fr;gap:22px}.pledge{padding-left:18px}}
+#confidentiality .shell{position:relative;z-index:1}
 
-.masthead-nav a:hover { color: var(--vyne-navy); }
+/* ───────────── disclosure card ───────────── */
 
-@media (max-width: 1000px) { .masthead-nav { display: none; } }
-
-/* ---------- eyebrow + headings ---------- */
-
-.eyebrow {
-  font-family: var(--vyne-font-sans);
-  font-size: var(--vyne-type-micro);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--vyne-bronze-text);
-  margin-bottom: 20px;
+.disclosure{
+  background:var(--vyne-white);border:1px solid var(--vyne-hairline);
+  border-left:3px solid var(--vyne-bronze);border-radius:2px;
+  padding:36px 40px;font-size:17px;line-height:1.72;
 }
+.disclosure p+p{margin-top:20px}
+@media (max-width:820px){.disclosure{padding:24px}}
 
-h1 {
-  font-size: clamp(34px, 5.2vw, 58px);
-  line-height: 1.12;
-}
+/* ───────────── founder (reserved) ───────────── */
 
-h2 {
-  font-size: clamp(26px, 3.2vw, 36px);
-  line-height: 1.22;
-  margin-bottom: 28px;
-}
+.founder-grid{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start}
+.founder-portrait{aspect-ratio:3/4;background:var(--vyne-stone-gray);border:1px solid var(--vyne-bronze)}
+.founder-portrait img{width:100%;height:100%;object-fit:cover;display:block}
+.founder-name{margin:0 0 18px;color:var(--vyne-bronze-text)}
+@media (max-width:820px){.founder-grid{grid-template-columns:1fr}.founder-portrait{max-width:180px}}
 
-h3 {
-  font-size: var(--vyne-type-section);
-  line-height: var(--vyne-type-section-lh);
-}
+/* ───────────── contact ───────────── */
 
-.lede {
-  font-size: clamp(18px, 2vw, 21px);
-  line-height: 1.6;
-  color: var(--vyne-slate);
-}
+.contact h2{margin-bottom:22px}
+.contact-cta{margin-top:38px}
+.contact-alt{margin-top:26px;font-size:var(--vyne-type-meta);color:var(--vyne-stone-gray)}
 
-.stack > * + * { margin-top: 20px; }
+/* ───────────── footer ───────────── */
 
-/* ---------- hero ---------- */
+.site-footer{background:var(--vyne-ivory);padding:calc(var(--vyne-unit)*8) 0 calc(var(--vyne-unit)*6);font-size:var(--vyne-type-meta);line-height:1.75;color:var(--vyne-slate)}
+.footer-top{display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:start;padding-bottom:30px}
+.footer-disclosure{max-width:88ch}
+@media (max-width:820px){.footer-top{grid-template-columns:1fr;gap:24px}}
+.footer-bar{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;border-top:1px solid var(--vyne-hairline);padding-top:24px}
+.footer-links{display:flex;gap:18px}
+.footer-links a{color:var(--vyne-slate);text-decoration:none}
+.footer-links a:hover{color:var(--vyne-navy);text-decoration:underline}
 
-.hero { padding: calc(var(--vyne-unit) * 16) 0 calc(var(--vyne-unit) * 14); }
+/* ───────────── pending-counsel pages ───────────── */
 
-.hero-rule {
-  width: 64px;
-  height: 1px;
-  background: var(--vyne-bronze);
-  margin: 32px 0;
-}
-
-@media (max-width: 720px) {
-  .hero { padding: calc(var(--vyne-unit) * 9) 0 calc(var(--vyne-unit) * 8); }
-}
-
-/* ---------- call to action ---------- */
-
-.cta {
-  display: inline-block;
-  background: var(--vyne-navy);
-  color: var(--vyne-ivory);
-  font-family: var(--vyne-font-sans);
-  font-size: 15px;
-  letter-spacing: 0.02em;
-  padding: 15px 30px;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: background var(--vyne-motion-slow) var(--vyne-motion-easing);
-}
-
-.cta:hover { background: var(--vyne-charcoal); }
-
-.cta-inverse {
-  background: var(--vyne-ivory);
-  color: var(--vyne-navy);
-}
-
-.cta-inverse:hover { background: var(--vyne-white); }
-
-/* ---------- questions ---------- */
-
-.questions { list-style: none; margin: 0; padding: 0; }
-
-.questions li {
-  font-family: var(--vyne-font-serif);
-  font-size: clamp(19px, 2.3vw, 24px);
-  line-height: 1.5;
-  color: var(--vyne-navy);
-  padding: 18px 0 18px 26px;
-  border-top: 1px solid var(--vyne-hairline);
-  border-left: 2px solid transparent;
-  transition: border-left-color var(--vyne-motion-slow) var(--vyne-motion-easing);
-}
-
-.questions li:hover { border-left-color: var(--vyne-bronze); }
-.questions li:first-child { border-top: 0; }
-
-/* ---------- process ---------- */
-
-.steps { counter-reset: step; display: grid; gap: 0; }
-
-.step {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 20px;
-  padding: 26px 0;
-  border-top: 1px solid var(--vyne-hairline);
-}
-
-.step:first-child { border-top: 0; }
-
-.step-number {
-  counter-increment: step;
-  font-family: var(--vyne-font-serif);
-  font-size: 15px;
-  color: var(--vyne-bronze-text);
-  padding-top: 4px;
-}
-
-.step-number::before { content: counter(step, decimal-leading-zero); }
-
-.step h3 { margin-bottom: 8px; }
-.step p { color: var(--vyne-slate); }
-
-@media (max-width: 720px) {
-  .step { grid-template-columns: 40px 1fr; gap: 14px; }
-}
-
-/* ---------- outcomes ---------- */
-
-.outcomes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  margin: 0 0 32px;
-  padding: 0;
-}
-
-.outcomes li {
-  font-family: var(--vyne-font-serif);
-  font-size: 18px;
-  color: var(--vyne-navy);
-  background: var(--vyne-white);
-  border: 1px solid var(--vyne-hairline);
-  border-radius: 2px;
-  padding: 10px 18px;
-}
-
-/* ---------- panels ---------- */
-
-.panel-navy {
-  background: var(--vyne-navy);
-  color: var(--vyne-ivory);
-  border-top: 0;
-}
-
-.panel-navy h2 { color: var(--vyne-ivory); }
-.panel-navy .eyebrow { color: var(--vyne-bronze); }
-.panel-navy .lede { color: var(--vyne-stone-gray); }
-.panel-navy p { color: var(--vyne-stone-gray); }
-.panel-navy a { color: var(--vyne-ivory); }
-
-.statement {
-  font-family: var(--vyne-font-serif);
-  font-size: clamp(21px, 2.6vw, 27px);
-  line-height: 1.45;
-  color: var(--vyne-navy);
-  border-left: 2px solid var(--vyne-bronze);
-  padding-left: 26px;
-  margin-top: 36px;
-}
-
-.disclosure {
-  background: var(--vyne-white);
-  border: 1px solid var(--vyne-hairline);
-  border-left: 2px solid var(--vyne-bronze);
-  border-radius: 2px;
-  padding: 30px 32px;
-  font-size: 17px;
-  line-height: 1.7;
-}
-
-@media (max-width: 720px) {
-  .disclosure { padding: 22px; }
-  .statement { padding-left: 18px; }
-}
-
-/* ---------- footer ---------- */
-
-.site-footer {
-  border-top: 1px solid var(--vyne-hairline);
-  padding: calc(var(--vyne-unit) * 7) 0;
-  font-size: var(--vyne-type-meta);
-  line-height: 1.7;
-  color: var(--vyne-slate);
-}
-
-.footer-disclosure { max-width: 88ch; margin-bottom: 28px; }
-
-.footer-bar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 18px;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid var(--vyne-hairline);
-  padding-top: 22px;
-}
-
-.footer-links { display: flex; gap: 18px; }
-.footer-links a { color: var(--vyne-slate); text-decoration: none; }
-.footer-links a:hover { color: var(--vyne-navy); text-decoration: underline; }
-
-/* ---------- pending-counsel pages ---------- */
-
-.notice {
-  min-height: 70vh;
-  display: flex;
-  align-items: center;
-}
-
-.notice-card {
-  background: var(--vyne-white);
-  border: 1px solid var(--vyne-hairline);
-  border-left: 2px solid var(--vyne-warning);
-  border-radius: 2px;
-  padding: 40px;
-  max-width: 62ch;
-}
-
-.notice-card h1 { font-size: clamp(24px, 3vw, 32px); margin-bottom: 18px; }
+.notice{min-height:70vh;display:flex;align-items:center;padding:60px 0}
+.notice-card{background:var(--vyne-white);border:1px solid var(--vyne-hairline);border-left:3px solid var(--vyne-warning);border-radius:2px;padding:44px;max-width:62ch}
+.notice-card h1{font-size:clamp(24px,3vw,32px);margin:14px 0 18px}
