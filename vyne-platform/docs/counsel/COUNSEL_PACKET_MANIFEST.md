@@ -59,7 +59,7 @@ must not leave VYNE. The compensation disclosure counsel needs is reproduced ver
 
 | | |
 |---|---|
-| **Public website copy** | Being drafted now. **Will require review before publication** — the standing constraint is that the website must not exceed the claims in the Engagement Understanding. Expect it as an addendum. |
+| **Public website copy** | ✅ **Now enclosed as `CP-2026-01_ADDENDUM_A_WEBSITE_COPY.md`** (founder-approved for inclusion, 2026-08-02). Carries the **exact rendered copy** from the built site, plus six specific review questions. **Not published** — local development only under EA-WEB-001, and publication is gated on this review. |
 | **Public scenario calculators** | Phase-3 backlog. Counsel review already flagged as required for disclaimers, valuation positioning, data collection, and IP/trade-dress. **Nothing built.** |
 | **Advisor Studio terms and privacy notice** | `LR-2026-004` — already registered as blocking the first real advisor account. **Overlaps this packet; counsel may prefer to handle together.** |
 | **Retention policy** | The output of C-21 to C-23. Does not exist yet and cannot be written by VYNE. |

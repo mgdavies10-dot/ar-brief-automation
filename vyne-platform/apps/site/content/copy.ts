@@ -18,6 +18,11 @@ export const meta = {
   title: "VYNE Strategies — consulting for financial advisors evaluating a change",
   description:
     "VYNE Strategies is a confidential consulting firm for financial advisors and teams evaluating consequential decisions about their business, including whether anything should change at all.",
+  /**
+   * LOCAL PLACEHOLDER — founder ruling 2026-08-02.
+   * This mailbox does not exist. It must NOT be published.
+   * Replace with a real address before the site leaves local development.
+   */
   contactEmail: "hello@vynestrategies.com",
   copyright: "© 2026 VYNE Strategies. All rights reserved.",
 } as const;
@@ -56,11 +61,11 @@ export const questions = {
   intro:
     "These are the questions advisors are actually working through. Notice that none of them are about us.",
   items: [
-    "Should I be looking at all, or is this fixable where I am?",
+    "Should I be looking elsewhere at all, or is this fixable where I am?",
     "What actually happens to my business if I move?",
     "How much of my book would realistically come with me—and how much would stay and keep producing?",
     "What does this do to my team?",
-    "Is the economics genuinely better, or does it only look better in year one?",
+    "Are the economics genuinely better, or do they only look better in year one?",
     "What do I own, and what would I own somewhere else?",
     "What happens to my clients?",
     "Am I solving the right problem?",
@@ -83,7 +88,7 @@ export const process = {
   steps: [
     {
       title: "We begin with a confidential conversation",
-      body: "No documents, no commitment, and nothing shared with anyone.",
+      body: "No documents, no commitment, and nothing shared with a firm or outside party without your permission.",
     },
     {
       title: "We orient the decision",
@@ -135,7 +140,7 @@ export const confidentiality = {
     "VYNE will not contact a firm about you, disclose your identity, or share your information without your explicit written authorization naming that specific firm.",
   body: [
     "Authorization is firm-specific and signed each time. A general willingness to explore is not authorization. Agreeing with a recommendation is not authorization. Authorization for one firm does not extend to another.",
-    "We do not ask for client information. No names, account numbers, statements, or anything identifying one of your clients. We do not need it and we will not keep it. Everything we need about your business can be described in aggregate.",
+    "We do not ask for client-identifying information. No names, account numbers, statements, or anything identifying one of your clients. We do not need it and we will not keep it. Everything we need about your business can be described in aggregate.",
     "Information you share is restricted to authorized VYNE personnel and professional advisers with a legitimate need to know.",
   ],
 } as const;
@@ -166,7 +171,7 @@ export const founder = {
 
 export const contact = {
   heading: "Start with a conversation.",
-  body: "No documents, no commitment, and nothing shared with anyone. We will tell you plainly whether we think we can be useful.",
+  body: "No documents, no commitment, and nothing shared with a firm or outside party without your permission. We will tell you plainly whether we think we can be useful.",
   cta: "Request a confidential conversation",
   altPrefix: "If you would prefer to write first, ",
   altLinkText: "email us",
