@@ -1,11 +1,12 @@
 import { process } from "@/content/copy";
+import { SectionLabel } from "./SectionLabel";
 
 /** Navy — private-advisory depth. No mark: the asset cannot be reversed. */
 export function Process() {
   return (
     <section id="process" className="band-navy">
       <div className="shell split">
-        <div className="split-label"><p className="eyebrow">How we work</p></div>
+        <SectionLabel index="04">How we work</SectionLabel>
         <div className="split-body">
           <h2>{process.heading}</h2>
           <div className="steps">

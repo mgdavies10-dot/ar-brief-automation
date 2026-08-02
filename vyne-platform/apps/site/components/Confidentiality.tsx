@@ -11,7 +11,7 @@ export function Confidentiality() {
     <section id="confidentiality" className="band-navy band-navy-deep">
       <Branching tone="dark" className="conf-motif" />
       <div className="shell">
-        <p className="eyebrow">Confidentiality</p>
+        <div className="conf-label"><span className="label-index" aria-hidden="true">06</span><span className="label-rule" aria-hidden="true" /><p className="eyebrow">Confidentiality</p></div>
         <h2 className="measure">{confidentiality.heading}</h2>
         <p className="pledge">{confidentiality.lead}</p>
         <div className="conf-grid">

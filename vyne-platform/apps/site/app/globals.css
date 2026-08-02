@@ -43,11 +43,19 @@ section{padding:calc(var(--vyne-unit)*13) 0;position:relative}
 /* The two-column editorial rhythm: a standing label rail, then the body.
    This is the "modern heritage" structure — an institutional report grid. */
 .split{display:grid;grid-template-columns:190px 1fr;gap:56px;align-items:start}
-.split-label{position:sticky;top:132px}
+.split-label{position:sticky;top:136px;display:flex;flex-direction:column;gap:14px}
+.label-index{font-family:var(--vyne-font-serif);font-size:38px;line-height:1;color:var(--vyne-stone-gray)}
+.label-rule{display:block;width:40px;height:2px;background:var(--vyne-bronze)}
+.band-navy .label-index{color:color-mix(in srgb,var(--vyne-stone-gray) 40%,transparent)}
+.conf-label{display:flex;flex-direction:column;gap:12px;margin-bottom:26px}
+.conf-label .label-index{font-family:var(--vyne-font-serif);font-size:38px;line-height:1;color:color-mix(in srgb,var(--vyne-stone-gray) 40%,transparent)}
+.conf-label .label-rule{display:block;width:40px;height:2px;background:var(--vyne-bronze)}
 .split-body{max-width:70ch}
 @media (max-width:960px){
   .split{grid-template-columns:1fr;gap:0}
-  .split-label{position:static;margin-bottom:20px}
+  .split-label{position:static;margin-bottom:26px;flex-direction:row;align-items:center;gap:14px}
+  .label-index{font-size:26px}
+  .label-rule{width:26px}
 }
 
 .band-ivory{background:var(--vyne-ivory);border-top:1px solid var(--vyne-hairline)}
@@ -101,16 +109,20 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 .rule-stack i{display:block;height:1px;background:var(--vyne-navy)}
 .rule-stack i+i{margin-top:7px}
 .masthead-mobile[open] summary .rule-stack i{background:var(--vyne-bronze-text)}
-.masthead-mobile nav{
-  position:absolute;right:0;top:calc(100% + 10px);min-width:230px;
-  background:var(--vyne-white);border:1px solid var(--vyne-hairline);
-  border-top:2px solid var(--vyne-bronze);display:flex;flex-direction:column;
+.mobile-panel{
+  position:fixed;inset:0;background:var(--vyne-ivory);z-index:60;
+  display:flex;flex-direction:column;padding:18px 24px 40px;overflow-y:auto;
 }
-.masthead-mobile nav a{
-  padding:13px 18px;font-size:15px;color:var(--vyne-navy);text-decoration:none;
-  border-bottom:1px solid var(--vyne-hairline);
+.mobile-panel-head{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid var(--vyne-hairline)}
+.mobile-close{font-size:var(--vyne-type-meta);letter-spacing:.16em;text-transform:uppercase;color:var(--vyne-bronze-text)}
+.mobile-panel nav{display:flex;flex-direction:column;margin-top:14px}
+.mobile-panel nav a{
+  display:flex;align-items:baseline;gap:16px;
+  font-family:var(--vyne-font-serif);font-size:26px;line-height:1.3;
+  color:var(--vyne-navy);text-decoration:none;
+  padding:20px 0;border-bottom:1px solid var(--vyne-hairline);
 }
-.masthead-mobile nav a:last-child{border-bottom:0}
+.mobile-index{font-family:var(--vyne-font-sans);font-size:11px;letter-spacing:.16em;color:var(--vyne-bronze-text);min-width:22px}
 
 /* ───────────── branching decision-path motif ─────────────
    Parallel rules at the angle already present in the approved mark, fanning
@@ -135,7 +147,10 @@ h3{font-size:var(--vyne-type-section);line-height:var(--vyne-type-section-lh)}
 
 /* ───────────── hero ───────────── */
 
-.hero{padding:calc(var(--vyne-unit)*15) 0 calc(var(--vyne-unit)*14)}
+.hero{padding:calc(var(--vyne-unit)*15) 0 calc(var(--vyne-unit)*14);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;right:0;width:38%;height:100%;background:var(--vyne-white);border-left:1px solid var(--vyne-hairline)}
+.hero .shell{position:relative;z-index:1}
+@media (max-width:960px){.hero::before{display:none}}
 .hero-grid{display:grid;grid-template-columns:1fr 220px;gap:48px;align-items:stretch}
 .hero-copy{max-width:64ch}
 .hero-motif{border-left:1px solid var(--vyne-hairline);min-height:340px}

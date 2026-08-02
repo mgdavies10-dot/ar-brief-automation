@@ -1,10 +1,11 @@
 import { questions } from "@/content/copy";
+import { SectionLabel } from "./SectionLabel";
 
 export function Questions() {
   return (
     <section id="questions" className="band-ivory">
       <div className="shell split">
-        <div className="split-label"><p className="eyebrow">In their words</p></div>
+        <SectionLabel index="02">In their words</SectionLabel>
         <div className="split-body">
           <h2>{questions.heading}</h2>
           <p className="lede" style={{ marginBottom: 36 }}>{questions.intro}</p>

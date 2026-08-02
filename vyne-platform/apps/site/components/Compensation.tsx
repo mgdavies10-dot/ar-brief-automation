@@ -1,10 +1,11 @@
 import { compensation } from "@/content/copy";
+import { SectionLabel } from "./SectionLabel";
 
 export function Compensation() {
   return (
     <section id="compensation" className="band-ivory">
       <div className="shell split">
-        <div className="split-label"><p className="eyebrow">Disclosure</p></div>
+        <SectionLabel index="07">Disclosure</SectionLabel>
         <div className="split-body">
           <h2>{compensation.heading}</h2>
           <div className="disclosure">

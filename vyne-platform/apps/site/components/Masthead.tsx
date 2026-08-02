@@ -17,11 +17,22 @@ export function Masthead() {
           <summary aria-label="Sections">
             <span className="rule-stack" aria-hidden="true"><i /><i /></span>
           </summary>
-          <nav aria-label="Sections">
-            {nav.map((item) => (
-              <a key={item.id} href={`#${item.id}`}>{item.label}</a>
-            ))}
-          </nav>
+          <div className="mobile-panel">
+            <div className="mobile-panel-head">
+              <Logo height={52} />
+              <span className="mobile-close" aria-hidden="true">Close</span>
+            </div>
+            <nav aria-label="Sections">
+              {nav.map((item, i) => (
+                <a key={item.id} href={`#${item.id}`}>
+                  <span className="mobile-index" aria-hidden="true">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
         </details>
       </div>
       <div className="masthead-band" role="presentation" />
