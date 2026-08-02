@@ -87,14 +87,18 @@ f092b33d893234aecd2613e2f79fa0b84ba3ed0c7cf6156a9f911589c196d2fa
   synthetic-acceptance statements -- is CASE1_SYNTHETIC_IDENTITY_AND_ACCEPTANCE.md
   and is NOT copied. See §4 do-not-copy and the flag at §10(4).
 
-  NO SANITIZATION REQUIRED. All six scan clean at source for relative paths,
-  repository names, fee percentages, amounts, step-ups, clawbacks, T12/TTMP, any
-  reference to BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md, and all simulation
-  vocabulary.
+  All six scan clean at source for relative paths, repository names, fee
+  percentages, amounts, step-ups, clawbacks, T12/TTMP, and any reference to
+  BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md.
 
-  Every copy must checksum-match its source EXACTLY. Unlike Stage 1 there is no
-  expected divergence. Any mismatch is a defect, not a design. The renamed file
-  must still match f092b33d... byte for byte -- rename only, no edit.
+  ONE SANITIZATION REQUIRED -- L1_ASSESSMENT_GUIDE.md, founder ruling 2026-08-01.
+  It is the ONLY file whose Consultant copy is expected to differ from source.
+  Sanitized copy hash: c24716b8868fe48ddb36e047d7cc66f6a8a31725d933f0b6e52fb7cade258567
+  Full detail, reason, and the exact one-line diff: §7a.
+
+  The other five copies must checksum-match source EXACTLY. Any other mismatch is a
+  defect, not a design. The renamed acceptance record must still match f092b33d...
+  byte for byte -- rename only, no edit.
 
   Workspace after copy: 12 .md at root + 4 files under engagements/
 
@@ -216,7 +220,8 @@ Copy-side SHA-256 — ALL VERIFIED:
 
   CASE1_STAGE2_LAUNCH_PACKAGE.md ....... MATCH  999ca2ff...
   ADVISOR_ENGAGEMENT_UNDERSTANDING.md .. MATCH  cbb6b25f...
-  L1_ASSESSMENT_GUIDE.md ............... MATCH  66b75318...
+  L1_ASSESSMENT_GUIDE.md ............... MATCH to SANITIZED value  c24716b8...
+                                         source 66b75318... — see §7a
   L1_MATERIALITY_WORKSHEET.md .......... MATCH  55db5006...
   L1_ASSESSMENT_HANDOFF.md ............. MATCH  cee0d364...
   E-26-101_EngagementUnderstandingAcceptance_v1.0_ISSUED_2026-08-01.md
@@ -248,38 +253,48 @@ operation wrote only to new paths. From this point they are hash-verifiable.
       01_orientation/E-26-101_Orientation_v1.0_DRAFT_2026-08-01.md
 
 --------------------------------------------------------------------------------
-7a. ONE RESIDUAL EXPOSURE — REPORTED, NOT SUPPRESSED
+7a. EXPECTED DIVERGENCE — L1_ASSESSMENT_GUIDE.md SANITIZATION
 --------------------------------------------------------------------------------
-The full-workspace scan returned exactly one hit on simulation vocabulary:
+Founder ruling, 2026-08-01: strip the residual simulation language from the
+CONSULTANT WORKSPACE COPY ONLY. The controlled repository source artifact is NOT
+changed.
 
-  L1_ASSESSMENT_GUIDE.md line 70
-  "After the first three simulated or real engagements, review: advisor
-   conversation time, internal documentation time..."
+L1_ASSESSMENT_GUIDE.md is the ONLY Stage 2 file whose Consultant copy is expected
+to differ from source. All other copies must checksum-match source exactly.
 
-ASSESSMENT — marginal, accepted, flagged.
+  REASON ......... ROLE SEPARATION AND CONTAMINATION CONTROL.
+                   The phrase is generic operating doctrine and does not say this
+                   engagement is simulated -- but it introduces the word into a
+                   workspace built so the Consultant never encounters the frame.
+                   The whole containment design rests on the Consultant having no
+                   reason to ask the question. Removing the prompt costs nothing
+                   and closes the last vector.
 
-  It does NOT say this engagement is simulated. It is generic operating doctrine
-  about when VYNE will revisit its launch time targets, and it presupposes that a
-  firm may run simulated engagements to calibrate -- which is ordinary practice and
-  reveals nothing about Case 1's design, hidden facts, or expected outcome.
+  EXACT CHANGE ... one line, line 70:
 
-  Same class as the Stage 1 Gate-reference decision: legitimate doctrine inside a
-  controlled operating artifact, reviewed and accepted rather than scrubbed.
+      70c70
+      < **After the first three simulated or real engagements, review:** advisor conversation time · internal
+      ---
+      > **After the first three engagements, review:** advisor conversation time · internal
 
-  It is NEW EXPOSURE -- this file was not in the Stage 1 copy set.
+                   Two changed lines reported by diff (one removed, one added) =
+                   ONE substantive edit. Nothing else in the file is touched.
 
-  A sharp Consultant could, in principle, take it as a prompt to wonder. That is a
-  weaker signal than the Ontology pointer sanitized at Stage 1, which named a
-  restricted document outright.
+  ORIGINAL SOURCE HASH ........ 66b7531899b4b1bb87e98f22d92a58ef661343d0db795f083845df7c9ead1e49
+                                (repository artifact -- UNCHANGED, verified by
+                                 git status and git diff --stat: both empty)
 
-  NOT SANITIZED UNILATERALLY. Sanitizing would change the artifact's hash and make a
-  containment call the founder has ruled on every previous time. If the founder wants
-  it removed, the copy-only edit is one line and the record is re-hashed:
+  SANITIZED CONSULTANT COPY ... c24716b8868fe48ddb36e047d7cc66f6a8a31725d933f0b6e52fb7cade258567
+                                VERIFIED 2026-08-01
 
-      sed -i 's/first three simulated or real engagements/first three engagements/' \
-        "$DST/L1_ASSESSMENT_GUIDE.md"
+  PRE-COMPUTED, NOT RECORDED AFTER THE FACT. The expected sanitized value was
+  derived by applying the sed to a throwaway copy of the source and confirming the
+  diff was exactly the one line above, BEFORE touching the workspace. The workspace
+  copy then hashed to that same value. A hash recorded afterwards only documents
+  what happened; a pre-computed one proves the edit did what was intended AND
+  NOTHING ELSE.
 
-  The repository artifact would remain untouched either way.
+  Residual simulation vocabulary in the workspace after sanitization: ZERO.
   [ ] grep -rnE '\.\./|ar-brief-automation|vyne-platform' "$DST"   → no output
   [ ] grep -rniE '8%|16%|T12|TTMP|step-up|clawback' "$DST"         → no output
   [ ] grep -rniE 'simulat|synthetic|hidden fact|answer key|SIM-0' "$DST"
