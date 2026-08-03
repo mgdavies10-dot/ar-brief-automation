@@ -14,10 +14,20 @@ export const proof = {
 } as const;
 
 export const founderDraft = {
-  heading: "Who is accountable",
-  placeholder: "Founder biography and portrait are being prepared and are not yet published.",
-  name: "", role: "", body: [] as string[], portrait: null as string | null,
   approved: false,
+  heading: "Who is accountable",
+  /** Draft public language. Contains NO employer, title, tenure, licence,
+   *  credential, award, client outcome or asset total — none is on record. */
+  body: [
+    "VYNE exists because the advisor transition industry answers the wrong question first. An advisor raises a concern and is shown options. The conversation becomes comparative before anyone has established what the advisor is trying to accomplish, or whether the problem is structural at all.",
+    "That ordering is not an accident. It follows the economics. Almost everyone in this market is paid when an advisor moves, which makes a move the destination every process quietly points toward.",
+    "VYNE is paid the same way, and says so on this page rather than claiming an independence it does not have. What VYNE does differently is run the decision as a decision: evidence before opinion, staying and remediating as real conclusions, and the reasoning written down so it can be argued with.",
+    "Advisors making seven- and eight-figure decisions about businesses they spent decades building deserve a decision process before a transaction process. That is the whole of it.",
+  ] as string[],
+  name: "",
+  role: "",
+  portrait: null as string | null,
+  placeholder: "",
 } as const;
 
 export const toolsPreview = {

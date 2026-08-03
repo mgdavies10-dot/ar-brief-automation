@@ -227,9 +227,7 @@ export function FounderBlock() {
       <div className="shell split">
         <Label n="08">Accountability</Label>
         <div className="split-body founder-grid">
-          <div className="founder-portrait">
-            <span>Portrait pending approval</span>
-          </div>
+          <div className="founder-mark" aria-hidden="true"><Branching /></div>
           <div>
             <h2>{founderDraft.heading}</h2>
             {live ? (
@@ -357,5 +355,141 @@ export function SiteFooter() {
         </div>
       </div>
     </footer>
+  );
+}
+
+/* ══ Website V1 — recomposed homepage blocks ══ */
+import { framework } from "@/content/framework";
+import { VYNE9 } from "@/content/vyne9";
+
+export function ValueProp() {
+  return (
+    <section className="band-navy vp">
+      <div className="shell vp-inner">
+        <p className="vp-line">
+          Advisors do not need more options. They need a way to establish which option,
+          if any, is right for their business, their clients and their future.
+        </p>
+        <p className="vp-sub">
+          VYNE is a confidential consulting firm. We run the decision, not the transaction —
+          and staying is a conclusion we reach and recommend.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export function FrameworkStrip() {
+  return (
+    <section className="band-ivory">
+      <div className="shell">
+        <div className="section-head">
+          <div className="split-label" style={{ position: "static" }}>
+            <span className="label-rule" aria-hidden="true" />
+            <p className="eyebrow">The VYNE Framework</p>
+          </div>
+          <a className="section-more" href="/how-we-help/framework">The Framework in full</a>
+        </div>
+        <h2 className="measure">Four dimensions, before any path is compared</h2>
+        <div className="fw-strip">
+          {framework.letters.map((l) => (
+            <div className="fw-cell" key={l.letter}>
+              <span className="fw-cell-mark" aria-hidden="true">{l.letter}</span>
+              <h3>{l.word}</h3>
+              <p>{l.line}</p>
+            </div>
+          ))}
+        </div>
+        <p className="lede measure">{framework.relation.body}</p>
+      </div>
+    </section>
+  );
+}
+
+export function Vyne9Invite() {
+  return (
+    <section className="band-ivory v9-invite">
+      <div className="shell v9-invite-inner">
+        <div>
+          <p className="eyebrow">Assessment</p>
+          <h2>{VYNE9.name}</h2>
+          <p className="lede">
+            Nine questions that establish what you are actually deciding, before anyone shows
+            you an option. Your reading appears immediately and anonymously — no email, and no
+            firm is contacted.
+          </p>
+          <div className="cta-row">
+            <a className="cta" href={VYNE9.route}>{VYNE9.cta}</a>
+          </div>
+        </div>
+        <ul className="v9-invite-readings">
+          <li><span>Stay</span></li>
+          <li><span>Strengthen</span></li>
+          <li><span>Prepare</span></li>
+          <li><span>Compare</span></li>
+          <li className="v9-invite-note">Four readings. Two of them earn VYNE nothing.</li>
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+export function AdvisorJourney() {
+  const steps = [
+    { t: "Anonymous", d: "Read, work the numbers, take The VYNE 9. Nothing is collected." },
+    { t: "A conversation", d: "Confidential, no documents, no commitment." },
+    { t: "Understanding", d: "An Engagement Understanding before any substantive work." },
+    { t: "The work", d: "Structured assessment, tested with you before conclusions." },
+    { t: "A written record", d: "Conclusions, reasoning, confidence, unknowns. Yours to keep." },
+    { t: "Your decision", d: "Recorded separately from our recommendation." },
+  ];
+  return (
+    <section className="band-ivory">
+      <div className="shell">
+        <div className="section-head">
+          <div className="split-label" style={{ position: "static" }}>
+            <span className="label-rule" aria-hidden="true" />
+            <p className="eyebrow">Advisor journey</p>
+          </div>
+        </div>
+        <h2 className="measure">Nothing is required of you until you choose it</h2>
+        <ol className="journey">
+          {steps.map((s, i) => (
+            <li key={s.t}>
+              <span className="journey-num" aria-hidden="true">{i + 1}</span>
+              <strong>{s.t}</strong>
+              <span>{s.d}</span>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
+}
+
+export function OfferAndCompare() {
+  return (
+    <section className="band-stone">
+      <div className="shell offer-grid">
+        <a className="offer-card" href="/start/review-my-offer">
+          <span className="eyebrow">Review my offer</span>
+          <h3>You have a package in front of you.</h3>
+          <p>
+            We read it against what it actually delivers over time — not the headline. No firm
+            learns you asked.
+          </p>
+          <span className="offer-go" aria-hidden="true">&rarr;</span>
+        </a>
+        <a className="offer-card" href="/start/compare-firms">
+          <span className="eyebrow">Compare firms privately</span>
+          <h3>You want a straight comparison.</h3>
+          <p>
+            Consistent criteria, attributed claims, and the gaps named. Nothing is disclosed to
+            any firm without your written authorization.
+          </p>
+          <span className="offer-go" aria-hidden="true">&rarr;</span>
+        </a>
+      </div>
+    </section>
   );
 }

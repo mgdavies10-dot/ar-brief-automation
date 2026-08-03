@@ -17,7 +17,7 @@ export const navGroups: NavGroup[] = [
     id: "how-we-help", label: "How VYNE helps",
     intro: "The work itself, and who it is for.",
     items: [
-      { label: "The VYNE Framework", href: "/how-we-help/framework", blurb: "How a decision is actually worked through." },
+      { label: "The VYNE Framework", href: "/how-we-help/framework", ready: true, blurb: "Vision · Your Objectives · Navigate · Enterprise Economics." },
       { label: "Advisor Journey", href: "/how-we-help/advisor-journey", blurb: "From first conversation to written record." },
       { label: "Established advisors", href: "/how-we-help/established-advisors" },
       { label: "Advisor teams", href: "/how-we-help/advisor-teams" },
