@@ -42,6 +42,13 @@ ease-out, no springs.
 ❓ **Unresolved:** Trajan Pro / Suisse Int'l require commercial licences. **Not a blocker** — the current
 pairing is approved and in use.
 
+> ### Derived logo assets are TEMPORARY
+> `packages/ui/assets/brand/derived/` holds transparent, recoloured, cropped and monogram variants
+> generated 2026-08-02. They are **TEMPORARY LOCAL IMPLEMENTATION DERIVATIVES — FOUNDER REVIEW
+> REQUIRED**, not approved production assets. Recolouring, cropping and monogram extraction are
+> **prohibited by `LOGO_USAGE.md` without approval**. The canonical source is unchanged and
+> `LOGO_USAGE.md` has **not** been amended. See `derived/README.md`.
+
 ## 4 · Logo — approved direction, binding
 
 **Primary mark:** VE monogram over a letterspaced VYNE wordmark, midnight navy.

@@ -1,7 +1,21 @@
 /**
- * THE VYNE 9 — canonical product name and question set.
- * Founder ruling 2026-08-02. Supersedes every "The VYNE 9" reference.
+ * THE VYNE 9 — product name is founder-selected working direction.
+ *
+ * !!! THE NINE QUESTIONS BELOW ARE **DRAFT — NOT FOUNDER-APPROVED** !!!
+ *
+ * They were drafted by Claude to fill a migration gap. The audit established only
+ * that "The VYNE 9" had not been migrated -- NOT that these are the previously
+ * approved questions.
+ *
+ * PROVISIONAL: the number nine, the exact questions, scoring and interpretation.
+ * NOT APPROVED: public release, schema, CRM scoring, report logic.
+ *
+ * Route and visual shell may use "The VYNE 9" as a working label.
+ * Never state that these questions are founder-approved.
+ * See docs/governance/CANONICAL_PRODUCT_VOCABULARY.md §2.
  */
+
+export const VYNE9_QUESTIONS_STATUS = "DRAFT — not founder-approved" as const;
 
 export const VYNE9 = {
   name: "The VYNE 9",
@@ -18,6 +32,8 @@ export type Vyne9Question = {
   lens: string;
 };
 
+/** DRAFT — not founder-approved. Pending review against any earlier migrated set,
+ *  Spartan Advisory structural insight (no wording copied), overlap and sequencing. */
 export const questions: Vyne9Question[] = [
   { n: "1", lens: "Protect", q: "What is working that must be protected?", why: "A change that damages what already works is not an improvement. This establishes the floor." },
   { n: "2", lens: "Friction", q: "Where is the current model creating meaningful friction?", why: "Separates genuine structural friction from ordinary irritation." },

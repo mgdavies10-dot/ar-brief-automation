@@ -33,15 +33,51 @@
 | Operating artifacts 1–10 | `operations/` | ✅ Approved controlled operating drafts | 2026-07-25 | Founder |
 
 **Detail by domain:** brand → `brand/BRAND_SOURCE_OF_TRUTH.md` · website → `website/WEBSITE_SOURCE_OF_TRUTH.md` ·
-decisions → `governance/APPROVED_DECISIONS_REGISTER.md` · assets → `brand/BRAND_ASSET_REGISTER.md`
+assets → `brand/BRAND_ASSET_REGISTER.md`
+
+## 1a · Product Council — the governing body
+
+**Official name: the VYNE Product Council.** An **internal governance body — NOT a legal board of
+directors** ("board of directors" returns zero repository hits). **The founder is Chair and the final
+decision-maker:** *"The council recommends. The founder makes the final business decision."*
+
+**Standing (working contexts of one model plus the founder):** Founder/Chair (human) · CPO · CMO · CTSO ·
+Legal, Privacy & Regulatory *(issue-spotting only)*.
+**Conditional:** Principal UX Designer · CFO/Revenue Lead · COO · QA & Risk Lead · Growth & Marketing Lead.
+**Honesty clause:** role separation *"does not create independence"* — the founder, outside professionals
+and real QA execution are the only true independence.
+
+**Website V1 requires review through:** Growth & Marketing lens · Legal, Privacy & Regulatory lens ·
+Chief Methodology Officer **when method claims appear** · **founder approval**.
+Charter: `governance/PRODUCT_COUNCIL_CHARTER.md` · Authority: `governance/AUTHORITY_MATRIX.md`
+
+## 1b · Canonical pointers
+
+| Topic | Canonical source |
+|---|---|
+| VYNE identity | `foundation/THE_VYNE_CONSTITUTION.md` |
+| Product Council | `governance/PRODUCT_COUNCIL_CHARTER.md` |
+| **The VYNE Framework** | `governance/CANONICAL_PRODUCT_VOCABULARY.md` §1 — **binding** |
+| **The VYNE 9** | `governance/CANONICAL_PRODUCT_VOCABULARY.md` §2 — name settled, **questions provisional** |
+| Website V1 | `website/WEBSITE_SOURCE_OF_TRUTH.md` · `website/WEBSITE_V1_RECOVERY_PACKAGE.md` · `governance/EA-WEB-002.md` |
+| Calculators | `backlog/CALCULATOR_INITIATIVE.md` + Recovery Package §6 |
+| AEO | `experience/CONTENT_ARCHITECTURE.md` (frozen; AEO Architecture **not started**) |
+| Lead generation | Recovery Package §5 · `apps/site/lib/adapters.ts` (activation gate closed) |
+| Advisor Studio | `vyne-docs/04_UX_Blueprint_v1.md` · `ROADMAP.md` M5 |
+| Operating artifacts | `operations/` (10 approved controlled drafts) |
+| Commercial & conflict doctrine | `commercial/BUSINESS_MODEL_AND_COMMERCIAL_PRINCIPLES.md` 🔒 |
+| Migration gaps | `governance/MIGRATION_GAP_REGISTER.md` |
 
 ## 2 · Approved decisions
 
 **Register:** `governance/APPROVED_DECISIONS_REGISTER.md` — DL-2026-001 … 012, founder directions,
 engineering authorizations, and recovered brand decisions.
 
-**Authorizations in force:** **EA-001** advisor platform *(public website excluded)* · **EA-WEB-001**
-minimum public website *(local only, publication gated on counsel)*.
+**Authorizations in force:** **EA-001** advisor platform *(public website excluded)* ·
+**EA-WEB-002** Website V1 *(supersedes EA-WEB-001; build gate open, activation and publication gates
+closed)*.
+
+**Registers:** `governance/MIGRATION_GAP_REGISTER.md` · `governance/CANONICAL_PRODUCT_VOCABULARY.md`
 
 ## 3 · Current implementation assets
 

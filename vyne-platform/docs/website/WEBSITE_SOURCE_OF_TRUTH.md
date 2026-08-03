@@ -1,7 +1,18 @@
 # Website — Source of Truth
 
+> ## Canonical vocabulary — read first
+> **The VYNE Framework** (V Vision · Y Your Objectives · N Navigate · E Enterprise Economics) is
+> **binding**. **The VYNE 9** is a founder-selected working product name, but **its nine questions are
+> PROVISIONAL and not founder-approved** — they were drafted by Claude to fill a migration gap. Do not
+> publish them, finalise schema or scoring, or describe them as approved.
+> Source: `../governance/CANONICAL_PRODUCT_VOCABULARY.md`
+>
+> **Public claims require Product Council review** — Growth & Marketing lens, Legal/Privacy/Regulatory
+> lens, CMO where method claims appear, and founder approval (`../governance/AUTHORITY_MATRIX.md`,
+> *Marketing claims → Level 2–3*). **This has not yet been performed for Website V1.**
+
 **Established:** 2026-08-02 · **Owner:** Founder · **Parent:** `../00_VYNE_MASTER_INDEX.md`
-**Authorization:** `../governance/EA-WEB-001.md`
+**Authorization:** `../governance/EA-WEB-002.md` *(supersedes EA-WEB-001)*
 
 > **The website direction is SETTLED: "Modern Heritage with Private Advisory depth."** Selected by the
 > founder 2026-08-02. **Do not re-present A/B/C. Do not re-ask for a direction.**
@@ -28,14 +39,19 @@ vines, leaves or foliage · competitor imitation · a beautiful report with no i
 
 ## 2 · Authorization and gates
 
-**EA-WEB-001** — separate and narrow. **EA-001 is not amended.**
+**EA-WEB-002** supersedes EA-WEB-001 for Website V1. **EA-001 is not amended.**
 
-**Permitted:** Next.js App Router · static export · `apps/site` · `@vyne/ui` tokens · typed
-`content/copy.ts` · one-page structure · thin Privacy/Terms placeholders · `mailto:` CTA · no imagery in
-v1.
+**Build gate — open:** multi-page routes · templates · assessment and calculator interfaces ·
+newsletter/conversion interfaces · research pages · CRM field mappings · consent states · analytics
+event specification · local and staging implementation.
 
-**Prohibited:** hosting · domain · analytics · database · authentication · production form submission ·
-data collection · third-party embeds · **publication before counsel review.**
+**Activation gate — CLOSED:** real form submission · email delivery · CRM writes · scheduling embeds ·
+analytics transmission · cookies · production data retention · third-party processors. All behind
+disabled or mocked adapters.
+
+**Publication gate — CLOSED:** founder design approval · counsel-cleared copy · approved Privacy and
+Terms · retention and consent rules · security review · final calculator formulas and QA · production
+logo derivatives · domain and hosting approval.
 
 ## 3 · Approved copy — do not alter without founder ruling
 
@@ -67,11 +83,11 @@ calculator formulas · exclamation marks.
 | | |
 |---|---|
 | Location | `apps/site/` · runs at `localhost:3002` |
-| Structure | one page · 9 sections · Privacy + Terms placeholders |
-| Section order | hero → who we serve → questions → first decision → **process (navy)** → outcomes → **confidentiality (navy)** → compensation → *founder (reserved)* → **contact (navy)** → footer |
-| Logo | masthead 64px · footer 56px · white plate |
+| Structure | **multi-page, 44 routes** · 11 in navigation · 33 scheduled stubs hidden |
+| Homepage | **14 blocks** — hero · value proposition · The VYNE 9 invitation · tools · intelligence · Framework · founder · confidentiality · journey · offer/compare · proof · compensation · newsletter · start |
+| Logo | **transparent derivative**, unboxed on white masthead — **temporary, founder review required** |
 | Motif | hero + confidentiality · **exactly 2** |
-| Mobile nav | CSS-only `<details>`, no JavaScript |
+| Navigation | mega-menu + full-panel mobile; **ready-only routes** |
 | SEO/AEO | semantic headings · Organization + FAQPage JSON-LD · metadata · OG · sitemap · robots |
 
 ## 5 · Interior-page template

@@ -5,13 +5,50 @@ Engineering Authorization EA-001 with a founder-approved governance system. Any 
 session working here acts as the **VYNE Lead Engineer** unless the founder says
 otherwise, and is bound by everything below.
 
-## Read before material work
-1. `vyne-platform/docs/governance/GOVERNANCE_MANUAL.md` — the operating process
-2. `vyne-platform/vyne-docs/01_EA-001_and_Governance_Record.md` (EA-001 is binding) and
-   `02_Council_Response_CR-001.md`
-3. `vyne-platform/docs/DECISION_LOG.md` — current decisions and founder directions
-4. `vyne-platform/docs/HANDOFF.md` — current build state and next required action
-5. `vyne-platform/docs/SETUP.md` — environment and verification commands
+## MANDATORY PREFLIGHT — open and read, do not summarize
+
+**Before any material VYNE work, actually OPEN each of these.** Referencing them, quoting this file's
+description of them, or relying on a prior session's summary **does not count**. A 2026-08-02 audit found
+that an entire advisor-facing website was built without opening items 2, 3 or 5.
+
+1. `vyne-platform/docs/00_VYNE_MASTER_INDEX.md`
+2. `vyne-platform/docs/governance/GOVERNANCE_MANUAL.md`
+3. `vyne-platform/docs/governance/CHANGE_CLASSIFICATION.md`
+4. `vyne-platform/docs/governance/AUTHORITY_MATRIX.md`
+5. `vyne-platform/docs/governance/SOURCE_OF_TRUTH_MAP.md`
+6. `vyne-platform/docs/governance/PRODUCT_COUNCIL_CHARTER.md`
+7. `vyne-platform/docs/DECISION_LOG.md` — **in full**
+8. `vyne-platform/docs/foundation/THE_VYNE_CONSTITUTION.md` — **in full**
+9. **the active authorization for the task** — EA-001 (`vyne-docs/01`) for the advisor platform ·
+   `docs/governance/EA-WEB-002.md` for Website V1
+10. **the relevant domain source-of-truth** — `docs/website/WEBSITE_SOURCE_OF_TRUTH.md` ·
+    `docs/brand/BRAND_SOURCE_OF_TRUTH.md`
+11. **the relevant frozen experience architectures** — `docs/experience/` Content · Messaging ·
+    Assessment · Consultation · Recommendation & Report
+12. **for any public surface:** `docs/brand/BRAND_TOKENS.md` · `DESIGN_SYSTEM.md` · `LOGO_USAGE.md`
+13. `vyne-platform/docs/governance/CANONICAL_PRODUCT_VOCABULARY.md`
+
+**Then present an Active Reading Manifest before implementing** — exact path · status · read in full or
+partial · what it governs. **Material implementation may not begin until that manifest is complete.**
+
+> **If a canonical document appears missing, that is a migration gap to REPORT — never a blank to fill.**
+> Inventing a plausible substitute and shipping it is a recorded past failure
+> (`CANONICAL_PRODUCT_VOCABULARY.md` §4).
+
+**Also current:** `docs/HANDOFF.md` (build state) · `docs/SETUP.md` (environment) ·
+`vyne-docs/02_Council_Response_CR-001.md`.
+
+## Canonical product vocabulary — never invent a substitute
+
+**The VYNE Framework — binding:** **V** Vision · **Y** Your Objectives · **N** Navigate ·
+**E** Enterprise Economics. Public hierarchy: **VYNE → The VYNE Framework → The VYNE 9**.
+
+**The VYNE 9 — name settled, questions PROVISIONAL.** The nine questions currently in
+`apps/site/content/vyne9.ts` were **drafted by Claude to fill a migration gap and are not
+founder-approved.** Do not publish them, do not finalise scoring or schema, and never describe them as
+approved.
+
+**Retired, never reuse:** "Eight Questions" · "Eight VYNE Questions".
 
 `vyne-platform/vyne-docs/` is **read-only** governing material. Never edit it.
 
