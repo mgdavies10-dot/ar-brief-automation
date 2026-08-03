@@ -86,9 +86,9 @@ export default function Page() {
 
           <RelatedCluster
             items={[
-              { label: "Insights", href: "/intelligence/insights" },
-              { label: "Reports and guides", href: "/intelligence/reports" },
-              { label: "Firm research", href: "/intelligence/firm-research" },
+              
+              
+              
               { label: "Should I stay at my current firm or explore a move?", href: "/explore/stay-or-change-firms" },
             ]}
           />

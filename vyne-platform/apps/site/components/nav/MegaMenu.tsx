@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { navGroups, primaryCta, startItems } from "@/content/nav";
+import { readyGroups as navGroups, primaryCta, startItems } from "@/content/nav";
 import { Logo } from "@/components/brand/Logo";
 import { meta } from "@/content/copy";
 

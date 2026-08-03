@@ -1,4 +1,4 @@
-export type NavItem = { label: string; href: string; blurb?: string };
+export type NavItem = { label: string; href: string; blurb?: string; ready?: boolean };
 export type NavGroup = { id: string; label: string; intro: string; items: NavItem[] };
 
 export const navGroups: NavGroup[] = [
@@ -7,9 +7,9 @@ export const navGroups: NavGroup[] = [
     intro: "Who we are, how we think, and how we are paid.",
     items: [
       { label: "About VYNE", href: "/why-vyne/about", blurb: "A confidential consulting firm for advisors facing consequential decisions." },
-      { label: "Founder", href: "/why-vyne/founder", blurb: "Who is accountable for the judgment." },
+      { label: "Founder", href: "/why-vyne/founder", ready: true, blurb: "Who is accountable for the judgment." },
       { label: "Philosophy", href: "/why-vyne/philosophy", blurb: "Evidence before opinion. Decisions over transactions." },
-      { label: "Confidentiality", href: "/why-vyne/confidentiality", blurb: "You control every firm interaction." },
+      { label: "Confidentiality", href: "/why-vyne/confidentiality", ready: true, blurb: "You control every firm interaction." },
       { label: "How VYNE is compensated", href: "/why-vyne/how-we-are-compensated", blurb: "Stated plainly, with the conflict named." },
     ],
   },
@@ -29,7 +29,7 @@ export const navGroups: NavGroup[] = [
     id: "explore", label: "Explore",
     intro: "The questions advisors are actually working through.",
     items: [
-      { label: "Should I stay or change firms?", href: "/explore/stay-or-change-firms" },
+      { label: "Should I stay or change firms?", href: "/explore/stay-or-change-firms", ready: true },
       { label: "Advisor affiliation models", href: "/explore/affiliation-models" },
       { label: "Employee advisor options", href: "/explore/employee-advisor-options" },
       { label: "Independence options", href: "/explore/independence-options" },
@@ -46,11 +46,11 @@ export const navGroups: NavGroup[] = [
     id: "tools", label: "Tools",
     intro: "Work your own numbers. Nothing is submitted anywhere.",
     items: [
-      { label: "Eight VYNE Questions", href: "/tools/eight-questions", blurb: "Eight questions. An immediate, anonymous result." },
-      { label: "Independent advisor net payout", href: "/tools/independent-net-payout", blurb: "Estimated pre-tax owner economics." },
-      { label: "W-2 advisor net payout", href: "/tools/w2-net-payout", blurb: "Estimated pre-tax cash compensation." },
-      { label: "Practice value scenario explorer", href: "/tools/practice-value", blurb: "A range, with the assumptions visible." },
-      { label: "W-2 sunset program scenario explorer", href: "/tools/sunset-program", blurb: "Your programme terms, not a published average." },
+      { label: "The VYNE 9", href: "/tools/the-vyne-9", ready: true, blurb: "Nine questions. An immediate, anonymous reading." },
+      { label: "Independent advisor net payout", href: "/tools/independent-net-payout", ready: true, blurb: "Estimated pre-tax owner economics." },
+      { label: "W-2 advisor net payout", href: "/tools/w2-net-payout", ready: true, blurb: "Estimated pre-tax cash compensation." },
+      { label: "Practice value scenario explorer", href: "/tools/practice-value", ready: true, blurb: "A range, with the assumptions visible." },
+      { label: "W-2 sunset program scenario explorer", href: "/tools/sunset-program", ready: true, blurb: "Your programme terms, not a published average." },
       { label: "Advisor decision checklist", href: "/tools/decision-checklist" },
     ],
   },
@@ -59,7 +59,7 @@ export const navGroups: NavGroup[] = [
     intro: "Source-backed research and reference.",
     items: [
       { label: "Insights", href: "/intelligence/insights" },
-      { label: "State of Advisor Movement", href: "/intelligence/state-of-advisor-movement", blurb: "VYNE's standing research programme." },
+      { label: "State of Advisor Movement", href: "/intelligence/state-of-advisor-movement", ready: true, blurb: "VYNE's standing research programme." },
       { label: "Reports and guides", href: "/intelligence/reports" },
       { label: "Firm research", href: "/intelligence/firm-research" },
       { label: "Model research", href: "/intelligence/model-research" },
@@ -71,10 +71,15 @@ export const navGroups: NavGroup[] = [
 ];
 
 export const startItems: NavItem[] = [
-  { label: "Request a confidential conversation", href: "/start/confidential-conversation" },
+  { label: "Request a confidential conversation", href: "/start/confidential-conversation", ready: true },
   { label: "Review my offer", href: "/start/review-my-offer" },
   { label: "Compare firms privately", href: "/start/compare-firms" },
   { label: "Subscribe", href: "/start/subscribe" },
 ];
 
 export const primaryCta = { label: "Confidential conversation", href: "/start/confidential-conversation" };
+
+/** Navigation honesty: only completed routes appear in navigation. */
+export const readyGroups: NavGroup[] = navGroups
+  .map((g) => ({ ...g, items: g.items.filter((i) => i.ready) }))
+  .filter((g) => g.items.length > 0);

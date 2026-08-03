@@ -21,7 +21,7 @@ const related = [
   { label: "Independence options", href: "/explore/independence-options" },
   { label: "Portability", href: "/explore/portability" },
   { label: "Client and team impact", href: "/explore/client-and-team-impact" },
-  { label: "Take the Eight VYNE Questions", href: "/tools/eight-questions" },
+  { label: "Take The VYNE 9", href: "/tools/the-vyne-9" },
 ];
 
 export default function Page() {

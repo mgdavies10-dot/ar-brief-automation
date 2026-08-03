@@ -4,7 +4,7 @@ import {
   hero, serves, questions, firstDecision, process, outcomes,
   confidentiality, compensation, contact, footer,
 } from "@/content/copy";
-import { navGroups, startItems } from "@/content/nav";
+import { readyGroups, navGroups, startItems } from "@/content/nav";
 
 const toolItems = navGroups.find((g) => g.id === "tools")!.items.slice(0, 5);
 const exploreItems = navGroups.find((g) => g.id === "explore")!.items;
@@ -30,7 +30,7 @@ export function Hero() {
           <div className="stack">{hero.body.map((l) => <p key={l} className="lede">{l}</p>)}</div>
           <div className="cta-row">
             <a className="cta" href="/start/confidential-conversation">Request a confidential conversation</a>
-            <a className="cta-ghost" href="/tools/eight-questions">Take the Eight Questions</a>
+            <a className="cta-ghost" href="/tools/the-vyne-9">Take The VYNE 9</a>
           </div>
         </div>
         <div className="hero-anchor"><Branching /></div>
@@ -84,7 +84,7 @@ export function Questions() {
           <ul className="questions">
             {questions.items.map((q, i) => (
               <li key={q}>
-                <a href={exploreItems[i]?.href ?? "/explore/stay-or-change-firms"}>{q}</a>
+                <a href="/explore/stay-or-change-firms">{q}</a>
               </li>
             ))}
           </ul>
@@ -125,7 +125,7 @@ export function FrameworkPreview() {
             ))}
           </div>
           <p style={{ marginTop: 34 }}>
-            <a className="cta-ghost cta-ghost-dark" href="/how-we-help/framework">The VYNE Framework in full</a>
+            <a className="cta-ghost cta-ghost-dark" href="/why-vyne/confidentiality">How VYNE protects your exploration</a>
           </p>
         </div>
       </div>
@@ -139,7 +139,7 @@ export function ToolsPreview() {
       <div className="shell">
         <div className="section-head">
           <Label n="05">Tools</Label>
-          <a className="section-more" href="/tools/eight-questions">All tools</a>
+          <a className="section-more" href="/tools/the-vyne-9">All tools</a>
         </div>
         <h2>{toolsPreview.heading}</h2>
         <p className="lede measure" style={{ marginBottom: 44 }}>{toolsPreview.intro}</p>
@@ -164,7 +164,7 @@ export function IntelligencePreview() {
       <div className="shell">
         <div className="section-head">
           <Label n="06">Intelligence</Label>
-          <a className="section-more" href="/intelligence/insights">All insights</a>
+          <a className="section-more" href="/intelligence/state-of-advisor-movement">Research</a>
         </div>
         <h2>{intelligencePreview.heading}</h2>
         <p className="lede measure" style={{ marginBottom: 44 }}>{intelligencePreview.intro}</p>
@@ -184,7 +184,7 @@ export function IntelligencePreview() {
               </a>
             </li>
             <li>
-              <a href="/explore/firm-platform-evaluation">
+              <a href="/why-vyne/how-we-are-compensated">
                 <span className="intel-kicker">Cornerstone</span>
                 How are financial-advisor recruiters compensated?
               </a>
@@ -280,8 +280,7 @@ export function Compensation() {
             <p>{compensation.controls}</p>
           </div>
           <p style={{ marginTop: 26 }}>
-            <a className="cta-ghost" href="/why-vyne/how-we-are-compensated">
-              How VYNE is compensated, in full
+            <a className="cta-ghost" href="/why-vyne/confidentiality">How VYNE protects your exploration
             </a>
           </p>
         </div>
@@ -337,7 +336,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="shell">
         <div className="footer-cols">
-          {navGroups.map((g) => (
+          {readyGroups.map((g) => (
             <div key={g.id}>
               <p className="eyebrow">{g.label}</p>
               <ul>

@@ -1,36 +1,25 @@
 import Image from "next/image";
-import logo from "@vyne/ui/assets/brand/vyne-logo-primary.png";
+import navy from "@vyne/ui/assets/brand/derived/vyne-stacked-navy-360.png";
+import ivory from "@vyne/ui/assets/brand/derived/vyne-stacked-ivory-360.png";
 import { meta } from "@/content/copy";
 
 /**
- * The approved VYNE mark, displayed NATURALLY on a white ground.
+ * The approved VYNE mark, now TRANSPARENT.
  *
- * The asset carries its own white ground and no alpha. Rather than boxing it in a
- * bordered plate, the surfaces that host it are white — so the ground disappears
- * and the mark reads as placed, not framed. No border. No card.
- *
- * LOGO_USAGE binding: exact file · 3:2 preserved · no recolour, crop, trace,
- * redraw or monogram extraction · white ground only.
+ * Derived from the approved asset by alpha extraction, not redrawing: the ink's
+ * own luminance became the alpha channel and the ink was recoloured. Geometry is
+ * identical to the approved mark by construction.
+ * See scripts/productionize-logo.mjs and BRAND_ASSET_REGISTER.
  */
-export function Logo({ height = 60 }: { height?: number }) {
+export function Logo({ height = 56, tone = "navy" }: { height?: number; tone?: "navy" | "ivory" }) {
+  const src = tone === "ivory" ? ivory : navy;
   return (
-    <Image
-      className="logo"
-      src={logo}
-      alt={meta.name}
-      height={height}
-      width={Math.round(height * 1.5)}
-      priority
-      unoptimized
-    />
+    <Image className="logo" src={src} alt={meta.name} height={height}
+      width={Math.round(height * (src.width / src.height))} priority unoptimized />
   );
 }
 
-/**
- * Branching decision-path geometry — STRUCTURAL ONLY.
- * Section transitions and a single hero anchor. Never ornament.
- * Pure CSS: nothing traced, extracted or derived from the glyph.
- */
+/** Branching decision-path geometry — structural only, never ornament. */
 export function Branching({ tone = "light" }: { tone?: "light" | "dark" }) {
   return (
     <div className={`branching branching-${tone}`} aria-hidden="true">

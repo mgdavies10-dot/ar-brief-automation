@@ -25,7 +25,7 @@ export default function Page() {
         kicker="Scenario tool"
         title="Independent advisor net payout"
         standfirst="A transparent model of estimated pre-tax owner economics, built from assumptions you select and can change. Every input is visible. Nothing is hidden inside the calculation."
-        crumbs={[{ label: "Tools", href: "/tools/eight-questions" }]}
+        crumbs={[{ label: "Tools", href: "/tools/the-vyne-9" }]}
       />
 
       <section className="band-ivory">
