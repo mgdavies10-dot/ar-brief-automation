@@ -10,6 +10,7 @@
  * ivory canvas, white one step up, navy as a full-bleed band.
  */
 @import "@vyne/ui/tokens.css";
+@import "./v1.css";
 
 *,*::before,*::after{box-sizing:border-box}
 
